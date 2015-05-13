@@ -41,7 +41,7 @@ ul.top-nav--mobile {
     left: -100px;
     opacity: 0;
     background-color: $color2;
-    transition-property: left, opacity;
+    transition-property: transform, opacity;
     transition-duration: .3s, .5s;
     transition-timing-function: ease-in-out;
 }
@@ -57,9 +57,9 @@ ul.top-nav--mobile {
         ul.top-nav--mobile {
             display: block;
             position: relative;
-            left: 0;
             opacity: 1;
             width: 90%;
+            transform: translateX(100px);
         }
     }
     a {
@@ -82,10 +82,10 @@ ul.top-nav--mobile {
     li {
         ul.top-nav__sub {
             position: absolute;
-            left: -100px;
+            left: -5em;
             opacity: 0;
             background-color: $color2;
-            transition-property: left, opacity;
+            transition-property: transform, opacity;
             transition-duration: .3s, .5s;
             transition-timing-function: ease-in-out;
         }
@@ -93,7 +93,7 @@ ul.top-nav--mobile {
             ul.top-nav__sub {
                 display: block;
                 position: relative;
-                left: 0;
+                transform: translateX(5em);
                 opacity: 1;
             }
         }
@@ -288,14 +288,14 @@ ul.top-nav--desktop {
             z-index: -5000;
             overflow: hidden;
             background-color: $color2;
-            transition-property: top, height, opacity;
+            transition-property: transform, height, opacity;
             transition-duration: .3s, .5s, .5s;
             transition-timing-function: ease-in-out;
         }
         &:focus, &:hover {
             ul.top-nav__sub {
                 background-color: $color2;
-                top: 3.2em;
+                transform: translateY(4.2em);
                 height: auto;
                 opacity: 1;
                 overflow: visible;
@@ -311,7 +311,7 @@ li.top-nav__sub--item {
         left: 50%;
         opacity: 0;
         background-color: $color2;
-        transition-property: left, opacity;
+        transition-property: transform, opacity;
         transition-duration: .3s, .5s;
         transition-timing-function: ease-in-out;
         min-width: 8em;
@@ -319,7 +319,7 @@ li.top-nav__sub--item {
     &:focus, &:hover {
         ul.top-nav__sub--2 {
             display: block;
-            left: 100%;
+            transform: translateX(50%);
             opacity: 1;
         }
     }

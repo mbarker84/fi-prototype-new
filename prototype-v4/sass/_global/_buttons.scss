@@ -14,14 +14,14 @@ button.cta {
     font-size: 1em;
 }
 
-button.signup__button--open-form {
+button.section__button--open-form {
     display: none;
 }
     
 /* Tablet styles */
 @media (min-width: $bp-m) {
     
-    button.signup__button--open-form {
+    button.section__button--open-form {
         display: block;
     }
     

@@ -1,6 +1,6 @@
 /* Events */
 
-section.event-home__events {
+section.regular {
     a {
         color: $color2;
     }
@@ -10,7 +10,7 @@ section.event-home__events {
 
 @media (min-width: $bp-l) {
     
-    section.event-home__events {
+    section.regular {
         li.events__single--regular {
             @include gallery(4 of 12);
             height: 15em;
@@ -21,37 +21,17 @@ section.event-home__events {
 
 /* Content library */
 
-section.event-home__content {
-    background-color: $color3;
-}
-
-article {
-    @include cf;
-}
-
-img.event-home__article__image {
-    height: 15em;
-    background-color: $color2;
-    margin-bottom: gutter();
-}
-
-.event-home__content--latest {
+.content--latest {
     display: none;
 }
 
 /* Content library--desktop styles */
 @media (min-width: $bp-l) {
-
-    .event-home__article__image {
-        @include span(6 of 12);
-    }
     
-    .event-home__article__text {
-        @include span(6 of 12 last);
-    }
-    
-    .event-home__content--latest {
+    .content--latest {
         display: block;
+        clear: both;
+        padding-top: 2em;
         li {
             @include gallery(4 of 12);
             height: 12em;

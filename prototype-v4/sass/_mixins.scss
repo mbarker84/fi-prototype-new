@@ -1,4 +1,4 @@
-@mixin section($margin-bottom, $padding: $padding) {
+@mixin section($margin-bottom, $padding) {
     margin-bottom: $margin-bottom;
     padding: $padding;
 }
@@ -9,5 +9,26 @@
         content: " ";
         display: block;
         clear: both;
+    }
+}
+
+/* Hide and show */
+
+@mixin mobile-hide {
+    display: none;
+    @media (min-width: $bp-m) {
+        display: block;
+    }
+}
+
+@mixin desktop-hide {
+    @media (min-width: $bp-l) {
+        display: none;
+    }
+}
+
+@mixin desktop-show {
+    @media (min-width: $bp-l) {
+        display: block;
     }
 }

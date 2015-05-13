@@ -1,18 +1,22 @@
 header {
     background-color: $color3;
-    padding: 6em 1em 3em 1em;
+    padding: 5em gutter() 3em gutter();
 }
 
 /* Tablet styles */
 
 @media (min-width: $bp-m) {
     
-    .header__group {
+    .header__group, .header__call-to-action {
         @include container(1200px);
     }
     
     h1.subhead {
         max-width: 20em;
+    }
+    
+    .header__call-to-action {
+        margin-top: 1em;
     }
     
 }
@@ -22,8 +26,7 @@ header {
 @media (min-width: $bp-l) {
     
     header {
-        padding-left: gutter();
-        padding-right: gutter();
+        padding: 8em gutter() 5em gutter();
     }
     
 }

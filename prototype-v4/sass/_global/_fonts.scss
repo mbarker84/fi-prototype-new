@@ -1,29 +1,33 @@
 h1 {
-    font-size: 3.2em;
+    font-size: 2em;
     margin-bottom: .2em;
     line-height: 1.2;
     &.subhead {
         font-size: 1.5em;
     }
+    @media (min-width: $bp-m) {
+        font-size: 3.2em;
+    }
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.6em;
     margin-bottom: .3em;
     line-height: 1.2;
+    @media (min-width: $bp-m) {
+        font-size: 2em;
+    }
 }
 
 h3 {
-    font-size: 1.2em;
-    margin-bottom: .2em;
+    font-size: 1.5em;
+    margin-bottom: .5em;
     text-transform: uppercase;
-    color: $color2;
 }
 
 h4 {
-    font-size: 1em;
+    font-size: 1.2em;
     margin-bottom: .2em;
-    text-transform: uppercase;
     color: $color2;
 }
 
@@ -34,4 +38,25 @@ p {
 
 em {
     font-style: italic;
+}
+
+a, a:focus, a:visited, a:hover, a:active {
+    color: $color4;
+}
+
+a.read-more {
+    color: $color1;
+}
+
+.blog {
+    a {
+        color: $color1;
+    }
+}
+
+.post__sub {
+    font-size: .8em;
+    span {
+        font-style: italic;
+    }
 }

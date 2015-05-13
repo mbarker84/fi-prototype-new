@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Future Insights | Home</title>
-    <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" />
+    <title>Future of Web Design</title>
+    <link href="../stylesheets/screen.css" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" />
 </head>
     
 <body>
@@ -15,8 +15,8 @@
     <nav>
         <div class="top-nav__logo">
             <a href="#">
-                    <img class="fi-logo" src="img/logos/fi-logo-white.svg" width="100%" height="auto">
-                    <img class="fi-text" src="img/logos/fi-text-white.svg" width="100%" height="auto">
+                    <img class="fi-logo" src="../img/logos/fi-logo-white.svg" width="100%" height="auto">
+                    <img class="fi-text" src="../img/logos/fi-text-white.svg" width="100%" height="auto">
             </a>
         </div>
         <!--mobile nav-->
@@ -109,70 +109,104 @@
     <!--header-->
     <header>
         <div class="header__group">
-            <h1>We are <br>Future Insights</h1>
-            <h1 class="subhead">We produce awesome events for designers, developers and people working on the web.</h1>
+            <h2>Blog //</h2>
+            <h1>Future of Web Design</h1>
+        </div>
+        <div class="header__call-to-action">
+            <p>Login or register now to access exclusive content</p>
+            <button class="cta"><a href="#signup-form">Login / Register FREE <i class="fa fa-arrow-right"></i></a></button>
         </div>
     </header>
     <!--main-->
-    <main class="home">
-        <!--events-->
-        <section class="regular">
-            <h2>Our Events</h2>
-            <ul class="events--priority">
-                <li class="events__single--priority">
-                    <a href="#">
-                        <figure>
-                            <img class="events__image" src="" width="100%" height="auto">
-                        </figure>
-                        <figcaption>
-                            <h3>Future of Web Design</h3>
-                            <h4>HTML // CSS // Responsive Design // UX // UI // IA ...</h4>
-                        </figcaption>
-                    </a>
+    <main class="blog--main">
+        <!--topics-->
+        <div class="topics">
+            <ul class="topics-menu">
+                <li>UX / UI</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li class="current">All</li>
+            </ul>
+        </div>
+        <!--search-->
+        <div class="search-box">
+            <ul class="search-box__menu"><a class="search-box__button" href="">Browse content <i class="fa fa-angle-right"></i></a>
+                <li class="search-box__item">Topic
+                    <ul class="search__sub">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>UX / UI</li>
+                        <li class="current">All</li>
+                    </ul>
                 </li>
-                <li class="events__single--priority">
-                    <a href="#">
-                        <figure>
-                            <img class="events__image" src="" width="100%" height="auto">
-                        </figure>
-                        <figcaption>
-                            <h3>Future of Web Apps</h3>
-                            <h4>Javascript // APIs // Toolkits // Real-time ...</h4>
-                        </figcaption>
-                    </a>
+                <li class="search-box__item">Speaker
+                    <ul class="search__sub">
+                        <li>Stephen Hay</li>
+                        <li>Sara Wachter-Boettcher</li>
+                        <li>Val Head</li>
+                        <li>Jason Pamental</li>
+                        <li class="current">All</li>
+                    </ul>
+                </li>
+                <li class="search-box__item">Event
+                    <ul class="search__sub">
+                        <li>Future of Web Design</li>
+                        <li>Future of Web Apps</li>
+                        <li>Future Insights Live</li>
+                        <li>Ultimate Developer Event</li>
+                        <li class="current">All</li>
+                    </ul>
                 </li>
             </ul>
-            <ul class="events--regular">
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>Ultimate Developer Event</h3>
-                    </a>
+        </div>
+        <!--search_desktop-->
+        <div class="search-box--desktop">
+            Topics
+            Speakers
+            Events
+        </div>
+        <!--main blog content-->
+        <section class="blog">
+            <ul class="blog__articles">
+                <li>
+                    <img class="blog__thumb" src="" width="100%" height="auto">
+                    <div class="blog__excerpt-text">
+                        <h2>What Makes You A Brilliant (or Nightmareish) Product Manager?</h2>
+                        <p class="post__sub">Posted by <span><a href="">Ellie Robinson</a></span> on <span>12-May–2015</span></p>
+                        <p>Future Insights Live Rising Star Natasha Awasthi is not only a seasoned product manager, she also teaches Product Management at General Assembly in NYC, and writes about her experiences for a variety of publications. In this guest blog series, Natasha takes a closer look at how to be a brilliant product manager in the tech sector.</p>
+                        <p><a class="read-more" href="">Read more <i class="fa fa-arrow-right"></i></a></p>
+                    </div>
                 </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>Future Insights Live</h3>
-                    </a>
+                <li>
+                    <img class="blog__thumb" src="" width="100%" height="auto">
+                    <div class="blog__excerpt-text">
+                        <h2>Hyperlinks and Story Arcs: Building Non-Linear Narratives for the Web with Senongo Akpem</h2>
+                        <p class="post__sub">Posted by <span><a href="">Michelle Barker</a></span> on <span>11-May–2015</span></p>
+                        <p>At last year’s Future of Web Design NYC, super talented designer and illustrator, Senongo Akpem, took to the stage to tell us all a story. It was a story that got us pretty intrigued about the potential of the web to bring us ever more innovative methods of storytelling, breaking out of the traditional linear narrative into exciting new territory.</p>
+                        <p><a class="read-more" href="">Read more <i class="fa fa-arrow-right"></i></a></p>
+                    </div>
                 </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>The London Web</h3>
-                    </a>
-                </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>Refresh Boston</h3>
-                    </a>
+                <li>
+                    <img class="blog__thumb" src="" width="100%" height="auto">
+                    <div class="blog__excerpt-text">
+                        <h2>Designing Using Data: Interview with Designer and Psychologist Joe Leech</h2>
+                        <p class="post__sub">Posted by <span><a href="">Ellie Robinson</a></span> on <span>10-May–2015</span></p>
+                        <p>Ahead of FI Live in Vegas in just over 2 weeks, we asked design expert and psychologist Joe Leech to share his thoughts on what makes for &lsquo;good&rsquo; or &lsquo;bad&rsquo; design, ways we can make data work for us, and which design minds he'd dissect if he had the chance.... </p>
+                        <p><a class="read-more" href="">Read more <i class="fa fa-arrow-right"></i></a></p>
+                    </div>
                 </li>
             </ul>
+            <a href="">More posts...</a>
+        </section>
+        <!--event callout-->
+        <section class="event-callout">
         </section>
         <!--signup-->
-        <section class="alternate">
-            <img class="section__image--main" src="" width="100%" height="auto">
-            <div class="section__text">
-                <h2>Videos, articles and more</h2>
-                <p>We have a wealth of inspiring videos of incredible talks and articles covering the latest and greatest in web design, all ready to share with you!</p>
+        <section id="signup-form" class="signup">
+            <div class="signup__text">
+                <h2>Get exclusive access to videos, articles and more</h2>
                 <p>Simply register your details to access our video library and receive regular email updates.</p>
-                <button class="cta section__button--open-form">Sign up <i class="fa fa-arrow-right"></i></button>
+                <button class="cta content__button--open-form">Sign up <i class="fa fa-arrow-right"></i></button>
             </div>
             <form class="signup">
                 <h3>Sign up</h3>
@@ -201,59 +235,6 @@
                     Go
                 </button>
             </form>
-        </section>
-        <!--explore-->
-        <section class="explore">
-            <ul class="explore__options">
-                <li class="explore__item">
-                    <a href="#">
-                        <i class="fa fa-video-camera"></i>
-                        <h4>Videos</h4>
-                    </a>
-                </li>
-                <li class="explore__item">
-                    <a href="#">
-                        <i class="fa fa-pencil"></i>
-                        <h4>Blog</h4>
-                    </a>
-                </li>
-                <li class="explore__item">
-                    <a href="#">
-                        <i class="fa fa-users"></i>
-                        <h4>Speakers</h4>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <!--get involved-->
-        <section class="regular">
-            <h2>Get Involved</h2>
-            <ul class="get-involved-options">
-                <li class="get-involved__item">
-                    <a href="#">
-                        <img class="get-involved__image" src="" width="100%" height="auto">
-                        <div class="get-involved__caption">
-                            <h3>Write for Us</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="get-involved__item">
-                    <a href="#">
-                        <img class="get-involved__image" src="" width="100%" height="auto">
-                        <div class="get-involved__caption">
-                            <h3>Speak at an event</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="get-involved__item">
-                    <a href="#">
-                        <img class="get-involved__image" src="" width="100%" height="auto">
-                        <div class="get-involved__caption">
-                            <h3>Sponsor</h3>
-                        </div>
-                    </a>
-                </li>
-            </ul>
         </section>
     </main>
     <!--footer-->
@@ -288,7 +269,7 @@
             </ul>
         </div>
     </footer>
-    
+
 </body>
     
 </html>
