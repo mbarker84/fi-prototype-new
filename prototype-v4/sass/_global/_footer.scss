@@ -1,10 +1,12 @@
 footer {
-    @include cf;
     background-color: $color2;
-    padding: gutter();
     h2, h4, p {
         color: $color4;
     }
+}
+
+.footer__content {
+    @include center-content;
 }
 
 ul.footer__social {
@@ -34,10 +36,13 @@ li.footer__social-item {
 
 @media (min-width: $bp-m) {
     
+    .footer__content {
+        @include center-content;
+    }
+    
     .footer__about,
     ul.footer__social,
     .footer__links {
-        @include container(1200px);
         @include cf;
     }
     

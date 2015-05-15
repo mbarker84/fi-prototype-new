@@ -1,10 +1,10 @@
 main.home {
-    @include container(1200px);
+    @include center-content;
 }
 
 section {
-    padding: gutter();
     @include cf;
+    margin-bottom: $large-padding;
     a {
         color: $color1;
         text-decoration: none;
@@ -13,26 +13,21 @@ section {
 
 section.alternate {
     background-color: $color3;
+    padding: $large-padding;
 }
 
 section.explore {
     background-color: $color2;
+    padding: $large-padding;
 }
 
 section.signup {
     background-color: $color1;
+    padding: $large-padding;
 }
 
 /* Section--Desktop XL-styles */
 @media (min-width: $bp-xl) {
-    
-    section.regular {
-        padding: 3em 0;
-        margin-bottom: 2em;
-    }
-    
-    section.alternate {
-    }
     
     section.explore {
         padding: 0;

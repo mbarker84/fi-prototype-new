@@ -3,6 +3,14 @@
     padding: $padding;
 }
 
+@mixin center-content {
+    @include container(1200px);
+    padding: gutter();
+    @media (min-width: $bp-xl) {
+        padding: 3em 1em;
+    }
+}
+
 /* Clearfix */
 @mixin cf {
     &:after {

@@ -110,98 +110,146 @@
     <header>
         <div class="header__content">
             <div class="header__group">
+                <h2>Blog //</h2>
                 <h1>Future of Web Design</h1>
-                <h1 class="subhead">We produce awesome events, videos and blog content for designers, developers and people working on the web.</h1>
-            </div>
-            <div class="header__call-to-action">
-                <p>Login or register now to access exclusive content</p>
-                <button class="cta"><a href="#signup-form">Login / Register FREE <i class="fa fa-arrow-right"></i></a></button>
             </div>
         </div>
     </header>
+    <!--search-->
+        <div class="search-box">
+            <ul class="search-box__menu"><a class="search-box__button" href="">Find <i class="fa fa-angle-right"></i></a>
+                <li class="search-box__item">Topic
+                    <ul class="search__sub">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>UX / UI</li>
+                        <li class="current">All</li>
+                    </ul>
+                </li>
+                <li class="search-box__item">Speaker
+                    <ul class="search__sub">
+                        <li>Stephen Hay</li>
+                        <li>Sara Wachter-Boettcher</li>
+                        <li>Val Head</li>
+                        <li>Jason Pamental</li>
+                        <li class="current">All</li>
+                    </ul>
+                </li>
+                <li class="search-box__item">Event
+                    <ul class="search__sub">
+                        <li>Future of Web Design</li>
+                        <li>Future of Web Apps</li>
+                        <li>Future Insights Live</li>
+                        <li>Ultimate Developer Event</li>
+                        <li class="current">All</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     <!--main-->
-    <main class="home">
-        <!--events-->
-        <section class="regular">
-            <h2>Upcoming Events</h2>
-            <ul class="events--regular">
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>London</h3>
-                        <p>27&ndash;29 April, 2015</p>
+    <main class="blog--main">
+        <!--search_desktop-->
+        <div class="search-box--desktop">
+            <ul class="search-box__menu"><h3>Find</h3>
+                <li class="search-box__item"><a href="">Topic <i class="fa fa-angle-right"></i></a>
+                    <ul class="search__sub">
+                        <li><a href="">HTML</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">UX / UI</a></li>
+                        <li class="current"><a href="">All</a></li>
+                    </ul>
+                </li>
+                <li class="search-box__item"><a href="">Speaker <i class="fa fa-angle-right"></i></a>
+                    <ul class="search__sub">
+                        <li><a href="">Stephen Hay</a></li>
+                        <li><a href="">Sara Wachter-Boettcher</a></li>
+                        <li><a href="">Val Head</a></li>
+                        <li><a href="">Jason Pamental</a></li>
+                        <li class="current"><a href="">All</a></li>
+                    </ul>
+                </li>
+                <li class="search-box__item"><a href="">Event <i class="fa fa-angle-right"></i></a>
+                    <ul class="search__sub">
+                        <li><a href="">Future of Web Design</a></li>
+                        <li><a href="">Future of Web Apps</a></li>
+                        <li><a href="">Future Insights Live</a></li>
+                        <li><a href="">Ultimate Developer Event</a></li>
+                        <li class="current"><a href="">All</a></li>
+                    </ul>
+                </li>
+                <li class="search-box__manual-search">
+                    <i class="fa fa-search"></i>
+                </li>
+            </ul>
+        </div>
+        <!--main blog content-->
+        <section class="blog">
+            <article class="blog__article">
+                <p class="tags"><span>UX</span><span>Strategy</span><span>Leadership</span><span>Product</span></p>
+                <h2>What Makes You A Brilliant (or Nightmareish) Product Manager?</h2>
+                <p class="post__sub">Posted by <span><a href="">Ellie Robinson</a></span> on <span>12-May–2015</span></p>
+                <figure>
+                    <img class="article__img" src="" width="100%" height="auto">
+                </figure>
+                <figcaption></figcaption>
+                <div class="article__text">
+                    <p>Future Insights Live Rising Star Natasha Awasthi is not only a seasoned product manager, she also teaches Product Management at General Assembly in NYC, and writes about her experiences for a variety of publications. In this guest blog series, Natasha takes a closer look at how to be a brilliant product manager in the tech sector.</p>
+                </div>
+            </article>
+            <aside class="article__aside">
+                <img class="aside__img" src="" width="100%" height="auto">
+                <div class="aside__text">
+                    <h3>About the Author</h3>
+                    <p class="aside">Digital devotee and resident culture vulture, Ellie is always on the hunt for imaginative new ways to make our events the best they can be.</p>
+                    <p class="aside__contact">Twitter: <a href="">@FollowEllie</a></p>
+                    <p class="aside__contact">Email: <a href="">ellie@futureinsights.com</a></p>
+                </div>
+            </aside>
+        </section>
+        <section class="recommendations">
+            <h2>You might also like...</h2>
+            <ul class="gallery--blog">
+                <li>
+                    <p class="gallery__content-type">Video</p>
+                    <a href="">
+                        <h4 class="gallery--recommends">Psychology For Designers <span>Joe Leech</span></h4>
+                        <p>Future of Web Design London 2014</p>
                     </a>
                 </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>San Francisco</h3>
-                        <p>28&ndash;30 October, 2015</p>
+                <li>
+                    <p class="gallery__content-type">Article</p>
+                    <a href="">
+                        <h4 class="gallery--recommends">Designing Using Data: Interview with Designer...</h4>
                     </a>
                 </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>New York</h3>
-                        <p>2&ndash;4 November, 2015</p>
-                    </a>
-                </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>Future Insights Live</h3>
-                        <p>1&ndash;4 June, 2015</p>
-                    </a>
-                </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>Refresh Boston</h3>
-                        <p>Free monthly meetup</p>
-                    </a>
-                </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>The London Web</h3>
-                        <p>Free monthly meetup</p>
+                <li>
+                    <p class="gallery__content-type">Article</p>
+                    <a href="">
+                        <h4 class="gallery--recommends">Hyperlinks and Story Arcs: Building Non-Linear...</h4>
                     </a>
                 </li>
             </ul>
         </section>
-        <!--content-->
-        <section class="alternate">
-                <img class="section__image--main" src="" width="100%" height="auto">
-                <div class="section__text">
-                    <h2>Latest from our blog</h2>
-                    <h3>Article title</h3>
-                    <p>Lorem ipsum dolor sit amet, at essent aliquando usu, mei iudico voluptua voluptatibus ei, est ei vide natum. Justo percipit vix ut, te mel ludus graece deleniti, at mei partem ridens labitur. Eum ad probo alienum albucius, nobis primis accumsan no nam, elit malis hendrerit in sit. Per id impedit apeirian atomorum, per at argumentum concludaturque. Has cibo equidem ea, ex pri fugit labitur ocurreret.</p>
-
-                    <p>Vix illud epicurei suscipiantur et. Ut has inani meliore. Senserit postulant pro at. Ne vel labore noster essent, ignota meliore sed ei, et est doctus repudiandae.</p>
-                    <button class="cta"><a href="#">Read more</a> <i class="fa fa-arrow-right"></i></button>
-                </div>
-            <div class="content--latest">
-                <h2>Latest videos</h2>
-                <ul class="content__videos--latest">
-                    <li class="content__item"><a href="#"><h3>Video 1</h3></a></li>
-                    <li class="content__item"><a href="#"><h3>Video 1</h3></a></li>
-                    <li class="content__item"><a href="#"><h3>Video 1</h3></a></li>
-                </ul>
-            </div>
-        </section>
-        <!--explore-->
-        <section class="explore">
-            <ul class="explore__options">
-                <li class="explore__item">
-                    <a href="#">
-                        <i class="fa fa-video-camera"></i>
-                        <h4>Videos</h4>
+        <!--event callout-->
+        <section class="event-callout">
+            <h2>Check out these events coming up...</h2>
+            <ul class="gallery--blog">
+                <li>
+                    <a href="">
+                        <h4>Future of Web Design San Francisco</h4>
+                        <p>October 28&ndash;30, 2015</p>
                     </a>
                 </li>
-                <li class="explore__item">
-                    <a href="#">
-                        <i class="fa fa-pencil"></i>
-                        <h4>Blog</h4>
+                <li>
+                    <a href="">
+                        <h4>Future of Web Design NYC</h4>
+                        <p>November 2&ndash;4, 2015</p>
                     </a>
                 </li>
-                <li class="explore__item">
-                    <a href="#">
-                        <i class="fa fa-users"></i>
-                        <h4>Speakers</h4>
+                <li>
+                    <a href="">
+                        <h4>Future of Web Design London</h4>
+                        <p>27&ndash;29 April, 2016</p>
                     </a>
                 </li>
             </ul>
@@ -240,36 +288,6 @@
                     Go
                 </button>
             </form>
-        </section>
-        <!--get involved-->
-        <section class="regular">
-            <h2>Get Involved</h2>
-            <ul class="get-involved-options">
-                <li class="get-involved__item">
-                    <a href="#">
-                        <img class="get-involved__image" src="" width="100%" height="auto">
-                        <div class="get-involved__caption">
-                            <h3>Write for Us</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="get-involved__item">
-                    <a href="#">
-                        <img class="get-involved__image" src="" width="100%" height="auto">
-                        <div class="get-involved__caption">
-                            <h3>Speak at an event</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="get-involved__item">
-                    <a href="#">
-                        <img class="get-involved__image" src="" width="100%" height="auto">
-                        <div class="get-involved__caption">
-                            <h3>Sponsor</h3>
-                        </div>
-                    </a>
-                </li>
-            </ul>
         </section>
     </main>
     <!--footer-->

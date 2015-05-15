@@ -63,8 +63,42 @@
 
     .search-box--desktop {
         display: block;
-        height: 20em;
         background-color: $color1;
+        ul.search-box__menu {
+            a {
+                display: block;
+                padding: .6em;
+            }
+            li.search-box__item {
+                border-bottom: 1px solid $color4;
+                &:nth-child(4n) {
+                    border-bottom: none;
+                }
+                ul.search__sub {
+                    display: none;
+                }
+                &:focus, &:hover {
+                    ul.search__sub {
+                        display: block;
+                        padding-left: .6em;
+                        a {
+                            color: $color2;
+                        }
+                    }
+                }
+            }
+            li.search-box__manual-search {
+                padding: .8em .6em;
+                background-color: $color4;
+                border: 2px solid $color1;
+            }
+        }
+        h3 {
+            padding: .6em;
+            margin-bottom: 0;
+            background-color: $color2;
+            color: $color1;
+        }
     }
     
 }

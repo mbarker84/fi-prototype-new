@@ -1,10 +1,13 @@
 .blog--main {
     @include cf;
-    @include container(1200px);
+    @include center-content;
+    section.signup, section.event-callout {
+        clear: both;
+    }
 }
 
 .topics {
-    @include mobile-hide;
+    display: none;
 }
 
 .blog__thumb {
@@ -14,6 +17,8 @@
 }
 
 ul.blog__articles {
+    border-bottom: 2px solid $color3;
+    margin-bottom: gutter(12);
     li {
         margin-bottom: 2em;
         @include cf;
@@ -25,6 +30,37 @@ ul.blog__articles {
 
 .search-box--desktop {
     display: none;
+}
+
+section.recommendations {
+    clear: both;
+}
+
+article.blog__article {
+    figure {
+        height: 10em;
+        background-color: $color3;
+        margin-bottom: 1em;
+    }
+}
+
+aside.article__aside {
+    border-top: 2px solid $color1;
+    padding-top: 1em;
+    @include bleed-x(1em);
+    img.aside__img {
+        @include span(2 of 9);
+        height: 6em;
+        background-color: $color3;
+        @media (min-width: $bp-m) {
+            height: 8em;
+        }
+    }
+    .aside__text {
+        @media (min-width: $bp-m) {
+            @include span(7 of 9 last);
+        }
+    }
 }
 
 /* Mobile styles */
@@ -47,6 +83,9 @@ ul.blog__articles {
 /* Tablet styles */
 
 @media (min-width: $bp-m) {
+    
+    .blog--main {
+    }
 
     img.blog__thumb {
         @include span(4 of 12);
@@ -69,7 +108,6 @@ ul.blog__articles {
     
     section.blog {
         @include span(8 of 12);
-        margin-right: span(1 of 12 last);
         padding: 0;
 
         img.blog__thumb {
@@ -86,15 +124,9 @@ ul.blog__articles {
 
 @media (min-width: $bp-xl) { 
     
-    .search-box--desktop {
-        @include span(3 of 12);
-        display: block;
-        @include bleed-x(20em);
-    }
-    
     section.blog {
         @include span(9 of 12 last);
-        padding: 0 0 0 gutter();
+        padding: 0 0 0 span(1 of 9);
     }
     
 }

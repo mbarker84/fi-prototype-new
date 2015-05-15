@@ -29,6 +29,9 @@ h4 {
     font-size: 1.2em;
     margin-bottom: .2em;
     color: $color2;
+    &.gallery--recommends {
+        margin-top: 2em;
+    }
 }
 
 p {
@@ -54,9 +57,32 @@ a.read-more {
     }
 }
 
-.post__sub {
+p.post__sub {
     font-size: .8em;
     span {
         font-style: italic;
     }
 }
+
+p.tags { 
+    font-size: .8em;
+    padding: .3em 0;
+    span {
+        margin-right: .5em;
+        background-color: $color1;
+        padding: .3em .5em;
+        color: $color4;
+        text-transform: uppercase;
+    }
+}
+
+p.gallery__content-type {
+    padding: .3em .5em;
+    position: absolute;
+    top: 0;
+    background-color: $color2;
+    color: $color3;
+    display: inline;
+    width: auto;
+}
+    

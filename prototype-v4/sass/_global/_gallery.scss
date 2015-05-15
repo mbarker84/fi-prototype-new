@@ -1,0 +1,25 @@
+/* Gallery */
+
+ul.gallery--blog {
+    @include cf;
+    li {
+        background-color: $color1;
+        position: relative;
+        @media (min-width: $bp-s) {
+            @include gallery(6 of 12);
+            margin-bottom: gutter(12);
+            height: 10em;
+        }
+        @media (min-width: $bp-m) {
+            @include gallery(4 of 12);
+        }
+        @media (min-width: $bp-l) {
+            @include gallery(3 of 12);
+        }
+        a {
+            display: block;
+            height: 100%;
+            padding: 1em;
+        }
+    }
+}
