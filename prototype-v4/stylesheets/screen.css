@@ -2168,6 +2168,52 @@ ul.gallery--content li {
     display: block;
     height: 100%;
     padding: 1em; }
+  ul.gallery--content li.locked {
+    background-color: #cccccc; }
+
+/* Featured content */
+.featured {
+  margin-bottom: 2em;
+  border-bottom: 2px solid #999999;
+  padding-bottom: 1em;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 1em; }
+  .featured:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.featured__img {
+  height: 10em;
+  background-color: #999999;
+  margin-bottom: 1em; }
+  @media (min-width: 700px) {
+    .featured__img {
+      width: 32.20339%;
+      float: left;
+      margin-right: 1.69492%;
+      margin-bottom: 0; } }
+  @media (min-width: 900px) {
+    .featured__img {
+      width: 31.81818%;
+      float: left;
+      margin-right: 2.27273%; } }
+
+@media (min-width: 700px) {
+  .featured__text {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0; } }
+@media (min-width: 700px) {
+  .featured__text {
+    width: 65.90909%;
+    float: right;
+    margin-right: 0; } }
 
 header {
   background-color: #cccccc;
