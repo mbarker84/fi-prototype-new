@@ -1,0 +1,10 @@
+.sort-dropdown {
+    @include span(6 of 12 last);
+    select {
+        appearance: none;
+        margin-bottom: 1em;
+        padding: .5em;
+        font-size: 1em;
+        float: right;
+    }
+}

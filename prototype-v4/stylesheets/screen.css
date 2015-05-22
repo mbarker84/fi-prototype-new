@@ -1868,7 +1868,7 @@ button.section__button--open-form {
     display: none; } }
 h1 {
   font-size: 2em;
-  margin-bottom: .2em;
+  margin-bottom: .1em;
   line-height: 1.2; }
   h1.subhead {
     font-size: 1.5em; }
@@ -1943,6 +1943,15 @@ p.gallery__content-type {
   font-weight: 700; }
 .article__text em {
   font-style: italic; }
+
+p.search-results {
+  margin-bottom: 1.5em;
+  color: #cccccc;
+  padding: .5em;
+  background-color: #333333; }
+  p.search-results span {
+    color: #FFFFFF;
+    text-transform: uppercase; }
 
 footer {
   background-color: #333333; }
@@ -2113,13 +2122,13 @@ ul.gallery--content:after {
   clear: both; }
 ul.gallery--content li {
   background-color: #999999;
-  position: relative; }
+  height: 10em;
+  position: relative;
+  margin-bottom: 1.69492%; }
   @media (min-width: 400px) {
     ul.gallery--content li {
       width: 49.15254%;
-      float: left;
-      margin-bottom: 1.69492%;
-      height: 10em; }
+      float: left; }
       ul.gallery--content li:nth-child(2n + 1) {
         margin-left: 0;
         margin-right: -100%;
@@ -2167,6 +2176,8 @@ ul.gallery--content li {
   ul.gallery--content li a {
     display: block;
     height: 100%;
+    padding: 1em; }
+  ul.gallery--content li p {
     padding: 1em; }
   ul.gallery--content li.locked {
     background-color: #cccccc; }
@@ -2545,6 +2556,38 @@ li.top-nav__item {
   height: 2em;
   border-radius: 50%; }
 
+ul.post-header {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em; }
+  ul.post-header:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  ul.post-header:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  ul.post-header li {
+    width: 49.15254%;
+    float: left;
+    padding: 1em;
+    background-color: #999999;
+    color: #cccccc; }
+    ul.post-header li:nth-child(2n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    ul.post-header li:nth-child(2n + 2) {
+      margin-left: 50.84746%;
+      margin-right: -100%;
+      clear: none; }
+    ul.post-header li.current {
+      background-color: #737373;
+      color: #FFFFFF; }
+
 /* Search box */
 .search-box {
   background-color: #333333;
@@ -2629,24 +2672,41 @@ li.top-nav__item {
       margin-bottom: 0;
       background-color: #333333;
       color: #999999; } }
+.sort-dropdown {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0; }
+  .sort-dropdown select {
+    appearance: none;
+    margin-bottom: 1em;
+    padding: .5em;
+    font-size: 1em;
+    float: right; }
+
 .topics {
   display: none; }
 
-.blog__thumb {
+.blog__thumb,
+.content__thumb {
   height: 10em;
   background-color: #cccccc;
-  margin-bottom: 1.69492%; }
+  margin-bottom: 1.69492%;
+  position: relative; }
 
-ul.blog__articles {
+ul.blog__articles,
+ul.content__articles {
   border-bottom: 2px solid #cccccc;
   margin-bottom: 1.69492%; }
-  ul.blog__articles li {
+  ul.blog__articles li,
+  ul.content__articles li {
     margin-bottom: 2em; }
-    ul.blog__articles li:after {
+    ul.blog__articles li:after,
+    ul.content__articles li:after {
       content: " ";
       display: block;
       clear: both; }
-    ul.blog__articles li:last-child {
+    ul.blog__articles li:last-child,
+    ul.content__articles li:last-child {
       margin-bottom: 0; }
 
 .search-box--desktop {
@@ -2688,7 +2748,9 @@ aside.article__aside {
     display: block;
     clear: both; }
   section.blog img.blog__thumb,
-  section.content img.blog__thumb {
+  section.blog .content__thumb,
+  section.content img.blog__thumb,
+  section.content .content__thumb {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%; }
@@ -2699,7 +2761,8 @@ aside.article__aside {
     margin-right: 0; } }
 /* Tablet styles */
 @media (min-width: 700px) {
-  img.blog__thumb {
+  img.blog__thumb,
+  .content__thumb {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
@@ -2723,7 +2786,9 @@ aside.article__aside {
     margin-right: 1.69492%;
     padding: 0; }
     section.blog img.blog__thumb,
-    section.content img.blog__thumb {
+    section.blog .content__thumb,
+    section.content img.blog__thumb,
+    section.content .content__thumb {
       width: 35.89744%;
       float: left;
       margin-right: 2.5641%; }
@@ -2773,6 +2838,15 @@ aside.article__aside {
   .content--main section.signup,
   .content--main section.event-callout {
     clear: both; }
+
+.narrow {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%; }
+
+.content__thumb a {
+  display: block;
+  height: 100%; }
 
 /* Events */
 section.regular a {

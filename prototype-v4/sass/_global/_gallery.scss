@@ -28,11 +28,11 @@ ul.gallery--content {
     @include cf;
     li {
         background-color: $color1;
+        height: 10em;
         position: relative;
+        margin-bottom: gutter(12);
         @media (min-width: $bp-s) {
             @include gallery(6 of 12);
-            margin-bottom: gutter(12);
-            height: 10em;
         }
         @media (min-width: $bp-m) {
             @include gallery(4 of 12);
@@ -44,6 +44,9 @@ ul.gallery--content {
         a {
             display: block;
             height: 100%;
+            padding: 1em;
+        }
+        p {
             padding: 1em;
         }
         &.locked {

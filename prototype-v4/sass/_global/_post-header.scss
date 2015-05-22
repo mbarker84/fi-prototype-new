@@ -1,0 +1,15 @@
+ul.post-header{
+    @include cf;
+    @include container;
+    padding: 0 1em;
+    li {
+        @include gallery(6 of 12);
+        padding: 1em;
+        background-color: $color1;
+        color: $color3;
+        &.current {
+            background-color: darken($color1, 15%);
+            color: $color4;
+        }
+    }
+}

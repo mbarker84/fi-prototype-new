@@ -1,6 +1,6 @@
 h1 {
     font-size: 2em;
-    margin-bottom: .2em;
+    margin-bottom: .1em;
     line-height: 1.2;
     &.subhead {
         font-size: 1.5em;
@@ -95,6 +95,17 @@ p.gallery__content-type {
     }
     em {
         font-style: italic;
+    }
+}
+
+p.search-results {
+    margin-bottom: 1.5em;
+    color: $color3;
+    padding: .5em;
+    background-color: $color2;
+    span {
+        color: $color4;
+        text-transform: uppercase;
     }
 }
     
