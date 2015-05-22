@@ -1,0 +1,8 @@
+.blog--main,
+.content--main {
+    @include cf;
+    @include center-content;
+    section.signup, section.event-callout {
+        clear: both;
+    }
+}

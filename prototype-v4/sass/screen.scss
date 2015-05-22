@@ -29,9 +29,10 @@ $susy: (
 @import '_global/_nav.scss';
 @import '_global/_popup.scss';
 @import '_global/_search.scss';
-@import '_global/_layouts/_home';
-@import '_global/_layouts/_event-home';
 @import '_global/_layouts/_blog';
+@import '_global/_layouts/_content.scss';
+@import '_global/_layouts/_event-home';
+@import '_global/_layouts/_home';
 
 @include border-box-sizing;
 
@@ -42,6 +43,7 @@ $susy: (
 
 body {
     position: relative;
+    overflow-x: hidden;
 }
 
 img {
