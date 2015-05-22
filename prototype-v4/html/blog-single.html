@@ -8,6 +8,9 @@
     <title>Future of Web Design</title>
     <link href="../stylesheets/screen.css" rel="stylesheet" type="text/css" />
     <link href="../stylesheets/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!--load jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 </head>
     
 <body>
@@ -188,12 +191,61 @@
                 <p class="tags"><span>UX</span><span>Strategy</span><span>Leadership</span><span>Product</span></p>
                 <h2>What Makes You A Brilliant (or Nightmareish) Product Manager?</h2>
                 <p class="post__sub">Posted by <span><a href="">Ellie Robinson</a></span> on <span>12-May–2015</span></p>
-                <figure>
+                <figure class="blog-img--main">
                     <img class="article__img" src="" width="100%" height="auto">
                 </figure>
                 <figcaption></figcaption>
                 <div class="article__text">
                     <p>Future Insights Live Rising Star Natasha Awasthi is not only a seasoned product manager, she also teaches Product Management at General Assembly in NYC, and writes about her experiences for a variety of publications. In this guest blog series, Natasha takes a closer look at how to be a brilliant product manager in the tech sector.</p>
+                    <p>Pow-wow sessions (friendly ones) about the needs of our customers is part of the job for a product manager. Yes, product management is about the people for whom we imagine products, but it’s also about the people we build stuff with.</p>
+
+<p>So, I set out to answer the following question: How well do we – as product managers - understand the pains of our teammates?</p>
+
+<p>I crafted a survey to discover what makes a product manager great and a nightmare to work with. I unleashed my questions on other product managers. I also begged engineers and designers in my social networks to share their views.</p>
+                <figure class="blog-img--float-left">
+                </figure>
+
+<p>While this exercise doesn’t qualify as rigorous research, it did reveal some patterns. Generally speaking, there was consensus on the expectations from this role including: be the voice of the customer, be transparent, be flexible, and have a grasp on features and functionality of the product. However, product managers who took this survey missed a couple attributes that separated the brilliant product managers from the good ones; also from those who induce nightmares.</p>
+
+                    <p>The Product Managers that induce nightmares are:</p>
+
+<h3>Irrational</h3>
+
+<p>These product managers not only have an unrealistic view of solutions but they don’t heed or seek the advice of their team. They seem aloof to the notion that there is a cost associated with every choice and course-correction. Furthermore, they are unable to express how or why they arrive at their decisions.</p>
+
+<p>It’s my theory, that the commonly perpetuated wisdom on “fake it ’til you make it” may create this blind spot for newly-minted product managers. It gets interpreted as “don’t admit to your team when you don’t know something.”</p>
+
+<h3>Micromanage</h3>
+
+<p>None of the product managers who took the survey mentioned a tendency to micromanage as a potential pitfall. Nearly all engineers and designers who took the survey, however, listed this as the most frustrating quality of product managers.</p>
+
+<p>They lamented how some product managers focus on managing tasks of other people when instead, they should be paying attention to the product and its priorities. Teams with such product managers are deflated, because they feel that their talent is not valued by their product peers.</p>
+
+<p>I have always wondered if this situation is rooted in another common misinterpretation.  Budding product managers are often told that “you are like a mini-CEO.”  It’s not unusual for people to think this means that they are the boss, must have all answers, and are expected to tell everyone what to do.</p>
+
+                    <p>Now, onto some good news. Great product managers are:</p>
+
+<h3>Strategic</h3>
+
+<p>They paint vivid pictures of their vision for a product. They are prepared to respond to shifts in the market, competitive landscape, and needs of the customer. However, as guardians of the big picture, they can make decisions in the short-term without compromising the future of your product.</p>
+
+<h3>Inclusive</h3>
+
+<p>They make it easy to have the difficult conversations. For instance, product managers often have to say “no” to ideas that deviate a squad from the strategic direction. Great product managers are able to deliver such messages without making people feel like they were shutdown.</p>
+
+<p>Also, they involve individuals from various departments in decisions that affect them. For this reason, they work hard to be multilingual – which is to say, they can fluently speak with and actively listen on behalf of technologists, designers and business people.</p>
+
+                    <p>Brilliant Product Managers are also:</p>
+
+<h3>Tuned-in</h3>
+
+<p>Engineers and designers, emphasized that brilliant product managers are aware of their team’s progress on tasks. These product managers proactively remove obstacles so the team can keep a solid momentum. They also make sure that their teammates understand the positive impact of their individual contributions.</p>
+
+<h3>Immediate</h3>
+
+<p>This brand of product people are careful but quick. They are motivated to keep their crew focused on the most essential work, at all times. Unfazed by incomplete information, they can consider multiple dimensions of a problem, prioritize features and functionality, and make decisions swiftly. </p> 
+
+<p><em>See Natasha speak about the value of product documentation versus prototyping at Future Insights Live on 1st - 4th June 2015 in Las Vegas. Tickets are still available, register today!</em></p>
                 </div>
             </article>
             <aside class="article__aside">
@@ -324,6 +376,31 @@
         </div>
         </div>
     </footer>
+    <div id="signup-popout" class="popup"><a href="">Sign up to the newsletter</a> to get exclusive access to premium content<div id="popup--hide" class="popup__close">X</div></div>
+    
+    <!--javascript-->
+    <!-- CTA fade in on scroll https://redvinestudio.com/how-to-make-a-menu-fade-in-on-scroll-using-jquery/-->
+    <script type="text/javascript">
+        (function($) {          
+            $(document).ready(function(){                    
+                $(window).scroll(function(){                          
+                    if ($(this).scrollTop() > 200) {
+                        $('#signup-popout').fadeIn(500);
+                    } else {
+                        $('#signup-popout').fadeOut(500);
+                    }
+                });
+            });
+        })(jQuery);
+    </script>
+    <!--hide on click-->
+    <script>
+$( "#popup--hide" ).click(function() {
+  $( "#signup-popout" ).hide( "slow", function() {
+    $( this ).remove();
+  });
+});
+    </script>
 
 </body>
     

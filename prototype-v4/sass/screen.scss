@@ -8,6 +8,13 @@
 @import "font-awesome-compass";
 @import "font-awesome";
 
+$susy: (
+    columns: 12,
+    container: 1100px,
+    gutters: 0.25,
+    global-box-sizing: border-box
+);
+
 /* Variables and mixins */
 @import 'variables';
 @import 'mixins';
@@ -18,18 +25,13 @@
 @import '_global/_forms.scss';
 @import '_global/_gallery.scss';
 @import '_global/_header.scss';
+@import '_global/_images.scss';
 @import '_global/_nav.scss';
+@import '_global/_popup.scss';
 @import '_global/_search.scss';
 @import '_global/_layouts/_home';
 @import '_global/_layouts/_event-home';
 @import '_global/_layouts/_blog';
-
-$susy: (
-    columns: 12,
-    container: 1100px,
-    global-box-sizing: border-box,
-);
-
 
 @include border-box-sizing;
 

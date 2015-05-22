@@ -36,20 +36,12 @@ section.recommendations {
     clear: both;
 }
 
-article.blog__article {
-    figure {
-        height: 10em;
-        background-color: $color3;
-        margin-bottom: 1em;
-    }
-}
-
 aside.article__aside {
     border-top: 2px solid $color1;
     padding-top: 1em;
     @include bleed-x(1em);
     img.aside__img {
-        @include span(2 of 9);
+        @include span(2 of 8);
         height: 6em;
         background-color: $color3;
         @media (min-width: $bp-m) {
@@ -58,7 +50,7 @@ aside.article__aside {
     }
     .aside__text {
         @media (min-width: $bp-m) {
-            @include span(7 of 9 last);
+            @include span(6 of 8 last);
         }
     }
 }
@@ -83,9 +75,6 @@ aside.article__aside {
 /* Tablet styles */
 
 @media (min-width: $bp-m) {
-    
-    .blog--main {
-    }
 
     img.blog__thumb {
         @include span(4 of 12);
@@ -111,13 +100,20 @@ aside.article__aside {
         padding: 0;
 
         img.blog__thumb {
-            @include span(3 of 9);
+            @include span(3 of 8);
         }
 
         .blog__excerpt-text {
-            @include span(6 of 9 last);
+            @include span(5 of 8 last);
         }
-        
+    }
+    
+    img.aside__img { 
+        @include span(3 of 9);
+    }
+    
+    .aside__text { 
+        @include span(3 of 9 last);
     }
     
 }

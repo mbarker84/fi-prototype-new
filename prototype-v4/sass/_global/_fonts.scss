@@ -66,13 +66,14 @@ p.post__sub {
 
 p.tags { 
     font-size: .8em;
-    padding: .3em 0;
     span {
         margin-right: .5em;
         background-color: $color1;
         padding: .3em .5em;
         color: $color4;
         text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: .5em;
     }
 }
 
@@ -84,5 +85,15 @@ p.gallery__content-type {
     color: $color3;
     display: inline;
     width: auto;
+}
+
+.article__text {
+    p:first-of-type {
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+    em {
+        font-style: italic;
+    }
 }
     

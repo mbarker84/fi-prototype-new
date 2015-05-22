@@ -1,0 +1,24 @@
+.popup {
+    position: fixed;
+    bottom: 0;
+    padding: 1em;
+    background-color: $color1;
+    color: $color4;
+    width: 100%;
+    text-align: center;
+}
+
+.popup__close {
+    display: block;
+    width: auto;
+    cursor: pointer;
+    background-color: $color2;
+    text-decoration: none;
+    position: absolute;
+    top: -.9em;
+    right: 1em;
+    padding: .55em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
