@@ -1,6 +1,7 @@
 /* Signup form - homepage */
 
-form.signup {
+form.signup,
+form.speak {
     margin-top: 1em;
 
     fieldset {
@@ -16,12 +17,18 @@ form.signup {
         margin-bottom: 1em;
     }
 
-    input.text-field {
+    input.text-field,
+    textarea {
         display: block;
         width: 100%;
         padding: .8em;
         margin-top: .5em;
         font-size: 1em;
+    }
+    
+    textarea {
+        height: 20em;
+        border: none;
     }
     
     input.radio-button {
@@ -31,6 +38,16 @@ form.signup {
         }
     }
     
+}
+
+form.speak {
+    opacity: 0;
+    transform: scaleY(0);
+    &:target {
+        transition: all 1s ease-in-out;
+        opacity: 1;
+        transform: scaleY(1);
+    }
 }
     
 /* Tablet styles */

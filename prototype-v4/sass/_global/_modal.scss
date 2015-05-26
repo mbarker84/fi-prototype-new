@@ -1,0 +1,54 @@
+.modal__signup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition-property: opacity;
+    transition-duration: .3s;
+    &:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.modal__content {
+    position: relative;
+    max-width: 600px;
+    background-color: $color2;
+    color: $color4;
+    margin: 10em auto;
+    padding: 2em;
+    h2 {
+        margin-bottom: 1em;
+    }
+    input {
+        display: block;
+        width: 100%;
+        margin: .5em 0 2em 0;
+        font-size: 1.1em;
+        padding: .5em;
+    }
+    button {
+        background-color: $color1;
+        color: $color2;
+    }
+    @media (min-width: $bp-l) {
+        padding: 3em;
+    }
+}
+
+.modal__close {
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    padding: .2em;
+    top: 1em;
+    right: 1em;
+    background-color: $color1;
+    color: $color2;
+    border-radius: 50%;
+    text-align: center;
+}

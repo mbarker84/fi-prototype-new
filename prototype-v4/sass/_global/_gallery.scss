@@ -86,3 +86,27 @@ ul.gallery--content {
         @include span(6 of 9 last);
     }
 }
+
+/* Gallery - full-width */
+
+ul.team {
+    @include cf;
+    li {
+        @include gallery(6);
+        text-align: center;
+        @media (min-width: $bp-m) {
+            @include gallery(4);
+        }
+        @media (min-width: $bp-l) {
+            @include gallery(3);
+        }
+        figure {
+            height: 5em;
+            background-color: $color1;
+            margin-bottom: .5em;
+            @media (min-width: $bp-m) {
+                height: 10em;
+            }
+        }
+    }
+}
