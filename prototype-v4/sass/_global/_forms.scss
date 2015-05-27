@@ -1,7 +1,8 @@
 /* Signup form - homepage */
 
 form.signup,
-form.speak {
+form.speak,
+form.sponsor {
     margin-top: 1em;
 
     fieldset {
@@ -40,15 +41,14 @@ form.speak {
     
 }
 
-form.speak {
-    opacity: 0;
-    transform: scaleY(0);
-    &:target {
-        transition: all 1s ease-in-out;
-        opacity: 1;
-        transform: scaleY(1);
+.form__container {
+    padding: 2em;
+    background-color: $color1;
+    @media (min-width: $bp-l) {
+        @include span(9 of 12);
     }
 }
+
     
 /* Tablet styles */
 @media (min-width: $bp-m) {

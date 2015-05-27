@@ -1,0 +1,48 @@
+a {
+    color: $color3;
+}
+a:focus, a:hover, a:active {
+    color: $color4;
+}
+
+nav, 
+footer {
+    a, a:focus, a:visited, a:hover, a:active {
+        color: $color4;
+    }
+}
+
+section {
+    a {
+        text-decoration: none;
+    }
+    &.regular,
+    &.content {
+        a {
+            color: $color3;
+            &:focus, &:hover, &:active {
+                color: $color2;
+            }
+        }
+    }
+}
+
+.popup, 
+.search-box__menu {
+    a {
+        color: $color4;
+    }
+}
+    
+
+button {
+    a {
+        color: $color3;
+        text-decoration: none;
+        display: block;
+        padding: .8em 2em;
+        &:focus, &:hover, &:active {
+            color: $color4;
+        }
+    }
+}

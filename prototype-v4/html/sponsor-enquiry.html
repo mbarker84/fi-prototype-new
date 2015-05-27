@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Future of Web Design</title>
+    <title>Future Insights | Get Involved</title>
     <link href="../stylesheets/screen.css" rel="stylesheet" type="text/css" />
     <link href="../stylesheets/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" />
     <!--load jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!--smooth scroll plugin via https://github.com/kswedberg/jquery-smooth-scroll-->
+    <script src="../js/jquery.smooth-scroll.js"></script>
 </head>
     
 <body>
@@ -81,9 +82,9 @@
                     <li class="top-nav__sub--item"><a href="about.html">About Us</a></li>
                     <li class="top-nav__sub--item"><a href="#">Get Involved <i class="fa fa-angle-right"></i></a>
                         <ul class="top-nav__sub--2">
-                            <li class="top-nav__sub2--item"><a class="scroll" href="about.html#write">Write for us</a></li>
-                            <li class="top-nav__sub2--item"><a class="scroll" href="speaker-submission.html">Speak</a></li>
-                            <li class="top-nav__sub2--item"><a class="scroll" href="sponsor-enquiry.html">Sponsor</a></li>
+                            <li class="top-nav__sub2--item"><a class="scroll" href="#write">Write for us</a></li>
+                            <li class="top-nav__sub2--item"><a class="scroll" href="#speak">Speak</a></li>
+                            <li class="top-nav__sub2--item"><a class="scroll" href="#sponsor">Sponsor</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -113,140 +114,51 @@
     <header>
         <div class="header__content">
             <div class="header__group">
-                <h1>Future of Web Design</h1>
-                <h1 class="subhead">We produce awesome events, videos and blog content for designers, developers and people working on the web.</h1>
-            </div>
-            <div class="header__call-to-action">
-                <p>Login or register now to access exclusive content</p>
-                <button class="cta"><a href="#signup-form">Login / Register FREE <i class="fa fa-arrow-right"></i></a></button>
+                <h2>Get involved //</h2>
+                <h1>Future Insights</h1>
             </div>
         </div>
     </header>
     <!--main-->
     <main class="home">
-        <!--events-->
+        <!--submission-->
         <section class="regular">
-            <h2>Upcoming Events</h2>
-            <ul class="events--regular">
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>London</h3>
-                        <p>27&ndash;29 April, 2015</p>
-                    </a>
-                </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>San Francisco</h3>
-                        <p>28&ndash;30 October, 2015</p>
-                    </a>
-                </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>New York</h3>
-                        <p>2&ndash;4 November, 2015</p>
-                    </a>
-                </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>Future Insights Live</h3>
-                        <p>1&ndash;4 June, 2015</p>
-                    </a>
-                </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>Refresh Boston</h3>
-                        <p>Free monthly meetup</p>
-                    </a>
-                </li>
-                <li class="events__single--regular">
-                    <a href="#">
-                        <h3>The London Web</h3>
-                        <p>Free monthly meetup</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <!--content-->
-        <section class="alternate">
-                <img class="section__image--main" src="" width="100%" height="auto">
-                <div class="section__text">
-                    <h2>Latest from our blog</h2>
-                    <h3>Article title</h3>
-                    <p>Lorem ipsum dolor sit amet, at essent aliquando usu, mei iudico voluptua voluptatibus ei, est ei vide natum. Justo percipit vix ut, te mel ludus graece deleniti, at mei partem ridens labitur. Eum ad probo alienum albucius, nobis primis accumsan no nam, elit malis hendrerit in sit. Per id impedit apeirian atomorum, per at argumentum concludaturque. Has cibo equidem ea, ex pri fugit labitur ocurreret.</p>
-
-                    <p>Vix illud epicurei suscipiantur et. Ut has inani meliore. Senserit postulant pro at. Ne vel labore noster essent, ignota meliore sed ei, et est doctus repudiandae.</p>
-                    <button class="cta"><a href="#">Read more <i class="fa fa-arrow-right"></i></a></button>
-                </div>
-            <div class="content--latest">
-                <h2>Latest videos</h2>
-                <ul class="content__videos--latest">
-                    <li class="content__item"><a href="#"><h3>Video 1</h3></a></li>
-                    <li class="content__item"><a href="#"><h3>Video 1</h3></a></li>
-                    <li class="content__item"><a href="#"><h3>Video 1</h3></a></li>
-                </ul>
-            </div>
-        </section>
-        <!--explore-->
-        <section class="explore">
-            <ul class="explore__options">
-                <li class="explore__item">
-                    <a href="#">
-                        <i class="fa fa-video-camera"></i>
-                        <h4>Videos</h4>
-                    </a>
-                </li>
-                <li class="explore__item">
-                    <a href="#">
-                        <i class="fa fa-pencil"></i>
-                        <h4>Blog</h4>
-                    </a>
-                </li>
-                <li class="explore__item">
-                    <a href="#">
-                        <i class="fa fa-users"></i>
-                        <h4>Speakers</h4>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <!--signup-->
-        <section id="signup-form" class="signup">
-            <div class="signup__text">
-                <h2>Get exclusive access to videos, articles and more</h2>
-                <p>Simply register your details to access our video library and receive regular email updates.</p>
-                <button class="cta content__button--open-form"><a href="">Sign up <i class="fa fa-arrow-right"></i></a></button>
-            </div>
-            <form class="signup">
-                <h3>Sign up</h3>
+            <h2>Sponsorship Enquiries</h2>
+            <p>If you have any questions please contact <a href="mailto:thadd@futureinsights.com">Thadd Palmer</a>.</p>
+            <!--form-->
+            <div class="form__container">
+                <form id="open-form--sponsor" class="sponsor">
+                    <h3>Submit an enquiry</h3>
                 <p><em>(&#42; denotes required field)</em></p>
                 <fieldset>
-                    <label>Name <span class="required">&#42;</span>
+                    <label>Contact Name <span class="required">&#42;</span>
                         <input type="text" name="name" id="name" placeholder="e.g. Joe Bloggs" class="text-field" required>
                     </label>
                     <label>Email <span class="required">&#42;</span>
                         <input type="text" name="email" id="email" placeholder="email@domain.com" class="text-field" required>
                     </label>
-                    <label>Password <span class="required">&#42;</span>
-                        <input type="text" name="password" id="password" class="text-field" required>
+                    <label>Company <span class="required">&#42;</span>
+                        <input type="text" name="company" id="company" placeholder="Your company name" class="text-field" required>
                     </label>
-                    <label>Confirm Password <span class="required">&#42;</span>
-                        <input type="text" name="confirm-password" id="confirm-password" class="text-field" required>
+                    <label>Any other information
+                        <textarea name="information" maxlength="1000" placeholder="Your proposal"></textarea>
                     </label>
-                    <label for="radio-buttons">What are you most interested in receiving news about?</label>
+                    <label for="radio-buttons">Which conference are you interested in sponsoring?</label>
                     <fieldset class="radio-buttons">
-                        <input type="radio" name="list" value="Design" class="radio-button"> Design
-                        <input type="radio" name="list" value="Design" class="radio-button"> Development
-                        <input type="radio" name="list" value="Design" class="radio-button"> All
+                        <input type="radio" name="list" value="FOWD" class="radio-button"> Future of Web Design
+                        <input type="radio" name="list" value="FOWA" class="radio-button"> Future of Web Apps
+                        <input type="radio" name="list" value="Other" class="radio-button"> Other
+                        <input type="radio" name="list" value="Not sure" class="radio-button"> Not sure
                     </fieldset>
                 </fieldset>
                 <button class="cta" name="submit">
                     <a href="">Go</a>
                 </button>
             </form>
+            </div>
         </section>
         <!--get involved-->
         <section class="regular">
-            <h2>Get Involved</h2>
             <ul class="get-involved__info">
                 <li id="write">
                     <h3>Write for us</h3>
@@ -254,14 +166,9 @@
                 </li>
                 <li id="speak">
                     <h3>Speak at an Event</h3>
-                    <p>Fill in this form to submit a talk for a Future Insights event. Please provide as much information as possible, and don’t forget to read our <a href="speaker-submission.html#guidelines">guidelines</a> first.</p>
+                    <p>Fill in this form to submit a talk for a Future Insights event. Please provide as much information as possible, and don’t forget to read our <a href="">guidelines</a> first.</p>
                     <p>Although we consider every submission carefully, due to the volume of submissions we received please be aware that at busy times we can&rsquo;t always reply with individual feedback.</p>
-                    <a href="speaker-submission.html">Submit a proposal <i class="fa fa-arrow-right"></i></a>
-                </li>
-                <li id="sponsor">
-                    <h3>Sponsor Us</h3>
-                    <p>When you sponsor a Future Insights event you get a truly first class service. We offer a variety of bespoke packages to suit your needs and budget.</p>
-                    <a href="sponsor-enquiry.html">Make an enquiry <i class="fa fa-arrow-right"></i></a>
+                    <a href="#open-form--speak">Submit a proposal <i class="fa fa-arrow-right"></i></a>
                 </li>
             </ul>
         </section>
@@ -325,6 +232,14 @@
         </div>
     </div>
     <!--javascript-->
+    <!--hide modal on click-->
+    <script>
+$( "#modal--hide" ).click(function() {
+  $( "#open-modal__signup" ).hide( "slow", function() {
+    $( this ).remove();
+  });
+});
+    </script>
     <!--hide popup on click-->
     <script>
 $( "#popup--hide" ).click(function() {
@@ -333,13 +248,10 @@ $( "#popup--hide" ).click(function() {
   });
 });
     </script>
-    <!--hide modal on click-->
+    <!--smooth scroll via https://github.com/kswedberg/jquery-smooth-scroll-->
     <script>
-$( "#modal--hide" ).click(function() {
-  $( "#open-modal__signup" ).hide( "slow", function() {
-    $( this ).remove();
-  });
-});
+        $('a.scroll').smoothScroll({
+            offset: -100});
     </script>
 
 </body>

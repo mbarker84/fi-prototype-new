@@ -5,10 +5,6 @@ main.home {
 section {
     @include cf;
     margin-bottom: $large-padding;
-    a {
-        color: $color1;
-        text-decoration: none;
-    }
 }
 
 section.alternate {
@@ -24,6 +20,12 @@ section.explore {
 section.signup {
     background-color: $color1;
     padding: $large-padding;
+}
+
+.container {
+    @media (min-width: $bp-l) {
+        @include span(9 of 12);
+    }
 }
 
 /* Section--Desktop XL-styles */
@@ -151,29 +153,6 @@ img.section__image--main {
 
 /* Get Involved */
 
-ul.get-involved-options {
-    @include cf;
-    list-style: none;
-}
-
-li.get-involved__item {
-    @include cf;
-    margin-bottom: gutter();
-    background-color: $color3;
-}
-
-img.get-involved__image {
-    @include span(1 of 3);
-    height: 5em;
-    background-color: $color2;
-}
-
-.get-involved__caption {
-    @include span(2 of 3 last);
-    min-height: 5em;
-    padding-top: 1em;
-}
-
 ul.get-involved__info {
     @include cf;
     li {
@@ -189,43 +168,9 @@ ul.get-involved__info {
     }    
 }
 
-/* Get involved--tablet styles */
-
-@media (min-width: $bp-m) {
-    
-    img.get-involved__image,
-    .get-involved__caption {
-        height: 10em;
-    }
-    
-    .get-involved__caption {
-        padding-top: 4em;
-    }
-    
-}
-
 /* Get involved--desktop styles */
 
 @media (min-width: $bp-l) {
-    
-    li.get-involved__item {
-        @include span(4 of 12);
-        margin-bottom: 0;
-        &:last-child {
-            @include span(4 of 12 last);
-        }
-    }
-    
-    img.get-involved__image {
-        @include span(full);
-        height: 10em;
-    }
-    
-    .get-involved__caption {
-        @include span(full);
-        height: auto;
-        padding: 1em;
-    }
     
     ul.get-involved__info {
         li {

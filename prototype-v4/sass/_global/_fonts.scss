@@ -43,21 +43,6 @@ em {
     font-style: italic;
 }
 
-a, a:focus, a:visited, a:hover, a:active {
-    color: $color4;
-}
-
-a.read-more {
-    color: $color1;
-}
-
-.blog, 
-.content {
-    a {
-        color: $color1;
-    }
-}
-
 p.post__sub {
     font-size: .8em;
     span {
