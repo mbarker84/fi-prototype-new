@@ -1,0 +1,29 @@
+header {
+    @include cf;
+    background-color: $color3;
+    padding-top: 3em;
+}
+
+.header__content {
+    @include center-content;
+}
+
+.header__group, .header__call-to-action {
+    @include span(full);
+}
+
+/* Tablet styles */
+
+@media (min-width: $bp-m) {
+    
+    h1.subhead {
+        max-width: 20em;
+    }
+    
+    .header__call-to-action {
+        margin-top: 1em;
+    }
+    
+}
+
+/* Desktop styles */

@@ -1,0 +1,109 @@
+/* Gallery */
+
+ul.gallery--blog {
+    @include cf;
+    li {
+        background-color: $color1;
+        position: relative;
+        @media (min-width: $bp-s) {
+            @include gallery(6 of 12);
+            margin-bottom: gutter(12);
+            height: 10em;
+        }
+        @media (min-width: $bp-m) {
+            @include gallery(4 of 12);
+        }
+        @media (min-width: $bp-l) {
+            @include gallery(3 of 12);
+        }
+        a {
+            display: block;
+            height: 100%;
+            padding: 1em;
+        }
+    }
+}
+
+ul.gallery--content {
+    @include cf;
+    li {
+        background-color: $color1;
+        height: 10em;
+        position: relative;
+        margin-bottom: gutter(12);
+        @media (min-width: $bp-s) {
+            @include gallery(6 of 12);
+        }
+        @media (min-width: $bp-m) {
+            @include gallery(4 of 12);
+        }
+        @media (min-width: $bp-l) {
+            @include gallery(3 of 9);
+            margin-bottom: gutter(9);
+        }
+        a {
+            display: block;
+            height: 100%;
+            padding: 1em;
+        }
+        &.locked {
+            background-color: $color3;
+        }
+    }
+}
+
+/* Featured content */
+
+.featured {
+    margin-bottom: $large-padding;
+    @include cf;
+    border-bottom: 2px solid $color1;
+    padding-bottom: 1em;
+    @include bleed-x(1em);
+}
+
+.featured__img {
+    height: 10em;
+    background-color: $color1;
+    margin-bottom: 1em;
+    @media (min-width: $bp-m) {
+        @include span(4 of 12);
+        margin-bottom: 0;
+    }
+    @media (min-width: $bp-l) {
+        @include span(3 of 9);
+    }
+}
+
+.featured__text {
+    @media (min-width: $bp-m) {
+        @include span(8 of 12 last);
+    }
+    @media (min-width: $bp-m) {
+        @include span(6 of 9 last);
+    }
+}
+
+/* Gallery - full-width */
+
+ul.team {
+    @include cf;
+    li {
+        @include gallery(6);
+        text-align: center;
+        @media (min-width: $bp-m) {
+            @include gallery(4);
+        }
+        @media (min-width: $bp-l) {
+            @include gallery(3);
+        }
+        figure {
+            height: 5em;
+            background-color: $color1;
+            margin-bottom: .5em;
+            @media (min-width: $bp-m) {
+                height: 10em;
+            }
+        }
+    }
+}

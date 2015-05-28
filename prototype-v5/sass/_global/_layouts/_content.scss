@@ -1,0 +1,19 @@
+.blog--main,
+.content--main {
+    @include cf;
+    @include center-content;
+    section.signup, section.event-callout {
+        clear: both;
+    }
+}
+
+.narrow {
+    @include span(6 of 12);
+}
+
+.content__thumb {
+    a {
+        display: block;
+        height: 100%;
+    }
+}

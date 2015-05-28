@@ -1,0 +1,129 @@
+.topics {
+    display: none;
+}
+
+.blog__thumb,
+.content__thumb {
+    height: 10em;
+    background-color: $color3;
+    margin-bottom: gutter();
+    position: relative;
+}
+
+ul.blog__articles,
+ul.content__articles {
+    border-bottom: 2px solid $color3;
+    margin-bottom: gutter(12);
+    li {
+        margin-bottom: 2em;
+        @include cf;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.search-box--desktop {
+    display: none;
+}
+
+section.recommendations {
+    clear: both;
+}
+
+aside.article__aside {
+    border-top: 2px solid $color1;
+    padding-top: 1em;
+    @include bleed-x(1em);
+    img.aside__img {
+        @include span(2 of 8);
+        height: 6em;
+        background-color: $color3;
+        @media (min-width: $bp-m) {
+            height: 8em;
+        }
+    }
+    .aside__text {
+        @media (min-width: $bp-m) {
+            @include span(6 of 8 last);
+        }
+    }
+}
+
+/* Mobile styles */
+
+@media (min-width: 500px) {
+    
+    section.blog,
+    section.content {
+        @include cf;
+        img.blog__thumb,
+        .content__thumb {
+            @include span(3 of 12);
+        }
+
+        .blog__excerpt-text {
+            @include span(9 of 12 last);
+        }
+    }
+    
+}
+
+/* Tablet styles */
+
+@media (min-width: $bp-m) {
+
+    img.blog__thumb,
+    .content__thumb {
+        @include span(4 of 12);
+    }
+
+    .blog__excerpt-text {
+        @include span(8 of 12 last);
+    }
+    
+}
+
+/* Desktop styles */
+
+@media (min-width: $bp-l) {
+    
+    .search-box--desktop {
+        display: block;
+        @include span(3 of 12);
+    }
+    
+    section.blog,
+    section.content {
+        @include span(8 of 12);
+        padding: 0;
+
+        img.blog__thumb,
+        .content__thumb {
+            @include span(3 of 8);
+        }
+
+        .blog__excerpt-text {
+            @include span(5 of 8 last);
+        }
+    }
+    
+    img.aside__img { 
+        @include span(3 of 9);
+    }
+    
+    .aside__text { 
+        @include span(3 of 9 last);
+    }
+    
+}
+
+@media (min-width: $bp-xl) { 
+    
+    section.blog,
+    section.content {
+        @include span(9 of 12 last);
+        padding: 0 0 0 span(1 of 9);
+    }
+    
+}

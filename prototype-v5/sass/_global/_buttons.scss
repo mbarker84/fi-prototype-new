@@ -1,0 +1,23 @@
+button.cta {
+    border-radius: .2em;
+    border: none;
+    background-color: $color2;
+    font-size: 1em;
+}
+
+button.section__button--open-form {
+    display: none;
+}
+    
+/* Tablet styles */
+@media (min-width: $bp-m) {
+    
+    button.section__button--open-form {
+        display: block;
+    }
+    
+    button.desktop-hide {
+        display: none;
+    }
+    
+}

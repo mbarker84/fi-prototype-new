@@ -2386,11 +2386,19 @@ footer a:hover,
 footer a:active {
   color: #FFFFFF; }
 
+header h1 a {
+  text-decoration: none;
+  color: #333333; }
+
 section a {
   text-decoration: none; }
-section.regular a, section.content a {
+section.regular a, section.content a, section.blog a {
   color: #cccccc; }
-  section.regular a:focus, section.regular a:hover, section.regular a:active, section.content a:focus, section.content a:hover, section.content a:active {
+  section.regular a:focus, section.regular a:hover, section.regular a:active, section.content a:focus, section.content a:hover, section.content a:active, section.blog a:focus, section.blog a:hover, section.blog a:active {
+    color: #333333; }
+section.alternate a {
+  color: #999999; }
+  section.alternate a:focus, section.alternate a:hover, section.alternate a:active {
     color: #333333; }
 
 .popup a,
@@ -2398,12 +2406,12 @@ section.regular a, section.content a {
   color: #FFFFFF; }
 
 button a {
-  color: #cccccc;
+  color: #cccccc !important;
   text-decoration: none;
   display: block;
   padding: .8em 2em; }
   button a:focus, button a:hover, button a:active {
-    color: #FFFFFF; }
+    color: #FFFFFF !important; }
 
 .modal__signup,
 .modal__info {
@@ -3068,7 +3076,7 @@ aside.article__aside {
       width: 32.20339%;
       float: left;
       height: 12em;
-      background-color: #999999; }
+      background-color: #333333; }
       .content--latest li:nth-child(3n + 1) {
         margin-left: 0;
         margin-right: -100%;
@@ -3129,6 +3137,11 @@ section.signup {
   section.explore {
     padding: 0; } }
 /* Events */
+ul.events--priority:after,
+ul.events--regular:after {
+  content: " ";
+  display: block;
+  clear: both; }
 ul.events--priority a,
 ul.events--regular a {
   display: block;

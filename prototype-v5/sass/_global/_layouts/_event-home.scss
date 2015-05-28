@@ -1,0 +1,27 @@
+/* Content library */
+
+.content--latest {
+    display: none;
+}
+
+/* Content library--desktop styles */
+@media (min-width: $bp-l) {
+    
+    .content--latest {
+        display: block;
+        clear: both;
+        padding-top: 2em;
+        li {
+            @include gallery(4 of 12);
+            background-color: $color2;
+            a {
+                display: block;
+                height: 100%;
+            }
+        }
+        figcaption {
+            padding: 1em;
+        }
+    }
+    
+}

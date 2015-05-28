@@ -1,0 +1,60 @@
+/* Signup form - homepage */
+
+form.signup,
+form.speak,
+form.sponsor {
+    margin-top: 1em;
+
+    fieldset {
+        margin-top: 1em;
+        &.radio-buttons {
+            margin-bottom: 1em;
+        }
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    input.text-field,
+    textarea {
+        display: block;
+        width: 100%;
+        padding: .8em;
+        margin-top: .5em;
+        font-size: 1em;
+    }
+    
+    textarea {
+        height: 20em;
+        border: none;
+    }
+    
+    input.radio-button {
+        margin: 0 1em 0 2em;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    
+}
+
+.form__container {
+    padding: 2em;
+    background-color: $color1;
+    @media (min-width: $bp-l) {
+        @include span(9 of 12);
+    }
+}
+
+    
+/* Tablet styles */
+@media (min-width: $bp-m) {
+    
+    form.signup {
+        display: none;
+    }
+    
+}

@@ -27,7 +27,7 @@
         li {
             @include gallery(4 of 12);
             height: 12em;
-            background-color: $color1;
+            background-color: $color2;
             a {
                 padding: 1em;
                 display: block;

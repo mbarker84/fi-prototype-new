@@ -41,6 +41,7 @@ section.signup {
 
 ul.events--priority,
 ul.events--regular {
+    @include cf;
     a {
         display: block;
         height: 100%;
