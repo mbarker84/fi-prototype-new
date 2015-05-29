@@ -1,0 +1,69 @@
+.fowd {
+    a {
+        color: $fowd;
+    }
+    a:focus, a:hover, a:active {
+        color: $color4;
+    }
+    nav {
+        background-color: $fowd;
+        ul, li {
+            background-color: $fowd;
+        }
+        a {
+            background-color: $fowd;
+            color: $color4;
+        }
+        .top-nav__logo,
+        .top-nav__right {
+            background-color: $fowd;
+        }
+    }
+    button {
+        background-color: $fowd;
+    }
+    .blog {
+        a {
+            color: $fowd;
+        }
+        a:focus, a:hover, a:active {
+            color: $color4;
+        }
+    }
+        
+}
+
+.fowa {
+    a {
+        color: $fowa;
+    }
+    a:focus, a:hover, a:active {
+        color: $color4;
+    }
+    nav {
+        background-color: $fowa;
+        ul, li {
+            background-color: $fowa;
+        }
+        a {
+            background-color: $fowa;
+            color: $color4;
+        }
+        .top-nav__logo,
+        .top-nav__right {
+            background-color: $fowa;
+        }
+    }
+    button {
+        background-color: $fowa;
+    }
+    .blog {
+        a {
+            color: $fowa;
+        }
+        a:focus, a:hover, a:active {
+            color: $color4;
+        }
+    }
+        
+}

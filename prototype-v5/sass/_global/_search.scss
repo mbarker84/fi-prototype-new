@@ -26,11 +26,12 @@
                     @include cf;
                     display: block;
                     position: absolute;
-                    top: 6em;
+                    top: 8em;
                     left: 0;
                     padding-top:.5em;
                     width: 100%;
                     background-color: $color2;
+                    z-index: 1000;
                     li {
                         display: block;
                     }
@@ -52,6 +53,26 @@
                     @include span(4 of 12 last no-gutters);
                     border: none;
                 }
+            }
+        }
+    }
+    
+    ul.subject-choice {
+        list-style: none;
+        display: block;
+        @include cf;
+        li {
+            width: 50%;
+            float: left;
+            background-color: $color1;
+            padding: .5em .3em;
+            border-top: 1px solid $color2;
+            &:last-child {
+                border-left: 1px solid $color2;
+            }
+            a {
+                padding: 1em;
+                height: 3em;
             }
         }
     }
@@ -98,6 +119,47 @@
             margin-bottom: 0;
             background-color: $color2;
             color: $color1;
+        }
+    }
+    
+    ul.subject-choice {
+        li {
+            display: block;
+            border-bottom: 2px solid $color4;
+            &:last-child {
+                border-bottom: 1em solid $color4;
+            }
+            a {
+                display: block;
+                padding: 1em .6em;
+                text-transform: uppercase;
+                color: $color4;
+                text-decoration: none;
+                font-size: 1.3em;
+                &:focus, &:hover, &:active {
+                    background-color: $color2;
+                    color: $color1;
+                }
+            }
+            &.current {
+                a {
+                    color: $color3;
+                    &:focus, &:hover, &:active {
+                        background-color: $color1;
+                        color: $color3;
+                    }
+                }
+            }
+            &.fowd {
+                a {
+                    background-color: $fowd;
+                }
+            }
+            &.fowa {
+                a {
+                    background-color: $fowa;
+                }
+            }
         }
     }
     

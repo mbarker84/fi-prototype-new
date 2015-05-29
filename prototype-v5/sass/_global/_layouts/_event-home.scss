@@ -13,13 +13,17 @@
         padding-top: 2em;
         li {
             @include gallery(4 of 12);
-            background-color: $color2;
             a {
                 display: block;
                 height: 100%;
             }
         }
+        figure {
+            position: relative;
+        }
         figcaption {
+            position: absolute;
+            top: 0;
             padding: 1em;
         }
     }

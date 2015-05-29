@@ -11,7 +11,6 @@ figure.content-img--main {
 }
 
 figure.blog-img--float-left {
-    height: 10em;
     background-color: $color3;
     @media (min-width: $bp-s) {
         @include span(6 of 12);
@@ -21,10 +20,24 @@ figure.blog-img--float-left {
     }
     @media (min-width: $bp-xl) {
         @include span(4 of 9);
-        height: 15em;
     }
 }
 
 figcaption {
     padding: 1em;
+}
+
+/* Video gallery */
+
+figure.featured__img {
+    height: 10em;
+    background-color: $color1;
+    margin-bottom: 1em;
+    @media (min-width: $bp-m) {
+        @include span(4 of 12);
+        margin-bottom: 0;
+    }
+    @media (min-width: $bp-l) {
+        @include span(3 of 9);
+    }
 }

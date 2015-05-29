@@ -5,7 +5,7 @@
 
 @mixin center-content {
     @include container(1200px);
-    padding: gutter();
+    padding: 1em;
     @media (min-width: $bp-xl) {
         padding: 3em 1em;
     }

@@ -8,7 +8,6 @@ ul.gallery--blog {
         @media (min-width: $bp-s) {
             @include gallery(6 of 12);
             margin-bottom: gutter(12);
-            height: 10em;
         }
         @media (min-width: $bp-m) {
             @include gallery(4 of 12);
@@ -19,7 +18,25 @@ ul.gallery--blog {
         a {
             display: block;
             height: 100%;
-            padding: 1em;
+            figcaption {
+                transition: all .3s ease-in-out;
+            }
+            &:focus, &:hover {
+                figcaption {
+                    padding-bottom: 2em;
+                }
+            }            
+        }
+        figure {
+            position: relative;
+            figcaption {
+                position: absolute;
+                bottom: 0;
+                padding: 1em;
+                background-color: black;
+                opacity: .8;
+                width: 100%;
+            }
         }
     }
 }
@@ -28,7 +45,6 @@ ul.gallery--content {
     @include cf;
     li {
         background-color: $color1;
-        height: 10em;
         position: relative;
         margin-bottom: gutter(12);
         @media (min-width: $bp-s) {
@@ -44,10 +60,25 @@ ul.gallery--content {
         a {
             display: block;
             height: 100%;
-            padding: 1em;
+        }
+        figure {
+            position: relative;
+        }
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            opacity: .8;
+            color: $color4;
         }
         &.locked {
             background-color: $color3;
+            figcaption {
+                background-color: $color4;
+                opacity: .5;
+                color: $color2;
+            }
         }
     }
 }
@@ -60,19 +91,6 @@ ul.gallery--content {
     border-bottom: 2px solid $color1;
     padding-bottom: 1em;
     @include bleed-x(1em);
-}
-
-.featured__img {
-    height: 10em;
-    background-color: $color1;
-    margin-bottom: 1em;
-    @media (min-width: $bp-m) {
-        @include span(4 of 12);
-        margin-bottom: 0;
-    }
-    @media (min-width: $bp-l) {
-        @include span(3 of 9);
-    }
 }
 
 .featured__text {
