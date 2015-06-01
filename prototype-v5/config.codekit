@@ -843,6 +843,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/staff\/ellie200.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37623,
+		"inputAbbreviatedPath": "\/img\/staff\/ellie200.jpg",
+		"outputAbbreviatedPath": "\/img\/staff\/ellie200.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/staff\/jpamental150.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

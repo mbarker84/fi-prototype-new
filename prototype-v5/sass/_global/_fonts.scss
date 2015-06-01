@@ -67,9 +67,16 @@ p.gallery__content-type {
     position: absolute;
     top: 0;
     background-color: $color2;
-    color: $color3;
+    color: $color4;
     display: inline;
     width: auto;
+    z-index: 2000;
+    &.content-type--video {
+        background-color: goldenrod;
+    }
+    &.content-type--article {
+        background-color: coral;
+    }
 }
 
 .article__text {
@@ -91,5 +98,12 @@ p.search-results {
         color: $color4;
         text-transform: uppercase;
     }
+}
+
+p.video-icon {
+    text-align: right;
+    margin-bottom: 0;
+    line-height: 1;
+    padding: 0;
 }
     

@@ -1,6 +1,7 @@
 /* Gallery */
 
-ul.gallery--blog {
+ul.gallery--blog,
+ul.gallery--events {
     @include cf;
     li {
         background-color: $color1;
@@ -14,29 +15,6 @@ ul.gallery--blog {
         }
         @media (min-width: $bp-l) {
             @include gallery(3 of 12);
-        }
-        a {
-            display: block;
-            height: 100%;
-            figcaption {
-                transition: all .3s ease-in-out;
-            }
-            &:focus, &:hover {
-                figcaption {
-                    padding-bottom: 2em;
-                }
-            }            
-        }
-        figure {
-            position: relative;
-            figcaption {
-                position: absolute;
-                bottom: 0;
-                padding: 1em;
-                background-color: black;
-                opacity: .8;
-                width: 100%;
-            }
         }
     }
 }
@@ -57,9 +35,35 @@ ul.gallery--content {
             @include gallery(3 of 9);
             margin-bottom: gutter(9);
         }
+    }
+}
+
+ul.gallery--content,
+ul.gallery--blog {
+    li {
+        position: relative;
         a {
             display: block;
             height: 100%;
+            figcaption {
+                transition: all .3s ease-in-out;
+                padding-bottom: 0;
+            }
+            p.video-icon {
+                transition: all .3s ease-in-out;
+                opacity: 0;
+                transform: scaleY(0);
+                margin-top: -1em;
+            }
+            &:focus, &:hover {
+                figcaption {
+                    padding-bottom: 1em;
+                }
+                p.video-icon {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+            }            
         }
         figure {
             position: relative;
@@ -79,6 +83,18 @@ ul.gallery--content {
                 opacity: .5;
                 color: $color2;
             }
+        }
+    }
+}
+
+ul.gallery--events {
+    figcaption {
+        background-color: $color4;
+    }
+    a {
+        color: $color2;
+        &:focus, &:hover {
+            color: $color1;
         }
     }
 }

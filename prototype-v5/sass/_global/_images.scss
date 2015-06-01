@@ -2,12 +2,7 @@
 
 figure.blog-img--main,
 figure.content-img--main {
-    height: 10em;
     background-color: $color3;
-    margin-bottom: 1em;
-    @media (min-width: $bp-l) {
-        height: 20em;
-    }
 }
 
 figure.blog-img--float-left {
@@ -30,7 +25,6 @@ figcaption {
 /* Video gallery */
 
 figure.featured__img {
-    height: 10em;
     background-color: $color1;
     margin-bottom: 1em;
     @media (min-width: $bp-m) {

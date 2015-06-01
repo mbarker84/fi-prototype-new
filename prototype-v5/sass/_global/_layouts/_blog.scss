@@ -35,16 +35,12 @@ aside.article__aside {
     padding-top: 1em;
     @include bleed-x(1em);
     img.aside__img {
-        @include span(2 of 8);
-        height: 6em;
+        @include span(2 of 7);
         background-color: $color3;
-        @media (min-width: $bp-m) {
-            height: 8em;
-        }
     }
     .aside__text {
         @media (min-width: $bp-m) {
-            @include span(6 of 8 last);
+            @include span(5 of 7 last);
         }
     }
 }
@@ -94,25 +90,25 @@ aside.article__aside {
     
     section.blog,
     section.content {
-        @include span(8 of 12);
-        padding: 0;
+        @include span(9 of 12 last);
+        padding: 0 span(1 of 9);
 
         img.blog__thumb,
         .content__thumb {
-            @include span(3 of 8);
+            @include span(3 of 9);
         }
 
         .blog__excerpt-text {
-            @include span(5 of 8 last);
+            @include span(6 of 9 last);
         }
     }
     
     img.aside__img { 
-        @include span(3 of 9);
+        @include span(2 of 9);
     }
     
     .aside__text { 
-        @include span(3 of 9 last);
+        @include span(7 of 9 last);
     }
     
 }
@@ -121,8 +117,6 @@ aside.article__aside {
     
     section.blog,
     section.content {
-        @include span(9 of 12 last);
-        padding: 0 0 0 span(1 of 9);
     }
     
 }

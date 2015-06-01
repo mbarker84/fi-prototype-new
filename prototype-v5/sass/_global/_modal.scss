@@ -1,6 +1,6 @@
 .modal__signup,
 .modal__info {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
@@ -20,7 +20,7 @@
     max-width: 600px;
     background-color: $color2;
     color: $color4;
-    margin: 10em auto;
+    margin: 3em auto;
     padding: 2em;
     h2 {
         margin-bottom: 1em;
@@ -38,6 +38,7 @@
     }
     @media (min-width: $bp-l) {
         padding: 3em;
+        margin: 5em auto;
     }
 }
 

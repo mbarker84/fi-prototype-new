@@ -101,9 +101,13 @@
                 &:focus, &:hover {
                     ul.search__sub {
                         display: block;
-                        padding-left: .6em;
                         a {
                             color: $color2;
+                            padding-left: 1em;
+                            &:focus, &:hover, &:active {
+                                color: $color1;
+                                background-color: $color2;
+                            }
                         }
                     }
                 }
