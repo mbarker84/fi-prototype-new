@@ -156,6 +156,11 @@
     <main class="content--main">
         <!--search_desktop-->
         <div class="search-box--desktop">
+            <ul class="subject-choice">
+                <li class="current"><a href="video-gallery.html">All</a></li>
+                <li class="fowd"><a href="video-gallery-design.html">Design</a></li>
+                <li class="fowa"><a href="video-gallery-dev.html">Development</a></li>
+            </ul>
             <ul class="search-box__menu"><h3>Find</h3>
                 <li class="search-box__item"><a href="">Topic <i class="fa fa-angle-right"></i></a>
                     <ul class="search__sub">
@@ -195,8 +200,8 @@
                 <h2>Think Like a Motion Designer</h2>
                 <h3>Val Head</h3>
                 <figure class="content-img--main">
-                    <img class="article__img" src="" width="100%" height="auto">
-                <figcaption><p>This video is currently only available to premium members.</p> <a href="">Find out more <i class="fa fa-arrow-right"></i></a></figcaption>
+                    <img class="article__img" src="../img/videos/fowd-video-valhead.jpg" width="100%" height="auto">
+                <figcaption class="img-caption--video"><p>This video is currently only available to premium members.</p> <a href="">Find out more <i class="fa fa-arrow-right"></i></a></figcaption>
                 </figure>
                 <div class="article__text">
                     <p>Motion design has become a necessary skill for the modern web. We've never had to understand animation principles like we do now. Beautiful animation comes from thinking like a motion designer when adding animations and transitions to our work on the web. There is a huge depth of motion design and animation knowledge we can pull from and apply to our work while we design new UIs of the web. In this session we will cover key animation principles like timing, offsets and secondary action as they apply to UI work on the web. Consider this your crash course into becoming a motion design pro!</p>
@@ -204,7 +209,7 @@
                 </div>
             </article>
             <aside class="article__aside">
-                <img class="aside__img" src="" width="100%" height="auto">
+                <img class="aside__img" src="../img/speaker-photos/val-head.jpg" width="100%" height="auto">
                 <div class="aside__text">
                     <h3>About the Speaker</h3>
                     <p class="aside">Val Head is a designer obsessed with type and code. She speaks internationally at conferences and leads workshops on web design and creative coding. Every year she bring a swarm of web designers to Pittsburgh for Web Design Day, the conference she co-founded. She is the managing editor of CreativeJS.com and the author of the Pocket Guide to CSS Animations from Five Simple Steps. Val tweets too much, occasionally dribbbles, and blogs somewhat consistently.</p>
@@ -212,26 +217,47 @@
                 </div>
             </aside>
         </section>
+        <!--reccommendations-->
         <section class="recommendations">
             <h2>You might also like...</h2>
             <ul class="gallery--blog">
                 <li>
-                    <p class="gallery__content-type">Video</p>
-                    <a href="">
-                        <h4 class="gallery--recommends">Psychology For Designers <span>Joe Leech</span></h4>
-                        <p>Future of Web Design London 2014</p>
+                    <p class="gallery__content-type content-type--video">Video</p>
+                    <a href="video-single.html">
+                        <figure>
+                            <img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto">
+                            <figcaption>
+                                <h4>Psychology for Designers</h4>
+                                <p>Joe Leech</p>
+                                <p class="video-icon"><i class="fa fa-play"></i></p>
+                            </figcaption>
+                        </figure>
                     </a>
                 </li>
                 <li>
-                    <p class="gallery__content-type">Article</p>
-                    <a href="">
-                        <h4 class="gallery--recommends">Designing Using Data: Interview with Designer...</h4>
+                    <p class="gallery__content-type content-type--article">Article</p>
+                    <a href="blog-single.html">
+                        <figure>
+                            <img src="../img/articles/article-6-400.jpg" width="100%" height="auto">
+                            <figcaption>
+                                <h4>Designing Using Data</h4>
+                                <p>An Interview with Designer Joe Leech</p>
+                                <p class="video-icon"><i class="fa fa-play"></i></p>
+                            </figcaption>
+                        </figure>
                     </a>
                 </li>
                 <li>
-                    <p class="gallery__content-type">Article</p>
-                    <a href="">
-                        <h4 class="gallery--recommends">Hyperlinks and Story Arcs: Building Non-Linear...</h4>
+                    <p class="gallery__content-type content-type--article">Article</p>
+                    <a href="blog-single.html">
+                        <figure>
+                            <img src="../img/articles/article-4-400.jpg" width="100%" height="auto">
+                            <figcaption>
+                                <h4>Hyperlinks and Story Arcs</h4>
+                                <p>Building Non-Linear Narratives for the Web</p>
+                                <p class="video-icon"><i class="fa fa-play"></i></p>
+                            </figcaption>
+                        </figure>
                     </a>
                 </li>
             </ul>
@@ -239,23 +265,38 @@
         <!--event callout-->
         <section class="event-callout">
             <h2>Check out these events coming up...</h2>
-            <ul class="gallery--blog">
+            <ul class="gallery--events">
                 <li>
                     <a href="">
-                        <h4>Future of Web Design San Francisco</h4>
-                        <p>October 28&ndash;30, 2015</p>
+                        <figure>
+                            <img src="../img/location-photos/San%20Francisco.jpg" width="100%" height="auto">
+                            <figcaption>
+                                <h4>Future of Web Design San Francisco</h4>
+                                <p>October 28&ndash;30, 2015</p>
+                            </figcaption>
+                        </figure>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <h4>Future of Web Design NYC</h4>
-                        <p>November 2&ndash;4, 2015</p>
+                        <figure>
+                            <img src="../img/location-photos/New%20York-01.jpg" width="100%" height="auto">
+                            <figcaption>
+                                <h4>Future of Web Design NYC</h4>
+                                <p>November 2&ndash;4, 2015</p>
+                            </figcaption>
+                        </figure>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <h4>Future of Web Design London</h4>
-                        <p>27&ndash;29 April, 2016</p>
+                        <figure>
+                            <img src="../img/location-photos/London-FOWD.jpg" width="100%" height="auto">
+                            <figcaption>
+                                <h4>Future of Web Design London</h4>
+                                <p>27&ndash;29 April, 2016</p>
+                            </figcaption>
+                        </figure>
                     </a>
                 </li>
             </ul>

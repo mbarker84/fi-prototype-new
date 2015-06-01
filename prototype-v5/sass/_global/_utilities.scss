@@ -3,7 +3,7 @@
         color: $fowd;
     }
     a:focus, a:hover, a:active {
-        color: $color4;
+        color: darken($fowd, 40%);
     }
     nav {
         background-color: $fowd;
@@ -21,13 +21,19 @@
     }
     button {
         background-color: $fowd;
+        a {
+            color: $fowd;
+        }
+        a:focus, a:hover, a:active {
+            color: darken($fowd, 40%);
+        }
     }
     .blog {
         a {
             color: $fowd;
         }
         a:focus, a:hover, a:active {
-            color: $color4;
+            color: darken($fowd, 40%);
         }
     }
         
@@ -38,7 +44,7 @@
         color: $fowa;
     }
     a:focus, a:hover, a:active {
-        color: $color4;
+        color: darken($fowa, 40%);
     }
     nav {
         background-color: $fowa;
@@ -56,13 +62,16 @@
     }
     button {
         background-color: $fowa;
+        a:focus, a:hover, a:active {
+            color: darken($fowa, 40%);
+        }
     }
     .blog {
         a {
             color: $fowa;
         }
         a:focus, a:hover, a:active {
-            color: $color4;
+            color: darken($fowa, 40%);
         }
     }
         

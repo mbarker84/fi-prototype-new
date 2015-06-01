@@ -3,6 +3,8 @@
 figure.blog-img--main,
 figure.content-img--main {
     background-color: $color3;
+    position: relative;
+    margin-bottom: 1em;
 }
 
 figure.blog-img--float-left {
@@ -20,6 +22,16 @@ figure.blog-img--float-left {
 
 figcaption {
     padding: 1em;
+}
+
+figcaption.img-caption--video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: $color4;
+    opacity: .5;
 }
 
 /* Video gallery */
