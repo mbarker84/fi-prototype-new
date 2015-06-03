@@ -872,6 +872,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/staff\/ian.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 46394,
+		"inputAbbreviatedPath": "\/img\/staff\/ian.jpg",
+		"outputAbbreviatedPath": "\/img\/staff\/ian.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/staff\/jpamental150.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -890,6 +901,17 @@
 		"initialSize": 36459,
 		"inputAbbreviatedPath": "\/img\/staff\/lis150.png",
 		"outputAbbreviatedPath": "\/img\/staff\/lis150.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/staff\/lou.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25951,
+		"inputAbbreviatedPath": "\/img\/staff\/lou.jpeg",
+		"outputAbbreviatedPath": "\/img\/staff\/lou.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -927,6 +949,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/staff\/sarah.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65045,
+		"inputAbbreviatedPath": "\/img\/staff\/sarah.jpg",
+		"outputAbbreviatedPath": "\/img\/staff\/sarah.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/staff\/staff-1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -934,6 +967,17 @@
 		"initialSize": 35777,
 		"inputAbbreviatedPath": "\/img\/staff\/staff-1.jpg",
 		"outputAbbreviatedPath": "\/img\/staff\/staff-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/staff\/veronica.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 129225,
+		"inputAbbreviatedPath": "\/img\/staff\/veronica.png",
+		"outputAbbreviatedPath": "\/img\/staff\/veronica.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

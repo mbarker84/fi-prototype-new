@@ -133,12 +133,8 @@ ul.team {
             @include gallery(3);
         }
         figure {
-            height: 5em;
             background-color: $color1;
             margin-bottom: .5em;
-            @media (min-width: $bp-m) {
-                height: 10em;
-            }
         }
     }
 }

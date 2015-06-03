@@ -2357,12 +2357,8 @@ ul.team li {
         margin-right: -100%;
         clear: none; } }
   ul.team li figure {
-    height: 5em;
     background-color: #999999;
     margin-bottom: .5em; }
-    @media (min-width: 700px) {
-      ul.team li figure {
-        height: 10em; } }
 
 header {
   padding-top: 3em; }
@@ -2398,6 +2394,10 @@ header {
   .header__call-to-action {
     margin-top: 1em; } }
 /* Desktop styles */
+img {
+  display: block;
+  width: 100%; }
+
 /* Blog */
 figure.blog-img--main,
 figure.content-img--main {
