@@ -2208,36 +2208,46 @@ ul.gallery--content li {
         clear: none; } }
 
 ul.gallery--content li,
-ul.gallery--blog li {
+ul.gallery--blog li,
+ul.content__videos--latest li {
   position: relative; }
   ul.gallery--content li a,
-  ul.gallery--blog li a {
+  ul.gallery--blog li a,
+  ul.content__videos--latest li a {
     display: block;
     height: 100%; }
     ul.gallery--content li a figcaption,
-    ul.gallery--blog li a figcaption {
+    ul.gallery--blog li a figcaption,
+    ul.content__videos--latest li a figcaption {
       transition: all .3s ease-in-out;
       padding-bottom: 0; }
     ul.gallery--content li a p.video-icon,
-    ul.gallery--blog li a p.video-icon {
+    ul.gallery--blog li a p.video-icon,
+    ul.content__videos--latest li a p.video-icon {
       transition: all .3s ease-in-out;
       opacity: 0;
       transform: scaleY(0);
       margin-top: -1em; }
     ul.gallery--content li a:focus figcaption, ul.gallery--content li a:hover figcaption,
     ul.gallery--blog li a:focus figcaption,
-    ul.gallery--blog li a:hover figcaption {
+    ul.gallery--blog li a:hover figcaption,
+    ul.content__videos--latest li a:focus figcaption,
+    ul.content__videos--latest li a:hover figcaption {
       padding-bottom: 1em; }
     ul.gallery--content li a:focus p.video-icon, ul.gallery--content li a:hover p.video-icon,
     ul.gallery--blog li a:focus p.video-icon,
-    ul.gallery--blog li a:hover p.video-icon {
+    ul.gallery--blog li a:hover p.video-icon,
+    ul.content__videos--latest li a:focus p.video-icon,
+    ul.content__videos--latest li a:hover p.video-icon {
       transform: scaleY(1);
       opacity: 1; }
   ul.gallery--content li figure,
-  ul.gallery--blog li figure {
+  ul.gallery--blog li figure,
+  ul.content__videos--latest li figure {
     position: relative; }
   ul.gallery--content li figcaption,
-  ul.gallery--blog li figcaption {
+  ul.gallery--blog li figcaption,
+  ul.content__videos--latest li figcaption {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -2245,10 +2255,12 @@ ul.gallery--blog li {
     opacity: .8;
     color: #FFFFFF; }
   ul.gallery--content li.locked,
-  ul.gallery--blog li.locked {
+  ul.gallery--blog li.locked,
+  ul.content__videos--latest li.locked {
     background-color: #cccccc; }
     ul.gallery--content li.locked figcaption,
-    ul.gallery--blog li.locked figcaption {
+    ul.gallery--blog li.locked figcaption,
+    ul.content__videos--latest li.locked figcaption {
       background-color: #FFFFFF;
       opacity: .5;
       color: #333333; }
@@ -3223,13 +3235,7 @@ aside.article__aside {
         clear: none; }
       .content--latest li a {
         display: block;
-        height: 100%; }
-    .content--latest figure {
-      position: relative; }
-    .content--latest figcaption {
-      position: absolute;
-      top: 0;
-      padding: 1em; } }
+        height: 100%; } }
 main.home {
   max-width: 1200px;
   margin-left: auto;
