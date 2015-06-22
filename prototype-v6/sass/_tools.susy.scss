@@ -1,0 +1,10 @@
+@import "susy";
+
+$susy: (
+    columns: 12,
+    container: 1200px,
+    gutters: 0.25,
+    global-box-sizing: border-box
+);
+
+$map-xs: layout(auto 6 0 no-gutters);

@@ -1,0 +1,38 @@
+ul.c-list {
+    li.c-list__item {
+        position: relative;
+        @include with-layout($map-xs) {
+            @include gallery(3);
+        }
+        figure.videos {
+            height: 8em;
+            background-color: $videos;
+        }
+        figure.articles {
+            height: 8em;
+            background-color: $articles;
+        }
+        figcaption {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            padding: 1em;
+        }
+    }
+}
+
+ul.c-get-involved {
+    @include clearfix;
+    li {
+    }
+    .get-involved__image {
+        @include with-layout($map-xs) {
+            @include span(2);
+        }
+    }
+    .get-involved__text {
+        @include with-layout($map-xs) {
+            @include span(4 last);
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.tr-mobile-hide {
+    @media (max-width: $bp-s) {
+        display: none;
+    }
+}
+
+.no-bottom-margin {
+    margin-bottom: 0;
+}

@@ -1,0 +1,10 @@
+.o-header--top {
+    @include clearfix;
+    padding: 1em;
+    background-color: $black;
+}
+
+ul {
+    @include clearfix;
+    list-style: none;
+}
