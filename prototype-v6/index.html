@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Future Insights | Home</title>
     <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+    <!--Font Awesome-->
     <link href="stylesheets/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!--Typekit-->
+    <script src="//use.typekit.net/crk8zvl.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
     <!--load jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
@@ -68,41 +72,47 @@
 <header>
     <div class="o-header--top">
         <div class="c-header__icon">
-            <a href="#"></a>
+            <a class="c-icon" href="#"><img src="img/logos/fi-logo-lt-grey.svg" width="100%" height="auto"></a>
         </div>
         <div class="c-header__search"><i class="fa fa-search"></i></div>
         <div class="c-social-icons">
-            <div class="c-header__icon">
-                <a href="#"></a>
-            </div>
-            <div class="c-header__icon">
-                <a href="#"></a>
-            </div>
+            <a class="c-icon" href="#"><svg class="twitter" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 405 405" enable-background="new 0 0 405 405" xml:space="preserve">
+<path d="M340.7,115.2c-10.1,4.5-20.9,7.5-32.2,8.8c11.6-6.9,20.5-17.9,24.7-31c-10.8,6.4-22.8,11.1-35.6,13.6
+	c-10.2-10.9-24.8-17.7-40.9-17.7c-31,0-56.1,25.1-56.1,56.1c0,4.4,0.5,8.7,1.5,12.8c-46.6-2.3-87.9-24.7-115.6-58.6
+	c-4.8,8.3-7.6,17.9-7.6,28.2c0,19.5,9.9,36.6,25,46.7c-9.2-0.3-17.8-2.8-25.4-7c0,0.2,0,0.5,0,0.7c0,27.2,19.3,49.8,45,55
+	c-4.7,1.3-9.7,2-14.8,2c-3.6,0-7.1-0.4-10.6-1c7.1,22.3,27.9,38.5,52.4,39c-19.2,15-43.4,24-69.7,24c-4.5,0-9-0.3-13.4-0.8
+	c24.8,15.9,54.3,25.2,86,25.2c103.2,0,159.6-85.5,159.6-159.6c0-2.4-0.1-4.9-0.2-7.3C323.7,136.4,333.2,126.5,340.7,115.2z"/>
+</svg></a>
+            <a class="c-icon" href="#"><svg class="facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 405 405" enable-background="new 0 0 405 405" xml:space="preserve">
+<path id="Blue_1_" d="M321.2,69H83.8C75.6,69,69,75.6,69,83.8v237.4c0,8.1,6.6,14.7,14.7,14.7h127.8V232.6h-34.8
+	v-40.3h34.8v-29.7c0-34.5,21.1-53.2,51.8-53.2c14.7,0,27.4,1.1,31.1,1.6v36l-21.3,0c-16.7,0-20,7.9-20,19.6v25.7h39.9l-5.2,40.3
+	h-34.7v103.4h68c8.1,0,14.7-6.6,14.7-14.7V83.8C335.9,75.6,329.3,69,321.2,69z"/>
+</svg>></a>
         </div>
     </div>
-    <div class="o-wrapper">
-        <div class="c-header__group">
-            <h1><span class="smaller">We are</span> <br>Future Insights</h1>
-            <p class="c-subhead">We produce awesome events for designers, developers and people working on the web.</p>
-            <p class="tr-mobile-hide">Visit our content library to explore what’s new in web design.</p>
-            <a class="c-button tr-mobile-hide" href="html/blog-home.html">Explore <i class="fa fa-arrow-right"></i></a>
-        </div>
+    <div class="o-header__group">
+        <h1><span class="smaller">We are</span> <br>Future Insights</h1>
+        <p class="c-subhead">We produce awesome events for designers, developers and people working on the web.</p>
+        <p class="tr-mobile-hide">Visit our content library to explore what’s new in web design.</p>
+        <a class="c-button tr-mobile-hide" href="html/blog-home.html">Explore <i class="fa fa-arrow-right"></i></a>
     </div>
 </header>
     <!--main-->
     <main class="home">
         <!--events-->
         <section class="o-regular">
-            <div class="o-wrapper">
-                <h2 class="no-bottom-margin">Our Events</h2>
+            <div class="o-wrapper-sides">
+                <h2>Our Events</h2>
             </div>
-            <ul class="c-list">
+            <ul class="c-list--events">
                 <li class="c-list__item">
                     <a href="html/event-home.html">
                         <figure>
                             <img class="events__image" src="img/events/event-FOWD-01.jpg" width="100%" height="auto">
                         <figcaption>
-                            <h3>Future of Web Design</h3>
+                            <h3 class="gallery-fowd">Future of Web Design</h3>
                         </figcaption>
                         </figure>
                     </a>
@@ -112,7 +122,7 @@
                         <figure>
                             <img class="events__image" src="img/events/event-FOWA-01.jpg" width="100%" height="auto">
                         <figcaption>
-                            <h3>Future of Web Apps</h3>
+                            <h3 class="gallery-fowa">Future of Web Apps</h3>
                         </figcaption>
                         </figure>
                     </a>
@@ -123,7 +133,7 @@
                             <img class="events__image" src="img/events/event-UDE-01.jpg" width="100%" height="auto">
                         </figure>
                         <figcaption>
-                            <h3>Ultimate Developer Event</h3>
+                            <h3 class="gallery-ude">Ultimate Developer Event</h3>
                         </figcaption>
                     </a>
                 </li>
@@ -133,7 +143,7 @@
                             <img class="events__image" src="img/events/event-FILive-01.jpg" width="100%" height="auto">
                         </figure>
                         <figcaption>
-                            <h3>Future Insights Live</h3>
+                            <h3 class="gallery-filive">Future Insights Live</h3>
                         </figcaption>
                     </a>
                 </li>
@@ -143,7 +153,7 @@
                             <img class="events__image" src="img/events/event-UDE-01.jpg" width="100%" height="auto">
                         </figure>
                         <figcaption>
-                            <h3>The London Web</h3>
+                            <h3 class="gallery-londonweb">The London Web</h3>
                         </figcaption>
                     </a>
                 </li>
@@ -158,8 +168,8 @@
                     </a>
                 </li>
             </ul>
-            <div class="o-wrapper">
-                <p><a href="html/past-events.html">View our past events <i class="fa fa-arrow-right"></i></a></p>
+            <div class="o-wrapper-sides">
+                <a class="c-link--primary" href="html/past-events.html">View our past events <i class="fa fa-arrow-right"></i></a>
             </div>
         </section>
         <!--content library-->
@@ -169,24 +179,55 @@
                 <p>We have a wealth of inspiring videos of incredible talks and articles covering the latest and greatest in web design, all ready to share with you!</p>
                 <p>Simply register your details to access our video library and receive regular email updates.</p>
             </div>
-            <ul class="c-list">
+            <ul class="c-list--content-library">
                 <li class="c-list__item">
-                    <figure class="videos">
+                    <a href="#">
+                        <figure class="videos">
+                            <svg class="icon--articles" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="-249 171 140 140" enable-background="new -249 171 140 140" xml:space="preserve">
+    <circle fill="none" stroke="#202123" stroke-width="7" stroke-miterlimit="10" cx="-179" cy="241" r="66.5"/>
+    <path fill="none" stroke="#202123" stroke-width="4" stroke-miterlimit="10" d="M-235.1,226.8c4.7-18.9,18.8-34,36.9-40.4
+         M-129.2,269.9c-4.4,7.5-10.4,14-17.6,18.8"/>
+    <circle fill="none" stroke="#202123" stroke-width="11" stroke-miterlimit="10" cx="-179" cy="241" r="46.5"/>
+    <path fill="none" stroke="#AE88EA" stroke-width="3" stroke-miterlimit="10" d="M-164,197c12.3,4.2,22.3,13.4,27.5,25.3
+         M-201.2,281.9c-6.1-3.3-11.4-8-15.5-13.6"/>
+    <circle fill="none" stroke="#202123" stroke-width="20" stroke-miterlimit="10" cx="-179" cy="241" r="14"/>
+    <circle fill="#AE88EA" cx="-164.5" cy="222.5" r="15.5"/>
+    <circle fill="#AE88EA" cx="-191.5" cy="258.5" r="8.5"/>
+    </svg>
                         <figcaption><h3>Videos</h3></figcaption>
-                    </figure>
+                        </figure>
+                    </a>
                 </li>
                 <li class="c-list__item">
-                    <figure class="articles">
-                        <figcaption><h3>Articles</h3></figcaption>
-                    </figure>
+                    <a href="#">
+                        <figure class="articles">
+                            <svg class="icon--articles" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="-249 171 140 140" enable-background="new -249 171 140 140" xml:space="preserve">
+      <line fill="none" stroke="#202123" stroke-width="10" stroke-miterlimit="10" x1="-249" y1="175" x2="-179" y2="175"/>
+      <line fill="none" stroke="#202123" stroke-width="10" stroke-miterlimit="10" x1="-158" y1="175" x2="-133" y2="175"/>
+      <line fill="none" stroke="#202123" stroke-width="10" stroke-miterlimit="10" x1="-249" y1="196.8" x2="-133" y2="196.8"/>
+      <line fill="none" stroke="#202123" stroke-width="10" stroke-miterlimit="10" x1="-249" y1="218.7" x2="-197" y2="218.7"/>
+      <line fill="none" stroke="#202123" stroke-width="10" stroke-miterlimit="10" x1="-178" y1="218.7" x2="-137" y2="218.7"/>
+      <line fill="none" stroke="#202123" stroke-width="10" stroke-miterlimit="10" x1="-249" y1="240.5" x2="-174" y2="240.5"/>
+      <line fill="none" stroke="#202123" stroke-width="10" stroke-miterlimit="10" x1="-249" y1="262.3" x2="-145.5" y2="262.3"/>
+      <line fill="none" stroke="#202123" stroke-width="10" stroke-miterlimit="10" x1="-126" y1="262.3" x2="-109" y2="262.3"/>
+      <line fill="none" stroke="#202123" stroke-width="10" stroke-miterlimit="10" x1="-249" y1="284.2" x2="-133" y2="284.2"/>
+      <line fill="none" stroke="#202123" stroke-width="10" stroke-miterlimit="10" x1="-249" y1="306" x2="-214" y2="306"/>
+      <line fill="none" stroke="#202123" stroke-width="10" stroke-miterlimit="10" x1="-197.8" y1="306" x2="-160.2" y2="306"/>
+    </svg>
+                            <figcaption><h3>Articles</h3></figcaption>
+                        </figure>
+                    </a>
                 </li>
             </ul>
         </section>
         <!--signup-->
-        <section class="alternate o-wrapper">
-            <h2>Sign Up</h2>
-                <p>Start receiving great quality content today!</p>
-            <a class="c-button">Signup <i class="fa fa-arrow-right"></i></a>
+        <section class="sign-up">
+            <div class="o-wrapper">
+                <h2>Sign Up</h2>
+                    <p>Subscribe to the newsletter and get FREE access to quality content today!</p>
+                <a class="c-button">Signup <i class="fa fa-arrow-right"></i></a>
+            </div>
         </section>
         <!--get involved-->
         <section class="regular o-wrapper">

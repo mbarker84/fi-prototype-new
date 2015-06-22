@@ -1,23 +1,32 @@
-.c-header__icon {
-    width: 2.5em;
-    height: 2.5em;
+a.c-icon {
     display: inline-block;
-    float: left;
-    background-color: $white;
-    margin-right: 1em;
-    a {
-        display: block;
-        height: 100%;
-    }
+    width: 2em;
+    height: 2em;
+    text-align: center;
 }
 
 .c-social-icons {
-    @include clearfix;
-    display: inline-block;
-    float: right;
-    background-color: $white;
-    .c-header__icon {
-        margin-left: 1em;
-        margin-right: 0;
+    a.c-icon {
+        float: right;
+        margin-left: .8em;
+        color: $fi-primary;
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+}
+
+svg.twitter, svg.facebook {
+    fill: $lt-grey;
+}
+
+ul.c-list--content-library {
+    a:focus, a:hover, a:active {
+        figure.videos {
+            background-color: darken($videos, 20%);
+        }
+        figure.articles {
+            background-color: darken($articles, 20%);
+        }
     }
 }

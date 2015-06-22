@@ -1,4 +1,4 @@
-ul.c-list {
+ul.c-list, ul.c-list--events {
     li.c-list__item {
         position: relative;
         @include with-layout($map-xs) {
@@ -16,7 +16,61 @@ ul.c-list {
             position: absolute;
             top: 0;
             height: 100%;
+            width: 100%;
             padding: 1em;
+            text-align: center;
+        }
+    }
+}
+
+ul.c-list--events {
+    figcaption {
+        background: linear-gradient(rgba(32, 33, 35, .9), rgba(32, 33, 35, .5));
+        text-align: center;
+        h3 {
+            padding-top: .5em;
+            padding-bottom: 1em;
+            border-bottom: 3px solid $white;
+            letter-spacing: .08em;
+            &.gallery-fowd {
+                border-bottom: 3px solid $fowd;
+            }
+            &.gallery-fowa {
+                border-bottom: 3px solid $fowa;
+            }
+            &.gallery-ude {
+                border-bottom: 3px solid $ude;
+            }
+            &.gallery-filive {
+                border-bottom: 3px solid $filive;
+            }
+            &.gallery-londonweb {
+                border-bottom: 3px solid $london-web;
+            }
+        }
+    }
+}
+
+ul.c-list--content-library {
+    @include clearfix;
+    li.c-list__item {
+        position: relative;
+        text-align: center;
+        @include with-layout($map-xs) {
+            @include gallery(3);
+        }
+        figure {
+            padding: 1em;
+            &.videos {
+                background-color: $videos;
+            }
+            &.articles {
+                background-color: $articles;
+            }
+        }
+        svg {
+            padding: 1em;
+            max-width: 100%;
         }
     }
 }
@@ -24,6 +78,8 @@ ul.c-list {
 ul.c-get-involved {
     @include clearfix;
     li {
+        @include clearfix;
+        margin-bottom: 1em;
     }
     .get-involved__image {
         @include with-layout($map-xs) {

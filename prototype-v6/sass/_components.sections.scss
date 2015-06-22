@@ -1,0 +1,25 @@
+section.o-regular {
+    @include wrapper-alternate;
+    background-color: $black;
+    color: $white;
+    letter-spacing: .08em;
+    .o-wrapper-sides {
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+    h2 {
+        color: lighten($black, 45%);
+    }
+    a.c-link--primary {
+        color: $fi-highlight;
+        display: block;
+        padding-top: 1em;
+    }
+}
+
+/* Signup section */
+section.sign-up {
+    background-color: $black;
+    color: $md-grey;
+    letter-spacing: .08em;
+}

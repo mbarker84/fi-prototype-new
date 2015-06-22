@@ -1,0 +1,18 @@
+@mixin headings {
+    font-family: $headings;
+    font-style: italic;
+    font-weight: 700;
+}
+
+@mixin wrapper {
+    @include container();
+    padding: 2em 1em;
+}
+
+@mixin wrapper-alternate {
+    padding: 1em 0;
+}
+
+@mixin wrapper-sides {
+    padding: 0 1em;
+}

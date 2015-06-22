@@ -1,0 +1,14 @@
+header {
+    background-color: $fi-primary;
+    background-image: url(../img/events/lines.svg), linear-gradient( rgba(70, 122, 198, .4), rgba(78, 203, 216, 1)),
+        url(../img/events/home-main.jpg);
+    background-size: cover;
+    color: $black;
+    h1 {
+        margin-top: .5em;
+    }
+}
+
+.o-header--top {
+    background-color: $black-overlay;
+}

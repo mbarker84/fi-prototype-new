@@ -1,7 +1,30 @@
 .o-header--top {
     @include clearfix;
-    padding: 1em;
-    background-color: $black;
+    padding: .6em 1em;
+}
+
+.c-header__icon {
+    @include with-layout($map-xs-2) {
+        @include span(1);
+    }
+}
+
+.c-header__search {
+    @include with-layout($map-xs-2) {
+        @include span(3);
+    }
+    height: 2em;
+}
+
+.c-social-icons {
+    @include clearfix;
+    @include with-layout($map-xs-2) {
+        @include span(2 last);
+    }
+}
+
+.o-header__group {
+    @include wrapper;
 }
 
 ul {

@@ -1,0 +1,42 @@
+/* Settings – Furthest reach, lowest specificity */
+
+/* Colours */
+
+/* Generic */
+$black: rgba(32, 33, 35, 1);
+$white: #F7F9F9;
+$articles: #5BD8B4;
+$videos: #AE88EA;
+
+/* Event-specific colours */
+$fi-primary: rgba(70, 122, 198, 1);
+$fi-highlight: rgba(78, 203, 216, 1);
+$fowd: #e52b32;
+$fowa: #ff7a19;
+$ude: #6D2AB7;
+$filive: #02AEDC;
+$london-web: #EFB21B;
+
+$fi-dk: darken($fi-primary, 20%);
+$fowd-dk: darken($fowd, 20%);
+$fowa-dk: darken($fowa, 20%);
+
+$black-overlay: rgba(32, 33, 35, .8);
+
+/* Greys */
+$lt-grey: #D9E4E8;
+$md-grey: #C2CED3;
+
+
+/* Breakpoints */
+
+$bp-s: 400px;
+$bp-m: 720px;
+$bp-l: 900px;
+$bp-xl: 1300px;
+
+/* Fonts */
+
+$headings: "ff-tisa-sans-web-pro", sans-serif;
+$paragraph: "ff-tisa-sans-web-pro", sans-serif;
+$secondary: "refrigerator-deluxe", sans-serif;

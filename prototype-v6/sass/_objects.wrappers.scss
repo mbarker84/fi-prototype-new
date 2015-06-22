@@ -1,7 +1,11 @@
 section.o-regular {
-    background-color: $lt-grey;
+    @include wrapper-alternate;
 }
 
 .o-wrapper {
-    padding: 1em;
+    @include wrapper;
+}
+
+.o-wrapper-sides {
+    @include wrapper-sides;
 }
