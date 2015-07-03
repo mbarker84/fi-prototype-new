@@ -8,7 +8,7 @@ section.o-regular {
         padding-bottom: .5em;
     }
     h2 {
-        color: lighten($black, 45%);
+        color: $md-grey;
     }
     a.c-link--primary {
         color: $fi-highlight;
@@ -20,6 +20,64 @@ section.o-regular {
 /* Signup section */
 section.sign-up {
     background-color: $black;
+    background-image: url(../img/backgrounds/lines02.svg);
+    background-size: cover;
     color: $md-grey;
-    letter-spacing: .08em;
+    letter-spacing: .03em;
+}
+
+
+/* Get involved */
+
+.o-get-involved__img {
+    @include with-layout($map-xs-2) {
+        @include span(2);
+    }
+}
+
+.o-get-involved__text {
+    @include with-layout($map-xs-2) {
+        @include span(4 last);
+        padding-top: 2em;
+        @media (min-width: $bp-m) {
+            padding-top: 0;
+        }
+    }
+}
+
+ul.c-get-involved {
+    @include clearfix;
+    svg {
+        stroke: $black;
+    }
+    li {
+        &:focus, &:hover, &:active {
+            svg {
+                stroke: $fi-primary;
+            }
+        }
+    }
+}
+
+ul.c-get-involved {
+    li {
+        @include clearfix;
+        clear: both;
+        margin-bottom: 1em;
+        @media (min-width: $bp-m) {
+            margin-bottom: 2em;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    h4 {
+        margin-top: 1em;
+    }
+    a {
+        color: $fi-primary;
+        &:focus, &:hover, &:active {
+            color: $black;
+        }
+    }
 }

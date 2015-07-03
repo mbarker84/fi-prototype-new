@@ -2,12 +2,18 @@ a.c-link--primary {
     font-family: $secondary;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 ul.c-list--content-library {
     a {
         color: $black;
         display: block;
+    }
+}
+
+footer {
+    a {
+        color: $fi-primary;
     }
 }

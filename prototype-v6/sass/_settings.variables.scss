@@ -4,7 +4,7 @@
 
 /* Generic */
 $black: rgba(32, 33, 35, 1);
-$white: #F7F9F9;
+$white: rgba(247, 249, 249, 1);
 $articles: #5BD8B4;
 $videos: #AE88EA;
 
@@ -22,16 +22,18 @@ $fowd-dk: darken($fowd, 20%);
 $fowa-dk: darken($fowa, 20%);
 
 $black-overlay: rgba(32, 33, 35, .8);
+$white-transparent: rgba(247, 249, 249, .5);
 
 /* Greys */
 $lt-grey: #D9E4E8;
-$md-grey: #C2CED3;
+$md-grey: darken($lt-grey, 15%);
+$dk-grey: darken($lt-grey, 40%);
 
 
 /* Breakpoints */
 
 $bp-s: 400px;
-$bp-m: 720px;
+$bp-m: 620px;
 $bp-l: 900px;
 $bp-xl: 1300px;
 
@@ -40,3 +42,9 @@ $bp-xl: 1300px;
 $headings: "ff-tisa-sans-web-pro", sans-serif;
 $paragraph: "ff-tisa-sans-web-pro", sans-serif;
 $secondary: "refrigerator-deluxe", sans-serif;
+
+
+/* Modular Scale */
+
+$ms-base: 1em;
+$ms-ratio: 1.2;

@@ -4,6 +4,13 @@
     font-weight: 700;
 }
 
+@mixin headings-caps {
+    font-family: $paragraph;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 @mixin wrapper {
     @include container();
     padding: 2em 1em;
@@ -15,4 +22,23 @@
 
 @mixin wrapper-sides {
     padding: 0 1em;
+}
+
+/* http://www.mademyday.de/css-height-equals-width-with-pure-css.html */
+@mixin ratio16_9 {
+    li {
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 56.25%;
+        }
+        figure {
+            position:  absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
 }

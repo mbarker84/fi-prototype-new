@@ -1,32 +1,20 @@
-a.c-icon {
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-    text-align: center;
-}
-
-.c-social-icons {
-    a.c-icon {
-        float: right;
-        margin-left: .8em;
-        color: $fi-primary;
-        &:last-child {
-            margin-left: 0;
-        }
-    }
-}
-
 svg.twitter, svg.facebook {
-    fill: $lt-grey;
+    fill: $md-grey;
 }
 
-ul.c-list--content-library {
-    a:focus, a:hover, a:active {
-        figure.videos {
-            background-color: darken($videos, 20%);
-        }
-        figure.articles {
-            background-color: darken($articles, 20%);
+
+.trigger {
+    i.fa-plus {
+        display: inline-block;
+        margin-left: 1em;
+        transform: rotate(0deg);
+        transition: all .3s ease-in-out;
+    }
+    &:focus, &:hover, &:active {
+        i.fa-plus {
+            display: inline-block;
+            margin-left: 1em;
+            transform: rotate(90deg);
         }
     }
 }

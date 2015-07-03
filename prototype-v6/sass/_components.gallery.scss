@@ -1,28 +1,33 @@
 ul.c-list, ul.c-list--events {
+    @include ratio16_9;
     li.c-list__item {
-        position: relative;
         @include with-layout($map-xs) {
             @include gallery(3);
         }
         figure.videos {
-            height: 8em;
             background-color: $videos;
         }
         figure.articles {
-            height: 8em;
             background-color: $articles;
         }
         figcaption {
             position: absolute;
             top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
             height: 100%;
             width: 100%;
             padding: 1em;
             text-align: center;
+            @media (min-width: $bp-m) {
+                padding: 3em;
+            }
         }
     }
 }
 
+/* Caption style – events */
 ul.c-list--events {
     figcaption {
         background: linear-gradient(rgba(32, 33, 35, .9), rgba(32, 33, 35, .5));
@@ -51,44 +56,24 @@ ul.c-list--events {
     }
 }
 
-ul.c-list--content-library {
-    @include clearfix;
-    li.c-list__item {
-        position: relative;
-        text-align: center;
-        @include with-layout($map-xs) {
-            @include gallery(3);
-        }
-        figure {
-            padding: 1em;
-            &.videos {
-                background-color: $videos;
-            }
-            &.articles {
-                background-color: $articles;
+/* Transitions */
+
+ul.c-list--events {
+    a {
+        figcaption {
+            &:focus, &:hover, &:active {
+                background: linear-gradient(rgba(32, 33, 35, .7), rgba(32, 33, 35, .3));
             }
         }
-        svg {
-            padding: 1em;
-            max-width: 100%;
+        h3 {
+            transition: all .3s ease-in-out;
+            transform: scale(1);
+        }
+        &:focus, &:hover, &:active {
+            h3 {
+                transform: scale(1.1);
+            }
         }
     }
 }
 
-ul.c-get-involved {
-    @include clearfix;
-    li {
-        @include clearfix;
-        margin-bottom: 1em;
-    }
-    .get-involved__image {
-        @include with-layout($map-xs) {
-            @include span(2);
-        }
-    }
-    .get-involved__text {
-        @include with-layout($map-xs) {
-            @include span(4 last);
-        }
-    }
-}

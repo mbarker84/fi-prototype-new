@@ -1,0 +1,32 @@
+footer {
+    background-color: $black;
+    color: $md-grey;
+}
+
+ul.footer__social {
+    width: 15em;
+    margin: 0 auto;
+    li {
+        display: inline-block;
+        padding: 1em;
+        font-size: 2em;
+    }
+}
+
+.footer__links {
+    line-height: 1.7;
+    li {
+        text-transform: uppercase;
+        font-size: .9em;
+        letter-spacing: .05em;
+    }
+    h4 {
+        border-bottom: 2px solid $md-grey;
+        margin-bottom: 1em;
+        letter-spacing: .05em;
+    }
+}
+
+ul.footer__links--events {
+    margin-bottom: 1em;
+}

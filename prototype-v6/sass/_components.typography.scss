@@ -1,0 +1,28 @@
+span.smaller {
+    font-size: .6em;
+    line-height: .6em;
+}
+
+p.menu {
+    padding: .6em 1em;
+    margin-bottom: 0;
+    font-size: 1em;
+    display: inline-block;
+}
+
+ul.c-list--events {
+    h3 {
+        font-size: ms(-1);
+        font-weight: 400;
+    }
+    @media (min-width: $bp-s) {
+        h3 {
+            font-size: ms(0);
+        }
+    }
+    @media (min-width: $bp-m) {
+        h3 {
+            font-size: ms(1);
+        }
+    }
+}
