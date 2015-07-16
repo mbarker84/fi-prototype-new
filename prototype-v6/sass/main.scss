@@ -2,6 +2,7 @@
 @import "settings.variables";
 
 @import "tools.compass";
+@import "tools.map";
 @import "tools.mixins";
 @import "tools.modular-scale";
 @import "tools.susy";
@@ -19,11 +20,13 @@
 @import "objects.wrappers";
 
 @import "components.buttons";
+@import "components.color";
 @import "components.footer";
 @import "components.forms";
 @import "components.gallery";
 @import "components.header";
 @import "components.icons";
+@import "components.images";
 @import "components.links";
 @import "components.menus";
 @import "components.page-title";

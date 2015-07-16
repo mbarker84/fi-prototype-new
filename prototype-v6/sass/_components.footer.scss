@@ -16,17 +16,24 @@ ul.footer__social {
 .footer__links {
     line-height: 1.7;
     li {
+        @include ms-respond(font-size, -1);
         text-transform: uppercase;
-        font-size: .9em;
-        letter-spacing: .05em;
-    }
-    h4 {
-        border-bottom: 2px solid $md-grey;
-        margin-bottom: 1em;
         letter-spacing: .05em;
     }
 }
 
 ul.footer__links--events {
     margin-bottom: 1em;
+}
+
+@media (min-width: $bp-l) {
+    ul.footer__links--events {
+        @include span(4);
+    }
+    ul.footer__links--nav {
+        @include span(4);
+    }
+    .footer__links li {
+        @include ms-respond(font-size, 0);
+    }
 }

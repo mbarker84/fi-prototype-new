@@ -1,13 +1,38 @@
-.o-header--top {
-    @include clearfix;
-    padding: .6em 1em;
-}
-
-.o-header__group {
-    @include wrapper;
-}
-
 ul {
     @include clearfix;
     list-style: none;
+}
+
+.o-3-col-list {
+    li {
+        margin-bottom: 1em;
+    }
+    @media (min-width: $bp-m) {
+        li.o-list__item--regular {
+            @include gallery(6);
+            margin-bottom: gutter();
+            margin-bottom: 2em;
+        }
+    }
+    @media (min-width: $bp-l) {
+        li {
+            @include gallery(4);
+        }
+        li.o-list__item--regular {
+            @include gallery(4);
+        }
+    }
+}
+
+.o-section__intro-block {
+    @media (min-width: $bp-l) {
+        max-width: 66.67%;
+    }
+}
+
+.o-row {
+    @include clearfix;
+    @include border-bottom($white);
+    margin-bottom: 1em;
+    padding-bottom: 1em;
 }

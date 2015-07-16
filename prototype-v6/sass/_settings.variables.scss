@@ -21,13 +21,16 @@ $fi-dk: darken($fi-primary, 20%);
 $fowd-dk: darken($fowd, 20%);
 $fowa-dk: darken($fowa, 20%);
 
+$fowd-lt: adjust-color($fowd, $hue: 0deg, $saturation: 10, $lightness: 30);
+
 $black-overlay: rgba(32, 33, 35, .8);
 $white-transparent: rgba(247, 249, 249, .5);
 
 /* Greys */
-$lt-grey: #D9E4E8;
-$md-grey: darken($lt-grey, 15%);
-$dk-grey: darken($lt-grey, 40%);
+$ultra-lt-grey: lighten($black, 75%);
+$lt-grey: lighten($black, 60%);
+$md-grey: lighten($black, 40%);
+$dk-grey: lighten($black, 20%);
 
 
 /* Breakpoints */
@@ -43,8 +46,3 @@ $headings: "ff-tisa-sans-web-pro", sans-serif;
 $paragraph: "ff-tisa-sans-web-pro", sans-serif;
 $secondary: "refrigerator-deluxe", sans-serif;
 
-
-/* Modular Scale */
-
-$ms-base: 1em;
-$ms-ratio: 1.2;

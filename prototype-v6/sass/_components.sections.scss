@@ -1,29 +1,86 @@
-section.o-regular {
-    @include wrapper-alternate;
+.o-regular {
     background-color: $black;
-    color: $white;
     letter-spacing: .08em;
-    .o-wrapper-sides {
-        padding-top: .5em;
-        padding-bottom: .5em;
+}
+
+
+.fowd, .fowa {
+    section.communities {
+        @media (min-width: $bp-xl) {
+            padding-top: 3em;
+        }
     }
-    h2 {
-        color: $md-grey;
-    }
-    a.c-link--primary {
-        color: $fi-highlight;
-        display: block;
-        padding-top: 1em;
+    section.events {
+        @media (min-width: $bp-l) {
+            padding-top: 8em;
+        }
     }
 }
 
+.line-break--full {
+    @include border-bottom($lt-grey);
+    margin-bottom: 1em;
+}
+
+/* Event home - Cities */
+
+section.cities {
+    background: $ultra-lt-grey url(../img/backgrounds/triangle-background.svg) center 100.1% / contain no-repeat;
+    @media (min-width: $bp-l) {
+        padding-bottom: 5em;
+    }
+    @media (min-width: $bp-xl) {
+        padding-bottom: 8em;
+    }
+    &--blog {
+        @extend .cities;
+        background-image: none;
+    }
+}
+
+/* Communities */
+.communities__videos,
+.communities__articles {
+    padding: 3em 1em 1em 1em;
+    position: relative;
+    @media (min-width: $bp-l) {
+        padding: 3em 2em 2em 2em;
+    }
+}
+
+h4.block-title {
+    position: absolute;
+    top: -.5em;
+    left: -.5em;
+    padding: .5em;
+}
+
+figure.articles__img {
+    margin-bottom: 1em;
+}
+
+.communities__articles {
+    @media (min-width: $bp-m) {
+        figure.articles__img {
+            @include span(4);
+            margin-bottom: 0;
+        }
+        .articles__text {
+            @include span(8 last);
+        }
+    }
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
 /* Signup section */
-section.sign-up {
-    background-color: $black;
-    background-image: url(../img/backgrounds/lines02.svg);
+section.signup {
+    background-image: url(../img/backgrounds/lines-grey.svg);
     background-size: cover;
-    color: $md-grey;
-    letter-spacing: .03em;
+    h1, h2, h3, p {
+        color: $lt-grey;
+    }
 }
 
 
@@ -46,20 +103,6 @@ section.sign-up {
 }
 
 ul.c-get-involved {
-    @include clearfix;
-    svg {
-        stroke: $black;
-    }
-    li {
-        &:focus, &:hover, &:active {
-            svg {
-                stroke: $fi-primary;
-            }
-        }
-    }
-}
-
-ul.c-get-involved {
     li {
         @include clearfix;
         clear: both;
@@ -70,14 +113,67 @@ ul.c-get-involved {
         &:last-child {
             margin-bottom: 0;
         }
-    }
-    h4 {
-        margin-top: 1em;
-    }
-    a {
-        color: $fi-primary;
-        &:focus, &:hover, &:active {
-            color: $black;
+        p {
+            color: $md-grey;
+            @include ms-respond(font-size, 0);
         }
+    }
+}
+
+@media (min-width: $bp-l) {
+    ul.c-get-involved {
+        li {
+            @include gallery(4);
+        }
+        .o-get-involved__img,
+        .o-get-involved__text {
+            @include span(full);
+        }
+        .o-get-involved__img {
+            padding: 1em 5em 1em 2em;
+        }
+    }
+}
+
+@media (min-width: $bp-xl) {
+    .o-get-involved__img {
+        padding: 2em 7em 2em 3em;
+    }
+}
+
+/* Articles - preview */
+
+article.articles--preview {
+    @include border-bottom($lt-grey);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.article-preview__img {
+    margin-bottom: 1em;
+}
+
+.article__tags {
+    margin-top: 1em;
+    li {
+        @include ms-respond(font-size, -2);
+        text-transform: uppercase;
+        letter-spacing: .03em;
+        color: $lt-grey;
+        background-color: $dk-grey;
+        padding: .5em;
+        display: inline-block;
+        margin-right: .5em;
+        margin-bottom: .5em;
+    }
+}
+
+.articles__videos-cta {
+    margin-top: 1em;
+    background-color: $black;
+    padding: 2em 1em;
+    text-align: center;
+    .c-button {
+        margin: 0 auto;
     }
 }

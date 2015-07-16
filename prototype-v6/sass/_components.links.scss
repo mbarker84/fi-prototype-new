@@ -1,19 +1,27 @@
-a.c-link--primary {
+a.c-link--primary, a.c-link--primary:visited {
     font-family: $secondary;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1em;
+    letter-spacing: 0.03em;
 }
 
-ul.c-list--content-library {
-    a {
-        color: $black;
-        display: block;
+a.menu__trigger {
+    @include labels;
+    letter-spacing: .03em;
+    padding: 0;
+    max-width: 6.3em;
+    @media (min-width: $bp-l) {
+        font-size: 1.2em;
+        position: fixed;
+        height: 70px;
+        padding-top: 1.2em !important;
+        text-align: center;
     }
 }
 
-footer {
-    a {
-        color: $fi-primary;
+header .header__link {
+    a, a:visited {
+        letter-spacing: .03em;
     }
 }

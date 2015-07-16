@@ -1,0 +1,116 @@
+$themes: (
+    theme-fi: $fi-highlight,
+    theme-fowd: $fowd,
+    theme-fowa: $fowa
+) !default;
+
+@mixin theme($name, $color) {
+  $primary: $color;
+  $secondary: darken($color, 20%);
+ 
+      
+      a, a:visited {
+          color: $primary;
+          &:focus, &:hover, &:active {
+              color: $secondary;
+          }
+      }
+      
+    .c-button {
+        background-color: $color;
+        color: black;
+        &:focus, &:hover, &:active {
+            background-color: $secondary;
+            color: black;
+        }
+    }
+    
+    nav {
+        h5 {
+            color: $primary;
+            border-bottom: 2px solid $primary;
+        }
+    }
+    
+    .top-nav__login a {
+        color: $primary;
+        background-color: $black;
+        &:focus, &:hover, &:active {
+            color: $black;
+            background-color: $primary;
+        }
+    }
+    
+    header {
+        background-color: $primary;
+    }
+    
+    footer {
+        a {
+            color: $primary;
+        }
+    }
+    
+    ul.c-get-involved {
+        svg:focus, svg:hover, svg:active {
+            stroke: $primary;
+        }
+    }
+    
+    svg.twitter, svg.facebook {
+        fill: $primary;
+        &:focus, &:hover, &:active {
+            fill: $secondary;
+        }
+    }
+    
+    a.c-link--primary, a.c-link--primary:visited {
+        color: $primary;
+        &:focus, &:hover, &:active {
+            color: $secondary;
+        }
+    }
+    
+    a.menu__trigger {
+        color: $black !important;
+        background-color: $primary;
+        &:focus, &:hover, &:active {
+            color: $primary !important;
+            background-color: $black;
+        }
+    }
+    
+    .communities__videos,
+    .communities__articles {
+        background-color: adjust-color($primary, $hue: 0deg, $saturation: 10, $lightness: 30);
+    }
+    
+    .videos__list {
+        a:focus, a:hover, a:active {
+            h5 {
+                color: $primary;
+            }
+        }
+    }
+    
+    h4.block-title {
+        background-color: $black;
+        color: $primary;
+        letter-spacing: .03em;
+    }
+    
+    a#event-menu__trigger {
+        background-color: $primary;
+    }
+    
+    .header__search button {
+        background-color: $black;
+        color: $fowd;
+        &:focus, &:hover, &:active {
+            background-color: $fowd;
+            color: $black;
+        }
+    }
+ 
+}
+

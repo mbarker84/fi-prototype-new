@@ -1,28 +1,93 @@
 span.smaller {
-    font-size: .6em;
+    @include ms-respond(font-size, -1);
     line-height: .6em;
 }
 
+.small {
+    @include ms-respond(font-size, 0);
+}
+
 p.menu {
+    font-size: 1em;
     padding: .6em 1em;
     margin-bottom: 0;
-    font-size: 1em;
     display: inline-block;
+}
+
+h1.header__page-head {
+    margin-bottom: 1em;
+    color: $black;
+}
+
+h1.fowd-logo {
+    @include ms-respond(font-size, 8);
+    font-family: corner-store;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+h3.article__title {
+    margin-bottom: .5em;
+}
+
+h4.video__caption {
+    font-weight: 400;
+    color: $white;
+    margin-bottom: .4em;
+    @include ms-respond(font-size, 0);
+    @media (min-width: $bp-m) {
+        @include ms-respond(font-size, 1);
+    }
+}
+p.video__caption {
+    color: $white;
+    margin-bottom: .5em;
+}
+
+.footer__links {
+    h5 {
+        margin-bottom: 1em;
+    }
+}
+
+section.events,
+section.signup,
+section.articles,
+footer {
+    color: $md-grey !important;
+}
+
+section.events,
+section.signup {
+    h2 {
+        letter-spacing: .03em;
+    }
 }
 
 ul.c-list--events {
     h3 {
         font-size: ms(-1);
         font-weight: 400;
-    }
-    @media (min-width: $bp-s) {
-        h3 {
-            font-size: ms(0);
+        @media (min-width: $bp-s) {
+            @include ms-respond(font-size, 0);
+        }
+        @media (min-width: $bp-m) {
+            @include ms-respond(font-size, 2);
         }
     }
-    @media (min-width: $bp-m) {
-        h3 {
-            font-size: ms(1);
-        }
+}
+
+section.communities,
+section.get-involved {
+    p {
+        color: $md-grey;
+    }
+}
+
+.communities__videos,
+.communities__articles,
+.communities__videos--blog-home {
+    p {
+        color: $dk-grey;
     }
 }

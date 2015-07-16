@@ -1,29 +1,24 @@
 nav.nav--main {
-    font-family: $paragraph;
     line-height: 1.3;
     position: fixed;
     width: 100%;
     display: block;
     background-color: $black-overlay;
     z-index: 10000;
+    overflow: visible;
     a {
-      padding: .6em 1em;
+      padding: .8em 1em;
       display: block;
       color: $white;
-        font-family: $paragraph;
-        font-weight: 300;
     }
     a.all {
         color: $md-grey;
     }
-    h4 {
-        color: $fi-highlight;
-        border-bottom: 2px solid $fi-highlight;
-        margin-bottom: .2em;
-        letter-spacing: .05em;
-    }
     i.fa-user {
         margin-right: 1em;
+    }
+    p {
+        margin-bottom: 0;
     }
 }
 
@@ -31,14 +26,16 @@ ul.top-nav {
     width: 100%;
     max-width: 420px;
     position: absolute;
-    left: -420px;
-    transform: translateX(0);
-    transition: transform .3s ease-out;
     background-color: $black-overlay;
+    display: none;
+    @media (min-width: $bp-l) {
+        top: 70px;
+    }
 }
 
 li.top-nav__item {
     padding-top: 1em;
+    padding-bottom: 1em;
     a {
         &:focus, &:hover, &:active {
             color: $md-grey;
@@ -47,8 +44,13 @@ li.top-nav__item {
 }
 
 li.top-nav__sub--item {
+    font-family: $paragraph;
+    font-weight: 300;
     width: 50%;
     float: left;
+    a, a:visited {
+        color: $white;
+    }
     ul.top-nav__sub--2 {
         opacity: 0;
         transform: translateX(-200px);
@@ -68,27 +70,12 @@ li.top-nav__sub2--item {
     padding-left: 1em;
 }
 
-.trigger {
-    padding: 0;
-    max-width: 6.8em;
-    overflow: visible;
-    cursor: pointer;
-    color: $black;
-    background-color: $fi-highlight;
-    &:focus, &:hover, &:active {
-        color: $fi-highlight;
-        background-color: $black;
-    ul.top-nav {
-      transform: translateX(420px);
-    }
-  }
-}
-
 .top-nav__right {
     @include clearfix;
     position: absolute;
-    top: .0;
+    top: 0;
     right: 0;
+    font-family: $paragraph;
 }
 
 .top-nav__login {
@@ -99,11 +86,6 @@ li.top-nav__sub2--item {
         float: right;
         z-index: 1000;
         margin-left: 1em;
-        a {
-            color: $fi-highlight !important;
-            background-color: $black;
-            height: 2.55em;
-        }
     }
 }
 
@@ -111,7 +93,7 @@ li.top-nav__sub2--item {
 /* icons */
 ul.c-social-icons {
     float: right;
-    width: 7em;
+    width: 10em;
     li {
         display: inline-block;
         float: right;
@@ -119,27 +101,116 @@ ul.c-social-icons {
         a {
             display: block;
             width: auto;
-            padding: .5em;
-            svg {
-                width: 1.4em;
-                height: 1.4em;
-                overflow: visible;
-            }
+            padding: .8em .5em;
         }
     }
 }
 
-.search {
-    background-color: $white;
-    color: $black;
-    opacity: .5;
-    clear: both;
-    width: 300px;
-    padding: .6em;
-    transition: .3s all ease-in-out;
-    transform: translateX(260px);
-    &:focus, &:hover, &:active {
-        transform: translateX(0);
-        opacity: .8;
+/* Event Menu (blog and video pages) */
+
+.event-menu__wrapper {
+    margin-top: -.1em;
+    border-top: 2px solid $black;
+}
+
+a#event-menu__trigger {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    color: $white !important;
+    font-family: $paragraph;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    cursor: pointer;
+    i {
+        float: right;
     }
 }
+
+ul.event-menu {
+    display: none;
+    font-family: $paragraph;
+}
+
+li.event-menu__item {
+    display: block;
+    width: 100%;
+    a {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        color: $white !important;
+        background-color: $black;
+    }
+}
+
+/* Event Menu (desktop sizes) */
+
+ul.event-menu--desktop {
+    @include ms-respond(font-size, 0);
+    background-color: $lt-grey;
+    font-family: $paragraph;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+}
+
+li.event-menu__item--desktop {
+    @include with-layout($map-gallery) {
+        @include span(2);
+    }
+    position: relative;
+    text-align: center;
+    height: 3.8em;
+    border-right: 1px solid $dk-grey;
+    &:last-child {
+        border-right: none;
+    }
+    a {
+        display: block;
+        height: 100%;
+        padding: 1em;
+        background-color: $md-grey;
+        color: $dk-grey !important;
+        &.current {
+            background-color: $fowd;
+            color: $white !important;
+            border-right: none;
+        }
+    }
+}
+
+/* Topic menu */
+
+a#topic-menu__trigger {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    color: $md-grey !important;
+    background-color: $black;
+    font-family: $paragraph;
+    cursor: pointer;
+    i {
+        float: right;
+    }
+}
+
+ul.topic-menu {
+    display: none;
+    font-family: $paragraph;
+}
+
+li.topic-menu__item {
+    display: block;
+    width: 100%;
+    a {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        color: $md-grey !important;
+        background-color: $black;
+        &:focus, &:hover, &:active {
+            color: $white !important;
+        }
+    }
+}
+

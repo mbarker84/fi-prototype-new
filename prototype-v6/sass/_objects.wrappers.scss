@@ -1,4 +1,4 @@
-section.o-regular {
+.o-regular {
     @include wrapper-alternate;
 }
 
@@ -8,4 +8,30 @@ section.o-regular {
 
 .o-wrapper-sides {
     @include wrapper-sides;
+}
+
+/* Container-width, white background */
+.o-type--1 {
+    @include wrapper;
+}
+
+/* Full-width, black background */
+.o-type--2 {
+    @include wrapper-alternate;
+    background-color: $ultra-lt-grey;
+}
+
+/* Container-width box with rounded corners */
+.o-type--3 {
+    @include wrapper;
+    @include container();
+    background-color: $black;
+    color: $lt-grey;
+    @media (min-width: 1200px) {
+        border-radius: 1.5em;
+    }
+    @media (min-width: $bp-xl) {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
 }

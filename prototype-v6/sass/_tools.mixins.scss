@@ -11,17 +11,50 @@
     text-transform: uppercase;
 }
 
+@mixin labels {
+    font-family: $secondary;
+    text-transform: uppercase;
+}
+
 @mixin wrapper {
     @include container();
     padding: 2em 1em;
+    @media (min-width: $bp-m) {
+        padding: 2.5em;
+    }
+    @media (min-width: $bp-l) {
+        padding: 4em 3em;
+    }
+    @media (min-width: $bp-xl) {
+        padding: 5em 3em;
+    }
 }
 
 @mixin wrapper-alternate {
-    padding: 1em 0;
+    padding: 2em 0;
+    @media (min-width: $bp-m) {
+        padding: 2.5em 0;
+    }
+    @media (min-width: $bp-l) {
+        padding: 4em 0;
+    }
+    @media (min-width: $bp-xl) {
+        padding: 5em 0;
+    }
 }
 
 @mixin wrapper-sides {
+    @include container();
     padding: 0 1em;
+    @media (min-width: $bp-m) {
+        padding: 0 2.5em;
+    }
+    @media (min-width: $bp-l) {
+        padding: 0 3em;
+    }
+    @media (min-width: $bp-xl) {
+        padding: 0 3em;
+    }
 }
 
 /* http://www.mademyday.de/css-height-equals-width-with-pure-css.html */
@@ -41,4 +74,22 @@
             right: 0;
         }
     }
+}
+
+/* Header background */
+
+@mixin header-background($lines-s, $lines-l, $color1, $color2, $color3, $image-s, $image-l) {
+    background-image: $lines-s, linear-gradient( $color2, $color3 ), $image-s;
+    background-size: cover;
+    @media (min-width: $bp-l) {
+        background-position: top;
+        background-image: $lines-l, linear-gradient( $color1, $color2, $color3 ), $image-l;
+        background-attachment: fixed, scroll;
+    }
+}
+
+/* Thin bottom border, e.g. in article and video sections */
+
+@mixin border-bottom($color) {
+    border-bottom: 2px solid $color;
 }

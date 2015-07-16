@@ -1,20 +1,42 @@
 svg.twitter, svg.facebook {
-    fill: $md-grey;
+    width: 1.4em;
+    height: 1.4em;
+    overflow: visible;
 }
 
+#menu-icon {
+    margin-left: .4em;
+}
 
-.trigger {
-    i.fa-plus {
-        display: inline-block;
-        margin-left: 1em;
-        transform: rotate(0deg);
-        transition: all .3s ease-in-out;
+ul.c-get-involved {
+    svg {
+        stroke: $black;
+        transition: all .2s ease-in-out;
+    }
+}
+
+svg.icon--play {
+    margin: 0 auto 1em auto;
+    width: 5em;
+    height: 5em;
+    .st0 {
+        fill: $black;
+        stroke: $md-grey;
+    }
+    .st1 {
+        fill: $md-grey;
+        stroke: $md-grey;
+    }
+    .st0, .st1 {
+        transition: all .2s ease-in-out;
     }
     &:focus, &:hover, &:active {
-        i.fa-plus {
-            display: inline-block;
-            margin-left: 1em;
-            transform: rotate(90deg);
+        .st0 {
+            stroke: $lt-grey;
+        }
+        .st1 {
+            fill: $lt-grey;
+            stroke: $lt-grey;
         }
     }
 }

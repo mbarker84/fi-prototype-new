@@ -1,28 +1,39 @@
 ul.c-list, ul.c-list--events {
     @include ratio16_9;
+    margin-bottom: 2em;
+}
+
+li.c-list__item {
+    @include with-layout($map-xs) {
+        @include gallery(3);
+        overflow: hidden;
+    }
+    figure.videos {
+        background-color: $videos;
+    }
+    figure.articles {
+        background-color: $articles;
+    }
+    figcaption {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 1em;
+        text-align: center;
+        @media (min-width: $bp-m) {
+            padding: 3em;
+        }
+    }
+}
+
+@media(min-width: $bp-l) {
     li.c-list__item {
         @include with-layout($map-xs) {
-            @include gallery(3);
-        }
-        figure.videos {
-            background-color: $videos;
-        }
-        figure.articles {
-            background-color: $articles;
-        }
-        figcaption {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            padding: 1em;
-            text-align: center;
-            @media (min-width: $bp-m) {
-                padding: 3em;
-            }
+            @include gallery(2);
         }
     }
 }
@@ -58,21 +69,92 @@ ul.c-list--events {
 
 /* Transitions */
 
-ul.c-list--events {
-    a {
-        figcaption {
-            &:focus, &:hover, &:active {
-                background: linear-gradient(rgba(32, 33, 35, .7), rgba(32, 33, 35, .3));
-            }
-        }
-        h3 {
-            transition: all .3s ease-in-out;
-            transform: scale(1);
-        }
+ul.c-list--events a {
+    figcaption {
         &:focus, &:hover, &:active {
-            h3 {
-                transform: scale(1.1);
+            background: linear-gradient(rgba(32, 33, 35, .7), rgba(32, 33, 35, .3));
+        }
+    }
+    h3 {
+        transition: all .3s ease-in-out;
+        transform: scale(1);
+        color: $white;
+    }
+    &:focus, &:hover, &:active {
+        h3 {
+            transform: scale(1.05);
+        }
+    }
+}
+
+/* Videos - 3 column list */
+
+.videos__list {
+    @include border-bottom($white);
+    margin-bottom: 1em;
+    figure {
+        position: relative;
+    }
+    figcaption {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background-color: $black-overlay;
+        padding: 1em;
+    }
+    @media (min-width: $bp-m) and (max-width: $bp-l) {
+        li {
+            @include clearfix;
+            clear: both;
+            margin-bottom: 1em;
+            background-color: $black;
+        }
+        figure img {
+            @include span(4);
+        }
+        figcaption {
+            @include span(8 last);
+            position: relative;
+            padding: 2em 2em 2em 1em;
+        }
+    }
+    @media (min-width: $bp-l) {
+        figcaption {
+            transition: all .2s ease-in-out;
+            h5 {
+                transform: scaleY(0);
+                transition: all .2s ease-in-out;
+                margin-bottom: -1em;
+                text-align: right;
             }
+        }
+        a:focus, a:hover, a:active {
+            figcaption {
+                padding-bottom: 2em;
+                h5 {
+                    transform: scaleY(1);
+                    color: $fowd;
+                }
+            }
+        }
+    }
+}
+
+/* Event home – cities */
+
+ul.c-list--cities {
+    @include border-bottom($lt-grey);
+    text-align: center;
+    margin-bottom: 1em;
+    img {
+        margin-bottom: 1em;
+    }
+    h3 {
+        margin-bottom: .2em;
+    }
+    a {
+        h3 {
+            color: $black;
         }
     }
 }

@@ -4,43 +4,82 @@
 
 h1 {
     @include headings;
-    font-size: ms(5); 
+    @include ms-respond(font-size, 6); 
+    color: $black;
     line-height: 1.1;
     margin-bottom: .4em;
 }
 
 h2 {
     @include headings;
-    font-size: ms(3);
-    margin-bottom: .6em;
+    @include ms-respond(font-size, 4);
+    color: $black;
+    margin-bottom: 1em;
+    line-height: 1.2;
+    @media (min-width: $bp-l) {
+        @include ms-respond(font-size, 3.5);
+    }
 }
 
 h3 {
     font-family: $paragraph;
+    color: $black;
     font-weight: 700;
-    font-size: ms(1);
+    @include ms-respond(font-size, 2);
     text-transform: uppercase;
     line-height: 1.2;
     letter-spacing: .06em;
     margin-bottom: 1em;
+    @media (min-width: $bp-l) {
+        @include ms-respond(font-size, 1.8);
+    }
 }
 
 h4 {
     font-family: $secondary;
-    font-size: ms(1);
+    font-weight: 700;
+    @include ms-respond(font-size, 2);
     text-transform: uppercase;
+    letter-spacing: .03em;
+    @media (min-width: $bp-l) {
+        @include ms-respond(font-size, 1.6);
+    }
+}
+
+h5 {
+    font-family: $secondary;
+    @include ms-respond(font-size, 1);
+    text-transform: uppercase;
+    @media (min-width: $bp-l) {
+        @include ms-respond(font-size, 0.8);
+    }
 }
 
 p {
     font-family: $paragraph;
-    font-size: $ms-base;
+    @include ms-respond(font-size, 0);
     font-weight: 400;
     line-height: 1.4;
     margin-bottom: 1em;
-    &:last-of-type {
-        margin-bottom: 0;
-    }
     @media (min-width: $bp-m) {
-        font-size: $ms-base * 1.1;
+        @include ms-respond(font-size, 1);
+    }
+}
+
+nav, footer {
+    @include ms-respond(font-size, 0);
+    h5 {
+        margin-bottom: .2em;
+        letter-spacing: .05em;
+    }
+}
+
+footer {
+    h3 {
+        color: $md-grey;
+    }
+    h5 {
+        color: $md-grey;
+        border-bottom: 2px solid $dk-grey;
     }
 }
