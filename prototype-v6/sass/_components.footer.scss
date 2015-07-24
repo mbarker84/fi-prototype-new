@@ -37,3 +37,8 @@ ul.footer__links--events {
         @include ms-respond(font-size, 0);
     }
 }
+
+.footer__credit {
+    @include ms-respond(font-size, 0);
+    padding: 1em;
+}

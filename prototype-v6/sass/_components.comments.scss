@@ -1,0 +1,60 @@
+.article__comments {
+    margin-top: 2em;
+}
+
+ul.comments--submitted {
+    margin-top: 2em;
+    li {
+        @include clearfix;
+        @include border-bottom($ultra-lt-grey);
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+.comments__user {
+    img {
+        margin-bottom: 1em;
+        max-width: 5em;
+    }
+}
+
+@media (min-width: $bp-s) {
+    
+    .comments__user {
+        @include span(4);
+    }
+
+    .comments__text {
+        @include span(8 last);
+    }
+    
+}
+
+@media (min-width: $bp-m) {
+    
+    .comments__user {
+        @include span(3);
+    }
+
+    .comments__text {
+        @include span(9 last);
+    }
+    
+}
+
+@media (min-width: $bp-l--2) {
+    
+    .article__comments {
+        margin-left: span(2) + gutter();
+    }
+    
+    .comments__user {
+        @include span(2 of 8);
+    }
+    
+    .comments__text {
+        @include span(6 of 8 last);
+    }
+    
+}

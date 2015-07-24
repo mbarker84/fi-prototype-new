@@ -89,7 +89,8 @@ ul.c-list--events a {
 
 /* Videos - 3 column list */
 
-.videos__list {
+.videos__list,
+.recommendations__list {
     @include border-bottom($white);
     margin-bottom: 1em;
     figure {
@@ -133,7 +134,6 @@ ul.c-list--events a {
                 padding-bottom: 2em;
                 h5 {
                     transform: scaleY(1);
-                    color: $fowd;
                 }
             }
         }
@@ -157,5 +157,27 @@ ul.c-list--cities {
             color: $black;
         }
     }
+    &--blog {
+        @extend ul.c-list--cities;
+        border-bottom: none;
+        margin-bottom: 0;
+        @media (min-width: $bp-l) {
+            margin-bottom: -4em;
+        }
+    }
 }
+
+/* Video pages */
+
+.videos__gallery {
+    @include ratio4_3;
+    clear: both;
+    padding-top: 2em;
+    border-top: 2px solid $lt-grey;
+    li {
+        overflow: hidden;
+    }
+}
+
+
 

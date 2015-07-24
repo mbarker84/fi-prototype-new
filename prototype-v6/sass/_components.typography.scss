@@ -30,24 +30,17 @@ h3.article__title {
     margin-bottom: .5em;
 }
 
-h4.video__caption {
-    font-weight: 400;
-    color: $white;
-    margin-bottom: .4em;
-    @include ms-respond(font-size, 0);
-    @media (min-width: $bp-m) {
-        @include ms-respond(font-size, 1);
-    }
-}
-p.video__caption {
-    color: $white;
-    margin-bottom: .5em;
-}
-
 .footer__links {
     h5 {
         margin-bottom: 1em;
     }
+}
+
+h4.block-title {
+    position: absolute;
+    top: -.5em;
+    left: -.5em;
+    padding: .5em;
 }
 
 section.events,
@@ -84,10 +77,67 @@ section.get-involved {
     }
 }
 
-.communities__videos,
-.communities__articles,
-.communities__videos--blog-home {
+.o-feature-block {
     p {
+        color: $dk-grey !important;
+    }
+}
+
+h4.video__caption,
+h4.list__caption {
+    font-weight: 400;
+    color: $white;
+    margin-bottom: .3em;
+    @include ms-respond(font-size, 0);
+    @media (min-width: $bp-m) {
+        @include ms-respond(font-size, 1);
+    }
+}
+p.video__caption,
+p.list__caption {
+    margin-bottom: .5em;
+    color: $lt-grey !important;
+}
+
+.articles h2,
+.articles h1 {
+    margin-bottom: .5em;
+}
+
+.article-single__text {
+    p.article-single__first {
+        @include ms-respond(font-size, 1.5);
+        @include headings;
         color: $dk-grey;
     }
+    h6 {
+        color: $dk-grey;
+        margin-bottom: 1em;
+    }
+    h3, h6 {
+        margin-top: 1.5em;
+    }
+    h3 {
+        color: $black;
+    }
+}
+
+
+
+figcaption.caption--primary {
+    font-family: $paragraph;
+    color: $md-grey;
+    margin-top: .5em;
+}
+
+.comments-form__field {
+    font-family: $paragraph;
+    @include ms-respond(font-size, 0);
+}
+
+.videos__premium-text {
+    padding: .5em;
+    background-color: $dk-grey;
+    color: $white;
+    letter-spacing: .03em;
 }

@@ -11,12 +11,21 @@ a.menu__trigger {
     letter-spacing: .03em;
     padding: 0;
     max-width: 6.3em;
+    z-index: $top;
+    position: fixed;
+    display: none;
     @media (min-width: $bp-l) {
         font-size: 1.2em;
-        position: fixed;
         height: 70px;
         padding-top: 1.2em !important;
         text-align: center;
+    }
+}
+
+#trigger--mobile {
+    display: block;
+    @media (min-width: $bp-l) {
+        display: none;
     }
 }
 
@@ -24,4 +33,8 @@ header .header__link {
     a, a:visited {
         letter-spacing: .03em;
     }
+}
+
+.full-nav__item a.current {
+    color: $white !important;
 }

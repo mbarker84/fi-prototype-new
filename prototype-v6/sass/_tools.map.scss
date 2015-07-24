@@ -17,18 +17,28 @@ $themes: (
       }
       
     .c-button {
-        background-color: $color;
+        background-color: $primary;
         color: black;
         &:focus, &:hover, &:active {
             background-color: $secondary;
             color: black;
         }
+        &--header {
+            background-color: $black;
+            color: $primary;
+        }
     }
     
-    nav {
+    .top-nav {
         h5 {
             color: $primary;
             border-bottom: 2px solid $primary;
+        }
+    }
+    
+    li.full-nav__item {
+        a:focus, a:hover, a:active {
+            color: $primary !important;
         }
     }
     
@@ -80,9 +90,8 @@ $themes: (
         }
     }
     
-    .communities__videos,
-    .communities__articles {
-        background-color: adjust-color($primary, $hue: 0deg, $saturation: 10, $lightness: 30);
+    .o-feature-block {
+        background-color: adjust-color($primary, $hue: 0deg, $saturation: -16, $lightness: 34);
     }
     
     .videos__list {
@@ -110,6 +119,40 @@ $themes: (
             background-color: $fowd;
             color: $black;
         }
+    }
+    
+    .article-single__line-break {
+        border-top: 3px solid $primary;
+    }
+    
+    .article__blockquote--right {
+        background-color: adjust-color($primary, $hue: 0deg, $saturation: -16, $lightness: 34);
+        &:before, &:after {
+            color: $primary;
+        }
+    }
+    
+    .article__bio {
+        background-color: adjust-color($primary, $hue: 0deg, $saturation: -16, $lightness: 34);
+    }
+    
+    .videos__list,
+    .recommendations__list {
+        figcaption h5 {
+            color: $primary;
+        }
+    }
+    
+    li.videos__item--event {
+        background-color: $primary;
+    }
+    
+    li.date-menu__item:last-child a {
+        color: $primary !important;
+    }
+    
+    section.signup h2 {
+        color: $primary;
     }
  
 }

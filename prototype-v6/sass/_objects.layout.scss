@@ -3,6 +3,10 @@ ul {
     list-style: none;
 }
 
+main, section {
+    @include clearfix;
+}
+
 .o-3-col-list {
     li {
         margin-bottom: 1em;
@@ -35,4 +39,84 @@ ul {
     @include border-bottom($white);
     margin-bottom: 1em;
     padding-bottom: 1em;
+    &--articles {
+        @extend .o-row;
+        border-bottom: none;
+    }
+    &--header {
+        @extend .o-row;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+
+/* Blog and video pages */
+
+.blog-layout--main {
+    @media (min-width: $bp-l) {
+        @include span(11);
+        padding-left: span(1);
+        overflow: visible;
+    }
+    @media (min-width: $bp-l--2) {
+        @include span(10);
+        padding-left: 0;
+    }
+}
+
+.blog-layout--preview {
+    @media (min-width: $bp-l--2) {
+        @include span(10);
+        .o-row--articles {
+            padding-left: span(1 of 10);
+            padding-top: 1em;
+        }
+    }
+}
+
+.cleared {
+    clear: both;
+}
+
+/* Featured */
+
+.o-feature-block {
+    padding: 3em 1em 1em 1em;
+    position: relative;
+    margin-top: 2em;
+    @media (min-width: $bp-l) {
+        margin-top: 3em;
+        padding: 3em 2em 2em 2em;
+    }
+}
+
+/* Signup section */
+
+@media (min-width: $bp-l) {
+    
+    .o-signup__img {
+        @include span(3);
+        padding-right: 1em;
+    }
+
+    .o-signup__text {
+        @include span(9 last);
+    }
+    
+}
+
+@media (min-width: $bp-l) {
+    
+    .o-signup__img {
+        padding-right: 2em;
+    }
+    
+}
+
+@media (min-width: $bp-xl) {
+    
+    .o-signup__img {
+        padding-right: 3em;
+    }
+    
 }

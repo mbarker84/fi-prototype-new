@@ -1,14 +1,14 @@
 nav.nav--main {
     line-height: 1.3;
-    position: fixed;
     width: 100%;
     display: block;
-    background-color: $black-overlay;
-    z-index: 10000;
+    position: absolute;
+    height: 2.9em;
+    background-color: transparentize($black, .5);
     overflow: visible;
+    z-index: $top;
     a {
       padding: .8em 1em;
-      display: block;
       color: $white;
     }
     a.all {
@@ -25,11 +25,13 @@ nav.nav--main {
 ul.top-nav {
     width: 100%;
     max-width: 420px;
-    position: absolute;
-    background-color: $black-overlay;
+    position: fixed;
+    z-index: $top;
+    background-color: transparentize($black, .05);
     display: none;
+    top: 2.9em;
     @media (min-width: $bp-l) {
-        top: 70px;
+        top: 4.2em;
     }
 }
 
@@ -37,6 +39,7 @@ li.top-nav__item {
     padding-top: 1em;
     padding-bottom: 1em;
     a {
+        display: block;
         &:focus, &:hover, &:active {
             color: $md-grey;
         }
@@ -50,6 +53,9 @@ li.top-nav__sub--item {
     float: left;
     a, a:visited {
         color: $white;
+        &:focus, &:hover, &:active {
+            color: $md-grey;
+        }
     }
     ul.top-nav__sub--2 {
         opacity: 0;
@@ -76,6 +82,10 @@ li.top-nav__sub2--item {
     top: 0;
     right: 0;
     font-family: $paragraph;
+    z-index: $top;
+    a {
+        display: block;
+    }
 }
 
 .top-nav__login {
@@ -106,11 +116,17 @@ ul.c-social-icons {
     }
 }
 
-/* Event Menu (blog and video pages) */
+/* Event Menu - mobile (blog and video pages) */
 
 .event-menu__wrapper {
-    margin-top: -.1em;
+    margin-top: .9em;
     border-top: 2px solid $black;
+    @media (min-width: $bp-s) {
+        margin-top: -.1em;
+    }
+    @media (min-width: $bp-l) {
+        display: none;
+    }
 }
 
 a#event-menu__trigger {
@@ -147,11 +163,16 @@ li.event-menu__item {
 /* Event Menu (desktop sizes) */
 
 ul.event-menu--desktop {
-    @include ms-respond(font-size, 0);
-    background-color: $lt-grey;
+    display: none;
+    @media (min-width: $bp-l) {
+        display: block;
+    }
+    @include ms-respond(font-size, -1);
     font-family: $paragraph;
     letter-spacing: .03em;
     text-transform: uppercase;
+    overflow: visible;
+    height: 4.2em;
 }
 
 li.event-menu__item--desktop {
@@ -160,28 +181,59 @@ li.event-menu__item--desktop {
     }
     position: relative;
     text-align: center;
-    height: 3.8em;
-    border-right: 1px solid $dk-grey;
+    height: 4.2em;
+    border-right: 2px solid $white;
+    overflow: visible;
     &:last-child {
         border-right: none;
     }
     a {
         display: block;
         height: 100%;
-        padding: 1em;
-        background-color: $md-grey;
+        padding: 1.2em;
+        background-color: $lt-grey;
         color: $dk-grey !important;
+        font-weight: 700;
+        &:focus, &:hover, &:active {
+            background-color: $black;
+            color: $md-grey !important;
+        }
         &.current {
             background-color: $fowd;
             color: $white !important;
             border-right: none;
+            font-weight: 400;
         }
     }
 }
 
-/* Topic menu */
+/* Decrease height of menu items at larger breakpoints */
+@media (min-width: 1150px) {
+    ul.event-menu--desktop,
+    li.event-menu__item--desktop {
+        height: 3.6em;
+    }
+}
 
-a#topic-menu__trigger {
+img.event-menu__triangle {
+    position: absolute;
+    height: 1em;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -1em;
+    z-index: $high;
+}
+
+/* Topic and event menus */
+
+.topic-menu__wrapper {
+    @media (min-width: $bp-l) {
+        display: none;
+    }
+}
+
+a#topic-menu__trigger,
+a#date-menu__trigger{
     display: block;
     width: 100%;
     padding: 1em;
@@ -194,12 +246,14 @@ a#topic-menu__trigger {
     }
 }
 
-ul.topic-menu {
+ul.topic-menu,
+ul.date-menu {
     display: none;
     font-family: $paragraph;
 }
 
-li.topic-menu__item {
+li.topic-menu__item,
+li.date-menu__item {
     display: block;
     width: 100%;
     a {
@@ -210,7 +264,99 @@ li.topic-menu__item {
         background-color: $black;
         &:focus, &:hover, &:active {
             color: $white !important;
+            background-color: $dk-grey;
         }
     }
+}
+
+/* Topic menu in header at desktop sizes */
+ .topic-menu__wrapper--inline {
+     display: none;
+     @media (min-width: $bp-l) {
+         display: block;
+         @include span(4);
+         padding-top: 1em;
+     }
+ }
+
+
+ul.topic-menu--desktop {
+    font-family: $paragraph;
+    li {
+        padding: .6em 1em;
+        &:first-child {
+            padding: 1.1em 1em .6em 1em;
+        }
+        &:last-child {
+            border-radius: 0 0 .5em 0;
+            padding: .6em 1em 1.1em 1em;
+            @media (min-width: $bp-xl) {
+                border-radius: 0 0 .5em .5em;
+            }
+            a {
+                color: $dk-grey;
+            }
+        }
+        &:nth-last-child(-n+2) {
+            padding-bottom: 1.1em;
+        }
+    }
+    a {
+        display: block;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+.sub-menu--closed {
+    background-color: $lt-grey;
+}
+
+.sub-menu--open {
+    background-color: $black;
+    a {
+        color: $lt-grey !important;
+    }
+}
+
+ul.topics__sub-menu {
+    display: none;
+    li {
+        &:last-child {
+            padding: .6em 1em;
+        }
+        &:nth-last-child(-n+2) {
+            padding-bottom: .6em;
+        }
+    }
+}
+
+
+
+/* Dropdown menu for videos page */
+
+.main__dropdown {
+    border-radius: 0;
+    max-width: 15em;
+    float: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+ }
+
+label.dropdown__label {
+    color: $md-grey;
+    @include ms-respond(font-size, 0);
+    font-family: $paragraph;
+    padding: .8em;
+}
+
+.dropdown--select {
+    border: none;
+    border-radius: 0;
+    font-family: $paragraph;
+    @include ms-respond(font-size, 0);
+    background-color: $black;
+    color: $md-grey;
+    margin-left: 1em;
 }
 

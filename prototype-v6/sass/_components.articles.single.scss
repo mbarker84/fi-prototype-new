@@ -1,0 +1,215 @@
+article.article--single {
+    ul.article__tags {
+        margin-bottom: 1em;
+    }
+}
+
+.article--single__title {
+    z-index: 1000000;
+}
+
+.article-single__img--main {
+    position: relative;
+    margin-bottom: 1em;
+    z-index: -100;
+}
+
+.article-single__line-break {
+    max-width: 20em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.article__img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( 165deg, rgba(247, 249, 249, 1) 20%, rgba(247, 249, 249, 0) );
+    z-index: 100;
+}
+
+.video__overlay {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background-color: $black-overlay;
+    padding: 2em;
+    width: 100%;
+    p {
+        color: $lt-grey;
+    }
+    .c-button {
+        margin-bottom: 1em;
+    }
+    @media (min-width: $bp-m) {
+        top: 30%;
+    }
+}
+
+
+/* Date menu on video pages */
+ .date-menu__wrapper--inline {
+     @media (min-width: $bp-m) {
+         @include span(6 last);
+     }
+ }
+/* Videos - title */
+.videos__event-title {
+    @media (min-width: $bp-m) {
+        @include span(6);
+        padding-top: .3em;
+    }
+}
+p.videos__number {
+    clear: both;
+    color: $lt-grey;
+}
+
+
+@media (min-width: $bp-m) {
+    
+    figure.article__img--left {
+        float: left;
+        display: inline;
+        margin: 0 2em 1em 0;
+        width: span(6);
+    }
+    
+    figure.article__img--right {
+        float: right;
+        display: inline;
+        margin: 0 0 1em 1em;
+        width: span(6);
+    }
+    
+}
+
+@media (min-width: $bp-l--2) {
+    
+    .article-single__img--main {
+        margin-top: -10em;
+        margin-left: 2em;
+    }
+
+    figure.article__img--left {
+        margin-left: span(-1 of 8);
+        width: span(4 of 8);
+        margin-right: 2em;
+        margin-bottom: 2em;
+    }
+
+    figure.article__img--right {
+        margin-right: span(-1 of 8);
+        width: span(4 of 8);
+        margin-left: 2em;
+        margin-bottom: 2em;
+    }
+    
+}
+
+@media (min-width: $bp-xl) {
+
+    figure.article__img--left {
+        margin-left: span(-2 of 8);
+        width: span(5 of 8);
+    }
+
+    figure.article__img--right {
+        margin-right: span(-2 of 8);
+        width: span(5 of 8);
+    }
+    
+}
+
+blockquote.article__blockquote--right {
+    padding: 1em;
+    @include headings;
+    @include ms-respond(font-size, 4);
+    color: $black;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    quotes: "\201C""\201D""\2018""\2019";
+    text-align: center;
+    @media (min-width: $bp-l) {
+        @include ms-respond(font-size, 3.5);
+        margin-right: span(-1 of 8);
+        width: span(5 of 8);
+        float: right;
+        display: inline;
+        margin-left: 1em;
+    }
+    @media (min-width: $bp-xl) {
+        margin-right: span(-2 of 8);
+        width: span(5 of 8);
+    }
+    &:before, &:after {
+        @include ms-respond(font-size, 3.5);
+        line-height: 0.1em;
+    }
+    &:before {
+      content: open-quote;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+    &:after {
+      content: close-quote;
+      margin-left: 0.25em;
+      vertical-align: -0.55em;
+    }
+}
+
+@media (min-width: $bp-l--2) {
+    
+    .article-single__text {
+        padding-left: span(2 of 10);
+        overflow: visible;
+    }
+    
+}
+
+/* Author bio */
+
+.bio__img {
+    max-width: 10em;
+    margin: 0 auto 1em auto;
+    img {
+        border-radius: 50%;
+    }
+}
+
+.bio__text {
+    text-align: center;
+}
+
+@media (min-width: $bp-m) {
+    
+    .bio__img {
+        @include span(4);
+        padding: 1em;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+
+    .bio__text {
+        @include span(8 last);
+        text-align: left;
+        padding: 1em 0;
+    }
+    
+}
+
+@media (min-width: $bp-l--2) {
+    
+    .article__bio {
+        margin-left: span(2) + gutter();
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 3em 2em 2em 2em;
+    }
+    
+}
+    

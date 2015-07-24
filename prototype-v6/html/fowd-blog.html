@@ -20,6 +20,7 @@
 <body class="fowd">
 <nav class="nav--main">
     <a id="trigger" class="menu__trigger" href="#open-menu">Menu <i id="menu-icon" class="fa fa-bars"></i></a>
+    <a id="trigger--mobile" class="menu__trigger" href="#open-menu">Menu <i id="menu-icon" class="fa fa-bars"></i></a>
     <ul id="open-menu" class="top-nav">
         <li class="top-nav__item"><a href="#"><h5>Events</h5></a>
             <ul class="top-nav__sub">
@@ -41,13 +42,37 @@
         <li class="top-nav__item"><a href="#"><h5>About</h5></a>
             <ul class="top-nav__sub">
                 <li class="top-nav__sub--item"><a href="#">Future Insights</a></li>
-                <li class="top-nav__sub--item"><a href="#">Get involved</a>
+                <li class="top-nav__sub--item"><a href="#">Get involved <i class="fa fa-chevron-down"></i></a>
                     <ul class="top-nav__sub--2">
                         <li class="top-nav__sub2--item"><a href="#">Write for us</a></li>
                         <li class="top-nav__sub2--item"><a href="#l">Speak at an event</a></li>
                         <li class="top-nav__sub2--item"><a href="#">Sponsor</a></li>
                     </ul>
                 </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="top-nav__full">
+        <li class="full-nav__item"><a href="#"><img class="nav__logo" src="../img/logos/fi-white_02.svg" width="100%" height="auto"></a></li>
+        <li class="full-nav__item"><a href="#"><h5>Events <i class="fa fa-chevron-down"></i></h5></a>
+            <ul class="full-nav__sub">
+                <li class="full-nav__sub--item"><a href="#">Future of Web Design</a></li>
+                <li class="full-nav__sub--item"><a href="#">Future of Web Apps</a></li>
+                <li class="full-nav__sub--item"><a href="#">Future Insights Live</a></li>
+                <li class="full-nav__sub--item"><a href="#">Ultimate Developer Event</a></li>
+                <li class="full-nav__sub--item"><a href="#">Future of Work</a></li>
+                <li class="full-nav__sub--item"><a class="all" href="#">See all...</a></li>
+            </ul>
+        </li>
+        <li class="full-nav__item"><a href="#"><h5>Videos</h5></a></li>
+        <li class="full-nav__item"><a href="#"><h5>Blog</h5></a></li>
+        <li class="full-nav__item"><a href="#"><h5>About</h5></a>
+        </li>
+        <li class="full-nav__item"><a href="#"><h5>Get Involved <i class="fa fa-chevron-down"></i></h5></a>
+            <ul class="full-nav__sub">
+                <li class="full-nav__sub--item"><a href="#">Write for us</a></li>
+                <li class="full-nav__sub--item"><a href="#">Speak at an event</a></li>
+                <li class="full-nav__sub--item"><a href="#">Sponsor</a></li>
             </ul>
         </li>
     </ul>
@@ -75,9 +100,9 @@
     </div>
 </nav>
 <!--header-->
-<header>
+<header class="header--blog">
     <!--event-menu-->
-    <div class="event-menu__wrapper tr-desktop-hide">
+    <div class="event-menu__wrapper">
         <a id="event-menu__trigger">Future of Web Design <i class="fa fa-caret-down"></i></a>
         <ul class="event-menu">
             <li class="event-menu__item"><a href="#">Future of Web Apps</a></li>
@@ -93,78 +118,95 @@
             <input type="text" name="search">
             <button class="search"><i class="fa fa-search"></i></button>
         </form>
+        <!--topic-menu-->
+    <div class="topic-menu__wrapper--inline">
+        <a id="topic-menu__trigger">Browse popular topics... <i class="fa fa-caret-down"></i></a>
+        <ul class="topic-menu">
+            <li class="topic-menu__item"><a href="#">UX Design</a></li>
+            <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
+            <li class="topic-menu__item"><a href="#">Prototyping</a></li>
+            <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
+            <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
+        </ul>
+    </div>
     </div>
 </header>
-<!--event-menu--desktop-->
-    <ul class="event-menu--desktop tr-mobile-hide">
-        <li class="event-menu__item--desktop"><a class="current" href="#">Future of Web Design</a></li>
+    <!--event-menu--desktop-->
+    <ul class="event-menu--desktop">
+        <li class="event-menu__item--desktop"><a class="current" href="#">Future of Web Design</a><img class="event-menu__triangle" src="../img/icons/svg/small-triangle-red.svg" width="100%" height="auto"></li>
         <li class="event-menu__item--desktop"><a href="#">Future of Web Apps</a></li>
             <li class="event-menu__item--desktop"><a href="#">Future Insights Live</a></li>
             <li class="event-menu__item--desktop"><a href="#">Future of Work</a></li>
         <li class="event-menu__item--desktop"><a href="#">More...</a></li>
     </ul>
+    <!--topic-menu-->
+    <div class="topic-menu__wrapper">
+        <a id="topic-menu__trigger">Choose topics... <i class="fa fa-caret-down"></i></a>
+        <ul class="topic-menu">
+            <li class="topic-menu__item"><a href="#">UX Design</a></li>
+            <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
+            <li class="topic-menu__item"><a href="#">Prototyping</a></li>
+            <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
+            <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
+        </ul>
+    </div>
     <!--main-->
-    <main class="home">
-        <!--topic-menu-->
-        <div class="topic-menu__wrapper tr-desktop-hide">
-            <a id="topic-menu__trigger">Choose topics... <i class="fa fa-caret-down"></i></a>
-            <ul class="topic-menu">
-                <li class="topic-menu__item"><a href="#">UX Design</a></li>
-                <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
-                <li class="topic-menu__item"><a href="#">Prototyping</a></li>
-                <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
-                <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
-            </ul>
-        </div>
+    <main class="blog o-type--1">
         <!--articles-->
-        <section class="articles o-type--1">
+        <section class="articles blog-layout--preview">
             <article class="articles--preview">
-                <h2>What Makes You A Brilliant (or Nightmareish) Product Manager?</h2>
-                <figure class="article-preview__img">
-                    <img src="../img/articles/article-01.png" width="100%" height="auto">
-                </figure>
-                <div class="article-preview__text">
-                    <p class="small">Posted by <a href="#">Ellie Robinson</a> on 12-May–2015</p>
-                    <p>Future Insights Live Rising Star Natasha Awasthi is not only a seasoned product manager, she also teaches Product Management at General Assembly in NYC, and writes about her experiences for a variety of publications. In this guest blog series, Natasha takes a closer look at how to be a brilliant product manager in the tech sector.</p>
+                <h2 class="article__title--preview">What Makes You A Brilliant (or Nightmareish) Product Manager?</h2>
+                <div class="o-row--articles">
+                    <div class="article-preview__img">
+                        <figure><img src="../img/articles/article-01.png" width="100%" height="auto"></figure>
+                    </div>
+                    <div class="article-preview__text">
+                        <p class="small">Posted by <a href="#">Ellie Robinson</a> on 12-May–2015</p>
+                        <p>Future Insights Live Rising Star Natasha Awasthi is not only a seasoned product manager, she also teaches Product Management at General Assembly in NYC, and writes about her experiences for a variety of publications. In this guest blog series, Natasha takes a closer look at how to be a brilliant product manager in the tech sector.</p>
+                        <h5><a href="#">Read more <i class="fa fa-arrow-right"></i></a></h5>
+                    </div>
                 </div>
-                <h5><a href="#">Read more <i class="fa fa-arrow-right"></i></a></h5>
                 <ul class="article__tags">
-                    <li>UX</li>
-                    <li>Project Management</li>
-                    <li>Branding</li>
-                    <li>Product and Strategy</li>
+                    <li><a href="#">UX</a></li>
+                    <li><a href="#">Project Management</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Product and Strategy</a></li>
                 </ul>
             </article>
             <article class="articles--preview">
-                <h2>Hyperlinks and Story Arcs: Building Non-Linear Narratives for the Web with Senongo Akpem</h2>
-                <figure class="article-preview__img">
-                    <img src="../img/articles/article-2.png" width="100%" height="auto">
-                </figure>
-                <div class="article-preview__text">
-                    <p class="small">Posted by <a href="#">Michelle Barker</a> on 12-May–2015</p>
-                    <p>At last year’s Future of Web Design NYC, super talented designer and illustrator, Senongo Akpem, took to the stage to tell us all a story. It was a story that got us pretty intrigued about the potential of the web to bring us ever more innovative methods of storytelling, breaking out of the traditional linear narrative into exciting new territory.</p>
+                <h2 class="article__title--preview">Hyperlinks and Story Arcs: Building Non-Linear Narratives for the Web with Senongo Akpem</h2>
+                <div class="o-row--articles">
+                    <div class="article-preview__img">
+                        <figure><img src="../img/articles/article-2.png" width="100%" height="auto"></figure>
+                    </div>
+                    <div class="article-preview__text">
+                        <p class="small">Posted by <a href="#">Michelle Barker</a> on 12-May–2015</p>
+                        <p>At last year’s Future of Web Design NYC, super talented designer and illustrator, Senongo Akpem, took to the stage to tell us all a story. It was a story that got us pretty intrigued about the potential of the web to bring us ever more innovative methods of storytelling, breaking out of the traditional linear narrative into exciting new territory.</p>
+                        <h5><a href="#">Read more <i class="fa fa-arrow-right"></i></a></h5>
+                    </div>
                 </div>
-                <h5><a href="#">Read more <i class="fa fa-arrow-right"></i></a></h5>
                 <ul class="article__tags">
-                    <li>UX</li>
-                    <li>UI</li>
-                    <li>Branding</li>
+                    <li><a href="#">UX</a></li>
+                    <li><a href="#">UI</a></li>
+                    <li><a href="#">Branding</a></li>
                 </ul>
             </article>
             <article class="articles--preview">
-                <h2>Designing Using Data: Interview with Designer and Psychologist Joe Leech</h2>
-                <figure class="article-preview__img">
-                    <img src="../img/articles/article-3.jpg" width="100%" height="auto">
-                </figure>
-                <div class="article-preview__text">
-                    <p class="small">Posted by <a href="#">Ellie Robinson</a> on 10-May–2015</p>
-                    <p>Ahead of FI Live in Vegas in just over 2 weeks, we asked design expert and psychologist Joe Leech to share his thoughts on what makes for ‘good’ or ‘bad’ design, ways we can make data work for us, and which design minds he'd dissect if he had the chance....</p>
+                <h2 class="article__title--preview">Designing Using Data: Interview with Designer and Psychologist Joe Leech</h2>
+                <div class="o-row--articles">
+                    <div class="article-preview__img">
+                        <figure><img src="../img/articles/article-3-400.jpg" width="100%" height="auto"></figure>
+                    </div>
+                    <div class="article-preview__text">
+                        <p class="small">Posted by <a href="#">Ellie Robinson</a> on 10-May–2015</p>
+                        <p>Ahead of FI Live in Vegas in just over 2 weeks, we asked design expert and psychologist Joe Leech to share his thoughts on what makes for ‘good’ or ‘bad’ design, ways we can make data work for us, and which design minds he'd dissect if he had the chance....</p>
+                        <h5><a href="#">Read more <i class="fa fa-arrow-right"></i></a></h5>
+                    </div>
                 </div>
-                <h5><a href="#">Read more <i class="fa fa-arrow-right"></i></a></h5>
                 <ul class="article__tags">
-                    <li>UX</li>
-                    <li>UI</li>
-                    <li>Product and Strategy</li>
+                    <li><a href="#">UX</a></li>
+                    <li><a href="#">UI</a></li>
+                    <li><a href="#">Product and Strategy</a></li>
                 </ul>
             </article>
             <h5><a href="#">Older posts <i class="fa fa-arrow-right"></i></a></h5>
@@ -178,11 +220,12 @@
                 <a class="c-button">Explore videos <i class="fa fa-arrow-right"></i></a>
             </div>
         </section>
+    </main>
         <!--events - cities-->
-        <section class="cities--blog o-type--2">
+        <section class="cities--blog o-type--2 cleared">
             <div class="o-wrapper-sides">
                 <h2>Upcoming Events</h2>
-            <ul class="c-list--cities o-3-col-list">
+            <ul class="c-list--cities--blog o-3-col-list">
                 <li class="o-list__item--regular">
                     <a href="html/event-home.html">
                         <figure>
@@ -217,11 +260,76 @@
             </div>
         </section>
         <!--signup-->
-        <section class="signup o-type--3">
-            <div class="o-section__intro-block">
+        <section class="signup--blog o-type--3">
+            <div class="o-signup__img">
+                <svg class="newsletter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 507.8 466.7" xml:space="preserve" enable-background="new 0 0 507.8 466.7">
+<style type="text/css">
+
+.st0{fill:#202123;stroke:#F7F9F9;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.st1{fill:#F7F9F9;}
+.st2{fill:#F7F9F9;stroke:#F7F9F9;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.st3{fill:#F7F9F9;stroke:#FFFFFF;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.st4{fill:#202123;}
+.st5{fill:none;stroke:#F7F9F9;stroke-width:8;stroke-miterlimit:10;}
+
+</style>
+<g id="envelope_base">
+<path id="XMLID_1_" class="st0" d="M456.5 446.9H103.3V253.3L266.5 154c6.3-3.5 14.1-3.6 20.4-0.2l169.6 99.4V446.9z"/>
+</g>
+<g id="envelope_top">
+<g id="letter">
+  <g id="XMLID_6_">
+    <polygon id="XMLID_4_" class="st0" points="423.7 363.1 136 363.1 136 7 364.2 7 423.7 61.7 "/>
+    <polygon id="XMLID_8_" class="st0" points="363.5 61.7 423.7 61.7 364.2 7 "/>
+  </g>
+  <g id="XMLID_13_">
+    <path id="XMLID_14_" class="st1" d="M220.1 198.9c1.8-2.5 3.9-5.2 6.2-8 2.3-2.9 5.4-6.2 9.2-9.9 3.8-3.7 7-6.4 9.4-8.1 2.4-1.6 4.8-2.5 6.9-2.5 0.5 0 1.1 0.1 1.8 0.3s1.3 0.6 1.9 1.1 1.1 1.3 1.5 2.3c0.4 1 0.6 2.3 0.6 3.8 0 3.1-0.4 6.1-1.3 9.1 -0.9 3-2.5 6.5-4.9 10.7 -2.4 4.2-4 7.9-4.8 10.9 -0.8 3.1-1.2 6.3-1.2 9.6 0 1.8 0.3 3.3 0.8 4.4 0.5 1.1 1.2 1.6 2.1 1.6 1.1 0 2.2-0.2 3.4-0.7s2.4-1 3.6-1.8c1.2-0.7 2.4-1.6 3.6-2.5 1.2-0.9 2.3-1.9 3.3-2.9 2.5-2.3 4.9-4.9 7.3-7.9l1.1 17.9c-0.8 0.6-1.8 1.3-3.1 2.2 -1.2 0.9-2.6 1.8-4.1 2.8 -1.5 1-3.1 2-4.9 3 -1.8 1-3.5 1.9-5.3 2.7 -1.8 0.8-3.5 1.4-5.3 1.9 -1.8 0.5-3.5 0.8-5.1 0.8 -2.5 0-4.7-0.6-6.6-1.9 -1.9-1.3-3.4-2.9-4.6-4.8 -1.2-1.9-2.1-4.1-2.7-6.4s-0.9-4.5-0.9-6.5c0-1.5 0.2-3.1 0.6-4.9 0.4-1.8 0.9-3.6 1.5-5.4 0.6-1.8 1.2-3.6 2-5.3 0.7-1.7 1.4-3.3 2-4.6 0.6-1.4 1.2-2.5 1.6-3.3 0.5-0.9 0.8-1.4 0.9-1.5l-1.4-0.2c-0.8 0.5-2.1 1.7-3.9 3.7 -1.8 2-3.9 4.5-6.2 7.6s-4.7 6.5-7.1 10.3c-2.4 3.8-4.7 7.7-6.6 11.8 -1 2-1.8 3.7-2.4 5.2 -0.6 1.5-1.2 2.7-1.9 3.6 -0.6 0.9-1.3 1.6-2 2.1 -0.7 0.5-1.6 0.7-2.8 0.7 -1.5 0-2.7-0.4-3.5-1.2 -0.9-0.8-1.5-1.9-2-3.2 -0.4-1.3-0.7-2.8-0.9-4.5 -0.1-1.7-0.2-3.4-0.2-5.2 0-3.1 0-7.1 0.1-12.1s0.3-10.5 0.6-16.6c0.4-6.1 1-12.4 2-18.9 1-6.5 1.9-13 2.8-19.4 0.9-6.4 2.3-12.6 4.2-18.4s4.1-11 6.8-15.4c2.7-4.4 5.8-8 9.4-10.6 3.6-2.6 7.7-3.9 12.4-3.9 2.4 0 4.4 0.4 6 1.1 1.5 0.7 2.8 1.7 3.7 3.1 0.9 1.3 1.6 2.9 1.9 4.7 0.4 1.8 0.5 3.9 0.5 6.1 0 3.4-0.5 7.1-1.4 11.2s-2.2 8.3-3.7 12.7c-1.5 4.4-3.3 8.9-5.3 13.4 -2 4.5-4 8.9-6.1 13.1 -2.1 4.2-4.1 8.2-6.1 12 -2 3.8-3.8 7.1-5.3 9.9L220.1 198.9zM226.1 156.5c2.7-6.9 4.6-12.7 5.8-17.4s1.8-8.2 1.8-10.4c0-3.4-0.5-5.1-1.4-5.1 -1.2 0-2.9 1.9-5.2 5.7 -2.3 3.8-5 9.4-8.1 16.6 -0.8 2.5-1.5 5-2.1 7.7 -0.7 2.6-1.2 5.3-1.5 7.9 -0.4 2.6-0.8 5.2-1.1 7.8s-0.7 5-1 7.2c-1 5.3-1.7 10.5-2.3 15.7 1.2-2.8 2.5-5.9 4-9.2 1.4-3.3 2.9-6.6 4.3-9.9 1.4-3.3 2.7-6.3 3.9-9.2C224.3 161 225.3 158.5 226.1 156.5z"/>
+    <path id="XMLID_17_" class="st1" d="M310.4 225.7c-1.6 1.5-3.6 3.1-6 4.8s-5 3.2-7.8 4.6c-2.8 1.4-5.6 2.6-8.5 3.5 -2.9 0.9-5.6 1.4-8.3 1.4 -2.3 0-4.3-0.3-5.9-1 -1.6-0.7-2.9-1.6-3.9-2.7 -1-1.2-1.7-2.6-2.1-4.3 -0.4-1.7-0.6-3.5-0.6-5.6 0-2.8 0.3-6.1 0.9-9.9 1.3-7.8 2.1-12.2 2.5-13.2 0.6-1.9 1.8-6.2 3.7-12.8 1.7-5.4 2.8-8.9 3.2-10.5 0.2-1.1 0.8-2.2 1.9-3.1 0.9-0.8 2-1.5 3.1-2 1.2-0.5 2.4-0.9 3.6-1.2 1.3-0.2 2.4-0.4 3.4-0.4 1.9 0 3.1 0.3 3.8 1 0.7 0.7 1 1.6 1 2.8 0 1-0.2 2.4-0.7 4.2 -0.5 1.8-1 3.9-1.6 6.2 -0.6 2.3-1.5 5.3-2.6 8.9 -1.2 3.6-1.9 6.7-2.4 9.3 -0.4 2.6-1 5.1-1.6 7.6 -0.6 2.5-1 4.8-1 6.9 0 2 0.2 3.6 0.7 4.8 0.4 1.2 1.4 1.8 2.8 1.8 1.6 0 3.4-0.6 5.4-1.7 2-1.1 4-2.5 6-4.1 2-1.6 4-3.2 5.9-5 1.9-1.7 3.6-3.2 5.1-4.4V225.7zM280.3 155c0-1 0.2-2.2 0.7-3.5 0.4-1.3 1.2-2.6 2.2-3.7 1-1.2 2.4-2.1 4-2.9 1.7-0.8 3.8-1.2 6.3-1.2 1.6 0 3.1 0.2 4.4 0.5 1.4 0.4 2.6 0.9 3.6 1.7 1 0.7 1.9 1.7 2.5 3 0.6 1.2 0.9 2.7 0.9 4.4 0 1.5-0.2 3-0.7 4.5 -0.5 1.5-1.3 2.7-2.4 3.9 -1.1 1.1-2.4 2.1-4.1 2.8 -1.6 0.7-3.6 1.1-5.9 1.1 -4 0-6.9-0.9-8.8-2.8C281.2 160.6 280.3 158.1 280.3 155z"/>
+    <path id="XMLID_21_" class="st1" d="M341.8 228.8c-0.1 0.2-0.2 0.6-0.2 1.2 -0.1 0.6-0.2 1.3-0.5 2.2 -0.2 0.9-0.6 1.8-1 2.7 -0.4 0.9-1.1 1.8-2 2.6 -0.9 0.8-2 1.5-3.3 2 -1.3 0.5-3 0.8-5.1 0.8 -1.7 0-3.2-0.2-4.5-0.6 -1.3-0.4-2.5-1-3.5-1.8 -1-0.8-1.7-1.9-2.3-3.1 -0.5-1.3-0.8-2.8-0.8-4.5 0-1.5 0.2-2.9 0.7-4.3 0.5-1.4 1.2-2.7 2.2-3.8 1-1.1 2.3-2 3.8-2.6 1.6-0.7 3.4-1 5.6-1 3.5 0 6.2 0.9 8.1 2.6 1.9 1.7 2.8 4.2 2.8 7.3C341.9 228.5 341.9 228.7 341.8 228.8zM330.1 205.5c0.4-4.6 1.1-9.4 2-14.3 0.9-4.9 2-9.8 3.4-14.7 1.4-4.9 2.7-9.7 4-14.5 1.3-4.8 2.6-9.4 3.8-13.8 1.2-4.4 2.4-8.6 3.5-12.5 1.1-3.9 2.1-7.4 2.9-10.5 0.6-2.2 1.5-3.9 2.7-5.2 1.2-1.3 2.4-2.4 3.9-3.1s2.9-1.2 4.5-1.5 3.1-0.4 4.6-0.4c0.8 0 1.5 0.1 2.1 0.3 0.7 0.2 1.2 0.5 1.7 1 0.5 0.5 0.8 1.1 1.1 2 0.2 0.8 0.4 1.9 0.4 3.2 0 0.9-0.1 1.9-0.2 3 -0.1 1.1-0.3 2.4-0.6 3.9 -1.6 5.2-3.1 10.4-4.7 15.7 -1.6 5.3-3.7 11-6.3 17 -2.6 6-5.6 12.6-8.9 19.8 -3.3 7.2-7.1 15.5-11.2 24.8 -0.1 0.5-0.3 1-0.7 1.4 -0.4 0.4-0.8 0.8-1.4 1.1 -0.5 0.3-1.1 0.5-1.8 0.7 -0.6 0.2-1.2 0.2-1.8 0.2 -0.9 0-1.6-0.2-2.2-0.5 -0.6-0.4-0.9-1-0.9-1.8C329.9 206.3 330 206 330.1 205.5z"/>
+  </g>
+</g>
+<g id="XMLID_9_">
+  <polygon id="XMLID_2_" class="st2" points="104.3 262.7 280.7 371.5 103.9 446.7 "/>
+  <polygon id="XMLID_5_" class="st2" points="456.3 262.7 279.9 371.5 456.7 446.7 "/>
+</g>
+<path id="XMLID_7_" class="st3" d="M103.1 446.7l164.8-94c7.1-4.1 17-4.1 24.1 0l164.8 94H103.1z"/>
+<g id="XMLID_11_">
+  <path id="XMLID_23_" class="st4" d="M279.9 349.7c4.2 0 8.5 1 12 3l164.8 94H103.1l164.8-94C271.4 350.8 275.6 349.7 279.9 349.7M279.9 329.7c-7.8 0-15.4 2-22 5.7l-164.8 94c-7.9 4.5-11.7 13.7-9.4 22.5 2.3 8.8 10.3 14.9 19.3 14.9h353.6c9.1 0 17-6.1 19.3-14.9 2.3-8.8-1.5-18-9.4-22.5l-164.8-94C295.3 331.7 287.7 329.7 279.9 329.7L279.9 329.7z"/>
+</g>
+</g>
+<g id="stars">
+<g id="XMLID_30_">
+  <g id="XMLID_27_">
+    <line id="XMLID_12_" class="st5" x1="28.9" y1="371.8" x2="46.8" y2="445.7"/>
+    <line id="XMLID_31_" class="st5" x1="5.4" y1="389" x2="70.3" y2="428.5"/>
+    <line id="XMLID_32_" class="st5" x1="0.9" y1="417.7" x2="74.8" y2="399.8"/>
+    <line id="XMLID_33_" class="st5" x1="18.1" y1="441.2" x2="57.6" y2="376.3"/>
+  </g>
+  <g id="XMLID_3_">
+    <line id="XMLID_34_" class="st5" x1="488.4" y1="7.2" x2="469.4" y2="59.9"/>
+    <line id="XMLID_28_" class="st5" x1="461.2" y1="12.1" x2="497.6" y2="55.1"/>
+    <line id="XMLID_29_" class="st5" x1="451.7" y1="38.6" x2="507.1" y2="28.6"/>
+  </g>
+</g>
+</g>
+</svg>
+            </div>
+            <div class="o-signup__text">
                 <h2>Sign Up</h2>
-                    <p>Subscribe to one of our newsletters and get FREE access to hundreds of videos today.</p>
-                <a class="c-button">Signup <i class="fa fa-arrow-right"></i></a>
+                <p>Subscribe to one of our email newsletters and get FREE access to hundreds of videos today.</p>
+                <form class="signup__form">
+                    <fieldset class="signup__details">
+                        <input class="signup-form__field" type="text" name="name" placeholder="Your Name">
+                        <input class="signup-form__field" type="text" name="email" placeholder="Email address, e.g. joe@domain.com">
+                    </fieldset>
+                    <p>What type of emails would you like to receive?</p>
+                    <fieldset class="signup__options">
+                        <label class="signup__radio-buttons" for="design"><input type="radio" name="newsletter" value="design">Design emails</label>
+                        <label class="signup__radio-buttons" for="design"><input type="radio" name="newsletter" value="developer">Developer emails</label>
+                        <label class="signup__radio-buttons" for="design"><input type="radio" name="newsletter" value="all">All emails</label>
+                    </fieldset>
+                </form>
+            <a class="c-button">Subscribe <i class="fa fa-arrow-right"></i></a>
             </div>
         </section>
         <!--get involved-->
@@ -284,7 +392,6 @@
                 </li>
             </ul>
         </section>
-    </main>
     <!--footer-->
     <footer>
         <div class="o-wrapper">
@@ -354,7 +461,25 @@ $( "#modal--hide" ).click(function() {
     </script>
     <!--jquery slide menu-->
     <script>
+    $(document).ready(function() {
+        $( window ).scroll(function() {
+            if ($(this).scrollTop() > 400){
+                $( '#trigger' ).slideDown( "fast" );
+            } else {
+                $('#trigger').slideUp('fast');
+            }
+        });
+    });
+    </script>
+    <script>
         $( "#trigger" ).click(function() {
+            $( "#open-menu" ).toggle( "slide" );
+            $( ".fa-bars" ).switchClass( "fa-bars", "fa-times", 200 );
+            $( ".fa-times" ).switchClass( "fa-times", "fa-bars", 200 );
+        });
+    </script>
+    <script>
+        $( "#trigger--mobile" ).click(function() {
             $( "#open-menu" ).toggle( "slide" );
             $( ".fa-bars" ).switchClass( "fa-bars", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-bars", 200 );
@@ -370,8 +495,18 @@ $( "#modal--hide" ).click(function() {
     <script>
         $( "#topic-menu__trigger" ).click(function() {
             $( ".topic-menu" ).slideToggle( "slow" );
+             $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
+            $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
         });
     </script>
+    <script>
+        $( "#more-topics__trigger" ).click(function() {
+            $( ".topics__sub-menu" ).slideToggle( "slow" );
+            $( ".sub-menu--closed" ).switchClass( "sub-menu--closed", "sub-menu--open", 200 );
+            $( ".sub-menu--open" ).switchClass( "sub-menu--open", "sub-menu--closed", 200 );
+        });
+    </script>
+    
 </body>
     
 </html>

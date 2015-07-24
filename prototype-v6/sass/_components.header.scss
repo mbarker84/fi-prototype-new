@@ -31,6 +31,10 @@ header {
     }
 }
 
+.c-header__group--videos {
+    padding-bottom: 2em;
+}
+
 .header__logo {
     max-width: 12em;
     margin-bottom: 4em;
@@ -67,7 +71,7 @@ header {
 @media (min-width: $bp-l) {
     .header__col-right {
         @include span(8 last);
-        margin-bottom: -10em;
+        margin-bottom: -8em;
         padding: 2em;
         background-color: $black;
         p {
@@ -86,10 +90,23 @@ header {
         margin-top: 4em;
         max-width: 30em;
     }
-    @media (min-width: $bp-l) {
-        max-width: 32em;
-    }
     @media (min-width: $bp-xl) {
         margin-top: 5em;
+    }
+}
+
+/* CTA */
+
+.header__cta {
+    clear: both;
+    margin-top: 2em;
+    @media (min-width: $bp-l) {
+        width: span(8);
+    }
+    .c-button {
+        margin-bottom: 1em;
+    }
+    p {
+        text-shadow: 1px 1px 40px $white-transparent;
     }
 }

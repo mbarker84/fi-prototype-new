@@ -76,6 +76,42 @@
     }
 }
 
+@mixin ratio4_3 {
+    li {
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 75%;
+        }
+        figure {
+            position:  absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+@mixin ratio4_3--image {
+    .article-preview__img {
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 75%;
+        }
+        figure {
+            position:  absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
 /* Header background */
 
 @mixin header-background($lines-s, $lines-l, $color1, $color2, $color3, $image-s, $image-l) {

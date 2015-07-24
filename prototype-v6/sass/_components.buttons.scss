@@ -7,9 +7,13 @@
     font-size: 1.2em;
     padding: .7em 1em;
     border-radius: .3em;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
     clear: both;
     cursor: pointer;
+    &--header {
+        @extend .c-button;
+        letter-spacing: .03em;
+    }
 }
 
 .get-involved_button {

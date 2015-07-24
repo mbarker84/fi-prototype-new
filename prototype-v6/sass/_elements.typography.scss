@@ -1,5 +1,5 @@
 *, html, body {
-    font-family: 'Helvetica', sans-serif;
+    font-family: $paragraph;
 }
 
 h1 {
@@ -7,15 +7,14 @@ h1 {
     @include ms-respond(font-size, 6); 
     color: $black;
     line-height: 1.1;
-    margin-bottom: .4em;
 }
 
 h2 {
     @include headings;
     @include ms-respond(font-size, 4);
     color: $black;
-    margin-bottom: 1em;
     line-height: 1.2;
+    margin-bottom: 1em;
     @media (min-width: $bp-l) {
         @include ms-respond(font-size, 3.5);
     }
@@ -29,7 +28,7 @@ h3 {
     text-transform: uppercase;
     line-height: 1.2;
     letter-spacing: .06em;
-    margin-bottom: 1em;
+    margin-bottom: .8em;
     @media (min-width: $bp-l) {
         @include ms-respond(font-size, 1.8);
     }
@@ -53,6 +52,13 @@ h5 {
     @media (min-width: $bp-l) {
         @include ms-respond(font-size, 0.8);
     }
+}
+
+h6 {
+    font-family: $paragraph;
+    @include ms-respond(font-size, 1);
+    font-weight: 700;
+    margin-bottom: 1em;
 }
 
 p {
@@ -82,4 +88,8 @@ footer {
         color: $md-grey;
         border-bottom: 2px solid $dk-grey;
     }
+}
+
+strong {
+    font-weight: 700;
 }

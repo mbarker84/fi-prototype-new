@@ -15,10 +15,9 @@
     @include wrapper;
 }
 
-/* Full-width, black background */
+/* Full-width background */
 .o-type--2 {
     @include wrapper-alternate;
-    background-color: $ultra-lt-grey;
 }
 
 /* Container-width box with rounded corners */
@@ -27,11 +26,11 @@
     @include container();
     background-color: $black;
     color: $lt-grey;
-    @media (min-width: 1200px) {
+    @media (min-width: $bp-l--3) {
         border-radius: 1.5em;
     }
     @media (min-width: $bp-xl) {
-        padding-top: 3em;
-        padding-bottom: 3em;
+        padding-top: 4em;
+        padding-bottom: 4em;
     }
 }

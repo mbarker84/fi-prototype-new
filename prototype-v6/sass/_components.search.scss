@@ -12,7 +12,8 @@
         width: 15%;
     }
     input, button {
-        @include ms-respond(font-size, 1);
+        @include ms-respond(font-size, 0);
+        font-family: $paragraph;
         padding: .7em 1em;
         border: none;
     }
@@ -24,10 +25,5 @@
     }
     @media (min-width: $bp-l) {
         @include span(6);
-    }
-    @media (min-width: $bp-xl) {
-        input, button {
-            padding: 1em;
-        }
     }
 }

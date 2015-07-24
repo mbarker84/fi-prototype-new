@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Future of Web Design | Home</title>
+    <title>Future of Web Design | Blog</title>
     <link href="../stylesheets/main.css" rel="stylesheet" type="text/css" />
     <!--Font Awesome-->
     <link href="../stylesheets/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" />
@@ -20,6 +20,7 @@
 <body class="fowd">
 <nav class="nav--main">
     <a id="trigger" class="menu__trigger" href="#open-menu">Menu <i id="menu-icon" class="fa fa-bars"></i></a>
+    <a id="trigger--mobile" class="menu__trigger" href="#open-menu">Menu <i id="menu-icon" class="fa fa-bars"></i></a>
     <ul id="open-menu" class="top-nav">
         <li class="top-nav__item"><a href="#"><h5>Events</h5></a>
             <ul class="top-nav__sub">
@@ -41,13 +42,37 @@
         <li class="top-nav__item"><a href="#"><h5>About</h5></a>
             <ul class="top-nav__sub">
                 <li class="top-nav__sub--item"><a href="#">Future Insights</a></li>
-                <li class="top-nav__sub--item"><a href="#">Get involved</a>
+                <li class="top-nav__sub--item"><a href="#">Get involved <i class="fa fa-chevron-down"></i></a>
                     <ul class="top-nav__sub--2">
                         <li class="top-nav__sub2--item"><a href="#">Write for us</a></li>
                         <li class="top-nav__sub2--item"><a href="#l">Speak at an event</a></li>
                         <li class="top-nav__sub2--item"><a href="#">Sponsor</a></li>
                     </ul>
                 </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="top-nav__full">
+        <li class="full-nav__item"><a href="#"><img class="nav__logo" src="../img/logos/fi-white_02.svg" width="100%" height="auto"></a></li>
+        <li class="full-nav__item"><a href="#"><h5>Events <i class="fa fa-chevron-down"></i></h5></a>
+            <ul class="full-nav__sub">
+                <li class="full-nav__sub--item"><a href="#">Future of Web Design</a></li>
+                <li class="full-nav__sub--item"><a href="#">Future of Web Apps</a></li>
+                <li class="full-nav__sub--item"><a href="#">Future Insights Live</a></li>
+                <li class="full-nav__sub--item"><a href="#">Ultimate Developer Event</a></li>
+                <li class="full-nav__sub--item"><a href="#">Future of Work</a></li>
+                <li class="full-nav__sub--item"><a class="all" href="#">See all...</a></li>
+            </ul>
+        </li>
+        <li class="full-nav__item"><a class="current" href="#"><h5>Videos</h5></a></li>
+        <li class="full-nav__item"><a href="#"><h5>Blog</h5></a></li>
+        <li class="full-nav__item"><a href="#"><h5>About</h5></a>
+        </li>
+        <li class="full-nav__item"><a href="#"><h5>Get Involved <i class="fa fa-chevron-down"></i></h5></a>
+            <ul class="full-nav__sub">
+                <li class="full-nav__sub--item"><a href="#">Write for us</a></li>
+                <li class="full-nav__sub--item"><a href="#">Speak at an event</a></li>
+                <li class="full-nav__sub--item"><a href="#">Sponsor</a></li>
             </ul>
         </li>
     </ul>
@@ -75,26 +100,237 @@
     </div>
 </nav>
 <!--header-->
-<header>
+<header class="header--blog">
+    <!--event-menu-->
+    <div class="event-menu__wrapper">
+        <a id="event-menu__trigger">Future of Web Design <i class="fa fa-caret-down"></i></a>
+        <ul class="event-menu">
+            <li class="event-menu__item"><a href="#">Future of Web Apps</a></li>
+            <li class="event-menu__item"><a href="#">Future Insights Live</a></li>
+            <li class="event-menu__item"><a href="#">Future of Work</a></li>
+        </ul>
+    </div>
     <div class="o-header__group o-type--1">
-        <div class="header__logo--event">
-            <img class="fowd-logo" src="../img/logos/fowd-logo-white.svg" width="100%" height="auto">
-        </div>
-        <p class="small">Produced by <a href="#"><img class="logo--small" src="../img/logos/fi-black.svg" alt="Future Insights"></a></p>
-        <div class="header__col-right">
-            <p class="c-subhead">Future of Web Design is a 3-day event for designers, front-end developers, and people working to make the web awesome. You'll leave the conference inspired, with valuable contacts and the knowledge to grow and succeed in this fast changing digital landscape.</p>
-            <div class="header__line-break"></div>
-            <h5 class="header__link"><a href="#">Next event: New York City, 2015 <i class="fa fa-arrow-right"></i></a></h5>
+        <!--search box-->
+        <form id="main-search" class="header__search">
+            <input type="text" name="search" placeholder="e.g. Bruce Lawson, CSS, London 2015">
+            <button class="search"><i class="fa fa-search"></i></button>
+        </form>
+        <!--topic-menu-->
+        <div class="topic-menu__wrapper--inline">
+            <a id="topic-menu__trigger">Browse popular topics... <i class="fa fa-caret-down"></i></a>
+            <ul class="topic-menu">
+                <li class="topic-menu__item"><a href="#">UX Design</a></li>
+                <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
+                <li class="topic-menu__item"><a href="#">Prototyping</a></li>
+                <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
+                <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
+            </ul>
         </div>
     </div>
 </header>
+    <!--event-menu--desktop-->
+    <ul class="event-menu--desktop">
+        <li class="event-menu__item--desktop"><a class="current" href="#">Future of Web Design</a><img class="event-menu__triangle" src="../img/icons/svg/small-triangle-red.svg" width="100%" height="auto"></li>
+        <li class="event-menu__item--desktop"><a href="#">Future of Web Apps</a></li>
+            <li class="event-menu__item--desktop"><a href="#">Future Insights Live</a></li>
+            <li class="event-menu__item--desktop"><a href="#">Future of Work</a></li>
+        <li class="event-menu__item--desktop"><a href="#">More...</a></li>
+    </ul>
+    <!--topic-menu-->
+    <div class="topic-menu__wrapper">
+        <a id="topic-menu__trigger">Choose topics... <i class="fa fa-caret-down"></i></a>
+        <ul class="topic-menu">
+            <li class="topic-menu__item"><a href="#">UX Design</a></li>
+            <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
+            <li class="topic-menu__item"><a href="#">Prototyping</a></li>
+            <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
+            <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
+        </ul>
+    </div>
     <!--main-->
-    <main class="home">
-        <!--events-->
-        <section class="cities o-type--2">
+    <main class="blog o-type--1">
+        <!--video gallery-->
+        <section class="videos">
+            <div class="videos__options">
+                <div class="videos__event-title">
+                    <h3><a href="#">Future of Web Design</a></h3>
+                </div>
+                <!--event-menu-->
+                <div class="date-menu__wrapper--inline">
+                    <a id="date-menu__trigger">London 2015 <i class="fa fa-caret-down"></i></a>
+                    <ul class="date-menu">
+                        <li class="date-menu__item"><a href="#">NYC 2014</a></li>
+                        <li class="date-menu__item"><a href="#">FI Live, Las Vegas, 2014</a></li>
+                        <li class="date-menu__item"><a href="#">London 2014</a></li>
+                        <li class="date-menu__item"><a href="#">NYC 2013</a></li>
+                        <li class="date-menu__item"><a href="#">London 2013</a></li>
+                        <li class="date-menu__item"><a href="#">All events</a></li>
+                    </ul>
+                </div>
+                <p class="small videos__number">21 videos</p>
+                <p class="videos__premium-text small">These videos are currently part of our <strong>Premium</strong> package. <a href="#">What does this mean?</a></p>
+            </div>
+            <ul class="videos__gallery videos__list o-3-col-list">
+                <li><a href="#">
+                        <figure><img src="../img/videos/fowd-video-5.jpg" width="100%" height="auto">
+                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/articles/article-5-400.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <figure><img src="../img/videos/fowd-video-2.jpg" width="100%" height="auto">
+                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-3.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-4.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <figure><img src="../img/videos/fowd-video-5.jpg" width="100%" height="auto">
+                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/articles/article-5-400.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <figure><img src="../img/videos/fowd-video-2.jpg" width="100%" height="auto">
+                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-3.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-4.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <figure><img src="../img/videos/fowd-video-5.jpg" width="100%" height="auto">
+                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/articles/article-5-400.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <figure><img src="../img/videos/fowd-video-2.jpg" width="100%" height="auto">
+                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-3.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-4.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+        <!--events - cities-->
+        <section class="cities--blog o-type--2 cleared">
             <div class="o-wrapper-sides">
-                <h2>Events</h2>
-            <ul class="c-list--cities o-3-col-list">
+                <h2>Upcoming Events</h2>
+            <ul class="c-list--cities--blog o-3-col-list">
                 <li class="o-list__item--regular">
                     <a href="html/event-home.html">
                         <figure>
@@ -125,84 +361,11 @@
                         </figcaption>
                     </a>
                 </li>
-                <li class="o-list__item--regular">
-                    <a href="html/event-home.html">
-                        <figure>
-                            <img class="events__image" src="../img/events/event-FILive-01.jpg" width="100%" height="auto">
-                        </figure>
-                        <figcaption>
-                            <h3>Future Insights Live, Las Vegas</h3><h4>June, 2016</h4>
-                        </figcaption>
-                    </a>
-                </li>
-                <li class="o-list__item--regular">
-                    <a href="html/event-home.html">
-                        <figure>
-                            <img class="events__image" src="../img/events/event-UDE-01.jpg" width="100%" height="auto">
-                        </figure>
-                        <figcaption>
-                            <h3>The London Web</h3><h4>Monthly Meetup</h4>
-                        </figcaption>
-                    </a>
-                </li>
-                <li class="o-list__item--regular">
-                    <a href="html/event-home.html">
-                        <figure>
-                            <img class="events__image" src="../img/events/event-UDE-01.jpg" width="100%" height="auto">
-                        </figure>
-                        <figcaption>
-                            <h3>Refresh Boston</h3><h4>Monthly Meetup</h4>
-                        </figcaption>
-                    </a>
-                </li>
             </ul>
-                <h5><a class="c-link--primary" href="html/past-events.html">View past events <i class="fa fa-arrow-right"></i></a></h5>
-            </div>
-        </section>
-        <!--communities-->
-        <section class="communities o-type--1">
-            <div class="o-section__intro-block">
-                <h2>Community</h2>
-                <p>We have a wealth of inspiring videos of incredible talks and articles, all ready to share with you! Check out some of our latest additions...</p>
-            </div>
-            <!--articles-->
-            <div class="communities__articles o-type--1">
-                <h4 class="block-title">Articles</h4>
-                <div class="o-row">
-                    <figure class="articles__img"><img src="../img/articles/article-01.png" width="100%" height="auto"></figure>
-                    <div class="articles__text">
-                        <h3 class="article__title">Changing Your Workflow to Cope with Responsive Design</h3>
-                        <p class="small">Published by <a href="#">Dan Rose</a> on 08 July, 2015</p>
-                        <p>Responsive design has brought many changes to the web design business, but one sneaky change that has perhaps been overlooked is that designing for so many screen sizes alters the way designers hand off the projects to developers.</p> 
-
-    <p class="small">That's just one example of a workflow issues that Dan Rose is determined to fix. But since we're talking about how projects are handed back and forth on a team, any fix is going to require a full team effort. Turns out getting everyone on a team who is used to one way of doing things to change is a tricky affair. </p>
-                        <h5><a class="c-link--primary" href="html/past-events.html">Read more <i class="fa fa-arrow-right"></i></a></h5>
-                    </div>
-                </div>
-                <a class="c-button">Visit the blog <i class="fa fa-arrow-right"></i></a>
-            </div>
-            <!--videos-->
-            <div class="communities__videos o-type--1">
-                <h4 class="block-title">Videos</h4>
-                <ul class="videos__list o-3-col-list">
-                    <li><a href="#">
-                            <figure><img src="../img/videos/filive-video1.jpg" width="100%" height="auto"><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <figure><img src="../img/videos/filive-video1.jpg" width="100%" height="auto"><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <figure><img src="../img/videos/filive-video1.jpg" width="100%" height="auto"><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
-                        </a>
-                    </li>
-                </ul>
-                <a class="c-button">Video library <i class="fa fa-arrow-right"></i></a>
             </div>
         </section>
         <!--signup-->
-        <section class="signup--blog o-type--3 tr-signup--home">
+        <section class="signup--blog o-type--3">
             <div class="o-signup__img">
                 <svg class="newsletter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 507.8 466.7" xml:space="preserve" enable-background="new 0 0 507.8 466.7">
 <style type="text/css">
@@ -334,7 +497,6 @@
                 </li>
             </ul>
         </section>
-    </main>
     <!--footer-->
     <footer>
         <div class="o-wrapper">
@@ -393,6 +555,7 @@
             <a href="" id="modal--hide" class="modal__close">x</a>
         </div>
     </div>
+        <div class="footer__credit">Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
     </footer>
     <!--hide modal on click-->
     <script>
@@ -404,10 +567,57 @@ $( "#modal--hide" ).click(function() {
     </script>
     <!--jquery slide menu-->
     <script>
+    $(document).ready(function() {
+        $( window ).scroll(function() {
+            if ($(this).scrollTop() > 400){
+                $( '#trigger' ).slideDown( "fast" );
+            } else {
+                $('#trigger').slideUp('fast');
+            }
+        });
+    });
+    </script>
+    <script>
         $( "#trigger" ).click(function() {
             $( "#open-menu" ).toggle( "slide" );
             $( ".fa-bars" ).switchClass( "fa-bars", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-bars", 200 );
+        });
+    </script>
+    <script>
+        $( "#trigger--mobile" ).click(function() {
+            $( "#open-menu" ).toggle( "slide" );
+            $( ".fa-bars" ).switchClass( "fa-bars", "fa-times", 200 );
+            $( ".fa-times" ).switchClass( "fa-times", "fa-bars", 200 );
+        });
+    </script>
+    <!--event menu-->
+    <script>
+        $( "#event-menu__trigger" ).click(function() {
+            $( ".event-menu" ).slideToggle( "slow" );
+        });
+    </script>
+    <!--topic menu-->
+    <script>
+        $( "#topic-menu__trigger" ).click(function() {
+            $( ".topic-menu" ).slideToggle( "slow" );
+             $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
+            $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
+        });
+    </script>
+    <script>
+        $( "#more-topics__trigger" ).click(function() {
+            $( ".topics__sub-menu" ).slideToggle( "slow" );
+            $( ".sub-menu--closed" ).switchClass( "sub-menu--closed", "sub-menu--open", 200 );
+            $( ".sub-menu--open" ).switchClass( "sub-menu--open", "sub-menu--closed", 200 );
+        });
+    </script>
+    <!--date menu-->
+    <script>
+        $( "#date-menu__trigger" ).click(function() {
+            $( ".date-menu" ).slideToggle( "slow" );
+             $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
+            $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
         });
     </script>
     

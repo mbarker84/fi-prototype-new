@@ -37,7 +37,10 @@ $dk-grey: lighten($black, 20%);
 
 $bp-s: 400px;
 $bp-m: 620px;
+$bp-m--2: 720px;
 $bp-l: 900px;
+$bp-l--2: 1100px;
+$bp-l--3: 1200px;
 $bp-xl: 1300px;
 
 /* Fonts */
@@ -46,3 +49,9 @@ $headings: "ff-tisa-sans-web-pro", sans-serif;
 $paragraph: "ff-tisa-sans-web-pro", sans-serif;
 $secondary: "refrigerator-deluxe", sans-serif;
 
+/* z-index */
+
+$bottom: 0;
+$middle: 100;
+$high: 1000;
+$top: 20000;
