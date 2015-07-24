@@ -100,8 +100,8 @@ ul.c-list--events a {
         position: absolute;
         width: 100%;
         bottom: 0;
-        background-color: $black-overlay;
         padding: 1em;
+        background-color: $black-overlay;
     }
     @media (min-width: $bp-m) and (max-width: $bp-l) {
         li {
@@ -117,6 +117,7 @@ ul.c-list--events a {
             @include span(8 last);
             position: relative;
             padding: 2em 2em 2em 1em;
+            background-color: transparent;
         }
     }
     @media (min-width: $bp-l) {
@@ -170,12 +171,14 @@ ul.c-list--cities {
 /* Video pages */
 
 .videos__gallery {
-    @include ratio4_3;
     clear: both;
     padding-top: 2em;
     border-top: 2px solid $lt-grey;
     li {
         overflow: hidden;
+    }
+    @media (min-width: $bp-l) {
+        @include ratio4_3;
     }
 }
 

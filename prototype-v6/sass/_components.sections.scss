@@ -141,3 +141,48 @@ ul.c-get-involved {
 section.recommendations {
     border-top: 3px solid $md-grey;
 }
+
+/* Team */
+
+section.team {
+    background-color: $ultra-lt-grey;
+}
+
+.team__card {
+    padding: 1em;
+    background-color: $black;
+    transition: all .2s ease-in-out;
+    border-radius: .4em;
+    .team__name {
+        color: $fi-highlight;
+        transition: all .2s ease-in-out;
+    }
+    .team__job-title {
+        margin-bottom: 0;
+        color: $lt-grey;
+        transition: all .2s ease-in-out;
+    }
+    &:focus, &:hover, &:active {
+        background-color: $fi-highlight;
+        figcaption.team-photo__caption {
+            color: $black;
+        }
+        .team__name {
+            color: $black;
+        }
+        .team__job-title {
+            margin-bottom: 0;
+            color: $black;
+        }
+    }
+}
+
+figure.team__photo {
+    margin-bottom: 1em;
+}
+
+.team__caption--hidden {
+    display: none;
+    margin-bottom: 0;
+    margin-top: .7em;
+}

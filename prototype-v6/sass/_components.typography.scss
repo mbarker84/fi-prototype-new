@@ -43,11 +43,25 @@ h4.block-title {
     padding: .5em;
 }
 
+h5.label--premium {
+    position: absolute;
+    top: .7em;
+    right: 0;
+    padding: .3em .5em;
+    color: $black;
+}
+
+footer {
+    color: $md-grey !important;
+}
+
 section.events,
 section.signup,
 section.articles,
-footer {
-    color: $md-grey !important;
+section.about__info {
+    p {
+        color: $md-grey !important;
+    }
 }
 
 section.events,

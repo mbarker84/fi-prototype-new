@@ -61,6 +61,10 @@ svg.icon--play {
     background-image: url(../img/icons/svg/article-white-2.svg);
 }
 
+.icon__team--plus {
+    float: right;
+}
+
 svg.newsletter {
     display: none;
     @media (min-width: $bp-l) {

@@ -233,7 +233,8 @@ img.event-menu__triangle {
 }
 
 a#topic-menu__trigger,
-a#date-menu__trigger{
+a#topic-menu__trigger--desktop,
+a#date-menu__trigger {
     display: block;
     width: 100%;
     padding: 1em;
@@ -247,6 +248,7 @@ a#date-menu__trigger{
 }
 
 ul.topic-menu,
+ul.topic-menu--desktop,
 ul.date-menu {
     display: none;
     font-family: $paragraph;
@@ -279,34 +281,6 @@ li.date-menu__item {
      }
  }
 
-
-ul.topic-menu--desktop {
-    font-family: $paragraph;
-    li {
-        padding: .6em 1em;
-        &:first-child {
-            padding: 1.1em 1em .6em 1em;
-        }
-        &:last-child {
-            border-radius: 0 0 .5em 0;
-            padding: .6em 1em 1.1em 1em;
-            @media (min-width: $bp-xl) {
-                border-radius: 0 0 .5em .5em;
-            }
-            a {
-                color: $dk-grey;
-            }
-        }
-        &:nth-last-child(-n+2) {
-            padding-bottom: 1.1em;
-        }
-    }
-    a {
-        display: block;
-        width: 100%;
-        cursor: pointer;
-    }
-}
 
 .sub-menu--closed {
     background-color: $lt-grey;

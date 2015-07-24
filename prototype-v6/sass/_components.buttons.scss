@@ -13,6 +13,7 @@
     &--header {
         @extend .c-button;
         letter-spacing: .03em;
+        @include ms-respond(font-size, 1.5);
     }
 }
 

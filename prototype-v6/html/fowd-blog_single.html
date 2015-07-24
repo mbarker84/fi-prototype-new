@@ -109,8 +109,8 @@
         </form>
         <!--topic-menu-->
     <div class="topic-menu__wrapper--inline">
-        <a id="topic-menu__trigger">Browse popular topics... <i class="fa fa-caret-down"></i></a>
-        <ul class="topic-menu">
+        <a id="topic-menu__trigger--desktop">Browse popular topics... <i class="fa fa-caret-down"></i></a>
+        <ul class="topic-menu--desktop">
             <li class="topic-menu__item"><a href="#">UX Design</a></li>
             <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
             <li class="topic-menu__item"><a href="#">Prototyping</a></li>
@@ -601,6 +601,13 @@ $( "#modal--hide" ).click(function() {
     <script>
         $( "#topic-menu__trigger" ).click(function() {
             $( ".topic-menu" ).slideToggle( "slow" );
+             $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
+            $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
+        });
+    </script>
+<script>
+        $( "#topic-menu__trigger--desktop" ).click(function() {
+            $( ".topic-menu--desktop" ).slideToggle( "slow" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
         });

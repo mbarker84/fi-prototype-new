@@ -118,8 +118,8 @@
         </form>
         <!--topic-menu-->
         <div class="topic-menu__wrapper--inline">
-            <a id="topic-menu__trigger">Browse popular topics... <i class="fa fa-caret-down"></i></a>
-            <ul class="topic-menu">
+            <a id="topic-menu__trigger--desktop">Browse popular topics... <i class="fa fa-caret-down"></i></a>
+            <ul class="topic-menu--desktop">
                 <li class="topic-menu__item"><a href="#">UX Design</a></li>
                 <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
                 <li class="topic-menu__item"><a href="#">Prototyping</a></li>
@@ -139,7 +139,7 @@
     </ul>
     <!--topic-menu-->
     <div class="topic-menu__wrapper">
-        <a id="topic-menu__trigger">Choose topics... <i class="fa fa-caret-down"></i></a>
+        <a id="topic-menu__trigger--mobile">Choose topics... <i class="fa fa-caret-down"></i></a>
         <ul class="topic-menu">
             <li class="topic-menu__item"><a href="#">UX Design</a></li>
             <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
@@ -154,13 +154,13 @@
         <section class="search-results">
             <div class="videos__options">
                 <div class="videos__event-title">
-                    <h3><a href="#">Search results</a></h3>
+                    <h3><a href="#">Search results</a> <span class="search-results__keywords">&ldquo;UX design&rdquo;</span></h3>
                 </div>
             </div>
             <ul class="videos__gallery videos__list o-3-col-list">
                 <li><a href="#">
                         <figure><img src="../img/videos/fowd-video-5.jpg" width="100%" height="auto">
-                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                <i class="icon--video"></i><h5 class="label--premium">Premium</h5><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
                     </a>
                 </li>
                 <li>
@@ -175,7 +175,7 @@
                 <li>
                     <a href="#">
                         <figure>
-                            <img src="../img/articles/article-01.png" width="100%" height="auto">
+                            <img src="../img/articles/article-6-400.jpg" width="100%" height="auto">
                             <i class="icon--article"></i>
                             <figcaption><h4 class="list__caption">Postprocessors and the Next Era of Front-End Development</h4><p class="list__caption small">Brian Graves</p><h5 class="video__caption">Read article <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
@@ -198,10 +198,7 @@
                 <li>
                     <a href="#">
                         <figure>
-                            <img src="../img/videos/fowd-video-4.jpg" width="100%" height="auto">
-
-                            <i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                            <img src="../img/videos/fowd-video-4.jpg" width="100%" height="auto"><i class="icon--video"></i><h5 class="label--premium">Premium</h5><figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
                 </li>
@@ -510,6 +507,13 @@ $( "#modal--hide" ).click(function() {
     <script>
         $( "#topic-menu__trigger" ).click(function() {
             $( ".topic-menu" ).slideToggle( "slow" );
+             $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
+            $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
+        });
+    </script>
+    <script>
+        $( "#topic-menu__trigger--desktop" ).click(function() {
+            $( ".topic-menu--desktop" ).slideToggle( "slow" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
         });

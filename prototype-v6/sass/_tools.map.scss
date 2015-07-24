@@ -154,6 +154,10 @@ $themes: (
     section.signup h2 {
         color: $primary;
     }
+    
+    h5.label--premium {
+        background-color:  adjust-color($primary, $hue: 0deg, $saturation: 10, $lightness: 30);
+    }
  
 }
 

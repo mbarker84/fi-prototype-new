@@ -43,7 +43,8 @@ main, section {
         @extend .o-row;
         border-bottom: none;
     }
-    &--header {
+    &--header,
+    &--about {
         @extend .o-row;
         border-bottom: none;
         padding-bottom: 0;
@@ -119,4 +120,15 @@ main, section {
         padding-right: 3em;
     }
     
+}
+
+/* About layout */
+
+@media (min-width: $bp-l) {
+    .o-col--1of2 {
+        @include span(4);
+    }
+    .o-col--2of2 {
+        @include span(8 last);
+    }
 }
