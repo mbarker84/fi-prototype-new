@@ -26,7 +26,7 @@ li.full-nav__item {
     float: left;
     position: relative;
     overflow: visible;
-    max-height: 2.9em;
+    height: 3.8em;
     z-index: $top;
     &:first-child {
         border-right: 2px solid $black;
@@ -36,7 +36,7 @@ li.full-nav__item {
         background-color: $black;
         margin-left: 1em;
         position: absolute;
-        top: 2.9em;
+        top: 3.8em;
         width: 15em;
         z-index: $high;
     }
@@ -49,11 +49,13 @@ li.full-nav__item {
     a {
         display: block;
         color: $lt-grey !important;
+        padding-top: 1.2em;
         h5 .fa {
             font-size: .7em;
         }
     }
 }
+    
 
 }
 

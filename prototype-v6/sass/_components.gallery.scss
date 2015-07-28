@@ -4,65 +4,19 @@ ul.c-list, ul.c-list--events {
 
 li.c-list__item {
     @include clearfix;
-    clear: both;
-    padding: 1em;
     overflow: visible;
+    margin-bottom: 2em;
+    text-align: center;
     figure {
         position: relative;
     }
     .events__description {
-        background-color: $black;
-        padding: 1em;
+        background-color: transparent;
     }
     .events__description p {
         margin-bottom: 0;
-    }
-    @include with-layout($map-xs) {
-        @media(min-width: $bp-m) {
-            padding: 0;
-            margin-bottom: 1em;
-            background-color: $black;
-            figure {
-                @include span(6);
-            }
-            .events__description {
-                @include span(6 last);
-                padding: 2em;
-            }
-            &:nth-child(2n) {
-                figure {
-                    width: span(6);
-                    float: right;
-                }
-                .events__description {
-                    @include span(6 last);
-                }
-            }
-        }
-        @media(min-width: $bp-l) {
-            background-color: transparent;
-            figure {
-                @include span(5);
-            }
-            .events__description {
-                @include span(6);
-                padding: 3em;
-                margin-top: 1em;
-                margin-left: -1em;
-                background-color: $black;
-            }
-            &:nth-child(2n) {
-                figure {
-                    width: span(5);
-                }
-                .events__description {
-                    @include span(6 last);
-                }
-            }
-        }
-        @media(min-width: $bp-xl) {
-            margin-bottom: 2em;
-        }
+        padding: 1em;
+        color: $dk-grey !important;
     }
     figcaption {
         position: absolute;
@@ -83,32 +37,31 @@ li.c-list__item {
     }
 }
 
+@media(min-width: $bp-m) {
+    li.c-list__item {
+        @include gallery(6);
+        padding: .5em;
+    }
+}
+
+@media (min-width: $bp-l) {
+    li.c-list__item {
+        padding: 1em;
+    }
+    
+}
+
 /* Caption style – events */
 ul.c-list--events {
     figcaption {
-        background: linear-gradient(rgba(32, 33, 35, .9), rgba(32, 33, 35, .5));
+        background: linear-gradient( rgba(32, 33, 35, .9), transparentize($fi-highlight, .6) );
         text-align: center;
-        h3 {
-            padding-top: .5em;
-            padding-bottom: 1em;
-            border-bottom: 3px solid $white;
-            letter-spacing: .08em;
-            &.gallery-fowd {
-                border-bottom: 3px solid $fowd;
-            }
-            &.gallery-fowa {
-                border-bottom: 3px solid $fowa;
-            }
-            &.gallery-ude {
-                border-bottom: 3px solid $ude;
-            }
-            &.gallery-filive {
-                border-bottom: 3px solid $filive;
-            }
-            &.gallery-londonweb {
-                border-bottom: 3px solid $london-web;
-            }
-        }
+    }
+    h4.caption--event {
+        opacity: 0;
+        margin-top: 1em;
+        padding-top: 1em;
+        border-top: 3px solid $fi-highlight;
     }
 }
 
@@ -120,7 +73,7 @@ ul.c-list--events a {
             background: linear-gradient(rgba(32, 33, 35, .7), rgba(32, 33, 35, .3));
         }
     }
-    h3, .gallery__caption--event {
+    h3, h4.caption--event, .gallery__caption--event {
         transition: all .3s ease-in-out;
         transform: scale(1);
         color: $white;
@@ -128,6 +81,9 @@ ul.c-list--events a {
     &:focus, &:hover, &:active {
         h3, .gallery__caption--event {
             transform: scale(1.05);
+        }
+        h4.caption--event {
+            opacity: 1;
         }
     }
 }

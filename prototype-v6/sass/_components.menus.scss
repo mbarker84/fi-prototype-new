@@ -3,7 +3,7 @@ nav.nav--main {
     width: 100%;
     display: block;
     position: absolute;
-    height: 2.9em;
+    height: 3.8em;
     background-color: transparentize($black, .5);
     overflow: visible;
     z-index: $top;
@@ -97,6 +97,13 @@ li.top-nav__sub2--item {
         z-index: 1000;
         margin-left: 1em;
     }
+    @media (min-width: $bp-l) {
+        a.login {
+            display: block;
+            height: 3.8em;
+            padding: 1.4em;
+        }
+    }
 }
 
 
@@ -112,6 +119,10 @@ ul.c-social-icons {
             display: block;
             width: auto;
             padding: .8em .5em;
+            @media (min-width: $bp-l) {
+                height: 3.8em;
+                padding-top: 1.2em;
+            }
         }
     }
 }

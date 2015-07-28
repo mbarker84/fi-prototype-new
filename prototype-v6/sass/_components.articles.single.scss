@@ -12,6 +12,9 @@ article.article--single {
     position: relative;
     margin-bottom: 1em;
     z-index: -100;
+    &--video {
+        @extend .article-single__img--main;
+    }
 }
 
 .article-single__line-break {
@@ -28,7 +31,7 @@ article.article--single {
     right: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient( 165deg, rgba(247, 249, 249, 1) 20%, rgba(247, 249, 249, 0) );
+    background: linear-gradient( 165deg, rgba(247, 249, 249, 1), rgba(0, 0, 0, 0) );
     z-index: 100;
 }
 
@@ -40,7 +43,7 @@ article.article--single {
     padding: 2em;
     width: 100%;
     p {
-        color: $lt-grey;
+        color: $lt-grey !important;
     }
     .c-button {
         margin-bottom: 1em;
@@ -93,6 +96,9 @@ p.videos__number {
     .article-single__img--main {
         margin-top: -10em;
         margin-left: 2em;
+        &--video {
+            margin-top: 0;
+        }
     }
 
     figure.article__img--left {

@@ -34,10 +34,3 @@
         padding-bottom: 4em;
     }
 }
-
-.event__wrapper {
-    @include clearfix;
-    @media (min-width: $bp-l) {
-        @include wrapper-sides;
-    }
-}

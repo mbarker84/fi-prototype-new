@@ -88,17 +88,11 @@ section.get-involved {
     }
 }
 
-.o-feature-block {
-    p {
-        color: $dk-grey !important;
-    }
-}
-
 h4.video__caption,
 h4.list__caption {
     font-weight: 400;
     color: $white;
-    margin-bottom: .3em;
+    margin-bottom: 0;
     @include ms-respond(font-size, 0);
     @media (min-width: $bp-m) {
         @include ms-respond(font-size, 1);
@@ -119,7 +113,7 @@ p.list__caption {
     p.article-single__first {
         @include ms-respond(font-size, 1.5);
         @include headings;
-        color: $dk-grey;
+        color: $dk-grey !important;
     }
     h6 {
         color: $dk-grey;
@@ -152,3 +146,5 @@ figcaption.caption--primary {
     color: $white;
     letter-spacing: .03em;
 }
+
+
