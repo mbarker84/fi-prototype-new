@@ -24,6 +24,23 @@ main, section {
     }
 }
 
+.o-4-col-list {
+    li {
+        margin-bottom: 1em;
+    }
+    @media (min-width: $bp-m) {
+        li, li.o-list__item--regular {
+            @include gallery(6);
+            margin-bottom: 2em;
+        }
+    }
+    @media (min-width: $bp-l) {
+        li, li.o-list__item--regular {
+            @include gallery(3);
+        }
+    }
+}
+
 .o-3-col-list--team {
     li {
         margin-bottom: 1em;
