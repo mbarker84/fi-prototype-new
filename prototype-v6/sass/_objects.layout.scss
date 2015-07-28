@@ -14,16 +14,35 @@ main, section {
     @media (min-width: $bp-m) {
         li.o-list__item--regular {
             @include gallery(6);
-            margin-bottom: gutter();
             margin-bottom: 2em;
         }
     }
     @media (min-width: $bp-l) {
-        li {
+        li, li.o-list__item--regular {
             @include gallery(4);
         }
+    }
+}
+
+.o-3-col-list--team {
+    li {
+        margin-bottom: 1em;
+    }
+    @media (min-width: $bp-s) {
+        li.o-list__item--regular {
+            @include gallery(6);
+            margin-bottom: gutter();
+        }
+    }
+    @media (min-width: $bp-m) {
         li.o-list__item--regular {
             @include gallery(4);
+            margin-bottom: gutter();
+        }
+    }
+    @media (min-width: $bp-xl) {
+        li.o-list__item--regular {
+            @include gallery(3);
         }
     }
 }
@@ -44,7 +63,9 @@ main, section {
         border-bottom: none;
     }
     &--header,
-    &--about {
+    &--about,
+    &--noborder,
+    &--regular {
         @extend .o-row;
         border-bottom: none;
         padding-bottom: 0;

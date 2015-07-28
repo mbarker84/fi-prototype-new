@@ -20,10 +20,11 @@
 <body class="fi">
 <nav class="nav--main">
     <a id="trigger" class="menu__trigger" href="#open-menu">Menu <i id="menu-icon" class="fa fa-bars"></i></a>
+    <a id="trigger--mobile" class="menu__trigger" href="#open-menu">Menu <i id="menu-icon" class="fa fa-bars"></i></a>
     <ul id="open-menu" class="top-nav">
         <li class="top-nav__item"><a href="#"><h5>Events</h5></a>
             <ul class="top-nav__sub">
-                <li class="top-nav__sub--item"><a href="html/fowd-home.html">Future of Web Design</a></li>
+                <li class="top-nav__sub--item"><a href="#">Future of Web Design</a></li>
                 <li class="top-nav__sub--item"><a href="#">Future of Web Apps</a></li>
                 <li class="top-nav__sub--item"><a href="#">Future Insights Live</a></li>
                 <li class="top-nav__sub--item"><a href="#">Ultimate Developer Event</a></li>
@@ -31,16 +32,47 @@
                 <li class="top-nav__sub--item"><a class="all" href="#">See all...</a></li>
             </ul>
         </li>
+        <li class="top-nav__item"><a href="#"><h5>Library</h5></a>
+            <ul class="top-nav__sub">
+                <li class="top-nav__sub--item"><a href="#">Videos</a></li>
+                <li class="top-nav__sub--item"><a href="#">Blog</a>
+                </li>
+            </ul>
+        </li>
         <li class="top-nav__item"><a href="#"><h5>About</h5></a>
             <ul class="top-nav__sub">
-                <li class="top-nav__sub--item"><a href="#">Our company</a></li>
-                <li class="top-nav__sub--item"><a href="#">Get involved</a>
+                <li class="top-nav__sub--item"><a href="#">Future Insights</a></li>
+                <li class="top-nav__sub--item"><a href="#">Get involved <i class="fa fa-chevron-down"></i></a>
                     <ul class="top-nav__sub--2">
                         <li class="top-nav__sub2--item"><a href="#">Write for us</a></li>
                         <li class="top-nav__sub2--item"><a href="#l">Speak at an event</a></li>
                         <li class="top-nav__sub2--item"><a href="#">Sponsor</a></li>
                     </ul>
                 </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="top-nav__full">
+        <li class="full-nav__item"><a href="#"><img class="nav__logo" src="../img/logos/fi-white_02.svg" width="100%" height="auto"></a></li>
+        <li class="full-nav__item"><a href="#"><h5>Events <i class="fa fa-chevron-down"></i></h5></a>
+            <ul class="full-nav__sub">
+                <li class="full-nav__sub--item"><a href="#">Future of Web Design</a></li>
+                <li class="full-nav__sub--item"><a href="#">Future of Web Apps</a></li>
+                <li class="full-nav__sub--item"><a href="#">Future Insights Live</a></li>
+                <li class="full-nav__sub--item"><a href="#">Ultimate Developer Event</a></li>
+                <li class="full-nav__sub--item"><a href="#">Future of Work</a></li>
+                <li class="full-nav__sub--item"><a class="all" href="#">See all...</a></li>
+            </ul>
+        </li>
+        <li class="full-nav__item"><a href="#"><h5>Videos</h5></a></li>
+        <li class="full-nav__item"><a href="#"><h5>Blog</h5></a></li>
+        <li class="full-nav__item"><a href="#"><h5>About</h5></a>
+        </li>
+        <li class="full-nav__item"><a href="#"><h5>Get Involved <i class="fa fa-chevron-down"></i></h5></a>
+            <ul class="full-nav__sub">
+                <li class="full-nav__sub--item"><a href="#">Write for us</a></li>
+                <li class="full-nav__sub--item"><a href="#">Speak at an event</a></li>
+                <li class="full-nav__sub--item"><a href="#">Sponsor</a></li>
             </ul>
         </li>
     </ul>
@@ -57,14 +89,6 @@
   <path d="M382.6 0H22.4C10 0 0 10 0 22.4v360.3C0 395 10 405 22.4 405h194V248.2h-52.8V187h52.8V142c0-52.3 31.9-80.8 78.6-80.8 22.4 0 41.6 1.7 47.2 2.4v54.7l-32.4 0c-25.4 0-30.3 12.1-30.3 29.8v39H340l-7.9 61.1h-52.6V405h103.2c12.3 0 22.4-10 22.4-22.4V22.4C405 10 395 0 382.6 0z"/>
 </svg></a></li>
         </ul>
-      <!--search-->
-      <div class="search tr-mobile-hide tr-desktop-hide">
-          <div class="search__button">
-            <i class="fa fa-search"></i>
-          </div>
-          <div class="search__box">
-          </div>
-      </div>
     </div>
 </nav>
 <!--header-->
@@ -89,64 +113,100 @@
                 <h2>Our Events</h2>
             </div>
             <ul class="c-list--events">
-                <li class="c-list__item">
+                <li class="c-list__item o-row--regular">
+                        <div class="event__wrapper">
+                            <a href="html/event-home.html">
+                                <figure>
+                                    <img class="events__image" src="img/events/event-FOWD-01.jpg" width="100%" height="auto">
+                                <figcaption>
+                                    <img class="gallery__caption--event" src="img/logos/fowd-logo-white.svg" width="100%" height="auto">
+                                </figcaption>
+                                </figure>
+                            </a>
+                        <div class="events__description"><p>A 3-day event for designers, front-end developers, and people working to make the web awesome.</p>
+                            <ul class="events__topic-list">
+                                <li>UX</li>
+                                <li>UI</li>
+                                <li>Design Inspiration</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Project Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-list__item o-row--regular">
+                        <div class="event__wrapper">
+                            <a href="html/event-home.html">
+                                <figure>
+                                    <img class="events__image" src="img/events/event-FOWD-01.jpg" width="100%" height="auto">
+                                <figcaption>
+                                    <img class="gallery__caption--event" src="img/logos/fowd-logo-white.svg" width="100%" height="auto">
+                                </figcaption>
+                                </figure>
+                            </a>
+                        <div class="events__description"><p>A 3-day event for designers, front-end developers, and people working to make the web awesome.</p>
+                            <ul class="events__topic-list">
+                                <li>UX</li>
+                                <li>UI</li>
+                                <li>Design Inspiration</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Project Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-list__item o-row--regular">
                     <a href="html/event-home.html">
-                        <figure>
-                            <img class="events__image" src="img/events/event-FOWD-01.jpg" width="100%" height="auto">
-                        <figcaption>
-                            <h3 class="gallery-fowd">Future of Web Design</h3>
-                        </figcaption>
-                        </figure>
+                        <div class="event__wrapper">
+                            <figure>
+                                <img class="events__image" src="img/events/event-FOWD-01.jpg" width="100%" height="auto">
+                            <figcaption>
+                                <h3 class="gallery-fowd">Future of Web Design</h3>
+                            </figcaption>
+                            </figure>
+                            <div class="events__description"><p>Future of Web Design is a 3-day event for designers, front-end developers, and people working to make the web awesome. You'll leave the conference inspired, with valuable contacts and the knowledge to grow and succeed in this fast changing digital landscape.</p></div>
+                        </div>
                     </a>
                 </li>
-                <li class="c-list__item">
+                <li class="c-list__item o-row--regular">
                     <a href="html/event-home.html">
-                        <figure>
-                            <img class="events__image" src="img/events/event-FOWA-01.jpg" width="100%" height="auto">
-                        <figcaption>
-                            <h3 class="gallery-fowa">Future of Web Apps</h3>
-                        </figcaption>
-                        </figure>
+                        <div class="event__wrapper">
+                            <figure>
+                                <img class="events__image" src="img/events/event-FOWD-01.jpg" width="100%" height="auto">
+                            <figcaption>
+                                <h3 class="gallery-fowd">Future of Web Design</h3>
+                            </figcaption>
+                            </figure>
+                            <div class="events__description"><p>Future of Web Design is a 3-day event for designers, front-end developers, and people working to make the web awesome. You'll leave the conference inspired, with valuable contacts and the knowledge to grow and succeed in this fast changing digital landscape.</p></div>
+                        </div>
                     </a>
                 </li>
-                <li class="c-list__item">
+                <li class="c-list__item o-row--regular">
                     <a href="html/event-home.html">
-                        <figure>
-                            <img class="events__image" src="img/events/event-UDE-01.jpg" width="100%" height="auto">
-                        </figure>
-                        <figcaption>
-                            <h3 class="gallery-ude">Ultimate Developer Event</h3>
-                        </figcaption>
+                        <div class="event__wrapper">
+                            <figure>
+                                <img class="events__image" src="img/events/event-FOWD-01.jpg" width="100%" height="auto">
+                            <figcaption>
+                                <h3 class="gallery-fowd">Future of Web Design</h3>
+                            </figcaption>
+                            </figure>
+                            <div class="events__description"><p>Future of Web Design is a 3-day event for designers, front-end developers, and people working to make the web awesome. You'll leave the conference inspired, with valuable contacts and the knowledge to grow and succeed in this fast changing digital landscape.</p></div>
+                        </div>
                     </a>
                 </li>
-                <li class="c-list__item">
+                <li class="c-list__item o-row--regular">
                     <a href="html/event-home.html">
-                        <figure>
-                            <img class="events__image" src="img/events/event-FILive-01.jpg" width="100%" height="auto">
-                        </figure>
-                        <figcaption>
-                            <h3 class="gallery-filive">Future Insights Live</h3>
-                        </figcaption>
-                    </a>
-                </li>
-                <li class="c-list__item">
-                    <a href="html/event-home.html">
-                        <figure>
-                            <img class="events__image" src="img/events/event-UDE-01.jpg" width="100%" height="auto">
-                        </figure>
-                        <figcaption>
-                            <h3 class="gallery-londonweb">The London Web</h3>
-                        </figcaption>
-                    </a>
-                </li>
-                <li class="c-list__item">
-                    <a href="html/event-home.html">
-                        <figure>
-                            <img class="events__image" src="img/events/event-UDE-01.jpg" width="100%" height="auto">
-                        </figure>
-                        <figcaption>
-                            <h3>Refresh Boston</h3>
-                        </figcaption>
+                        <div class="event__wrapper">
+                            <figure>
+                                <img class="events__image" src="img/events/event-FOWD-01.jpg" width="100%" height="auto">
+                            <figcaption>
+                                <h3 class="gallery-fowd">Future of Web Design</h3>
+                            </figcaption>
+                            </figure>
+                            <div class="events__description"><p>Future of Web Design is a 3-day event for designers, front-end developers, and people working to make the web awesome. You'll leave the conference inspired, with valuable contacts and the knowledge to grow and succeed in this fast changing digital landscape.</p></div>
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -162,20 +222,22 @@
                 <p>We have a wealth of inspiring videos of incredible talks and articles, all ready to share with you! Check out some of our latest additions...</p>
             </div>
             <!--articles-->
-            <div class="communities__articles o-type--1">
+            <div class="communities__articles o-feature-block">
                 <h4 class="block-title">Articles</h4>
-                <figure class="articles__img"><img src="img/articles/article-01.png" width="100%" height="auto"></figure>
-                <div class="articles__text">
-                    <h3 class="article__title">Changing Your Workflow to Cope with Responsive Design</h3>
-                    <p class="small">Published by <a href="#">Dan Rose</a> on 08 July, 2015</p>
-                    <p>Responsive design has brought many changes to the web design business, but one sneaky change that has perhaps been overlooked is that designing for so many screen sizes alters the way designers hand off the projects to developers.</p> 
+                <div class="o-row--noborder">
+                    <figure class="articles__img"><img src="img/articles/article-01.png" width="100%" height="auto"></figure>
+                    <div class="articles__text">
+                        <h3 class="article__title">Changing Your Workflow to Cope with Responsive Design</h3>
+                        <p class="small">Published by <a href="#">Dan Rose</a> on 08 July, 2015</p>
+                        <p>Responsive design has brought many changes to the web design business, but one sneaky change that has perhaps been overlooked is that designing for so many screen sizes alters the way designers hand off the projects to developers.</p> 
 
-<p class="small">That's just one example of a workflow issues that Dan Rose is determined to fix. But since we're talking about how projects are handed back and forth on a team, any fix is going to require a full team effort. Turns out getting everyone on a team who is used to one way of doing things to change is a tricky affair. </p>
-                    <h5><a class="c-link--primary" href="html/past-events.html">Read more <i class="fa fa-arrow-right"></i></a></h5>
+    <p class="small">That's just one example of a workflow issues that Dan Rose is determined to fix. But since we're talking about how projects are handed back and forth on a team, any fix is going to require a full team effort. Turns out getting everyone on a team who is used to one way of doing things to change is a tricky affair. </p>
+                        <h5><a class="c-link--primary" href="html/past-events.html">Read more <i class="fa fa-arrow-right"></i></a></h5>
+                    </div>
                 </div>
             </div>
             <!--videos-->
-            <div class="communities__videos o-type--1">
+            <div class="communities__videos o-feature-block">
                 <h4 class="block-title">Videos</h4>
                 <ul class="videos__list o-3-col-list">
                     <li><a href="#">

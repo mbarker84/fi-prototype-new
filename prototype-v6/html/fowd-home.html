@@ -20,6 +20,7 @@
 <body class="fowd">
 <nav class="nav--main">
     <a id="trigger" class="menu__trigger" href="#open-menu">Menu <i id="menu-icon" class="fa fa-bars"></i></a>
+    <a id="trigger--mobile" class="menu__trigger" href="#open-menu">Menu <i id="menu-icon" class="fa fa-bars"></i></a>
     <ul id="open-menu" class="top-nav">
         <li class="top-nav__item"><a href="#"><h5>Events</h5></a>
             <ul class="top-nav__sub">
@@ -41,13 +42,37 @@
         <li class="top-nav__item"><a href="#"><h5>About</h5></a>
             <ul class="top-nav__sub">
                 <li class="top-nav__sub--item"><a href="#">Future Insights</a></li>
-                <li class="top-nav__sub--item"><a href="#">Get involved</a>
+                <li class="top-nav__sub--item"><a href="#">Get involved <i class="fa fa-chevron-down"></i></a>
                     <ul class="top-nav__sub--2">
                         <li class="top-nav__sub2--item"><a href="#">Write for us</a></li>
                         <li class="top-nav__sub2--item"><a href="#l">Speak at an event</a></li>
                         <li class="top-nav__sub2--item"><a href="#">Sponsor</a></li>
                     </ul>
                 </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="top-nav__full">
+        <li class="full-nav__item"><a href="#"><img class="nav__logo" src="../img/logos/fi-white_02.svg" width="100%" height="auto"></a></li>
+        <li class="full-nav__item"><a href="#"><h5>Events <i class="fa fa-chevron-down"></i></h5></a>
+            <ul class="full-nav__sub">
+                <li class="full-nav__sub--item"><a href="#">Future of Web Design</a></li>
+                <li class="full-nav__sub--item"><a href="#">Future of Web Apps</a></li>
+                <li class="full-nav__sub--item"><a href="#">Future Insights Live</a></li>
+                <li class="full-nav__sub--item"><a href="#">Ultimate Developer Event</a></li>
+                <li class="full-nav__sub--item"><a href="#">Future of Work</a></li>
+                <li class="full-nav__sub--item"><a class="all" href="#">See all...</a></li>
+            </ul>
+        </li>
+        <li class="full-nav__item"><a href="#"><h5>Videos</h5></a></li>
+        <li class="full-nav__item"><a href="#"><h5>Blog</h5></a></li>
+        <li class="full-nav__item"><a href="#"><h5>About</h5></a>
+        </li>
+        <li class="full-nav__item"><a href="#"><h5>Get Involved <i class="fa fa-chevron-down"></i></h5></a>
+            <ul class="full-nav__sub">
+                <li class="full-nav__sub--item"><a href="#">Write for us</a></li>
+                <li class="full-nav__sub--item"><a href="#">Speak at an event</a></li>
+                <li class="full-nav__sub--item"><a href="#">Sponsor</a></li>
             </ul>
         </li>
     </ul>
@@ -64,15 +89,6 @@
   <path d="M382.6 0H22.4C10 0 0 10 0 22.4v360.3C0 395 10 405 22.4 405h194V248.2h-52.8V187h52.8V142c0-52.3 31.9-80.8 78.6-80.8 22.4 0 41.6 1.7 47.2 2.4v54.7l-32.4 0c-25.4 0-30.3 12.1-30.3 29.8v39H340l-7.9 61.1h-52.6V405h103.2c12.3 0 22.4-10 22.4-22.4V22.4C405 10 395 0 382.6 0z"/>
 </svg></a></li>
         </ul>
-      <!--search-->
-      <div class="search tr-mobile-hide tr-desktop-hide">
-          <div class="search__button">
-            <i class="fa fa-search"></i>
-          </div>
-          <div class="search__box">
-          </div>
-      </div>
-    </div>
 </nav>
 <!--header-->
 <header>
@@ -166,7 +182,7 @@
                 <p>We have a wealth of inspiring videos of incredible talks and articles, all ready to share with you! Check out some of our latest additions...</p>
             </div>
             <!--articles-->
-            <div class="communities__articles o-type--1">
+            <div class="communities__articles o-feature-block">
                 <h4 class="block-title">Articles</h4>
                 <div class="o-row">
                     <figure class="articles__img"><img src="../img/articles/article-01.png" width="100%" height="auto"></figure>
@@ -182,8 +198,9 @@
                 <a class="c-button">Visit the blog <i class="fa fa-arrow-right"></i></a>
             </div>
             <!--videos-->
-            <div class="communities__videos o-type--1">
+            <div class="communities__videos o-feature-block">
                 <h4 class="block-title">Videos</h4>
+                <p>Explore the video library and watch hundreds of videos from previous events, featuring incredible speakers...</p>
                 <ul class="videos__list o-3-col-list">
                     <li><a href="#">
                             <figure><img src="../img/videos/filive-video1.jpg" width="100%" height="auto"><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
@@ -272,6 +289,13 @@
                     </fieldset>
                 </form>
             <a class="c-button">Subscribe <i class="fa fa-arrow-right"></i></a>
+            </div>
+        </section>
+        <!--advisors-->
+        <section class="advisors">
+            <div class="o-wrapper">
+                <h2>Our Advisors</h2>
+                <p>We work with a trusty panel of advisors, featuring the best and brightest names in the industry.</p>
             </div>
         </section>
         <!--get involved-->

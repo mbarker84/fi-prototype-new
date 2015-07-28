@@ -23,3 +23,37 @@ ol.article__ol_1 {
 ul.article__ul_1 {
     overflow: visible;
 }
+
+/* Events */
+
+ul.events__topic-list {
+    width: 100%;
+    margin: 1em 0;
+    li {
+        @include ms-respond(font-size, 1);
+        display: inline-block;
+        float: left;
+        padding: 0 1em .3em 0;
+        text-transform: uppercase;
+        color: $lt-grey;
+    }
+}
+
+/* About */
+
+
+ul.about__vacancies {
+    margin-bottom: 0;
+}
+
+li.vacancies__item {
+    margin-top: 0;
+    p {
+        @media(min-width: $bp-l--2) {
+            width: span(8);
+        }
+    }
+    h5 {
+        margin-bottom: 1em;
+    }
+}

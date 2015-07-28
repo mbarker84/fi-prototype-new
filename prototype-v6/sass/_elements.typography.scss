@@ -58,7 +58,7 @@ h6 {
     font-family: $paragraph;
     @include ms-respond(font-size, 1);
     font-weight: 700;
-    margin-bottom: 1em;
+    margin-bottom: .8em;
 }
 
 p {

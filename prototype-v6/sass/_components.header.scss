@@ -50,6 +50,9 @@ header {
         max-width: 30em;
         margin-bottom: 12em;
     }
+    @media (min-width: $bp-xl) {
+        margin-bottom: 3em;
+    }
 }
 
 .header__line-break {
