@@ -16,6 +16,7 @@
         font-family: $paragraph;
         padding: .7em 1em;
         border: none;
+        height: 3.1em;
     }
     @media (min-width: $bp-m) {
         @include span(8);

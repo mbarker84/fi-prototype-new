@@ -27,6 +27,7 @@
     }
     @media (min-width: $bp-xl) {
         padding: 5em 3em;
+        @include container();
     }
 }
 
@@ -94,6 +95,24 @@
     }
 }
 
+@mixin ratio1_1 {
+    figure {
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 50%;
+        }
+        figcaption {
+            position:  absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
 @mixin ratio4_3--image {
     .article-preview__img {
         position: relative;
@@ -115,7 +134,7 @@
 /* Header background */
 
 @mixin header-background($lines-s, $lines-l, $color1, $color2, $color3, $image-s, $image-l) {
-    background-image: $lines-s, linear-gradient( $color2, $color3 ), $image-s;
+    background-image: $lines-s, linear-gradient( $color1, $color2, $color3 ), $image-s;
     background-size: cover;
     @media (min-width: $bp-l) {
         background-position: top;

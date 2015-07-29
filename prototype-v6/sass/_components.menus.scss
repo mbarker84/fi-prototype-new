@@ -3,13 +3,12 @@ nav.nav--main {
     width: 100%;
     display: block;
     position: absolute;
-    height: 3.8em;
+    height: 2.9em;
     background-color: transparentize($black, .5);
     overflow: visible;
     z-index: $top;
     a {
       padding: .8em 1em;
-      color: $white;
     }
     a.all {
         color: $md-grey;
@@ -19,6 +18,9 @@ nav.nav--main {
     }
     p {
         margin-bottom: 0;
+    }
+    @media (min-width: $bp-l) {
+        height: 3.8em;
     }
 }
 
@@ -130,11 +132,8 @@ ul.c-social-icons {
 /* Event Menu - mobile (blog and video pages) */
 
 .event-menu__wrapper {
-    margin-top: .9em;
     border-top: 2px solid $black;
-    @media (min-width: $bp-s) {
-        margin-top: -.1em;
-    }
+    margin-top: -.1em;
     @media (min-width: $bp-l) {
         display: none;
     }
@@ -245,6 +244,7 @@ img.event-menu__triangle {
 
 a#topic-menu__trigger,
 a#topic-menu__trigger--desktop,
+a#topic-menu__trigger--mobile,
 a#date-menu__trigger {
     display: block;
     width: 100%;

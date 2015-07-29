@@ -29,17 +29,9 @@ $themes: (
         }
     }
     
-    .top-nav {
-        h5 {
-            color: $primary;
-            border-bottom: 2px solid $primary;
-        }
-    }
-    
-    li.full-nav__item {
-        a:focus, a:hover, a:active {
-            color: $primary !important;
-        }
+    .top-nav__item h5 {
+        color: $primary;
+        border-bottom: 2px solid $primary;
     }
     
     .top-nav__login a {
@@ -126,7 +118,6 @@ $themes: (
     }
     
     .article__blockquote--right {
-        background-color: adjust-color($primary, $hue: 0deg, $saturation: -16, $lightness: 34);
         &:before, &:after {
             color: $primary;
         }
@@ -142,11 +133,7 @@ $themes: (
             color: $primary;
         }
     }
-    
-    li.videos__item--event {
-        background-color: $primary;
-    }
-    
+        
     li.date-menu__item:last-child a {
         color: $primary !important;
     }

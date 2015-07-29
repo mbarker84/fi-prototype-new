@@ -1,7 +1,5 @@
 header {
     position: relative;
-    background-image: url(../img/backgrounds/lines.svg), linear-gradient( rgba(70, 122, 198, .6), rgba(78, 203, 216, 1)),
-        url(../img/events/home-main.jpg);
     background-size: cover;
     color: $black;
     h1 {
@@ -25,14 +23,8 @@ header {
     @media (min-width: $bp-l) {
         padding-top: 2em;
         background-position: top;
-        background-image: url(../img/backgrounds/lines-l.svg), linear-gradient( rgba(70, 122, 198, .6), rgba(78, 203, 216, .8), rgba(247, 249, 249, 1)),
-        url(../img/events/home-main_l.jpg);
         background-attachment: fixed, scroll;
     }
-}
-
-.c-header__group--videos {
-    padding-bottom: 2em;
 }
 
 .header__logo {
@@ -60,17 +52,48 @@ header {
     border-top: 3px solid $white;
 }
 
+.header__line-break--black {
+    max-width: 10em;
+    border-top: 3px solid $black;
+}
+
 .header__link {
     margin-top: 1em;
 }
 
-@media (min-width: $bp-m) {
-    header .c-subhead {
-        padding: 1em 0;
-        margin-bottom: 0;
+.header__sub-logo {
+    margin-bottom: 1em;
+}
+
+.header__subhead {
+    position: relative;
+    color: $black;
+    margin-top: 2em;
+    margin-bottom: 0;
+    p {
+        text-shadow: 1px 1px 40px $white;
     }
 }
 
+.header__arrow {
+    position: absolute;
+    bottom: -5em;
+    right: 0;
+    width: 4.2em;
+    img {
+        margin-bottom: .2em;
+    }
+}
+
+@media (min-width: $bp-l) {
+    .header__subhead {
+        @include span(8);
+    }
+}
+
+
+
+/*
 @media (min-width: $bp-l) {
     .header__col-right {
         @include span(8 last);
@@ -83,6 +106,7 @@ header {
         }
     }
 }
+*/
 
 
 /* Event home */
@@ -90,11 +114,7 @@ header {
 .header__logo--event {
     max-width: 20em;
     @media (min-width: $bp-m) {
-        margin-top: 4em;
-        max-width: 30em;
-    }
-    @media (min-width: $bp-xl) {
-        margin-top: 5em;
+        max-width: 25em;
     }
 }
 
@@ -110,6 +130,6 @@ header {
         margin-bottom: 1em;
     }
     p {
-        text-shadow: 1px 1px 30px $white-transparent;
+        text-shadow: 1px 1px 40px $white;
     }
 }

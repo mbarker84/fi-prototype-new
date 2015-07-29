@@ -24,24 +24,9 @@
 
 /* Events */
 
-section.events {
-    background-color: $ultra-lt-grey;
-}
-
-/* Event home - Cities */
-
+section.events,
 section.cities {
-    background: $ultra-lt-grey url(../img/backgrounds/triangle-background.svg) center 100.1% / contain no-repeat;
-    @media (min-width: $bp-l) {
-        padding-bottom: 5em;
-    }
-    @media (min-width: $bp-xl) {
-        padding-bottom: 8em;
-    }
-    &--blog {
-        @extend .cities;
-        background-image: none;
-    }
+    background-color: $ultra-lt-grey;
 }
 
 

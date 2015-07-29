@@ -64,7 +64,7 @@
                 <li class="full-nav__sub--item"><a class="all" href="#">See all...</a></li>
             </ul>
         </li>
-        <li class="full-nav__item"><a class="current" href="#"><h5>Videos</h5></a></li>
+        <li class="full-nav__item"><a href="#"><h5>Videos</h5></a></li>
         <li class="full-nav__item"><a href="#"><h5>Blog</h5></a></li>
         <li class="full-nav__item"><a href="#"><h5>About</h5></a>
         </li>
@@ -79,7 +79,7 @@
   <!--menu-right-->
     <div class="top-nav__right">
         <div class="top-nav__login">
-            <a href="#open-modal__signup"><i class="fa fa-user"></i>Login / Sign Up</a>
+            <a class="login" href="#open-modal__signup"><i class="fa fa-user"></i>Login / Sign Up</a>
         </div>
         <ul class="c-social-icons tr-mobile-hide">
             <li><a href="#"><svg class="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 405 405" xml:space="preserve">
@@ -89,14 +89,6 @@
   <path d="M382.6 0H22.4C10 0 0 10 0 22.4v360.3C0 395 10 405 22.4 405h194V248.2h-52.8V187h52.8V142c0-52.3 31.9-80.8 78.6-80.8 22.4 0 41.6 1.7 47.2 2.4v54.7l-32.4 0c-25.4 0-30.3 12.1-30.3 29.8v39H340l-7.9 61.1h-52.6V405h103.2c12.3 0 22.4-10 22.4-22.4V22.4C405 10 395 0 382.6 0z"/>
 </svg></a></li>
         </ul>
-      <!--search-->
-      <div class="search tr-mobile-hide tr-desktop-hide">
-          <div class="search__button">
-            <i class="fa fa-search"></i>
-          </div>
-          <div class="search__box">
-          </div>
-      </div>
     </div>
 </nav>
 <!--header-->
@@ -110,7 +102,7 @@
             <li class="event-menu__item"><a href="#">Future of Work</a></li>
         </ul>
     </div>
-    <div class="o-header__group o-type--1">
+    <div class="o-header__group">
         <!--search box-->
         <form id="main-search" class="header__search">
             <input type="text" name="search" placeholder="e.g. Bruce Lawson, CSS, London 2015">
@@ -233,7 +225,7 @@
         
     </main>
         <!--events - cities-->
-        <section class="cities--blog o-type--2 cleared">
+        <section class="cities o-type--2">
             <div class="o-wrapper-sides">
                 <h2>Upcoming Events</h2>
             <ul class="c-list--cities--blog o-3-col-list">
@@ -505,7 +497,7 @@ $( "#modal--hide" ).click(function() {
     </script>
     <!--topic menu-->
     <script>
-        $( "#topic-menu__trigger" ).click(function() {
+        $( "#topic-menu__trigger--mobile" ).click(function() {
             $( ".topic-menu" ).slideToggle( "slow" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );

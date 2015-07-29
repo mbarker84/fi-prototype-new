@@ -71,8 +71,67 @@ li.vacancies__item {
 
 /* Advisors */
 
+.advisors__img {
+    position: relative;
+    overflow: hidden;
+    background-color: $md-grey;
+    /* set equal width height and width */
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
+    img {
+        position:  absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
 .advisors__caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     padding: 1em;
-    background-color: $black;
-    
+    background-color: $black-overlay;
+    p {
+        color: $lt-grey !important;
+        line-height: 1.2;
+    }
+    ul.advisor__links {
+        margin-bottom: 0;
+    }
+    li.links__item {
+        margin-bottom: 0;
+        p {
+            margin-bottom: .5em;
+        }
+    }
+    .link-name {
+        display: inline-block;
+        width: 50%;
+        float: left;
+    }
+    h4.advisor__name {
+        color: $white;
+        margin-bottom: .5em;
+    }
+}
+
+@media (min-width: $bp-l) {
+    .advisors__caption {
+        height: 100%;
+        transform: translateY(78%);
+        transition: all .3s ease-in-out;
+    }
+    .advisors__img {
+        cursor: pointer;
+        &:focus, &:hover, &:active {
+            .advisors__caption {
+                transform: translateY(0);
+            }
+        }
+    }
 }

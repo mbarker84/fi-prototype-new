@@ -29,12 +29,8 @@ a.menu__trigger {
     }
 }
 
-header .header__link {
-    a, a:visited {
-        letter-spacing: .03em;
-    }
-}
 
-.full-nav__item a.current {
+.full-nav__item .current {
     color: $white !important;
+    border-bottom: 3px solid $white;
 }

@@ -126,6 +126,7 @@ ul.c-list--events a {
             transition: all .2s ease-in-out;
             h5 {
                 transform: scaleY(0);
+                opacity: 0;
                 transition: all .2s ease-in-out;
                 margin-bottom: -1em;
                 text-align: right;
@@ -134,8 +135,10 @@ ul.c-list--events a {
         a:focus, a:hover, a:active {
             figcaption {
                 padding-bottom: 2em;
+                background-color: black;
                 h5 {
                     transform: scaleY(1);
+                    opacity: 1;
                 }
             }
         }
@@ -163,9 +166,6 @@ ul.c-list--cities {
         @extend ul.c-list--cities;
         border-bottom: none;
         margin-bottom: 0;
-        @media (min-width: $bp-l) {
-            margin-bottom: -4em;
-        }
     }
 }
 

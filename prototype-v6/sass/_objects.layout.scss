@@ -25,17 +25,17 @@ main, section {
 }
 
 .o-4-col-list {
-    li {
+    li.o-list__item--regular {
         margin-bottom: 1em;
     }
     @media (min-width: $bp-m) {
-        li, li.o-list__item--regular {
+        li.o-list__item--regular {
             @include gallery(6);
             margin-bottom: 2em;
         }
     }
     @media (min-width: $bp-l) {
-        li, li.o-list__item--regular {
+        li.o-list__item--regular {
             @include gallery(3);
         }
     }
@@ -117,6 +117,19 @@ main, section {
     clear: both;
 }
 
+.o-header__group {
+    @include wrapper-sides;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    @media (min-width: $bp-m) {
+        margin-top: 5em;
+        margin-bottom: 3em;
+    }
+    @media (min-width: $bp-l) {
+        margin-top: 8em;
+    }
+}
+
 /* Featured */
 
 .o-feature-block {
@@ -147,10 +160,10 @@ main, section {
     
 }
 
-@media (min-width: $bp-l) {
+@media (min-width: $bp-l--2) {
     
-    .o-signup__img {
-        padding-right: 2em;
+    .o-signup__text {
+        @include span(8);
     }
     
 }

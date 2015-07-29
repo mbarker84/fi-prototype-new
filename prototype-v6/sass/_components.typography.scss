@@ -19,13 +19,6 @@ h1.header__page-head {
     color: $black;
 }
 
-h1.fowd-logo {
-    @include ms-respond(font-size, 8);
-    font-family: corner-store;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
 h3.article__title {
     margin-bottom: .5em;
 }
@@ -61,7 +54,6 @@ section {
     }
 }
 
-section.events,
 section.signup {
     h2 {
         letter-spacing: .03em;
@@ -144,8 +136,7 @@ figcaption.caption--primary {
 .videos__premium-text {
     padding: .5em;
     background-color: $dk-grey;
-    color: $white;
+    color: $white !important;
     letter-spacing: .03em;
 }
-
 

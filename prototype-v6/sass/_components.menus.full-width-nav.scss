@@ -28,6 +28,7 @@ li.full-nav__item {
     overflow: visible;
     height: 3.8em;
     z-index: $top;
+    color: $lt-grey;
     &:first-child {
         border-right: 2px solid $black;
     }
@@ -39,8 +40,10 @@ li.full-nav__item {
         top: 3.8em;
         width: 15em;
         z-index: $high;
+        padding-bottom: 1em;
     }
     &:focus, &:hover, &:active {
+        border-bottom: 3px solid $dk-grey;
         ul.full-nav__sub {
             display: block;
             animation: dropdown .3s ease-in-out;
@@ -48,18 +51,38 @@ li.full-nav__item {
     }
     a {
         display: block;
-        color: $lt-grey !important;
         padding-top: 1.2em;
         h5 .fa {
             font-size: .7em;
         }
     }
+    li.full-nav__sub--item {
+        height: 2.6em;
+        &:last-child {
+            padding-bottom: 1em;
+        }
+    }
+}
+
+    
+.full-nav__item a {
+    color: $lt-grey;
+    &:focus, &:hover, &:active {
+        color: $dk-grey;
+    }
+}
+    
+.full-nav__item.current {
+    a {
+        color: $white !important;
+    }
+    border-bottom: 3px solid $white;
 }
     
 
 }
 
 @keyframes dropdown {
-    0% { transform: translateY(-30px); opacity: 0; }
+    0% { transform: translateY(-50px); opacity: 0; }
     100% { transform: translateY(0); opacity: 1; }
 }
