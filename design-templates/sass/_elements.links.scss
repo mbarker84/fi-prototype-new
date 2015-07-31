@@ -1,0 +1,15 @@
+a, a:visited {
+    text-decoration: none;
+}
+
+.c-list__item {
+    a {
+        color: $white;
+    }
+}
+
+section.o-regular {
+    a {
+        color: $white;
+    }
+}

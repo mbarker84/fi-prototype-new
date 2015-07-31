@@ -1,0 +1,146 @@
+span.smaller {
+    @include ms-respond(font-size, -1);
+    line-height: .6em;
+}
+
+.small {
+    @include ms-respond(font-size, 0);
+}
+
+p.menu {
+    font-size: 1em;
+    padding: .6em 1em;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+h1.header__page-head {
+    margin-bottom: 1em;
+    color: $black;
+}
+
+h3.article__title {
+    margin-bottom: .5em;
+}
+
+.footer__links {
+    h5 {
+        margin-bottom: 1em;
+    }
+}
+
+h4.block-title {
+    position: absolute;
+    top: -.5em;
+    left: -.5em;
+    padding: .5em;
+}
+
+h5.label--premium {
+    position: absolute;
+    top: .7em;
+    right: 0;
+    padding: .3em .5em;
+    color: $black;
+}
+
+footer {
+    color: $md-grey !important;
+}
+
+section {
+    p {
+        color: $md-grey;
+    }
+}
+
+section.signup {
+    h2 {
+        letter-spacing: .03em;
+    }
+}
+
+ul.c-list--events {
+    h3 {
+        font-size: ms(-1);
+        font-weight: 400;
+        @media (min-width: $bp-s) {
+            @include ms-respond(font-size, 0);
+        }
+        @media (min-width: $bp-m) {
+            @include ms-respond(font-size, 2);
+        }
+    }
+}
+
+section.communities,
+section.get-involved {
+    p {
+        color: $md-grey;
+    }
+}
+
+h4.video__caption,
+h4.list__caption {
+    font-weight: 400;
+    color: $white;
+    margin-bottom: 0;
+    @include ms-respond(font-size, 0);
+    @media (min-width: $bp-m) {
+        @include ms-respond(font-size, 1);
+    }
+}
+p.video__caption,
+p.list__caption {
+    margin-bottom: .5em;
+    color: $lt-grey !important;
+    margin-top: .2em;
+}
+
+.articles h2,
+.articles h1 {
+    margin-bottom: .5em;
+}
+
+.article-single__text {
+    p.article-single__first {
+        @include ms-respond(font-size, 1.5);
+        @include headings;
+        color: $dk-grey !important;
+    }
+    h6 {
+        color: $dk-grey;
+        margin-bottom: 1em;
+    }
+    h3, h6 {
+        margin-top: 1.5em;
+    }
+    h3 {
+        color: $black;
+    }
+}
+
+
+
+figcaption.caption--primary {
+    font-family: $paragraph;
+    color: $md-grey;
+    margin-top: .5em;
+}
+
+.comments-form__field {
+    font-family: $paragraph;
+    @include ms-respond(font-size, 0);
+}
+
+.videos__premium-text {
+    padding: .5em;
+    background-color: $ultra-lt-grey;
+    color: $dk-grey !important;
+    letter-spacing: .03em;
+}
+
+p.section__intro--dk {
+    color: $dk-grey;
+}
+

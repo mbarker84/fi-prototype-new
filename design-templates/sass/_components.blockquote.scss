@@ -1,0 +1,23 @@
+.testimonials__blockquote h2 {
+    quotes: "\201C""\201D""\2018""\2019";
+    display: inline;
+    &:before, &:after {
+        @include ms-respond(font-size, 3.5);
+        line-height: 0.1em;
+        color: $fowd;
+    }
+    &:before {
+      content: open-quote;
+      margin-right: 0.25em;
+      vertical-align: -0.2em;
+    }
+    &:after {
+      content: close-quote;
+      margin-left: 0.25em;
+      vertical-align: -0.4em;
+    }
+}
+
+.testimonials__blockquote {
+    margin-bottom: 2em;
+}

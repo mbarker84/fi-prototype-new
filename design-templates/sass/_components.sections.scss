@@ -1,0 +1,200 @@
+.line-break--full {
+    @include border-bottom($lt-grey);
+    margin-bottom: 1em;
+}
+
+.line-break--centered {
+    max-width: 10em;
+    margin: 0 auto;
+    border-top: 3px solid $dk-grey;
+}
+
+/* Events */
+
+section.events,
+section.cities {
+    @include background-gradient($white, $ultra-lt-grey);
+}
+
+
+/* Videos */
+
+section.videos {
+    overflow: visible;
+}
+
+/* Communities */
+
+figure.articles__img {
+    margin-bottom: 1em;
+    position: relative;
+}
+
+@media (min-width: $bp-m) {
+    figure.articles__img {
+        @include span(4);
+        margin-bottom: 0;
+    }
+    .articles__text {
+        @include span(8 last);
+    }
+}
+
+
+/* Signup section */
+section.signup {
+    background-image: url(../img/backgrounds/lines-grey.svg);
+    background-size: cover;
+    h1, h3, p {
+        color: $lt-grey !important;
+    }
+    &--blog {
+        @extend .signup;
+        @media (min-width: $bp-l--3) {
+            margin-top: 5em;
+        }
+    }
+}
+
+
+/* Get involved */
+
+.o-get-involved__img {
+    @include with-layout($map-xs-2) {
+        @include span(2);
+    }
+}
+
+.o-get-involved__text {
+    @include with-layout($map-xs-2) {
+        @include span(4 last);
+        padding-top: 2em;
+        @media (min-width: $bp-m) {
+            padding-top: 0;
+        }
+    }
+}
+
+ul.c-get-involved {
+    li {
+        @include clearfix;
+        clear: both;
+        margin-bottom: 1em;
+        @media (min-width: $bp-m) {
+            margin-bottom: 2em;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        p {
+            color: $md-grey;
+            @include ms-respond(font-size, 0);
+        }
+    }
+}
+
+@media (min-width: $bp-l) {
+    ul.c-get-involved {
+        li {
+            @include gallery(4);
+        }
+        .o-get-involved__img,
+        .o-get-involved__text {
+            @include span(full);
+        }
+        .o-get-involved__img {
+            padding: 1em 5em 1em 2em;
+        }
+    }
+}
+
+@media (min-width: $bp-xl) {
+    .o-get-involved__img {
+        padding: 2em 7em 2em 3em;
+    }
+}
+
+/* Articles */
+
+section.articles {
+}
+
+/* Recommendations */
+
+section.recommendations {
+    border-top: 3px solid $md-grey;
+}
+
+/* About page */
+
+section.vacancies {
+    @include border-bottom($lt-grey);
+}
+
+.vacancies__intro {
+    @media (min-width: $bp-l--2) {
+        width: span(8);
+    }
+}
+
+/* Team */
+
+section.team {
+    background-color: $ultra-lt-grey;
+}
+
+.team__card {
+    padding: 1em;
+    background-color: $black;
+    transition: all .2s ease-in-out;
+    border-radius: .4em;
+    .team__name {
+        color: $fi-highlight;
+        transition: all .2s ease-in-out;
+    }
+    .team__job-title {
+        margin-bottom: 0;
+        color: $lt-grey;
+        transition: all .2s ease-in-out;
+    }
+    &:focus, &:hover, &:active {
+        background-color: $fi-highlight;
+        figcaption.team-photo__caption {
+            color: $black;
+        }
+        .team__name {
+            color: $black;
+        }
+        .team__job-title {
+            margin-bottom: 0;
+            color: $black;
+        }
+    }
+}
+
+figure.team__photo {
+    margin-bottom: 1em;
+}
+
+.team__caption--hidden {
+    margin-bottom: 0;
+    margin-top: .7em;
+    @media (min-width: $bp-m) {
+        display: none;
+    }
+}
+
+
+/* Advisors */
+
+section.advisors {
+    @media (min-width: $bp-l--2) {
+        margin-top: 4em;
+    }
+}
+
+/* Testimonials */
+
+section.testimonials {
+    text-align: center;
+}

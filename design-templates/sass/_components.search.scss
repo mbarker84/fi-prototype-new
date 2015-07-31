@@ -1,0 +1,30 @@
+.header__search {
+    @include clearfix;
+    margin-top: 1em;
+    background-color: $white;
+    border-radius: .4em;
+    input {
+        width: 85%;
+        background-color: $white;
+        float: left;
+    }
+    button {
+        width: 15%;
+    }
+    input, button {
+        @include ms-respond(font-size, 0);
+        font-family: $paragraph;
+        padding: .7em 1em;
+        border: none;
+        height: 3.1em;
+    }
+    @media (min-width: $bp-m) {
+        @include span(8);
+    }
+    @media (min-width: $bp-l) {
+        @include span(6);
+    }
+    @media (min-width: $bp-l) {
+        @include span(6);
+    }
+}

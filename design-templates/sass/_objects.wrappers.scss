@@ -1,0 +1,36 @@
+.o-regular {
+    @include wrapper-alternate;
+}
+
+.o-wrapper {
+    @include wrapper;
+}
+
+.o-wrapper-sides {
+    @include wrapper-sides;
+}
+
+/* Container-width, white background */
+.o-type--1 {
+    @include wrapper;
+}
+
+/* Full-width background */
+.o-type--2 {
+    @include wrapper-alternate;
+}
+
+/* Container-width box with rounded corners */
+.o-type--3 {
+    @include wrapper;
+    @include container();
+    background-color: $black;
+    color: $lt-grey;
+    @media (min-width: $bp-l--3) {
+        border-radius: 1.5em;
+    }
+    @media (min-width: $bp-xl) {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+}

@@ -1,0 +1,173 @@
+$themes: (
+    theme-fi: $fi-highlight,
+    theme-fowd: $fowd,
+    theme-fowa: $fowa
+) !default;
+
+@mixin theme($name, $color) {
+  $primary: $color;
+  $secondary: darken($color, 20%);
+ 
+      
+      a, a:visited {
+          color: $primary;
+          &:focus, &:hover, &:active {
+              color: $secondary;
+          }
+      }
+      
+    .c-button {
+        background-color: $primary;
+        color: black;
+        &:focus, &:hover, &:active {
+            background-color: $secondary;
+            color: black;
+        }
+        &--header {
+            background-color: $black;
+            color: $primary;
+        }
+    }
+    
+    .top-nav__item h5 {
+        color: $primary;
+        border-bottom: 2px solid $primary;
+    }
+    
+    .top-nav__login a {
+        color: $primary;
+        background-color: $black;
+        &:focus, &:hover, &:active {
+            color: $black;
+            background-color: $primary;
+        }
+    }
+    
+    header {
+        background-color: $primary;
+    }
+    
+    footer {
+        a {
+            color: $primary;
+        }
+    }
+    
+    ul.c-get-involved li {
+        &:focus, &:hover, &:active {
+            svg {
+                stroke: $primary;
+            }
+        }
+    }
+    
+    svg.twitter, svg.facebook {
+        fill: $primary;
+        &:focus, &:hover, &:active {
+            fill: $secondary;
+        }
+    }
+    
+    a.c-link--primary, a.c-link--primary:visited {
+        color: $primary;
+        &:focus, &:hover, &:active {
+            color: $secondary;
+        }
+    }
+    
+    a.menu__trigger {
+        color: $black !important;
+        background-color: $primary;
+        &:focus, &:hover, &:active {
+            color: $primary !important;
+            background-color: $black;
+        }
+    }
+    
+    .o-feature-block {
+        background-color: adjust-color($primary, $hue: 0deg, $saturation: -36, $lightness: 36);
+    }
+    
+    .videos__list {
+        a:focus, a:hover, a:active {
+            h5 {
+                color: $primary;
+            }
+        }
+    }
+    
+    h4.block-title {
+        background-color: $black;
+        color: $primary;
+        letter-spacing: .03em;
+    }
+    
+    a#event-menu__trigger {
+        background-color: $primary;
+    }
+    
+    .header__search button {
+        background-color: $black;
+        color: $fowd;
+        &:focus, &:hover, &:active {
+            background-color: $fowd;
+            color: $black;
+        }
+    }
+    
+    .article-single__line-break {
+        border-top: 3px solid $primary;
+    }
+    
+    .article__blockquote--right {
+        &:before, &:after {
+            color: $primary;
+        }
+    }
+    
+    .article__bio {
+        background-color: adjust-color($primary, $hue: 0deg, $saturation: -36, $lightness: 36);
+    }
+    
+    .videos__list,
+    .recommendations__list {
+        figcaption h5 {
+            color: $primary;
+        }
+    }
+        
+    li.date-menu__item:last-child a {
+        color: $primary !important;
+    }
+    
+    section.signup h2 {
+        color: $primary;
+    }
+    
+    h5.label--premium {
+        background-color:  adjust-color($primary, $hue: 0deg, $saturation: 10, $lightness: 30);
+    }
+    
+    section.testimonials {
+        background-color: adjust-color($primary, $hue: 0deg, $saturation: -16, $lightness: 34);
+        @media (min-width: $bp-l--2) {
+            background-color: transparent;
+            border-top: 5px solid $primary;
+            border-bottom: 5px solid $primary;
+        }
+    }
+    .testimonials__blockquote h2 {
+        &:before, &:after {
+            color: $fowd;
+        }
+    }
+    
+    section.events,
+    section.cities,
+    section.advisors {
+        @include background-gradient($white, adjust-color($primary, $hue: 190deg, $saturation: -36, $lightness: 36));
+    }
+
+ 
+}
+

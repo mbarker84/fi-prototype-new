@@ -1,0 +1,94 @@
+svg.twitter, svg.facebook {
+    width: 1.4em;
+    height: 1.4em;
+    overflow: visible;
+}
+
+#menu-icon {
+    margin-left: .4em;
+}
+
+ul.c-get-involved li {
+    svg {
+        stroke: $black;
+        transform: scale(1);
+        transition: all .2s ease-in-out;
+    }
+    &:focus, &:hover, &:active {
+        svg {
+            transform: scale(1.05);
+            transition: all .2s ease-in-out;
+        }
+    }
+}
+
+svg.icon--play {
+    margin: 0 auto 1em auto;
+    width: 5em;
+    height: 5em;
+    .st0 {
+        fill: $black;
+        stroke: $md-grey;
+    }
+    .st1 {
+        fill: $md-grey;
+        stroke: $md-grey;
+    }
+    .st0, .st1 {
+        transition: all .2s ease-in-out;
+    }
+    &:focus, &:hover, &:active {
+        .st0 {
+            stroke: $lt-grey;
+        }
+        .st1 {
+            fill: $lt-grey;
+            stroke: $lt-grey;
+        }
+    }
+}
+
+.icon--video,
+.icon--article {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 1.6em;
+    height: 1.6em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .8;
+}
+
+.icon--video {
+    background-image: url(../img/icons/svg/movie20-white.svg);
+}
+
+.icon--article {
+    background-image: url(../img/icons/svg/article-white-2.svg);
+}
+
+.icon__team--plus {
+    float: right;
+}
+
+svg.newsletter {
+    display: none;
+    @media (min-width: $bp-l) {
+        display: block;
+        max-width: 100%;
+        overflow: visible;
+        g#letter {
+            animation: bounce 7s ease-in-out 2s infinite;
+        }
+    }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    7% { transform: translateY(-30px); }
+    10% { transform: translateY(-15px); }
+    15% { transform: translateY(-20px); }
+    25% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}

@@ -1,0 +1,156 @@
+@mixin headings {
+    font-family: $headings;
+    font-style: italic;
+    font-weight: 700;
+}
+
+@mixin headings-caps {
+    font-family: $paragraph;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin labels {
+    font-family: $secondary;
+    text-transform: uppercase;
+}
+
+@mixin wrapper {
+    @include container();
+    padding: 2em 1em;
+    @media (min-width: $bp-m) {
+        padding: 2.5em;
+    }
+    @media (min-width: $bp-l) {
+        padding: 4em 3em;
+    }
+    @media (min-width: $bp-xl) {
+        padding: 5em 3em;
+        @include container();
+    }
+}
+
+@mixin wrapper-alternate {
+    padding: 2em 0;
+    @media (min-width: $bp-m) {
+        padding: 2.5em 0;
+    }
+    @media (min-width: $bp-l) {
+        padding: 4em 0;
+    }
+    @media (min-width: $bp-xl) {
+        padding: 5em 0;
+    }
+}
+
+@mixin wrapper-sides {
+    @include container();
+    padding: 0 1em;
+    @media (min-width: $bp-m) {
+        padding: 0 2.5em;
+    }
+    @media (min-width: $bp-l) {
+        padding: 0 3em;
+    }
+    @media (min-width: $bp-xl) {
+        padding: 0 3em;
+    }
+}
+
+/* http://www.mademyday.de/css-height-equals-width-with-pure-css.html */
+@mixin ratio16_9 {
+    li {
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 56.25%;
+        }
+        figure {
+            position:  absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+@mixin ratio4_3 {
+    li {
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 75%;
+        }
+        figure {
+            position:  absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+@mixin ratio1_1 {
+    figure {
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 50%;
+        }
+        figcaption {
+            position:  absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+@mixin ratio4_3--image {
+    .article-preview__img {
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 75%;
+        }
+        figure {
+            position:  absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+/* Background gradient */
+
+@mixin background-gradient($color1, $color2) {
+    background: linear-gradient(150deg, $color1, $color2);
+}
+
+/* Header background */
+
+@mixin header-background($lines-s, $lines-l, $color1, $color2, $color3, $image-s, $image-l) {
+    background-image: $lines-s, linear-gradient( $color1, $color2, $color3 ), $image-s;
+    background-size: cover;
+    @media (min-width: $bp-l) {
+        background-position: top;
+        background-image: $lines-l, linear-gradient( $color1, $color2, $color3 ), $image-l;
+        background-attachment: fixed, scroll;
+    }
+}
+
+/* Thin bottom border, e.g. in article and video sections */
+
+@mixin border-bottom($color) {
+    border-bottom: 2px solid $color;
+}

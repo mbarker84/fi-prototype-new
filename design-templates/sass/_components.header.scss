@@ -1,0 +1,135 @@
+header {
+    position: relative;
+    background-size: cover;
+    color: $black;
+    h1 {
+        clear: both;
+    }
+    h3 {
+        margin-bottom: .5em;
+    }
+    p.small {
+        display: none;
+    }
+    padding: 2em 0 1em 0;
+    @media (min-width: $bp-s) {
+        padding-top: 3em;
+    }
+    @media (min-width: $bp-m) {
+        p.small {
+            display: block;
+        }
+    }
+    @media (min-width: $bp-l) {
+        padding-top: 2em;
+        background-position: top;
+        background-attachment: fixed, scroll;
+    }
+}
+
+.header__logo {
+    max-width: 12em;
+    margin-bottom: 4em;
+    @media (min-width: $bp-s) {
+        margin-bottom: 7em;
+    }
+    @media (min-width: $bp-m) {
+        margin-bottom: 8em;
+        max-width: 20em;
+    }
+    @media (min-width: $bp-l) {
+        width: span(3);
+        max-width: 30em;
+        margin-bottom: 12em;
+    }
+    @media (min-width: $bp-xl) {
+        margin-bottom: 3em;
+    }
+}
+
+.header__line-break {
+    max-width: 10em;
+    border-top: 3px solid $white;
+}
+
+.header__line-break--black {
+    max-width: 10em;
+    border-top: 3px solid $black;
+}
+
+.header__link {
+    margin-top: 1em;
+}
+
+.header__sub-logo {
+    margin-bottom: 1em;
+}
+
+.header__subhead {
+    position: relative;
+    color: $black;
+    margin-top: 2em;
+    margin-bottom: 0;
+    p {
+        text-shadow: 1px 1px 40px $white;
+    }
+}
+
+.header__arrow {
+    position: absolute;
+    bottom: -5em;
+    right: 0;
+    width: 4.2em;
+    img {
+        margin-bottom: .2em;
+    }
+}
+
+@media (min-width: $bp-l) {
+    .header__subhead {
+        @include span(8);
+    }
+}
+
+
+
+/*
+@media (min-width: $bp-l) {
+    .header__col-right {
+        @include span(8 last);
+        margin-bottom: -8em;
+        padding: 2em;
+        background-color: $black;
+        p {
+            color: $md-grey;
+            padding-top: 0;
+        }
+    }
+}
+*/
+
+
+/* Event home */
+
+.header__logo--event {
+    max-width: 20em;
+    @media (min-width: $bp-m) {
+        max-width: 25em;
+    }
+}
+
+/* CTA */
+
+.header__cta {
+    clear: both;
+    margin-top: 2em;
+    @media (min-width: $bp-l) {
+        width: span(8);
+    }
+    .c-button {
+        margin-bottom: 1em;
+    }
+    p {
+        text-shadow: 1px 1px 40px $white;
+    }
+}

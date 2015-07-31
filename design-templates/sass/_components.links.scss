@@ -1,0 +1,36 @@
+a.c-link--primary, a.c-link--primary:visited {
+    font-family: $secondary;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.03em;
+}
+
+a.menu__trigger {
+    @include labels;
+    letter-spacing: .03em;
+    padding: 0;
+    max-width: 6.3em;
+    z-index: $top;
+    position: fixed;
+    display: none;
+    @media (min-width: $bp-l) {
+        font-size: 1.2em;
+        height: 70px;
+        padding-top: 1.2em !important;
+        text-align: center;
+    }
+}
+
+#trigger--mobile {
+    display: block;
+    @media (min-width: $bp-l) {
+        display: none;
+    }
+}
+
+
+.full-nav__item .current {
+    color: $white !important;
+    border-bottom: 3px solid $white;
+}
