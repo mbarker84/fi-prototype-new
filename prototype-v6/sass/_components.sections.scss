@@ -1,16 +1,3 @@
-.fowd, .fowa {
-    section.communities {
-        @media (min-width: $bp-xl) {
-            padding-top: 3em;
-        }
-    }
-    section.events {
-        @media (min-width: $bp-l) {
-            padding-top: 8em;
-        }
-    }
-}
-
 .line-break--full {
     @include border-bottom($lt-grey);
     margin-bottom: 1em;
@@ -26,7 +13,7 @@
 
 section.events,
 section.cities {
-    background-color: $ultra-lt-grey;
+    @include background-gradient($white, $ultra-lt-grey);
 }
 
 
@@ -127,6 +114,11 @@ ul.c-get-involved {
     }
 }
 
+/* Articles */
+
+section.articles {
+}
+
 /* Recommendations */
 
 section.recommendations {
@@ -196,8 +188,13 @@ figure.team__photo {
 /* Advisors */
 
 section.advisors {
-    background-color: $ultra-lt-grey;
     @media (min-width: $bp-l--2) {
         margin-top: 4em;
     }
+}
+
+/* Testimonials */
+
+section.testimonials {
+    text-align: center;
 }

@@ -89,7 +89,6 @@
   <path d="M382.6 0H22.4C10 0 0 10 0 22.4v360.3C0 395 10 405 22.4 405h194V248.2h-52.8V187h52.8V142c0-52.3 31.9-80.8 78.6-80.8 22.4 0 41.6 1.7 47.2 2.4v54.7l-32.4 0c-25.4 0-30.3 12.1-30.3 29.8v39H340l-7.9 61.1h-52.6V405h103.2c12.3 0 22.4-10 22.4-22.4V22.4C405 10 395 0 382.6 0z"/>
 </svg></a></li>
         </ul>
-    </div>
 </nav>
 <!--header-->
 <header class="header--blog">
@@ -429,39 +428,55 @@
             </ul>
         </div>
         </div>
-        <!--modal__signup-->
-    <div class="tr-mobile-hide tr-desktop-hide" id="open-modal__signup" class="modal__signup">
+    </footer>
+    <!--modal__signup-->
+    <div id="open-modal__signup" class="modal__signup">
         <div class="modal__content">
-            <h2>Login / Sign Up</h2>
+            <!--hide form when submitted-->
+            <div class="modal__content--1">
+            <h3>Login / Sign Up</h3>
             <form class="modal__form">
-                <label>Name <span class="required">&#42;</span>
-                    <input type="text" name="name" id="name" placeholder="e.g. Joe Bloggs" class="text-field" required>
-                </label>
-                <label>Email <span class="required">&#42;</span>
-                    <input type="text" name="email" id="email" placeholder="email@domain.com" class="text-field" required>
-                </label>
-                <label>Password <span class="required">&#42;</span>
-                    <input type="text" name="password" id="password" class="text-field" required>
-                </label>
-                <p>Not a member yet? Fill in your details and we&rsquo;ll send you an email.</p>
-                
-                <label>Confirm Password <span class="required">&#42;</span>
-                    <input type="text" name="confirm-password" id="confirm-password" class="text-field" required>
-                </label>
-                <button class="cta"><a href="">Go <i class="fa fa-arrow-right"></i></a></button>
+                <fieldset class="modal-form__fields">
+                    <label>Name <span class="required">&#42;</span>
+                        <input type="text" name="name" id="name" placeholder="e.g. Joe Bloggs" class="text-field" required>
+                    </label>
+                    <label>Email <span class="required">&#42;</span>
+                        <input type="text" name="email" id="email" placeholder="email@domain.com" class="text-field" required>
+                    </label>
+                    <label>Password <span class="required">&#42;</span>
+                        <input type="text" name="password" id="password" class="text-field" required>
+                    </label>
+                    <label>Confirm Password <span class="required">&#42;</span><input type="text" name="confirm-password" id="confirm-password" class="text-field" required>
+                    </label>
+                </fieldset>
+                <p class="small">Not a member yet? Fill in your details and we&rsquo;ll send you an email.</p>
+                <a class="c-button" id="modal--submit">Subscribe <i class="fa fa-arrow-right"></i></a>
             </form>
+            </div>
+            <div class="modal__content--2">
+                <p>Thank you for submitting your details! You now have access to our extensive video library absolutely FREE! Please check your email inbox and click on the link to confirm.</p>
+                <a class="c-button" id="modal--hide">Back to content <i class="fa fa-arrow-right"></i></a>
+            </div>
             <a href="" id="modal--hide" class="modal__close">x</a>
         </div>
     </div>
-        <div class="footer__credit">Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-    </footer>
     <!--hide modal on click-->
     <script>
-$( "#modal--hide" ).click(function() {
-  $( "#open-modal__signup" ).hide( "slow", function() {
-    $( this ).remove();
-  });
-});
+        $(document).ready(function() {
+            $( "#modal--hide" ).click(function() {
+              $( "#open-modal__signup" ).hide( "slow", function() {
+                $( this ).remove();
+              });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $( "#modal--submit" ).click(function() {
+                $( ".modal__content--1" ).switchClass( "modal__content--1", "modal--hidden", 200 );
+                $( ".modal__content--2" ).removeClass( "modal__content--2", 200 );
+            });
+        });
     </script>
     <!--jquery slide menu-->
     <script>
@@ -508,13 +523,6 @@ $( "#modal--hide" ).click(function() {
             $( ".topic-menu--desktop" ).slideToggle( "slow" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
-        });
-    </script>
-    <script>
-        $( "#more-topics__trigger" ).click(function() {
-            $( ".topics__sub-menu" ).slideToggle( "slow" );
-            $( ".sub-menu--closed" ).switchClass( "sub-menu--closed", "sub-menu--open", 200 );
-            $( ".sub-menu--open" ).switchClass( "sub-menu--open", "sub-menu--closed", 200 );
         });
     </script>
     <!--date menu-->

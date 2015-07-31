@@ -64,8 +64,8 @@
                 <li class="full-nav__sub--item"><a class="all" href="#">See all...</a></li>
             </ul>
         </li>
-        <li class="full-nav__item current"><a href="#"><h5>Videos</h5></a></li>
-        <li class="full-nav__item"><a href="#"><h5>Blog</h5></a></li>
+        <li class="full-nav__item"><a href="#"><h5>Videos</h5></a></li>
+        <li class="full-nav__item current"><a href="#"><h5>Blog</h5></a></li>
         <li class="full-nav__item"><a href="#"><h5>About</h5></a>
         </li>
         <li class="full-nav__item"><a href="#"><h5>Get Involved <i class="fa fa-chevron-down"></i></h5></a>
@@ -104,22 +104,22 @@
     <div class="o-header__group">
         <h3>Blog</h3>
         <div class="header__line-break--black"></div>
-        <!--search box-->
+         <!--search box-->
         <form id="main-search" class="header__search">
-            <input type="text" name="search">
+            <input type="text" name="search" placeholder="e.g. Bruce Lawson, CSS, London 2015">
             <button class="search"><i class="fa fa-search"></i></button>
         </form>
         <!--topic-menu-->
-    <div class="topic-menu__wrapper--inline">
-        <a id="topic-menu__trigger--desktop">Browse popular topics... <i class="fa fa-caret-down"></i></a>
-        <ul class="topic-menu--desktop">
-            <li class="topic-menu__item"><a href="#">UX Design</a></li>
-            <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
-            <li class="topic-menu__item"><a href="#">Prototyping</a></li>
-            <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
-            <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
-        </ul>
-    </div>
+        <div class="topic-menu__wrapper--inline">
+            <a id="topic-menu__trigger--desktop">Browse popular topics... <i class="fa fa-caret-down"></i></a>
+            <ul class="topic-menu--desktop">
+                <li class="topic-menu__item"><a href="#">UX Design</a></li>
+                <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
+                <li class="topic-menu__item"><a href="#">Prototyping</a></li>
+                <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
+                <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
+            </ul>
+        </div>
     </div>
 </header>
     <!--event-menu--desktop-->
@@ -132,7 +132,7 @@
     </ul>
     <!--topic-menu-->
     <div class="topic-menu__wrapper">
-        <a id="topic-menu__trigger">Choose topics... <i class="fa fa-caret-down"></i></a>
+        <a id="topic-menu__trigger--mobile">Choose topics... <i class="fa fa-caret-down"></i></a>
         <ul class="topic-menu">
             <li class="topic-menu__item"><a href="#">UX Design</a></li>
             <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
@@ -143,6 +143,15 @@
     </div>
     <!--main-->
     <main class="blog o-type--1">
+        <div class="blog__options">
+            <!--filter-menu-->
+            <div class="filter-menu__wrapper--inline blog__menu">
+                <a id="filter-menu__trigger">Most recent <i class="fa fa-caret-down"></i></a>
+                <ul class="filter-menu">
+                    <li class="filter-menu__item"><a href="#">Popular articles</a></li>
+                </ul>
+            </div>
+        </div>
         <!--articles-->
         <section class="articles blog-layout--preview">
             <article class="articles--preview">
@@ -202,13 +211,17 @@
             </article>
             <h5><a href="#">Older posts <i class="fa fa-arrow-right"></i></a></h5>
             <!--videos-->
-            <div class="articles__videos-cta">
-                <a href="#"><svg class="icon--play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 447.3 447.3" xml:space="preserve" enable-background="new 0 0 447.3 447.3"><style type="text/css">
-	.st0{stroke-width:38;stroke-miterlimit:10;}
-	.st1{stroke-width:21;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-</style><circle id="XMLID_1_" class="st0" cx="223.6" cy="223.6" r="204.6"/><polygon id="XMLID_2_" class="st1" points="173.7 322.2 173.7 125.1 309.6 223.6 "/></svg></a>
-                <p>Interested in video content?</p>
-                <a class="c-button">Explore videos <i class="fa fa-arrow-right"></i></a>
+            <div class="articles__videos-cta o-row--regular">
+                <figure class="videos-cta__img">
+                <img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto"></figure>
+                <div class="videos-cta__text">
+                    <a href="#"><svg class="icon--play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 447.3 447.3" xml:space="preserve" enable-background="new 0 0 447.3 447.3"><style type="text/css">
+        .st0{stroke-width:38;stroke-miterlimit:10;}
+        .st1{stroke-width:21;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    </style><circle id="XMLID_1_" class="st0" cx="223.6" cy="223.6" r="204.6"/><polygon id="XMLID_2_" class="st1" points="173.7 322.2 173.7 125.1 309.6 223.6 "/></svg></a>
+                    <p>Interested in video content?</p>
+                    <a class="c-button">Explore videos <i class="fa fa-arrow-right"></i></a>
+                </div>
             </div>
         </section>
     </main>
@@ -417,38 +430,55 @@
             </ul>
         </div>
         </div>
-        <!--modal__signup-->
-    <div class="tr-mobile-hide tr-desktop-hide" id="open-modal__signup" class="modal__signup">
+    </footer>
+    <!--modal__signup-->
+    <div id="open-modal__signup" class="modal__signup">
         <div class="modal__content">
-            <h2>Login / Sign Up</h2>
+            <!--hide form when submitted-->
+            <div class="modal__content--1">
+            <h3>Login / Sign Up</h3>
             <form class="modal__form">
-                <label>Name <span class="required">&#42;</span>
-                    <input type="text" name="name" id="name" placeholder="e.g. Joe Bloggs" class="text-field" required>
-                </label>
-                <label>Email <span class="required">&#42;</span>
-                    <input type="text" name="email" id="email" placeholder="email@domain.com" class="text-field" required>
-                </label>
-                <label>Password <span class="required">&#42;</span>
-                    <input type="text" name="password" id="password" class="text-field" required>
-                </label>
-                <p>Not a member yet? Fill in your details and we&rsquo;ll send you an email.</p>
-                
-                <label>Confirm Password <span class="required">&#42;</span>
-                    <input type="text" name="confirm-password" id="confirm-password" class="text-field" required>
-                </label>
-                <button class="cta"><a href="">Go <i class="fa fa-arrow-right"></i></a></button>
+                <fieldset class="modal-form__fields">
+                    <label>Name <span class="required">&#42;</span>
+                        <input type="text" name="name" id="name" placeholder="e.g. Joe Bloggs" class="text-field" required>
+                    </label>
+                    <label>Email <span class="required">&#42;</span>
+                        <input type="text" name="email" id="email" placeholder="email@domain.com" class="text-field" required>
+                    </label>
+                    <label>Password <span class="required">&#42;</span>
+                        <input type="text" name="password" id="password" class="text-field" required>
+                    </label>
+                    <label>Confirm Password <span class="required">&#42;</span><input type="text" name="confirm-password" id="confirm-password" class="text-field" required>
+                    </label>
+                </fieldset>
+                <p class="small">Not a member yet? Fill in your details and we&rsquo;ll send you an email.</p>
+                <a class="c-button" id="modal--submit">Subscribe <i class="fa fa-arrow-right"></i></a>
             </form>
+            </div>
+            <div class="modal__content--2">
+                <p>Thank you for submitting your details! You now have access to our extensive video library absolutely FREE! Please check your email inbox and click on the link to confirm.</p>
+                <a class="c-button" id="modal--hide">Back to content <i class="fa fa-arrow-right"></i></a>
+            </div>
             <a href="" id="modal--hide" class="modal__close">x</a>
         </div>
     </div>
-    </footer>
     <!--hide modal on click-->
     <script>
-$( "#modal--hide" ).click(function() {
-  $( "#open-modal__signup" ).hide( "slow", function() {
-    $( this ).remove();
-  });
-});
+        $(document).ready(function() {
+            $( "#modal--hide" ).click(function() {
+              $( "#open-modal__signup" ).hide( "slow", function() {
+                $( this ).remove();
+              });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $( "#modal--submit" ).click(function() {
+                $( ".modal__content--1" ).switchClass( "modal__content--1", "modal--hidden", 200 );
+                $( ".modal__content--2" ).removeClass( "modal__content--2", 200 );
+            });
+        });
     </script>
     <!--jquery slide menu-->
     <script>
@@ -484,7 +514,7 @@ $( "#modal--hide" ).click(function() {
     </script>
     <!--topic menu-->
     <script>
-        $( "#topic-menu__trigger" ).click(function() {
+        $( "#topic-menu__trigger--mobile" ).click(function() {
             $( ".topic-menu" ).slideToggle( "slow" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
@@ -495,13 +525,6 @@ $( "#modal--hide" ).click(function() {
             $( ".topic-menu--desktop" ).slideToggle( "slow" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
-        });
-    </script>
-    <script>
-        $( "#more-topics__trigger" ).click(function() {
-            $( ".topics__sub-menu" ).slideToggle( "slow" );
-            $( ".sub-menu--closed" ).switchClass( "sub-menu--closed", "sub-menu--open", 200 );
-            $( ".sub-menu--open" ).switchClass( "sub-menu--open", "sub-menu--closed", 200 );
         });
     </script>
     

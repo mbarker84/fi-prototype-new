@@ -81,4 +81,18 @@
         min-width: 6em;
     }
 }
+
+/* Modal signup form */
+
+.modal__form {
+    input {
+        @include ms-respond(font-size, 0);
+        display: block;
+        margin: .5em 0 1em 0;
+        width: 100%;
+        padding: .6em .5em;
+        border-radius: .3em;
+        border: none;
+    }
+}
     

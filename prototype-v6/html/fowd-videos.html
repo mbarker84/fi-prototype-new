@@ -172,15 +172,12 @@
                     <h3>All Events</h3>
                 </div>
                 <!--event-menu-->
-                <div class="date-menu__wrapper--inline">
-                    <a id="date-menu__trigger">Browse by... <i class="fa fa-caret-down"></i></a>
-                    <ul class="date-menu">
-                        <li class="date-menu__item"><a href="#">Event</a></li>
-                        <li class="date-menu__item"><a href="#">Speaker (A–Z)</a></li>
-                        <li class="date-menu__item"><a href="#">London 2014</a></li>
-                        <li class="date-menu__item"><a href="#">NYC 2013</a></li>
-                        <li class="date-menu__item"><a href="#">London 2013</a></li>
-                        <li class="date-menu__item"><a href="#">All events</a></li>
+                <div class="filter-menu__wrapper--inline">
+                    <a id="filter-menu__trigger">Browse by... <i class="fa fa-caret-down"></i></a>
+                    <ul class="filter-menu">
+                        <li class="filter-menu__item"><a href="#">Event</a></li>
+                        <li class="filter-menu__item"><a href="#">Speaker (A–Z)</a></li>
+                        <li class="filter-menu__item"><a href="#">Popular videos</a></li>
                     </ul>
                 </div>
                 <p class="small videos__number">16 events</p>
@@ -189,7 +186,7 @@
                 <li class="videos__item--event">
                     <a href="#">
                         <figure>
-                            <img src="../img/location-photos/London-FOWD.jpg" width="100%" height="auto">
+                            <img src="../img/location-photos/London-FOWD.jpg" width="100%" height="auto"><i class="icon--video"></i>
                             <figcaption><h4 class="list__caption">London 2015</h4><p class="list__caption small">21 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
@@ -197,7 +194,7 @@
                 <li class="videos__item--event">
                     <a href="#">
                         <figure>
-                            <img src="../img/location-photos/New%20York-01.jpg" width="100%" height="auto">
+                            <img src="../img/location-photos/New%20York-01.jpg" width="100%" height="auto"><i class="icon--video"></i>
                             <figcaption><h4 class="list__caption">New York 2014</h4><p class="list__caption small">21 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
@@ -205,7 +202,7 @@
                 <li class="videos__item--event">
                     <a href="#">
                         <figure>
-                            <img src="../img/videos/fowd-video-5.jpg" width="100%" height="auto">
+                            <img src="../img/videos/fowd-video-5.jpg" width="100%" height="auto"><i class="icon--video"></i>
                             <figcaption><h4 class="list__caption">FI Live, Las Vegas, 2014</h4><p class="list__caption small">30 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
@@ -213,7 +210,7 @@
                 <li class="videos__item--event">
                     <a href="#">
                         <figure>
-                            <img src="../img/videos/fowd-video-1.jpg" width="100%" height="auto">
+                            <img src="../img/videos/fowd-video-1.jpg" width="100%" height="auto"><i class="icon--video"></i>
                             <figcaption><h4 class="list__caption">London 2014</h4><p class="list__caption small">21 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
@@ -221,7 +218,7 @@
                 <li class="videos__item--event">
                     <a href="#">
                         <figure>
-                            <img src="../img/videos/fowd-video-2.jpg" width="100%" height="auto">
+                            <img src="../img/videos/fowd-video-2.jpg" width="100%" height="auto"><i class="icon--video"></i>
                             <figcaption><h4 class="list__caption">New York 2013</h4><p class="list__caption small">21 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
@@ -229,7 +226,7 @@
                 <li class="videos__item--event">
                     <a href="#">
                         <figure>
-                            <img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto">
+                            <img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto"><i class="icon--video"></i>
                             <figcaption><h4 class="list__caption">FI Live, Las Vegas, 2013</h4><p class="list__caption small">30 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
@@ -443,39 +440,55 @@
             </ul>
         </div>
         </div>
-        <!--modal__signup-->
-    <div class="tr-mobile-hide tr-desktop-hide" id="open-modal__signup" class="modal__signup">
+    </footer>
+    <!--modal__signup-->
+    <div id="open-modal__signup" class="modal__signup">
         <div class="modal__content">
-            <h2>Login / Sign Up</h2>
+            <!--hide form when submitted-->
+            <div class="modal__content--1">
+            <h3>Login / Sign Up</h3>
             <form class="modal__form">
-                <label>Name <span class="required">&#42;</span>
-                    <input type="text" name="name" id="name" placeholder="e.g. Joe Bloggs" class="text-field" required>
-                </label>
-                <label>Email <span class="required">&#42;</span>
-                    <input type="text" name="email" id="email" placeholder="email@domain.com" class="text-field" required>
-                </label>
-                <label>Password <span class="required">&#42;</span>
-                    <input type="text" name="password" id="password" class="text-field" required>
-                </label>
-                <p>Not a member yet? Fill in your details and we&rsquo;ll send you an email.</p>
-                
-                <label>Confirm Password <span class="required">&#42;</span>
-                    <input type="text" name="confirm-password" id="confirm-password" class="text-field" required>
-                </label>
-                <button class="cta"><a href="">Go <i class="fa fa-arrow-right"></i></a></button>
+                <fieldset class="modal-form__fields">
+                    <label>Name <span class="required">&#42;</span>
+                        <input type="text" name="name" id="name" placeholder="e.g. Joe Bloggs" class="text-field" required>
+                    </label>
+                    <label>Email <span class="required">&#42;</span>
+                        <input type="text" name="email" id="email" placeholder="email@domain.com" class="text-field" required>
+                    </label>
+                    <label>Password <span class="required">&#42;</span>
+                        <input type="text" name="password" id="password" class="text-field" required>
+                    </label>
+                    <label>Confirm Password <span class="required">&#42;</span><input type="text" name="confirm-password" id="confirm-password" class="text-field" required>
+                    </label>
+                </fieldset>
+                <p class="small">Not a member yet? Fill in your details and we&rsquo;ll send you an email.</p>
+                <a class="c-button" id="modal--submit">Subscribe <i class="fa fa-arrow-right"></i></a>
             </form>
+            </div>
+            <div class="modal__content--2">
+                <p>Thank you for submitting your details! You now have access to our extensive video library absolutely FREE! Please check your email inbox and click on the link to confirm.</p>
+                <a class="c-button" id="modal--hide">Back to content <i class="fa fa-arrow-right"></i></a>
+            </div>
             <a href="" id="modal--hide" class="modal__close">x</a>
         </div>
     </div>
-        <div class="footer__credit">Video camera icon made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> Licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-    </footer>
     <!--hide modal on click-->
     <script>
-$( "#modal--hide" ).click(function() {
-  $( "#open-modal__signup" ).hide( "slow", function() {
-    $( this ).remove();
-  });
-});
+        $(document).ready(function() {
+            $( "#modal--hide" ).click(function() {
+              $( "#open-modal__signup" ).hide( "slow", function() {
+                $( this ).remove();
+              });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $( "#modal--submit" ).click(function() {
+                $( ".modal__content--1" ).switchClass( "modal__content--1", "modal--hidden", 200 );
+                $( ".modal__content--2" ).removeClass( "modal__content--2", 200 );
+            });
+        });
     </script>
     <!--jquery slide menu-->
     <script>

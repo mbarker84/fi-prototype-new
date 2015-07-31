@@ -50,7 +50,7 @@ footer {
 
 section {
     p {
-        color: $md-grey !important;
+        color: $md-grey;
     }
 }
 
@@ -135,8 +135,12 @@ figcaption.caption--primary {
 
 .videos__premium-text {
     padding: .5em;
-    background-color: $dk-grey;
-    color: $white !important;
+    background-color: $ultra-lt-grey;
+    color: $dk-grey !important;
     letter-spacing: .03em;
+}
+
+p.section__intro--dk {
+    color: $dk-grey;
 }
 

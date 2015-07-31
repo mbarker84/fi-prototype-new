@@ -8,10 +8,17 @@ svg.twitter, svg.facebook {
     margin-left: .4em;
 }
 
-ul.c-get-involved {
+ul.c-get-involved li {
     svg {
         stroke: $black;
+        transform: scale(1);
         transition: all .2s ease-in-out;
+    }
+    &:focus, &:hover, &:active {
+        svg {
+            transform: scale(1.05);
+            transition: all .2s ease-in-out;
+        }
     }
 }
 

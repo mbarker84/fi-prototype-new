@@ -20,3 +20,21 @@
 .get-involved_button {
     margin-top: 1em;
 }
+
+.like-button {
+    text-align: right;
+    svg.heart {
+        display: block;
+        .heart__fill {
+            fill: $lt-grey;
+            &:focus, &:hover, &:active {
+                fill: $md-grey;
+            }
+        }
+        width: 1.5em;
+        height: 1.5em;
+        margin-bottom: .5em;
+        margin-left: 1em;
+        float: right;
+    }
+}

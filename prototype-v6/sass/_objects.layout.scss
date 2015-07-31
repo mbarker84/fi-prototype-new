@@ -66,7 +66,7 @@ main, section {
 
 .o-section__intro-block {
     @media (min-width: $bp-l) {
-        max-width: 66.67%;
+        max-width: span(8);
     }
 }
 
@@ -106,6 +106,7 @@ main, section {
 .blog-layout--preview {
     @media (min-width: $bp-l--2) {
         @include span(10);
+        padding-top: 3em;
         .o-row--articles {
             padding-left: span(1 of 10);
             padding-top: 1em;
@@ -186,3 +187,11 @@ main, section {
         @include span(8 last);
     }
 }
+
+/* Promo video */
+
+
+    
+
+
+    

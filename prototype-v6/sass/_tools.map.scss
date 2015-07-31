@@ -53,9 +53,11 @@ $themes: (
         }
     }
     
-    ul.c-get-involved {
-        svg:focus, svg:hover, svg:active {
-            stroke: $primary;
+    ul.c-get-involved li {
+        &:focus, &:hover, &:active {
+            svg {
+                stroke: $primary;
+            }
         }
     }
     
@@ -83,7 +85,7 @@ $themes: (
     }
     
     .o-feature-block {
-        background-color: adjust-color($primary, $hue: 0deg, $saturation: -16, $lightness: 34);
+        background-color: adjust-color($primary, $hue: 0deg, $saturation: -36, $lightness: 36);
     }
     
     .videos__list {
@@ -124,7 +126,7 @@ $themes: (
     }
     
     .article__bio {
-        background-color: adjust-color($primary, $hue: 0deg, $saturation: -16, $lightness: 34);
+        background-color: adjust-color($primary, $hue: 0deg, $saturation: -36, $lightness: 36);
     }
     
     .videos__list,
@@ -144,6 +146,26 @@ $themes: (
     
     h5.label--premium {
         background-color:  adjust-color($primary, $hue: 0deg, $saturation: 10, $lightness: 30);
+    }
+    
+    section.testimonials {
+        background-color: adjust-color($primary, $hue: 0deg, $saturation: -16, $lightness: 34);
+        @media (min-width: $bp-l--2) {
+            background-color: transparent;
+            border-top: 5px solid $primary;
+            border-bottom: 5px solid $primary;
+        }
+    }
+    .testimonials__blockquote h2 {
+        &:before, &:after {
+            color: $fowd;
+        }
+    }
+    
+    section.events,
+    section.cities,
+    section.advisors {
+        @include background-gradient($white, adjust-color($primary, $hue: 190deg, $saturation: -36, $lightness: 36));
     }
 
  

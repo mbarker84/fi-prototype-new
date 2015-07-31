@@ -47,6 +47,7 @@ article.article--single {
     }
     .c-button {
         margin-bottom: 1em;
+        color: $black !important;
     }
     @media (min-width: $bp-m) {
         top: 30%;
@@ -217,5 +218,18 @@ blockquote.article__blockquote--right {
         padding: 3em 2em 2em 2em;
     }
     
+}
+
+.blog__social-buttons {
+    margin-bottom: 1em;
+    @media (min-width: $bp-m) {
+        @include span(5 of 10);
+    }
+}
+
+.like-button {
+    @media (min-width: $bp-m) {
+        @include span(2 of 10 last);
+    }
 }
     

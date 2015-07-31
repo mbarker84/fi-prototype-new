@@ -43,7 +43,6 @@ li.full-nav__item {
         padding-bottom: 1em;
     }
     &:focus, &:hover, &:active {
-        border-bottom: 3px solid $dk-grey;
         ul.full-nav__sub {
             display: block;
             animation: dropdown .3s ease-in-out;
@@ -66,9 +65,9 @@ li.full-nav__item {
 
     
 .full-nav__item a {
-    color: $lt-grey;
+    color: $lt-grey !important;
     &:focus, &:hover, &:active {
-        color: $dk-grey;
+        color: $dk-grey !important;
     }
 }
     

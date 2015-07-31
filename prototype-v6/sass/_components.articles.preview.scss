@@ -36,12 +36,38 @@ article.articles--preview {
 }
 
 .articles__videos-cta {
-    margin-top: 1em;
+    margin-top: 2em;
     background-color: $black;
-    padding: 2em 1em;
     text-align: center;
     .c-button {
         margin: 0 auto;
+    }
+}
+
+.videos-cta__img {
+    display: none;
+}
+
+.videos-cta__text {
+    padding: 2em;
+}
+
+@media (min-width: $bp-l) {
+    .videos-cta__img {
+        display: block;
+        @include span(4);
+    }
+    .videos-cta__text {
+        @include span(8 last);
+    }
+}
+
+@media (min-width: $bp-l--2) {
+    .videos-cta__img {
+        @include span(4 of 10);
+    }
+    .videos-cta__text {
+        @include span(6 of 10 last);
     }
 }
 

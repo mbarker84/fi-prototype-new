@@ -245,7 +245,7 @@ img.event-menu__triangle {
 a#topic-menu__trigger,
 a#topic-menu__trigger--desktop,
 a#topic-menu__trigger--mobile,
-a#date-menu__trigger {
+a#filter-menu__trigger {
     display: block;
     width: 100%;
     padding: 1em;
@@ -260,13 +260,13 @@ a#date-menu__trigger {
 
 ul.topic-menu,
 ul.topic-menu--desktop,
-ul.date-menu {
+ul.filter-menu {
     display: none;
     font-family: $paragraph;
 }
 
 li.topic-menu__item,
-li.date-menu__item {
+li.filter-menu__item {
     display: block;
     width: 100%;
     a {
@@ -343,5 +343,21 @@ label.dropdown__label {
     background-color: $black;
     color: $md-grey;
     margin-left: 1em;
+}
+
+/* Filter menu */
+
+.filter-menu__wrapper--inline {
+    @media (min-width: $bp-l) {
+        width: span(4 last);
+        float: right;
+        display: inline-block;
+    }
+}
+
+.blog__options {
+    @include clearfix;
+    @include border-bottom($lt-grey);
+    padding-bottom: 1em;
 }
 

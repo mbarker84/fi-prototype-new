@@ -1,0 +1,65 @@
+/* Signup */
+
+#open-modal__signup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    transition: all .3s ease-in-out;
+    z-index: -1000;
+    &:target {
+        opacity: 1;
+        background-color: transparentize($black, .8);
+        z-index: $top;
+    }
+}
+
+.modal__content {
+    position: relative;
+    max-width: 32em;
+    margin: 5em auto 0 auto;
+    background-color: $black;
+    padding: 4em 2em 2em 2em;
+    color: $lt-grey;
+    @media (min-width: $bp-l) {
+        margin-top: 5em;
+        padding: 5em 3em 3em 3em;
+    }
+    @media (min-width: $bp-xl) {
+        margin-top: 10em;
+    }
+    h3 {
+        color: $lt-grey !important;
+    }
+}
+
+.modal__close {
+    position: absolute;
+    text-align: center;
+    top: 1em;
+    right: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-color: $md-grey;
+    color: $black !important;
+    padding: .1em;
+    &:focus, &:hover, &:active {
+        background-color: $dk-grey;
+    }
+}
+
+.modal__content--2 {
+    display: none;
+}
+
+.modal--hidden {
+    display: none;
+}
+    
+.modal--show {
+    display: block;
+}

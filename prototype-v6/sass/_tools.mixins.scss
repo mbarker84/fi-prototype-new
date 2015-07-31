@@ -131,6 +131,12 @@
     }
 }
 
+/* Background gradient */
+
+@mixin background-gradient($color1, $color2) {
+    background: linear-gradient(150deg, $color1, $color2);
+}
+
 /* Header background */
 
 @mixin header-background($lines-s, $lines-l, $color1, $color2, $color3, $image-s, $image-l) {

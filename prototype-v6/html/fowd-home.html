@@ -178,6 +178,24 @@
                 <h5><a class="c-link--primary" href="html/past-events.html">View past events <i class="fa fa-arrow-right"></i></a></h5>
             </div>
         </section>
+        <!--promo video-->
+        <section class="promo-video o-type--1">
+            <div class="o-section__content o-row--regular">
+                <div class="o-promo-video__text o-col--1of2">
+                    <h3>See what people thought of our  most recent event...</h3>
+                </div>
+                <div class="o-promo-video__video-frame o-col--2of2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ntv1pPyNzBE" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!--blockquote-->
+        <section class="testimonials o-type--1">
+            <blockquote class="testimonials__blockquote">
+                <h2>I met so many passionate people at FOWD, and each presenter managed to convey a large amount of actionable, clear information to attendees. Having only two tracks to choose between was great – I never felt like I was missing out!</h2>
+            </blockquote>
+            <h4 class="blockquote__attribution">Catt Small, <a href="#">Soundcloud</a></h4>
+        </section>
         <!--communities-->
         <section class="communities o-type--1">
             <div class="o-section__intro-block">
@@ -206,15 +224,21 @@
                 <p>Explore the video library and watch hundreds of videos from previous events, featuring incredible speakers...</p>
                 <ul class="videos__list o-3-col-list">
                     <li><a href="#">
-                            <figure><img src="../img/videos/filive-video1.jpg" width="100%" height="auto"><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                            <figure><img src="../img/videos/fowd-video-1.jpg" width="100%" height="auto">
+                                <i class="icon--video"></i>
+                                <figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
                         </a>
                     </li>
                     <li><a href="#">
-                            <figure><img src="../img/videos/filive-video1.jpg" width="100%" height="auto"><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                            <figure><img src="../img/videos/fowd-video-2.jpg" width="100%" height="auto">
+                                <i class="icon--video"></i>
+                                <figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
                         </a>
                     </li>
                     <li><a href="#">
-                            <figure><img src="../img/videos/filive-video1.jpg" width="100%" height="auto"><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                            <figure><img src="../img/videos/fowd-video-3.jpg" width="100%" height="auto">
+                                <i class="icon--video"></i>
+                                <figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
                         </a>
                     </li>
                 </ul>
@@ -292,6 +316,7 @@
                     </fieldset>
                 </form>
             <a class="c-button">Subscribe <i class="fa fa-arrow-right"></i></a>
+                <a href="" id="modal--hide" class="modal__close">x</a>
             </div>
         </section>
         <!--advisors-->
@@ -299,7 +324,7 @@
             <div class="o-type--1">
                 <div class="o-section__intro-block">
                     <h2>Our Advisors</h2>
-                    <p>We work with a trusty panel of advisors, featuring the best and brightest names in the industry.</p>
+                    <p class="section__intro--dk">We work with a trusty panel of advisors, featuring the best and brightest names in the industry.</p>
                 </div>
                 <ul class="advisors__list o-4-col-list">
                     <li class="o-list__item--regular advisors__item">
@@ -504,38 +529,67 @@
             </ul>
         </div>
         </div>
-        <!--modal__signup-->
-    <div class="tr-mobile-hide tr-desktop-hide" id="open-modal__signup" class="modal__signup">
+    </footer>
+    <!--modal__signup-->
+    <div id="open-modal__signup" class="modal__signup">
         <div class="modal__content">
-            <h2>Login / Sign Up</h2>
+            <!--hide form when submitted-->
+            <div class="modal__content--1">
+            <h3>Login / Sign Up</h3>
             <form class="modal__form">
-                <label>Name <span class="required">&#42;</span>
-                    <input type="text" name="name" id="name" placeholder="e.g. Joe Bloggs" class="text-field" required>
-                </label>
-                <label>Email <span class="required">&#42;</span>
-                    <input type="text" name="email" id="email" placeholder="email@domain.com" class="text-field" required>
-                </label>
-                <label>Password <span class="required">&#42;</span>
-                    <input type="text" name="password" id="password" class="text-field" required>
-                </label>
-                <p>Not a member yet? Fill in your details and we&rsquo;ll send you an email.</p>
-                
-                <label>Confirm Password <span class="required">&#42;</span>
-                    <input type="text" name="confirm-password" id="confirm-password" class="text-field" required>
-                </label>
-                <button class="cta"><a href="">Go <i class="fa fa-arrow-right"></i></a></button>
+                <fieldset class="modal-form__fields">
+                    <label>Name <span class="required">&#42;</span>
+                        <input type="text" name="name" id="name" placeholder="e.g. Joe Bloggs" class="text-field" required>
+                    </label>
+                    <label>Email <span class="required">&#42;</span>
+                        <input type="text" name="email" id="email" placeholder="email@domain.com" class="text-field" required>
+                    </label>
+                    <label>Password <span class="required">&#42;</span>
+                        <input type="text" name="password" id="password" class="text-field" required>
+                    </label>
+                    <label>Confirm Password <span class="required">&#42;</span><input type="text" name="confirm-password" id="confirm-password" class="text-field" required>
+                    </label>
+                </fieldset>
+                <p class="small">Not a member yet? Fill in your details and we&rsquo;ll send you an email.</p>
+                <a class="c-button" id="modal--submit">Subscribe <i class="fa fa-arrow-right"></i></a>
             </form>
+            </div>
+            <div class="modal__content--2">
+                <p>Thank you for submitting your details! You now have access to our extensive video library absolutely FREE! Please check your email inbox and click on the link to confirm.</p>
+                <a class="c-button" id="modal--hide">Back to content <i class="fa fa-arrow-right"></i></a>
+            </div>
             <a href="" id="modal--hide" class="modal__close">x</a>
         </div>
     </div>
-    </footer>
     <!--hide modal on click-->
     <script>
-$( "#modal--hide" ).click(function() {
-  $( "#open-modal__signup" ).hide( "slow", function() {
-    $( this ).remove();
-  });
-});
+        $(document).ready(function() {
+            $( "#modal--hide" ).click(function() {
+              $( "#open-modal__signup" ).hide( "slow", function() {
+                $( this ).remove();
+              });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $( "#modal--submit" ).click(function() {
+                $( ".modal__content--1" ).switchClass( "modal__content--1", "modal--hidden", 200 );
+                $( ".modal__content--2" ).removeClass( "modal__content--2", 200 );
+            });
+        });
+    </script>
+    <!--trigger menu on scroll-->
+    <script>
+    $(document).ready(function() {
+        $( window ).scroll(function() {
+            if ($(this).scrollTop() > 400){
+                $( '#trigger' ).slideDown( "fast" );
+            } else {
+                $('#trigger').slideUp('fast');
+            }
+        });
+    });
     </script>
     <!--jquery slide menu-->
     <script>
