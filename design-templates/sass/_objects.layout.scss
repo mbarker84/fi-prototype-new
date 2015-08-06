@@ -14,7 +14,7 @@ main, section {
     @media (min-width: $bp-m) {
         li.o-list__item--regular {
             @include gallery(6);
-            margin-bottom: 2em;
+            margin-bottom: gutter();
         }
     }
     @media (min-width: $bp-l) {
@@ -31,7 +31,7 @@ main, section {
     @media (min-width: $bp-m) {
         li.o-list__item--regular {
             @include gallery(6);
-            margin-bottom: 2em;
+            margin-bottom: gutter();
         }
     }
     @media (min-width: $bp-l) {
@@ -54,7 +54,6 @@ main, section {
     @media (min-width: $bp-m) {
         li.o-list__item--regular {
             @include gallery(4);
-            margin-bottom: gutter();
         }
     }
     @media (min-width: $bp-xl) {
@@ -106,11 +105,13 @@ main, section {
 .blog-layout--preview {
     @media (min-width: $bp-l--2) {
         @include span(10);
-        padding-top: 3em;
         .o-row--articles {
             padding-left: span(1 of 10);
             padding-top: 1em;
         }
+    }
+    @media (min-width: $bp-xl) {
+        @include span(full);
     }
 }
 
@@ -128,21 +129,6 @@ main, section {
     }
     @media (min-width: $bp-l) {
         margin-top: 8em;
-    }
-}
-
-/* Featured */
-
-.o-feature-block {
-    padding: 3em 1em 1em 1em;
-    position: relative;
-    margin-top: 2em;
-    @media (min-width: $bp-l) {
-        margin-top: 3em;
-        padding: 3em 2em 2em 2em;
-    }
-    p {
-        color: $dk-grey !important;
     }
 }
 

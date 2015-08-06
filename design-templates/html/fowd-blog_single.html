@@ -125,7 +125,8 @@
     </div>
 </header>
     <!--event-menu--desktop-->
-    <ul class="event-menu--desktop"><!--EDITABLE-->
+    <ul class="event-menu--desktop">
+        <li class="event-menu__item--desktop"><a href="#">All</a></li>
         <li class="event-menu__item--desktop"><a class="current" href="#">Future of Web Design</a><img class="event-menu__triangle" src="../img/icons/svg/small-triangle-red.svg" width="100%" height="auto"></li>
         <li class="event-menu__item--desktop"><a href="#">Future of Web Apps</a></li>
             <li class="event-menu__item--desktop"><a href="#">Future Insights Live</a></li>
@@ -165,14 +166,16 @@
                 <!--EDITABLE--><figcaption class="caption--primary">This is the image caption</figcaption>
                 <div class="article-single__line-break"></div>
                 <!--social-buttons-->
-                <!--EDITABLE--><div class="blog__social-buttons">
-                    <span class='st_sharethis_large' displayText='ShareThis'></span>
-                    <span class='st_facebook_large' displayText='Facebook'></span>
-                    <span class='st_twitter_large' displayText='Tweet'></span>
-                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
-                    <span class='st_pinterest_large' displayText='Pinterest'></span>
-                    <span class='st_email_large' displayText='Email'></span>
-                </div>
+                    <div class="blog__social-buttons"><!--EDITABLE-->
+                        <span class='st_sharethis_large' displayText='ShareThis'></span>
+                        <span class='st_facebook_large' displayText='Facebook'></span>
+                        <span class='st_twitter_large' displayText='Tweet'></span>
+                        <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                    </div>
+                    <!--like button-->
+                    <div class="like-button"><!--THIS RANKS THE POPULARITY OF A BLOG POST OR VIDEO--POSTS WITH THE MOST ‘LIKES’ ARE FEATURED HIGHER UP WHEN USERS ORDER VIDEOS BY POPULARITY FROM THE DROPDOWN-->
+                        <p class="small"><span class="small">23 likes</span><svg class="heart" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 200 200" xml:space="preserve"><path class="heart__fill" d="M147.9 13.7c-26.4 0-48 18.2-48 49.2l0 0c0-31.1-21.5-49.2-47.9-49.2 -26.4 0-47.8 24.6-47.8 55 0 16.3 6.2 30.9 15.9 41l0 0 79.7 81 79.9-81.1 0.2 0c9.8-10.1 15.9-24.6 15.9-40.9C195.8 38.2 174.3 13.7 147.9 13.7z"/></svg></p>
+                    </div>
                 <div class="article-single__text">
                 <!--EDITABLE--><p class="article-single__first">Editor's note: this is a guest blog by John Siebert, president and CEO of Tranquil Blue - Web Design Tampa.</p>
 
@@ -256,14 +259,12 @@
                 </ul>
     <p>If you are thinking of competing with the available market apps, covering these basic components is fundamental. And if you desire to popularize your app, aim on devising novel techniques to achieve these fundamentals.</p>
     <!--social-buttons-->
-                <div class="blog__social-buttons">
-                    <span class='st_sharethis_large' displayText='ShareThis'></span>
-                    <span class='st_facebook_large' displayText='Facebook'></span>
-                    <span class='st_twitter_large' displayText='Tweet'></span>
-                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
-                    <span class='st_pinterest_large' displayText='Pinterest'></span>
-                    <span class='st_email_large' displayText='Email'></span>
-                </div>
+                    <div class="blog__social-buttons--lower">
+                        <span class='st_sharethis_large' displayText='ShareThis'></span>
+                        <span class='st_facebook_large' displayText='Facebook'></span>
+                        <span class='st_twitter_large' displayText='Tweet'></span>
+                        <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                    </div>
                 </div>
             </article>
             <!--author bio-->
@@ -276,7 +277,8 @@
                     <div class="bio__text">
                         <h3>Ellie Robinson</h3>
                         <p class="small">Digital devotee and resident culture vulture, Ellie is always on the hunt for imaginative new ways to make our events the best they can be.</p>
-                        <p class="small">Twitter: <a href="http://twitter.com/FollowEllie">@FollowEllie</a></p>
+                        <p class="small"><i class="fa fa-twitter"></i>Twitter: <a href="http://twitter.com/FollowEllie">@FollowEllie</a></p>
+                        <h5><a href="#">View profile <i class="fa fa-arrow-right"></i></a></h5>
                     </div>
                 </div>
             </aside>

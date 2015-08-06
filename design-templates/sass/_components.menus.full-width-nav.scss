@@ -35,17 +35,15 @@ li.full-nav__item {
     ul.full-nav__sub {
         display: none;
         background-color: $black;
-        margin-left: 1em;
         position: absolute;
-        top: 3.8em;
+        top: 3.75em;
         width: 15em;
-        z-index: $high;
-        padding-bottom: 1em;
+        z-index: 500;
     }
     &:focus, &:hover, &:active {
         ul.full-nav__sub {
             display: block;
-            animation: dropdown .3s ease-in-out;
+            animation: dropdown .2s ease-in-out;
         }
     }
     a {
@@ -56,10 +54,7 @@ li.full-nav__item {
         }
     }
     li.full-nav__sub--item {
-        height: 2.6em;
-        &:last-child {
-            padding-bottom: 1em;
-        }
+        height: auto;
     }
 }
 
@@ -67,15 +62,24 @@ li.full-nav__item {
 .full-nav__item a {
     color: $lt-grey !important;
     &:focus, &:hover, &:active {
-        color: $dk-grey !important;
+        color: $md-grey !important;
+        background-color: $black;
+    }
+}
+
+.full-nav__sub--item a {
+    &:focus, &:hover, &:active {
+        color: $lt-grey !important;
+        background-color: $dk-grey;
+        border: none;
     }
 }
     
 .full-nav__item.current {
     a {
         color: $white !important;
+        border-bottom: 3px solid $white;
     }
-    border-bottom: 3px solid $white;
 }
     
 

@@ -197,6 +197,10 @@ li.event-menu__item--desktop {
     &:last-child {
         border-right: none;
     }
+    &:first-child a {
+        background-color: $dk-grey;
+        color: $lt-grey !important;
+    }
     a {
         display: block;
         height: 100%;
@@ -288,7 +292,6 @@ li.filter-menu__item {
      @media (min-width: $bp-l) {
          display: block;
          @include span(4);
-         padding-top: 1em;
      }
  }
 
@@ -351,7 +354,6 @@ label.dropdown__label {
     @media (min-width: $bp-l) {
         width: span(4 last);
         float: right;
-        display: inline-block;
     }
 }
 

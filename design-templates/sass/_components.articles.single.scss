@@ -8,6 +8,10 @@ article.article--single {
     z-index: 1000000;
 }
 
+.article-single__text {
+    clear: both;
+}
+
 .article-single__img--main {
     position: relative;
     margin-bottom: 1em;
@@ -190,6 +194,9 @@ blockquote.article__blockquote--right {
 
 .bio__text {
     text-align: center;
+    .fa-twitter {
+        margin-right: .5em;
+    }
 }
 
 @media (min-width: $bp-m) {
@@ -221,9 +228,15 @@ blockquote.article__blockquote--right {
 }
 
 .blog__social-buttons {
+    @include clearfix;
     margin-bottom: 1em;
+    display: block;
     @media (min-width: $bp-m) {
         @include span(5 of 10);
+    }
+    &--lower {
+        @extend .blog__social-buttons;
+        margin-bottom: 2em;
     }
 }
 

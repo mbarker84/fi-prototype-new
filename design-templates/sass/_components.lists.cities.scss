@@ -1,0 +1,26 @@
+/* Events - Cities */
+
+ul.c-list--cities {
+    @include border-bottom($lt-grey);
+    text-align: center;
+    margin-bottom: 1em;
+    li.list-item--cities {
+        margin-bottom: 2em;
+    }
+    img {
+        margin-bottom: 1em;
+    }
+    h3 {
+        margin-bottom: .2em;
+    }
+    a {
+        h3 {
+            color: $black;
+        }
+    }
+    &--blog {
+        @extend ul.c-list--cities;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+}

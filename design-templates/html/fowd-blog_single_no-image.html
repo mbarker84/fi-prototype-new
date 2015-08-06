@@ -15,6 +15,10 @@
     <!--load jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!--social share scripts from sharethis.com-->
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "44d50d04-d627-4fd0-8e2d-933e1af2c4d4", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </head>
     
 <body class="fowd">
@@ -65,7 +69,7 @@
             </ul>
         </li>
         <li class="full-nav__item"><a href="#"><h5>Videos</h5></a></li>
-        <li class="full-nav__item current"><a href="#"><h5>Blog</h5></a></li>
+        <li class="full-nav__item current"><a href="#" class="current"><h5>Blog</h5></a></li>
         <li class="full-nav__item"><a href="#"><h5>About</h5></a>
         </li>
         <li class="full-nav__item"><a href="#"><h5>Get Involved <i class="fa fa-chevron-down"></i></h5></a>
@@ -93,7 +97,7 @@
 <!--header-->
 <header class="header--blog">
     <!--event-menu-->
-    <div class="event-menu__wrapper"><!--EDITABLE--WE NEED TO BE ABLE TO SELECT WHICH EVENTS WE WANT TO GO HERE-->
+    <div class="event-menu__wrapper">
         <a id="event-menu__trigger">Future of Web Design <i class="fa fa-caret-down"></i></a>
         <ul class="event-menu">
             <li class="event-menu__item"><a href="#">Future of Web Apps</a></li>
@@ -102,24 +106,22 @@
         </ul>
     </div>
     <div class="o-header__group">
-        <h3 class="header__title">Blog</h3>
-        <div class="header__line-break--black"></div>
-         <!--search box-->
+        <!--search box-->
         <form id="main-search" class="header__search">
-            <input type="text" name="search" placeholder="e.g. Bruce Lawson, CSS, London 2015">
+            <input type="text" name="search">
             <button class="search"><i class="fa fa-search"></i></button>
         </form>
         <!--topic-menu-->
-        <div class="topic-menu__wrapper--inline">
-            <a id="topic-menu__trigger--desktop">Browse popular topics... <i class="fa fa-caret-down"></i></a>
-            <ul class="topic-menu--desktop"><!--EDITABLE--CAN THIS BE SET UP SO THAT MOST POPULAR OR MOST FREQUENTLY TAGGED TOPICS APPEAR HERE? IF NOT THEN WE NEED TO BE ABLE TO CHOOSE TOPICS MANUALLY-->
-                <li class="topic-menu__item"><a href="#">UX Design</a></li>
-                <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
-                <li class="topic-menu__item"><a href="#">Prototyping</a></li>
-                <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
-                <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
-            </ul>
-        </div>
+    <div class="topic-menu__wrapper--inline"><!--EDITABLE--CAN THIS BE SET UP SO THAT MOST POPULAR OR MOST FREQUENTLY TAGGED TOPICS APPEAR HERE? IF NOT THEN WE NEED TO BE ABLE TO CHOOSE TOPICS MANUALLY-->
+        <a id="topic-menu__trigger--desktop">Browse popular topics... <i class="fa fa-caret-down"></i></a>
+        <ul class="topic-menu--desktop">
+            <li class="topic-menu__item"><a href="#">UX Design</a></li>
+            <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
+            <li class="topic-menu__item"><a href="#">Prototyping</a></li>
+            <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
+            <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
+        </ul>
+    </div>
     </div>
 </header>
     <!--event-menu--desktop-->
@@ -132,8 +134,8 @@
         <li class="event-menu__item--desktop"><a href="#">More...</a></li>
     </ul>
     <!--topic-menu-->
-    <div class="topic-menu__wrapper"><!--EDITABLE AS ABOVE-->
-        <a id="topic-menu__trigger--mobile">Choose topics... <i class="fa fa-caret-down"></i></a>
+    <div class="topic-menu__wrapper"><!--EDITABLE-->
+        <a id="topic-menu__trigger">Choose topics... <i class="fa fa-caret-down"></i></a>
         <ul class="topic-menu">
             <li class="topic-menu__item"><a href="#">UX Design</a></li>
             <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
@@ -144,95 +146,200 @@
     </div>
     <!--main-->
     <main class="blog o-type--1">
-        <div class="options">
-            <!--event-menu-->
-            <div class="filter-menu__wrapper--inline">
-                <a id="filter-menu__trigger">Most recent <i class="fa fa-caret-down"></i></a>
-                <ul class="filter-menu">
-                    <li class="filter-menu__item"><a href="#">Speaker A-Z</a></li>
-                    <li class="filter-menu__item"><a href="#">Popular</a></li>
-                </ul>
-            </div>
-        </div>
         <!--articles-->
-        <section class="articles blog-layout--preview">
-            <article class="articles--preview">
-                <h2 class="article__title--preview">What Makes You A Brilliant (or Nightmareish) Product Manager?</h2>
-                <div class="o-row--articles">
-                    <div class="article-preview__img">
-                        <figure><img src="../img/articles/article-01.png" width="100%" height="auto"></figure>
-                    </div>
-                    <div class="article-preview__text">
-                        <p class="small">Posted by <a href="#">Ellie Robinson</a> on 12-May–2015</p>
-                        <p>Future Insights Live Rising Star Natasha Awasthi is not only a seasoned product manager, she also teaches Product Management at General Assembly in NYC, and writes about her experiences for a variety of publications. In this guest blog series, Natasha takes a closer look at how to be a brilliant product manager in the tech sector.</p>
-                        <h5><a href="#">Read more <i class="fa fa-arrow-right"></i></a></h5>
-                    </div>
-                </div>
-                <ul class="article__tags">
+        <section class="articles blog-layout--main">
+            <article class="article--single">
+                <ul class="article__tags"><!--EDITABLE-->
                     <li><a href="#">UX</a></li>
                     <li><a href="#">Project Management</a></li>
                     <li><a href="#">Branding</a></li>
                     <li><a href="#">Product and Strategy</a></li>
                 </ul>
-            </article>
-            <article class="articles--preview">
-                <h2 class="article__title--preview">Hyperlinks and Story Arcs: Building Non-Linear Narratives for the Web with Senongo Akpem</h2>
-                <div class="o-row--articles">
-                    <div class="article-preview__img">
-                        <figure><img src="../img/articles/article-2.png" width="100%" height="auto"></figure>
-                    </div>
-                    <div class="article-preview__text">
-                        <p class="small">Posted by <a href="#">Michelle Barker</a> on 12-May–2015</p>
-                        <p>At last year’s Future of Web Design NYC, super talented designer and illustrator, Senongo Akpem, took to the stage to tell us all a story. It was a story that got us pretty intrigued about the potential of the web to bring us ever more innovative methods of storytelling, breaking out of the traditional linear narrative into exciting new territory.</p>
-                        <h5><a href="#">Read more <i class="fa fa-arrow-right"></i></a></h5>
-                    </div>
+                <div class="article--single__title">
+                    <!--EDITABLE--><h1>5 Mobile Design Patterns to Engage Your Customers</h1>
+                    <p class="small">Posted by <a href="#">Ian Murphy</a> on 19-July-2015</p>
                 </div>
-                <ul class="article__tags">
-                    <li><a href="#">UX</a></li>
-                    <li><a href="#">UI</a></li>
-                    <li><a href="#">Branding</a></li>
+                <div class="article-single__line-break"></div>
+                <div class="article-single__text">
+                <!--EDITABLE--><p class="article-single__first">Editor's note: this is a guest blog by John Siebert, president and CEO of Tranquil Blue - Web Design Tampa.</p>
+
+<p>In an app-centric decade sites that carefully plan their mobility will succeed. Notable rulers of this decade are those players that devised their mobile strategy on time and with precision.</p>
+
+<p>According to research by Gartner, a majority of mobile users will be using tablets by 2017. Mobile enabled business tasks will be a trend of the coming times. More and more business processes will go mobile. And the demand of mobile app developers will be on an all-time high.</p>
+
+<p>Mobile workers already use a host of cloud services like Office 365 and Salesforce 1 through their mobile devices. As of now these services are consumer-grade and are emerging to achieve the enterprise-grade status. Enterprise cloud services are next step. SAP has already realized this potency and has made available ample mobile apps which people are not even aware of.</p>
+                    <!--EDITABLE--><blockquote class="article__blockquote--right">Simplification of the app designs is necessary for development of enterprise-grade applications</blockquote>
+
+<p>Simplification of the app designs - along with provision of advanced file sync and storage features - is necessary for development of enterprise-grade applications, and all this has to drive past the device space constraints. But don’t stress; innovations take place under such deterrent circumstances. 45% of enterprises focus on custom app development for wider market capture.</p>
+
+                <p>A lot of things go behind devising a mobile app design like gestures, ergonomics, etc. Development of every mobile app is based on two principles of user experience:</p>
+
+                <ol class="article__ol_1">
+                    <li><p>Anticipate the just what the app will be used for – and by whom- before designing it, and</p></li>
+                    <li><p>Ensure your designs are easy to recreate and build upon.</p></li>
+                </ol>
+
+<p>There are a few basic design patterns to consider when developing for the enterprise application market, which are:</p>
+                <ul class="article__ul_1">
+                    <li>
+                        <h3>Mobile App Navigation Pattern</h3>
+<p>Navigation is one of the most crucial aspects of mobile apps. A good navigation produces good user experience and will make use of your app a habit and not a chore. Below are some mobile app design navigation patterns that have been successful:</p>
+                        <ol class="article__ol_1">
+                            <li>
+                                <h6>Springboard / Dashboard pattern</h6>
+                                <p>This pattern resembles a grid layout and is used when the app is content-focused and possesses a category list to display. If your categories extend one page, you can provide back and forth navigation options.</p>
+                                <p>Facebook used this display pattern in its mobile app; it’s been emulated by LinkedIn and many others.</p>
+                                <!--EDITABLE--><figure class="article__img--center"><img src="../img/articles/article-01.png" width="100%" height="auto"></figure>
+                            </li>
+                            <li>
+                                <h6>List Pattern</h6>
+                                <p>This pattern differs in the layout but functions almost like the springboard, except for group lists and search features supported by them.</p>
+                                <p>E-commerce giant Amazon’s mobile app uses this pattern</p>
+                                <!--EDITABLE--><figure class="article__img--left"><img src="../img/articles/article-01.png" width="100%" height="auto"></figure>
+                            </li>
+                            <li>
+                                <h6>Tab Pattern</strong></h6>
+                                <p>Tab orientation varies for different devices, and hence requires some customization in accordance with the device. The design needs to adhere to development guidelines for every device. Pinterest app is designed using a tab pattern.</p>
+                            </li>
+                            <li>
+                                <h6>Gallery</strong></h6>
+                                <p>This pattern arranges images in the order of frequency of use of content. The content basically comprises individual items which can be also viewed in carousel format.</p>
+                <p>Flickr and BBC news are some apps with a Gallery pattern.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>User Interaction Modes</h3>
+                        <p>Mobile touch screens do not support an external mouse for interaction, so design is limited to using finger-operable interactions like press, swipe, scroll, ‘pull to refresh’, pinch-in, pinch-out, and so on. Pull to refresh and pinch are actions which don’t even require a button to execute.</p>
+                    </li>
+                    <li>
+                        <h3>Notification Patterns</h3>
+                        <p>A quick way of showing recent updates to users is by way of alerts and notifications. Different applications use different notifying methods. Facebook displays the notification count by displaying numbers on the top ribbon. Clicking on the number opens a popup listing out all the notifications in brief; and tapping on each will take you to its detailed feed.</p>
+                        <!--EDITABLE--><figure class="article__img--right"><img src="../img/articles/article-2.jpg" width="100%" height="auto"><figcaption class="caption--primary">This is a caption</figcaption></figure>
+                    </li>
+                    <li>
+                        <h3>Search Patterns</h3>
+                        <p>It can be either basic or advanced, but a search interface is now a mandatory feature of any app. Follow these basic rules to create a usable search option.</p>
+                        <ol class="article__ol_1">
+                            <li><p>Provide a clear button to reset search fields.</p></li>
+                            <li><p>An option to cancel the search is also preferable.</p></li>
+                            <li><p>Always display the search progress status through an icon.</p></li>
+                            <li><p>Offer minimal input fields for search criteria.</p></li>
+                            <li><p>Include an auto-complete option into your search box.</p></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Forms</h3>
+                        <p>As people are doing more and more computing with their mobile devices nowadays, filling out forms is going to be a necessary function, whether you allow the user to sign up using the mobile app or submit some survey through it. Space is the basic constraint when it comes to designing apps for small devices, thereby forcing developers to prioritize actions and look for the easiest way of performing them on mobile.</p>
+                        <p>Designers look for different methods of gathering user input through application forms, and the design of these forms depends on their purpose. A social networking app form may require only sign up formalities, whereas an e-commerce app will need a cart checkout form to submit orders.</p>
+                        <p>To create user-centric forms follow these form designing rules:</p>
+                        <ol class="article__ol_1">
+                            <li><p>Considering that users zoom fields for readability, top align your field labels, such that they are not lost on zooming. But this zooming is possible with web forms and not apps.</p></li>
+                            <li><p>Keep input fields to minimal, eliminating unnecessary ones.</p></li>
+                            <li><p>Describe a label in with the fewest possible words.</p></li>
+                            <li><p>Speed – being able to complete them quickly - is an important consideration to be mindful of while designing a mobile form.</p></li>
+                        </ol>
+                    </li>
                 </ul>
+    <p>If you are thinking of competing with the available market apps, covering these basic components is fundamental. And if you desire to popularize your app, aim on devising novel techniques to achieve these fundamentals.</p>
+    <!--social-buttons-->
+                <div class="blog__social-buttons--lower">
+                    <span class='st_sharethis_large' displayText='ShareThis'></span>
+                    <span class='st_facebook_large' displayText='Facebook'></span>
+                    <span class='st_twitter_large' displayText='Tweet'></span>
+                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                </div>
+                </div>
             </article>
-            <article class="articles--preview">
-                <h2 class="article__title--preview">Designing Using Data: Interview with Designer and Psychologist Joe Leech</h2>
-                <div class="o-row--articles">
-                    <div class="article-preview__img">
-                        <figure><img src="../img/articles/article-3-400.jpg" width="100%" height="auto"></figure>
-                    </div>
-                    <div class="article-preview__text">
-                        <p class="small">Posted by <a href="#">Ellie Robinson</a> on 10-May–2015</p>
-                        <p>Ahead of FI Live in Vegas in just over 2 weeks, we asked design expert and psychologist Joe Leech to share his thoughts on what makes for ‘good’ or ‘bad’ design, ways we can make data work for us, and which design minds he'd dissect if he had the chance....</p>
-                        <h5><a href="#">Read more <i class="fa fa-arrow-right"></i></a></h5>
+            <!--author bio-->
+            <aside class="o-feature-block article__bio"><!--EDITABLE--CAN THE AUTHOR BIO BE PULLED IN FROM THE DATABASE, RATHER THAN HAVING TO ENTER IT EVERY TIME-->
+                <h4 class="block-title">About the Author</h4>
+                <div class="o-row">
+                    <figure class="bio__img">
+                        <img src="../img/staff/ellie200.jpg" width="100%" height="auto">
+                    </figure>
+                    <div class="bio__text">
+                        <h3>Ellie Robinson</h3>
+                        <p class="small">Digital devotee and resident culture vulture, Ellie is always on the hunt for imaginative new ways to make our events the best they can be.</p>
+                        <p class="small"><i class="fa fa-twitter"></i>Twitter: <a href="http://twitter.com/FollowEllie">@FollowEllie</a></p>
+                        <h5><a href="#">View profile <i class="fa fa-arrow-right"></i></a></h5>
                     </div>
                 </div>
-                <ul class="article__tags">
-                    <li><a href="#">UX</a></li>
-                    <li><a href="#">UI</a></li>
-                    <li><a href="#">Product and Strategy</a></li>
+            </aside>
+            <!--comments-->
+            <div class="article__comments">
+                <h2>Comments</h2>
+                <form class="form--comments">
+                    <input class="comments-form__field" type="text" name="firstname" value="Name">
+                    <input class="comments-form__field" type="text" name="email" value="Email">
+                    <textarea class="comments-form__textarea"></textarea>
+                    <input class="form__button c-button" type="submit" value="Submit">
+                </form>
+                <ul class="comments--submitted">
+                    <li>
+                        <div class="comments__user"><img class="comments__avatar" src="../img/staff/chris150.jpg" width="100%" height="auto"><h6>Chris Jones</h6><p class="small">15 July, 2015</p></div>
+                        <div class="comments__text"><p class="small">My number one problem with traditional grid frameworks has been when it comes to responsive design and breakpoints. You either use a few breakpoints and end up with columns that change at sub-optimal window sizes, or you get an increasingly larger jungle of classes each time you add a breakpoint.
+With Susy I can check and see that this content will break at 1056px, so then we add a breakpoint right there. Quick, easy, and no bloat.</p></div>
+                    </li>
                 </ul>
-            </article>
-            <!--SHOW UP TO 10 POSTS-->
-            <h5><a href="#">Older posts <i class="fa fa-arrow-right"></i></a></h5>
-            <!--videos-->
-            <div class="articles__videos-cta o-row--regular">
-                <figure class="videos-cta__img">
-                <!--EDITABLE--><img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto"></figure>
-                <div class="videos-cta__text">
-                    <a href="#"><svg class="icon--play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 447.3 447.3" xml:space="preserve" enable-background="new 0 0 447.3 447.3"><style type="text/css">
-        .st0{stroke-width:38;stroke-miterlimit:10;}
-        .st1{stroke-width:21;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-    </style><circle id="XMLID_1_" class="st0" cx="223.6" cy="223.6" r="204.6"/><polygon id="XMLID_2_" class="st1" points="173.7 322.2 173.7 125.1 309.6 223.6 "/></svg></a>
-                    <p>Interested in video content?</p>
-                    <a class="c-button">Explore videos <i class="fa fa-arrow-right"></i></a>
-                </div>
             </div>
         </section>
     </main>
+        <!--recommendations-->
+        <section class="recommendations o-type--1">
+            <!--EDITABLE--><h2>You might be interested in...</h2>
+            <div class="o-feature-block communities__videos">
+                <h4 class="block-title">Videos</h4>
+                <ul class="recommendations__list o-3-col-list"><!--THIS REGION SHOULD DISPLAY VIDEOS WITH SIMILAR TOPIC TAGS TO THE ARTICLE THE USER IS CURRENTLY VIEWING-->
+                    <li><a href="#">
+                            <figure><img src="../img/videos/filive-video1.jpg" width="100%" height="auto">
+                    <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="../img/articles/article-5-400.jpg" width="100%" height="auto">
+                                
+                                <i class="icon--video"></i>
+                                <figcaption><h4 class="video__caption">Designing Animation Awesomeness</h4><p class="video__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="../img/articles/article-5-400.jpg" width="100%" height="auto">
+                                
+                                <i class="icon--video"></i>
+                                <figcaption><h4 class="video__caption">Designing Animation Awesomeness</h4><p class="video__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+                <a class="c-button">Video library <i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="o-feature-block communities__articles">
+                <h4 class="block-title">Articles</h4>
+                <div class="o-row"><!--THIS REGION SHOULD DISPLAY A BLOG POST WITH SIMILAR TOPIC TAGS TO THE ARTICLE THE USER IS CURRENTLY VIEWING-->
+                    <figure class="articles__img"><img src="../img/articles/article-01.png" width="100%" height="auto"><i class="icon--article"></i></figure>
+                    <div class="articles__text">
+                        <h3 class="article__title">Changing Your Workflow to Cope with Responsive Design</h3>
+                        <p class="small">Published by <a href="#">Dan Rose</a> on 08 July, 2015</p>
+                        <p>Responsive design has brought many changes to the web design business, but one sneaky change that has perhaps been overlooked is that designing for so many screen sizes alters the way designers hand off the projects to developers.</p> 
+
+    <p class="small">That's just one example of a workflow issues that Dan Rose is determined to fix. But since we're talking about how projects are handed back and forth on a team, any fix is going to require a full team effort. Turns out getting everyone on a team who is used to one way of doing things to change is a tricky affair. </p>
+                        <h5><a class="c-link--primary" href="html/past-events.html">Read more <i class="fa fa-arrow-right"></i></a></h5>
+                    </div>
+                </div>
+                <a class="c-button">Blog home <i class="fa fa-arrow-right"></i></a>
+            </div>
+        </section>
         <!--events - cities-->
-        <section class="cities o-type--2">
+        <section class="cities o-type--2"><!--EDITABLE REGION-->
             <div class="o-wrapper-sides">
                 <h2>Upcoming Events</h2>
-            <ul class="c-list--cities--blog o-3-col-list"><!--EDITABLE REGION, SAME AS HOMEPAGE-->
+            <ul class="c-list--cities--blog o-3-col-list">
                 <li class="o-list__item--regular">
                     <a href="html/event-home.html">
                         <figure>
@@ -322,8 +429,8 @@
 </svg>
             </div>
             <div class="o-signup__text">
-                <h2>Sign Up</h2>
-                <p>Subscribe to one of our email newsletters and get FREE access to hundreds of videos today.</p>
+                <!--EDITABLE--><h2>Sign Up</h2>
+                <!--EDITABLE--><p>Subscribe to one of our email newsletters and get FREE access to hundreds of videos today.</p>
                 <form class="signup__form">
                     <fieldset class="signup__details">
                         <input class="signup-form__field" type="text" name="name" placeholder="Your Name">
@@ -340,7 +447,7 @@
             </div>
         </section>
         <!--get involved-->
-        <section class="get-involved o-type--1"><!--EDITABLE REGION--ALL TEXT-->
+        <section class="get-involved o-type--1"><!--EDITABLE REGION-->
             <h2>Get Involved</h2>
             <ul class="c-get-involved">
                 <li id="write">
@@ -400,7 +507,7 @@
             </ul>
         </section>
     <!--footer-->
-    <footer><!--EDITABLE REGION--ALL TEXT-->
+    <footer>
         <div class="o-wrapper">
             <p class="small">Future of Web Design is produced by <a href="../index.html"><img class="logo--small" src="../img/logos/fi-white.svg" alt="Future Insights" width="100%" height="auto"></a></p>
         <div class="footer__about">
@@ -434,7 +541,7 @@
         </div>
         </div>
     </footer>
-    <!--modal__signup-->
+<!--modal__signup-->
     <div id="open-modal__signup" class="modal__signup">
         <div class="modal__content">
             <!--hide form when submitted-->
@@ -459,19 +566,24 @@
             </form>
             </div>
             <div class="modal__content--2">
-                <p>Thank you for submitting your details! You now have access to our extensive video library absolutely FREE! Please check your email inbox and click on the link to confirm.</p>
+                <!--EDITABLE--><p>Thank you for submitting your details! You now have access to our extensive video library absolutely FREE! Please check your email inbox and click on the link to confirm.</p>
                 <a class="c-button" id="modal--hide">Back to content <i class="fa fa-arrow-right"></i></a>
             </div>
             <a href="" id="modal--hide" class="modal__close">x</a>
         </div>
     </div>
+    <!--popup CTA-->
+    <div id="popup-open" class="popup popup--hide"><!--EDITABLE REGION--WE MAY NEED TO CHANGE THE WORDING AND LINK TO ADVERTISE AN EVENT INSTEAD. ALSO, CAN WE SET THIS TO ONLY APPEAR WHEN A USER IS NOT LOGGED IN? OR HAVE DIFFERENT WORDING WHEN THEY ARE LOGGED IN.-->
+        <div class="popup__content">
+            <p class="small">Get the latest content, straight to your inbox: <strong><a class="popup__link" href="#">Subscribe to the newsletter</a></strong></p>
+        </div>
+        <a class="popup__close" href="#">x</a>
+    </div>
     <!--hide modal on click-->
     <script>
         $(document).ready(function() {
             $( "#modal--hide" ).click(function() {
-              $( "#open-modal__signup" ).hide( "slow", function() {
-                $( this ).remove();
-              });
+              $( "#open-modal__signup" ).hide( "slow", function());
             });
         });
     </script>
@@ -517,17 +629,47 @@
     </script>
     <!--topic menu-->
     <script>
-        $( "#topic-menu__trigger--mobile" ).click(function() {
+        $( "#topic-menu__trigger" ).click(function() {
             $( ".topic-menu" ).slideToggle( "slow" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
         });
     </script>
-    <script>
+<script>
         $( "#topic-menu__trigger--desktop" ).click(function() {
             $( ".topic-menu--desktop" ).slideToggle( "slow" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
+        });
+    </script>
+    <script>
+        $( "#more-topics__trigger" ).click(function() {
+            $( ".topics__sub-menu" ).slideToggle( "slow" );
+            $( ".sub-menu--closed" ).switchClass( "sub-menu--closed", "sub-menu--open", 200 );
+            $( ".sub-menu--open" ).switchClass( "sub-menu--open", "sub-menu--closed", 200 );
+        });
+    </script>
+<!--jquery slide up popup-->
+    <script>
+    $(document).ready(function() {
+        $( window ).scroll(function() {
+            if ($(this).scrollTop() > 600){
+                $( '#popup-open' ).switchClass( "popup--hide", "popup--show", 200 );
+            }
+            else {
+                $('#popup-open').switchClass( "popup--show", "popup--hide", 200 );
+            }
+        });
+    });
+    </script>
+<!--hide popup-->
+    <script>
+        $(document).ready(function() {
+            $( "#popup-close" ).click(function() {
+              $( "#popup-open" ).hide( "slow", function() {
+                $( this ).remove();
+              });
+            });
         });
     </script>
     

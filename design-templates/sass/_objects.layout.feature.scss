@@ -1,0 +1,15 @@
+/* Featured */
+
+.o-feature-block {
+    clear: both;
+    padding: 3em 1em 1em 1em;
+    position: relative;
+    margin-top: 2em;
+    @media (min-width: $bp-l) {
+        margin-top: 3em;
+        padding: 3em 2em 2em 2em;
+    }
+    p {
+        color: $dk-grey !important;
+    }
+}
