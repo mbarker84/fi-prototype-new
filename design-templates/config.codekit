@@ -759,6 +759,72 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/logos\/sponsors\/adobe.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/logos\/sponsors\/adobe.png",
+		"outputAbbreviatedPath": "\/img\/logos\/sponsors\/adobe.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logos\/sponsors\/balsamiq.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26400,
+		"inputAbbreviatedPath": "\/img\/logos\/sponsors\/balsamiq.png",
+		"outputAbbreviatedPath": "\/img\/logos\/sponsors\/balsamiq.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logos\/sponsors\/invision.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30538,
+		"inputAbbreviatedPath": "\/img\/logos\/sponsors\/invision.png",
+		"outputAbbreviatedPath": "\/img\/logos\/sponsors\/invision.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logos\/sponsors\/mautic.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29851,
+		"inputAbbreviatedPath": "\/img\/logos\/sponsors\/mautic.png",
+		"outputAbbreviatedPath": "\/img\/logos\/sponsors\/mautic.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logos\/sponsors\/mediatemple.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 56441,
+		"inputAbbreviatedPath": "\/img\/logos\/sponsors\/mediatemple.png",
+		"outputAbbreviatedPath": "\/img\/logos\/sponsors\/mediatemple.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logos\/sponsors\/siteground.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34464,
+		"inputAbbreviatedPath": "\/img\/logos\/sponsors\/siteground.png",
+		"outputAbbreviatedPath": "\/img\/logos\/sponsors\/siteground.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/speaker-photos\/ben-jordan.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1637,6 +1703,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/sass\/_components.line-breaks.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/_components.line-breaks.scss",
+		"outputAbbreviatedPath": "\/stylesheets\/_components.line-breaks.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/sass\/_components.links.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1694,6 +1776,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/_components.lists.speakers.scss",
 		"outputAbbreviatedPath": "\/stylesheets\/_components.lists.speakers.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/_components.lists.sponsors.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/_components.lists.sponsors.scss",
+		"outputAbbreviatedPath": "\/stylesheets\/_components.lists.sponsors.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

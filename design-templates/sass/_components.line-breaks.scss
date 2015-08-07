@@ -1,0 +1,10 @@
+.line-break--full {
+    @include border-bottom($lt-grey);
+    margin-bottom: 1em;
+}
+
+.line-break--centered {
+    max-width: 10em;
+    margin: 0 auto;
+    border-top: 3px solid $dk-grey;
+}

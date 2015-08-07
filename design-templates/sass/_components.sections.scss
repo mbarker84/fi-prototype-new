@@ -1,18 +1,14 @@
-.line-break--full {
-    @include border-bottom($lt-grey);
-    margin-bottom: 1em;
-}
-
-.line-break--centered {
-    max-width: 10em;
-    margin: 0 auto;
-    border-top: 3px solid $dk-grey;
-}
-
 /* Events */
 
 section.events,
-section.cities {
+section.cities,
+section.advisors {
+    @include background-gradient($white, $ultra-lt-grey);
+}
+
+/* Sponsors */
+
+section.sponsors {
     @include background-gradient($white, $ultra-lt-grey);
 }
 
@@ -112,11 +108,6 @@ ul.c-get-involved {
     .o-get-involved__img {
         padding: 2em 7em 2em 3em;
     }
-}
-
-/* Articles */
-
-section.articles {
 }
 
 /* Recommendations */

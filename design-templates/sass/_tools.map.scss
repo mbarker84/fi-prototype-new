@@ -161,12 +161,7 @@ $themes: (
             color: $fowd;
         }
     }
-    
-    section.events,
-    section.cities,
-    section.advisors {
-        @include background-gradient($white, adjust-color($primary, $hue: 190deg, $saturation: -36, $lightness: 36));
-    }
+
     
     li.pagination__item--current {
         background-color: $primary;
