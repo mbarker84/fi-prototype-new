@@ -174,9 +174,39 @@ main, section {
     }
 }
 
-/* Promo video */
+/* Speaker profile */
 
+.o-speaker-profile__col--2 {
+    clear: both;
+}
 
+@media (min-width: $bp-l) {
+    
+    .o-speaker-profile__col--1 {
+        @include span(4);
+        @include clearfix;
+    }
+    
+    .o-speaker-profile__col--2 {
+        @include span(8 last);
+        clear: none;
+    }
+    
+}
+
+/* 50% columns at large breakpoints */
+
+@media (min-width: $bp-l) {
+    
+    .o-col-50--1 {
+        @include span(6);
+    }
+    .o-col-50--2 {
+        @include span(6 last);
+    }
+    
+}
+    
     
 
 

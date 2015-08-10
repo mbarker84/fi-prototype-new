@@ -1,0 +1,120 @@
+section.speaker__appearances,
+section.speaker__content {
+    padding: 2em 0 0 0;
+}
+
+figure.speaker-profile__img {
+    max-width: 10em;
+    margin: 0 auto 1em auto;
+    img {
+        border-radius: 50%;
+    }
+}
+
+/* Sponsor profile image */
+figure.sponsor-profile__img {
+    max-width: 10em;
+    margin: 0 auto 1em auto;
+}
+
+.profile-link {
+    margin-left: 1em;
+}
+
+ul.speaker-profile__links {
+    padding-top: 1em;
+    border-top: 2px solid $white;
+}
+
+li.profile-links__item p {
+    margin-bottom: .5em;
+}
+
+/* Speaker profile */
+
+@media (min-width: $bp-l) {
+
+    figure.speaker-profile__img,
+    figure.sponsor-profile__img {
+        padding: 0 1em;
+        max-width: 100%;
+    }
+    
+    ul.speaker-profile__links {
+        @include span(full);
+    }
+    
+}
+
+/* Speaking appearances */
+
+.appearances__video-icon {
+    @include span(2);
+    figure.video-icon {
+        position: relative;
+        background-color: $black;
+        text-align: center;
+        margin-bottom: 1em;
+        border-radius: .3em;
+        padding: .5em;
+        figcaption {
+            display: none;
+        }
+    }
+    @media (min-width: $bp-m) {
+        @include span(3);
+        figure.video-icon {
+            padding: 1em 2em;
+        }
+    }
+    @media (min-width: $bp-m--2) {
+        @include span(2);
+    }
+    @media (min-width: $bp-l) {
+        @include span(2 of 6);
+        figure.video-icon img {
+            margin-bottom: 0;
+        }
+        figure.video-icon figcaption {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $black;
+            opacity: 0;
+            transition: all .2s ease-in-out;
+            padding: 2em 1em;
+            letter-spacing: .03em;
+        }
+        &:focus, &:hover, &:active {
+            padding: 0;
+            figure.video-icon figcaption {
+                opacity: 1;
+                color: $white;
+            }
+        }
+    }
+}
+
+.appearances__event-name {
+    @include span(10 last);
+    @media (min-width: $bp-m) {
+        @include span(9 last);
+    }
+    @media (min-width: $bp-m--2) {
+        @include span(10 last);
+    }
+    @media (min-width: $bp-l) {
+        @include span(4 of 6 last);
+    }
+}
+
+.appearances__date {
+    margin-bottom: .5em;
+}
+
+.appearances__talk-title {
+    color: $dk-grey;
+}

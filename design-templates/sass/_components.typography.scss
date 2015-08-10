@@ -86,6 +86,7 @@ h4.list__caption {
     color: $white;
     margin-bottom: 0;
     @include ms-respond(font-size, 0);
+    line-height: 1.1;
     @media (min-width: $bp-m) {
         @include ms-respond(font-size, 1);
     }
@@ -146,5 +147,25 @@ p.section__intro--dk {
 
 .search-results__keywords {
     color: $lt-grey;
+}
+
+.profile-head {
+    color: $md-grey;
+    margin-bottom: .5em;
+}
+
+h2.speaker-profile__speaker-name {
+    margin-bottom: .5em;
+}
+
+.sponsor__speaker-label {
+    background-color: $black;
+    padding: .2em .5em;
+    @include ms-respond(font-size, -2);
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    &:focus, &:hover, &:active {
+        background-color: $lt-grey;
+    }
 }
 

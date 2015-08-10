@@ -83,3 +83,12 @@ li.speaker-letters__item {
         margin-bottom: 2em;
     }
 }
+
+/* Speaking appearances */
+
+li.appearances__item {
+    @include clearfix;
+    h6 {
+        margin-bottom: 0;
+    }
+}
