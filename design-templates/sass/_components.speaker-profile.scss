@@ -87,6 +87,7 @@ li.profile-links__item p {
             transition: all .2s ease-in-out;
             padding: 2em 1em;
             letter-spacing: .03em;
+            border-radius: .3em;
         }
         &:focus, &:hover, &:active {
             padding: 0;

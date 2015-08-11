@@ -12,6 +12,12 @@ section.sponsors {
     @include background-gradient($white, $ultra-lt-grey);
 }
 
+.sponsor__form {
+    @media (min-width: $bp-m--2) {
+        width: span(10);
+    }
+}
+
 
 /* Videos */
 

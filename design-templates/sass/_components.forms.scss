@@ -82,9 +82,9 @@
     }
 }
 
-/* Modal signup form */
-
-.modal__form {
+.modal__form,
+.sponsor,
+.speaker {
     input {
         @include ms-respond(font-size, 0);
         display: block;

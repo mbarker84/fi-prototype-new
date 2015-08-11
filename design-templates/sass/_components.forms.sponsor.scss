@@ -1,0 +1,47 @@
+form.sponsor,
+form.speaker {
+    padding: 1em;
+    background-color: $black;
+    @media (min-width: $bp-m) {
+        padding: 2em;
+    }
+    @media (min-width: $bp-l) {
+        padding: 3em;
+    }
+    label {
+        color: $lt-grey;
+        line-height: 1.3;
+    }
+    input {
+        background-color: $white;
+    }
+}
+
+form.sponsor {
+    @media (min-width: $bp-m--2) {
+        padding: 2em 40% 2em 2em;
+    }
+    @media (min-width: $bp-l) {
+        padding: 3em;
+    }
+}
+
+.sponsor-form__textarea,
+.speaker-form__textarea {
+    height: 10em;
+    margin: .5em 0 2em 0;
+    border: none;
+    border-radius: .3em;
+    width: 100%;
+}
+
+.speaker-form__textarea {
+    height: 15em;
+}
+
+.speaker-form__label--small {
+    @media (min-width: $bp-m--2) {
+        width: 50%;
+        display: block;
+    }
+}
