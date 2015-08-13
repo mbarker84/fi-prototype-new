@@ -1,0 +1,50 @@
+
+.speaker-form__textarea {
+    height: 15em;
+}
+
+.speaker-form__label--small {
+    @media (min-width: $bp-m--2) {
+        width: 50%;
+        display: block;
+    }
+}
+
+.form__fields {
+    margin-bottom: 1em;
+}
+
+fieldset.speaker-submission__checkbox,
+fieldset.speaker-submission__radio {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 2px solid $dk-grey;
+    border-radius: .5em;
+    margin-top: 1em;
+}
+
+.speaker-submission__radio-button {
+    @include clearfix;
+    margin-right: 1em;
+    overflow: visible;
+    @media (min-width: $bp-s) {
+        display: inline-block;
+        min-width: 6em;
+        float: left;
+    }
+    input {
+        display: inline-block;
+        width: auto;
+        margin-right: 1em;
+    }
+}
+
+.speaker-submission__checkbox-input {
+    display: block;
+    padding: 0;
+    input {
+        display: inline-block;
+        width: auto;
+        margin-right: 1em;
+    }
+}

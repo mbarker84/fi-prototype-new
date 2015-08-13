@@ -30,22 +30,22 @@ ul.events__topic-list {
     width: 100%;
     padding: 1em;
     li {
-        @include ms-respond(font-size, 1);
+        @include ms-respond(font-size, 2);
+        font-family: $secondary;
         display: inline;
-        text-align: center;
         line-height: 1.2;
         padding: .2em .5em .2em 0;
         letter-spacing: .05em;
         font-weight: 700;
         text-transform: uppercase;
-        color: darken($fi-highlight, 20%);
+        color: $md-grey;
         @media (min-width: $bp-l) {
             @include ms-respond(font-size, 0.5);
         }
         &::before {
             content: "\2022";
             margin-right: .5em;
-            color: darken($fi-highlight, 20%);
+            color: $md-grey;
         }
     }
 }

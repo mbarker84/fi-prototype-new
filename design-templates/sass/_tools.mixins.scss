@@ -114,14 +114,14 @@
 }
 
 @mixin ratio4_3--image {
-    .article-preview__img {
+    figure {
         position: relative;
         &:before {
             content: "";
             display: block;
             padding-top: 75%;
         }
-        figure {
+        img {
             position:  absolute;
             top: 0;
             left: 0;

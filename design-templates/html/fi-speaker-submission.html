@@ -144,12 +144,14 @@
     <!--main-->
     <main class="speaker-submission">
         <!--articles-->
-        <section class="sponsor-submit o-type--1">
+        <section class="speaker-submit o-type--1">
             <h2>Speak at an event</h2>
             <div class="o-row--regular">
-                <div class="o-section__intro-block">
+                <div class="o-section__intro-block speaker-submit__intro">
                     <p>Have you learned a thing or two about Web design, web apps, mobile development, or some other great web technology? Share it with the group, please! We're always on the lookout for the next rising star in the web world, so here's your chance to show us what you've got.</p>
+                    <p>If you’re submitting a talk for the first time, please read our <a href="#">guidelines</a> first.</p>
                 </div>
+                <!--speaker submission form-->
                 <div class="speaker__form">
                     <form class="speaker">
                         <fieldset class="form__fields">
@@ -163,7 +165,27 @@
                                 <input type="text" name="password" id="Company" placeholder="e.g. Future Insights" class="text-field">
                             </label>
                             <label class="speaker-form__label--small">Twitter
-                                <input type="text" name="password" id="Company" placeholder="@" class="text-field">
+                                <input type="text" name="company" id="Company" placeholder="@" class="text-field">
+                            </label>
+                             <label class="speaker-form__label--small">Title of your talk
+                                <input type="text" name="title" id="Title" placeholder="" class="text-field">
+                            </label>
+                            <label>Which event would your presentation be best suited for?
+                                <fieldset class="speaker-submission__checkbox">
+                                    <label class="speaker-submission__checkbox-input"><input type="checkbox">Future of Web Design</label>
+                                    <label class="speaker-submission__checkbox-input"><input type="checkbox">Future of Web Apps</label>
+                                    <label class="speaker-submission__checkbox-input"><input type="checkbox">Future Insights Live</label>
+                                    <label class="speaker-submission__checkbox-input"><input type="checkbox">Other (please specify)</label> 
+                                    <label class="speaker-form__label--small"><input type="text" name="event"></label>
+                                </fieldset>
+                            </label>
+                            <label>Who is the ideal audience for this talk? (Tick all that apply)
+                                <fieldset class="speaker-submission__checkbox">
+                                    <label class="speaker-submission__checkbox-input"><input type="checkbox">Web designers</label>
+                                    <label class="speaker-submission__checkbox-input"><input type="checkbox">Web developers</label>
+                                    <label class="speaker-submission__checkbox-input"><input type="checkbox">Entrepreneurs</label>
+                                    <label class="speaker-submission__checkbox-input"><input type="checkbox">Business types</label>
+                                </fieldset>
                             </label>
                             <label>In 300 words or less, what does your session reveal about the future of your subject?
                             <textarea class="speaker-form__textarea"></textarea></label>
@@ -171,6 +193,20 @@
                             <textarea class="speaker-form__textarea"></textarea></label>
                             <label>Presentation outline: A completed outline helps you think through your presentation and the conference producer accurately describe your talk on our site.
                             <textarea class="speaker-form__textarea"></textarea></label>
+                            <label>Have you spoken at a Future Insights (or Carsonified) conference before?
+                                <fieldset class="speaker-submission__radio">
+                                    <label class="speaker-submission__radio-button"><input type="radio">Yes</label>
+                                    <label class="speaker-submission__radio-button"><input type="radio">No</label>
+                                </fieldset>
+                            </label>
+                            <label>Have you spoken at any other web technology or marketing conferences before?
+                                <fieldset class="speaker-submission__radio">
+                                    <label class="speaker-submission__radio-button"><input type="radio">Yes</label>
+                                    <label class="speaker-submission__radio-button"><input type="radio">No</label>
+                                </fieldset>
+                            </label>
+                            <label class="speaker-form__label--small">Please link to any video of a prior talk you've given:<input type="text" name="link" placeholder="http://"></label>
+                            </label>
                         </fieldset>
                         <a class="c-button" id="modal--submit">Submit <i class="fa fa-arrow-right"></i></a>
                     </form>

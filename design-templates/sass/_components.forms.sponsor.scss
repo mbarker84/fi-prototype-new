@@ -34,14 +34,3 @@ form.sponsor {
     border-radius: .3em;
     width: 100%;
 }
-
-.speaker-form__textarea {
-    height: 15em;
-}
-
-.speaker-form__label--small {
-    @media (min-width: $bp-m--2) {
-        width: 50%;
-        display: block;
-    }
-}

@@ -106,7 +106,6 @@ main, section {
     @media (min-width: $bp-l--2) {
         @include span(10);
         .o-row--articles {
-            padding-left: span(1 of 10);
             padding-top: 1em;
         }
     }
@@ -129,6 +128,13 @@ main, section {
     }
     @media (min-width: $bp-l) {
         margin-top: 8em;
+    }
+}
+
+.o-header-group--home {
+    @media (min-width: $bp-l) {
+        margin-top: 3em;
+        margin-bottom: 3em;
     }
 }
 
@@ -207,7 +213,14 @@ main, section {
     
 }
     
+
+@media (min-width: $bp-l) {
     
+    .o-text-block--10 {
+        width: span(10);
+    }
+    
+}
 
 
     

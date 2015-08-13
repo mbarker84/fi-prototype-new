@@ -6,6 +6,11 @@ section.advisors {
     @include background-gradient($white, $ultra-lt-grey);
 }
 
+section.events--home {
+    background-image: url(../img/backgrounds/background-pattern_triangles.svg), linear-gradient(150deg, transparent, $ultra-lt-grey);
+    background-size: cover;
+}
+
 /* Sponsors */
 
 section.sponsors {
@@ -25,6 +30,10 @@ section.videos {
     overflow: visible;
 }
 
+.videos__courses {
+    margin-bottom: 2em;
+}
+
 /* Communities */
 
 figure.articles__img {
@@ -40,6 +49,23 @@ figure.articles__img {
     .articles__text {
         @include span(8 last);
     }
+}
+
+/* Speakers */
+
+section.speakers--archive,
+section.articles--archive {
+    border-top: 2px solid $lt-grey;
+}
+
+.speaker-submit__intro {
+    margin-bottom: 2em;
+}
+
+.archive__articles-title {
+    @include border-bottom($dk-grey);
+    padding-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 

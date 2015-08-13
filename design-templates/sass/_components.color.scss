@@ -1,7 +1,7 @@
 .fi {
     @include theme(theme-fi, $fi-primary);
     header {
-        @include header-background(url(../img/backgrounds/lines-black.svg), url(../img/backgrounds/lines-black-l.svg), $black-overlay, transparentize($fi-primary, .3), $fi-highlight, url(../img/events/home-main.jpg), url(../img/events/home-main_l.jpg));
+        @include header-background(url(../img/backgrounds/lines-black.svg), url(../img/backgrounds/lines-lt-blue-l.svg), $black-overlay, transparentize($fi-primary, .3), $fi-highlight, url(../img/events/home-main.jpg), url(../img/events/home-main_l.jpg));
         color: $black;
     }
     .o-feature-block {

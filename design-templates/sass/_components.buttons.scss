@@ -15,6 +15,16 @@
         letter-spacing: .03em;
         @include ms-respond(font-size, 1.5);
     }
+    &--white {
+        @extend .c-button;
+        background-color: $white !important;
+    }
+    &--type-2 {
+        @extend .c-button;
+        background-color: $black !important;
+        color: $fi-highlight !important;
+        letter-spacing: .03em;
+    }
 }
 
 .get-involved_button {

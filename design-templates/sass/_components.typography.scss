@@ -15,7 +15,6 @@ p.menu {
 }
 
 h1.header__page-head {
-    margin-bottom: 1em;
     color: $black;
 }
 
@@ -42,6 +41,16 @@ h5.label--premium {
     right: 0;
     padding: .3em .5em;
     color: $black;
+}
+
+p.subhead {
+    @include ms-respond(font-size, 1);
+    font-weight: 700;
+}
+
+p.subhead--home {
+    @include ms-respond(font-size, 1);
+    font-weight: 700;
 }
 
 footer {
@@ -134,11 +143,10 @@ figcaption.caption--primary {
     @include ms-respond(font-size, 0);
 }
 
-.videos__premium-text {
+.videos__banner-text {
     padding: .5em;
     background-color: $ultra-lt-grey;
     color: $dk-grey !important;
-    letter-spacing: .03em;
 }
 
 p.section__intro--dk {

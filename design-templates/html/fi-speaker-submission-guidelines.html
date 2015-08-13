@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Future of Web Design | Videos</title>
+    <title>Future of Web Design | Sponsor</title>
     <link href="../stylesheets/main.css" rel="stylesheet" type="text/css" />
     <!--Font Awesome-->
     <link href="../stylesheets/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" />
@@ -17,7 +17,7 @@
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
     
-<body class="fowd">
+<body class="fi">
 <nav class="nav--main">
     <a id="trigger" class="menu__trigger" href="#open-menu">Menu <i id="menu-icon" class="fa fa-bars"></i></a>
     <a id="trigger--mobile" class="menu__trigger" href="#open-menu">Menu <i id="menu-icon" class="fa fa-bars"></i></a>
@@ -64,8 +64,9 @@
                 <li class="full-nav__sub--item"><a class="all" href="#">See all...</a></li>
             </ul>
         </li>
-        <li class="full-nav__item current"><a href="#"><h5>Videos</h5></a></li>
+        <li class="full-nav__item"><a href="#"><h5>Videos</h5></a></li>
         <li class="full-nav__item"><a href="#"><h5>Blog</h5></a></li>
+        <li class="full-nav__item"><a href="#"><h5>Speakers</h5></a></li>
         <li class="full-nav__item"><a href="#"><h5>About</h5></a>
         </li>
         <li class="full-nav__item"><a href="#"><h5>Get Involved <i class="fa fa-chevron-down"></i></h5></a>
@@ -89,12 +90,11 @@
   <path d="M382.6 0H22.4C10 0 0 10 0 22.4v360.3C0 395 10 405 22.4 405h194V248.2h-52.8V187h52.8V142c0-52.3 31.9-80.8 78.6-80.8 22.4 0 41.6 1.7 47.2 2.4v54.7l-32.4 0c-25.4 0-30.3 12.1-30.3 29.8v39H340l-7.9 61.1h-52.6V405h103.2c12.3 0 22.4-10 22.4-22.4V22.4C405 10 395 0 382.6 0z"/>
 </svg></a></li>
         </ul>
-    </div>
 </nav>
 <!--header-->
-<header class="header--videos">
+<header class="header--blog">
     <!--event-menu-->
-    <div class="event-menu__wrapper">
+    <div class="event-menu__wrapper"><!--EDITABLE--WE NEED TO BE ABLE TO SELECT WHICH EVENTS WE WANT TO GO HERE-->
         <a id="event-menu__trigger">Future of Web Design <i class="fa fa-caret-down"></i></a>
         <ul class="event-menu">
             <li class="event-menu__item"><a href="#">Future of Web Apps</a></li>
@@ -103,46 +103,36 @@
         </ul>
     </div>
     <div class="o-header__group">
-        <h3 class="header__title">Video Library</h3>
-        <div class="header__line-break--black"></div>
-        <div class="o-row--header">
-            <!--search box-->
-            <form id="main-search" class="header__search">
-                <input type="text" name="search" placeholder="e.g. Bruce Lawson, CSS, London 2015">
-                <button class="search"><i class="fa fa-search"></i></button>
-            </form>
-            <!--topic-menu-->
-            <div class="topic-menu__wrapper--inline"><!--EDITABLE REGION-->
-                <a id="topic-menu__trigger--desktop">Browse popular topics... <i class="fa fa-caret-down"></i></a>
-                <ul class="topic-menu--desktop">
-                    <li class="topic-menu__item"><a href="#">UX Design</a></li>
-                    <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
-                    <li class="topic-menu__item"><a href="#">Prototyping</a></li>
-                    <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
-                    <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
-                </ul>
-            </div>
-        </div>
-        <!--CTA-->
-        <div class="header__cta"><!--EDITABLE REGION--OMIT IF THE USER IS ALREADY LOGGED IN-->
-            <p>Start watching hundreds of videos today, absolutely FREE, or sign up to a subscription package to get even more great content.</p>
-            <a class="c-button--header" href="#">Sign up <i class="fa fa-arrow-right"></i></a>
-            <p class="small"> Already a member? <a href="#">Log in</a>.</p>
+         <!--search box-->
+        <form id="main-search" class="header__search">
+            <input type="text" name="search" placeholder="e.g. Bruce Lawson, CSS, London 2015">
+            <button class="search"><i class="fa fa-search"></i></button>
+        </form>
+        <!--topic-menu-->
+        <div class="topic-menu__wrapper--inline">
+            <a id="topic-menu__trigger--desktop">Browse popular topics... <i class="fa fa-caret-down"></i></a>
+            <ul class="topic-menu--desktop"><!--EDITABLE--CAN THIS BE SET UP SO THAT MOST POPULAR OR MOST FREQUENTLY TAGGED TOPICS APPEAR HERE? IF NOT THEN WE NEED TO BE ABLE TO CHOOSE TOPICS MANUALLY-->
+                <li class="topic-menu__item"><a href="#">UX Design</a></li>
+                <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
+                <li class="topic-menu__item"><a href="#">Prototyping</a></li>
+                <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
+                <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
+            </ul>
         </div>
     </div>
 </header>
     <!--event-menu--desktop-->
     <ul class="event-menu--desktop">
-        <li class="event-menu__item--desktop"><a href="#">All</a></li>
-        <li class="event-menu__item--desktop"><a class="current" href="#">Future of Web Design</a><img class="event-menu__triangle" src="../img/icons/svg/small-triangle-red.svg" width="100%" height="auto"></li>
+        <li class="event-menu__item--desktop"><a class="current" href="#">All</a><img class="event-menu__triangle" src="../img/icons/svg/small-triangle-blue.svg" width="100%" height="auto"></li>
+        <li class="event-menu__item--desktop"><a href="#">Future of Web Design</a></li>
         <li class="event-menu__item--desktop"><a href="#">Future of Web Apps</a></li>
             <li class="event-menu__item--desktop"><a href="#">Future Insights Live</a></li>
             <li class="event-menu__item--desktop"><a href="#">Future of Work</a></li>
         <li class="event-menu__item--desktop"><a href="#">More...</a></li>
     </ul>
     <!--topic-menu-->
-    <div class="topic-menu__wrapper"><!--EDITABLE REGION-->
-        <a id="topic-menu__trigger">Choose topics... <i class="fa fa-caret-down"></i></a>
+    <div class="topic-menu__wrapper"><!--EDITABLE AS ABOVE-->
+        <a id="topic-menu__trigger--mobile">Choose topics... <i class="fa fa-caret-down"></i></a>
         <ul class="topic-menu">
             <li class="topic-menu__item"><a href="#">UX Design</a></li>
             <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
@@ -152,99 +142,31 @@
         </ul>
     </div>
     <!--main-->
-    <main class="blog o-type--1">
-        <!--video gallery-->
-        <section class="videos">
-            <div class="videos__courses">
-                <p class="videos__banner-text small">Subscribe to a 6-week video course: Get a weekly email with a free video on your chosen topic, delivered direct to your inbox. <br/><a href="#"><strong>View courses <i class="fa fa-arrow-right"></i></strong></a></p>
+    <main class="speaker-submission">
+        <!--articles-->
+        <section class="speaker-submit o-type--1">
+            <h2>Speaker Submission Guidelines</h2>
+            <div class="o-text-block--10">
+                <p>We’re always looking for interesting talks for our events, and actively welcome submissions. There are a few things you should bear in mind when submitting a talk:</p>
+                <ol class="submission-guidelines__list article__ol_1">
+                    <li><h6>Provide as much detail as possible</h6><p>We don’t expect you to have a fully formed talk yet, but you should have already given consideration to how you will break down your topic into a rough structure. The more detail we have on this, the better.</p></li>
+                    <li><h6>Content is king</h6><p>It’s not about the jokes, or how many cat GIFs you can cram into 40 minutes: Our events are all about <em>content</em>. Think practical takeaways &ndash; what are the key points attendees can walk away with and start applying to their project right now?</p></li>
+                    <li><h6>Be future-focused</h6><p>Being <em>Future</em> Insights, our priority is to give our audience a glimpse of the future. What great things are around the corner for your chosen subject?</p></li>
+                    <li><h6>Product pitches are not cool</h6><p>The fastest way to turn off an audience is to turn your talk into a sales pitch. Therefore, we request that you don’t use your talk as an opportuity to pitch your product. Sure, use examples and case studies from your own work, but please remember to keep it balanced and talk about your topic in a broader sense too. You’ll get much more interest (and respect) from the audience that way.</p></li>
+                    <li><h6>Be committed</h6><p>Speaking at a Future Insights event is a great opportunity to make an impression and forge new connections. Our speakers and attendees always have a blast. But, make no mistake, putting a talk together is <strong>hard work</strong>. If you’re selected as a speaker, you’ll be expected to commit to at least two 30-minute content reviews with our producers, and to put together a talk synopsis, structure and slide deck in accordance with our deadlines.</p></li>
+                </ol>
+                <p>Our conference producers are always on hand to help, and will be happy to assist with practical advice and any information you need. Simply <a href="mailto:hello@futureinsights.com">reach out</a> if you have any questions.</p>
+                
+            <p>Ready?</p>
             </div>
-            <div class="o-feature-block videos__featured"><!--EDITABLE REGION--WE NEED TO BE ABLE TO MANUALLY SELECT A VIDEO TO HIGHLIGHT HERE-->
-                <h4 class="block-title">Featured</h4>
-                <div class="o-row">
-                    <figure class="articles__img"><img src="../img/videos/fowd-video-valhead.jpg" width="100%" height="auto">
-                    <i class="icon--video"></i></figure>
-                    <div class="articles__text">
-                        <h3 class="article__title">Designing Animation Awesomeness</h3>
-                        <h6>Val Head | <a href="#">Future of Web Design NYC 2015</a></h6>
-                        <p>Responsive design has brought many changes to the web design business, but one sneaky change that has perhaps been overlooked is that designing for so many screen sizes alters the way designers hand off the projects to developers.</p>
-                        <a class="c-button">Watch now <i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!--options-->
-            <div class="options">
-                <div class="options__title">
-                    <h3>All Events</h3>
-                </div>
-                <!--event-menu-->
-                <div class="filter-menu__wrapper--inline">
-                    <a id="filter-menu__trigger">Browse by... <i class="fa fa-caret-down"></i></a>
-                    <ul class="filter-menu">
-                        <li class="filter-menu__item"><a href="#">Event</a></li>
-                        <li class="filter-menu__item"><a href="#">Speaker (A–Z)</a></li>
-                        <li class="filter-menu__item"><a href="#">Popular videos</a></li>
-                    </ul>
-                </div>
-                <p class="small options__number">16 events</p>
-            </div>
-            <ul class="videos__gallery videos__list o-3-col-list"><!--FOR THE DEFAULT VIEW VIDEOS ARE ORDERED BY EVENT, STARTING WITH MOST RECENT-->
-                <li class="videos__item--event">
-                    <a href="#">
-                        <figure>
-                            <img src="../img/location-photos/London-FOWD.jpg" width="100%" height="auto"><i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">London 2015</h4><p class="list__caption small">21 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li class="videos__item--event">
-                    <a href="#">
-                        <figure>
-                            <img src="../img/location-photos/New%20York-01.jpg" width="100%" height="auto"><i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">New York 2014</h4><p class="list__caption small">21 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li class="videos__item--event">
-                    <a href="#">
-                        <figure>
-                            <img src="../img/videos/fowd-video-5.jpg" width="100%" height="auto"><i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">FI Live, Las Vegas, 2014</h4><p class="list__caption small">30 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li class="videos__item--event">
-                    <a href="#">
-                        <figure>
-                            <img src="../img/videos/fowd-video-1.jpg" width="100%" height="auto"><i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">London 2014</h4><p class="list__caption small">21 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li class="videos__item--event">
-                    <a href="#">
-                        <figure>
-                            <img src="../img/videos/fowd-video-2.jpg" width="100%" height="auto"><i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">New York 2013</h4><p class="list__caption small">21 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li class="videos__item--event">
-                    <a href="#">
-                        <figure>
-                            <img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto"><i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">FI Live, Las Vegas, 2013</h4><p class="list__caption small">30 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
-                        </figure>
-                    </a>
-                </li>
-            </ul>
+            <a class="c-button" id="modal--submit">Submit a talk <i class="fa fa-arrow-right"></i></a>
         </section>
-        
     </main>
         <!--events - cities-->
         <section class="cities o-type--2">
             <div class="o-wrapper-sides">
                 <h2>Upcoming Events</h2>
-            <ul class="c-list--cities--blog o-3-col-list">
+            <ul class="c-list--cities--blog o-3-col-list"><!--EDITABLE REGION, SAME AS HOMEPAGE-->
                 <li class="o-list__item--regular">
                     <a href="html/event-home.html">
                         <figure>
@@ -335,7 +257,7 @@
             </div>
             <div class="o-signup__text">
                 <h2>Sign Up</h2>
-                <!--EDITABLE--><p>Subscribe to one of our email newsletters and get FREE access to hundreds of videos today.</p>
+                <p>Subscribe to one of our email newsletters and get FREE access to hundreds of videos today.</p>
                 <form class="signup__form">
                     <fieldset class="signup__details">
                         <input class="signup-form__field" type="text" name="name" placeholder="Your Name">
@@ -352,7 +274,7 @@
             </div>
         </section>
         <!--get involved-->
-        <section class="get-involved o-type--1"><!--EDITABLE REGION-->
+        <section class="get-involved o-type--1"><!--EDITABLE REGION--ALL TEXT-->
             <h2>Get Involved</h2>
             <ul class="c-get-involved">
                 <li id="write">
@@ -412,7 +334,7 @@
             </ul>
         </section>
     <!--footer-->
-    <footer><!--EDITABLE REGION-->
+    <footer><!--EDITABLE REGION--ALL TEXT-->
         <div class="o-wrapper">
             <p class="small">Future of Web Design is produced by <a href="../index.html"><img class="logo--small" src="../img/logos/fi-white.svg" alt="Future Insights" width="100%" height="auto"></a></p>
         <div class="footer__about">
@@ -529,25 +451,17 @@
     </script>
     <!--topic menu-->
     <script>
-        $( "#topic-menu__trigger" ).click(function() {
+        $( "#topic-menu__trigger--mobile" ).click(function() {
             $( ".topic-menu" ).slideToggle( "slow" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
         });
     </script>
-    <!--topic menu desktop-->
     <script>
         $( "#topic-menu__trigger--desktop" ).click(function() {
             $( ".topic-menu--desktop" ).slideToggle( "slow" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
-        });
-    </script>
-    <script>
-        $( "#more-topics__trigger" ).click(function() {
-            $( ".topics__sub-menu" ).slideToggle( "slow" );
-            $( ".sub-menu--closed" ).switchClass( "sub-menu--closed", "sub-menu--open", 200 );
-            $( ".sub-menu--open" ).switchClass( "sub-menu--open", "sub-menu--closed", 200 );
         });
     </script>
     

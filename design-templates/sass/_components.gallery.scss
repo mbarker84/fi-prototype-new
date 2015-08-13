@@ -2,6 +2,8 @@ ul.c-list, ul.c-list--events {
     margin-bottom: 2em;
 }
 
+/* Events */
+
 li.c-list__item {
     @include clearfix;
     overflow: visible;
@@ -31,9 +33,6 @@ li.c-list__item {
         @media (min-width: $bp-s) {
             padding: 3em;
         }
-        @media (min-width: $bp-l) {
-            padding: 4em;
-        }
     }
 }
 
@@ -46,7 +45,8 @@ li.c-list__item {
 
 @media (min-width: $bp-l) {
     li.c-list__item {
-        padding: 1em;
+        @include gallery(4);
+        padding: 0;
     }
     
 }
@@ -54,7 +54,7 @@ li.c-list__item {
 /* Caption style – events */
 ul.c-list--events {
     figcaption {
-        background: linear-gradient( rgba(32, 33, 35, .9), transparentize($fi-highlight, .6) );
+        background: linear-gradient( rgba(32, 33, 35, .9), rgba(32, 33, 35, .6) );
         text-align: center;
     }
     h4.caption--event {
@@ -156,6 +156,12 @@ ul.c-list--events a {
     @media (min-width: $bp-l) {
         @include ratio4_3;
     }
+}
+
+/* FI Home */
+
+.events-list__item {
+    position: relative;
 }
 
 
