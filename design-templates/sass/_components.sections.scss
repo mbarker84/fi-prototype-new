@@ -1,11 +1,12 @@
 /* Events */
 
-section.events,
-section.cities,
-section.advisors {
+section.advisors,
+section.team {
     @include background-gradient($white, $ultra-lt-grey);
 }
 
+section.events,
+section.cities,
 section.events--home {
     background-image: url(../img/backgrounds/background-pattern_triangles.svg), linear-gradient(150deg, transparent, $ultra-lt-grey);
     background-size: cover;

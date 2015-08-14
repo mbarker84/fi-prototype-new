@@ -19,11 +19,25 @@
         @extend .c-button;
         background-color: $white !important;
     }
-    &--type-2 {
-        @extend .c-button;
-        background-color: $black !important;
-        color: $fi-highlight !important;
-        letter-spacing: .03em;
+}
+
+.c-button--type-2 {
+    display: inline-block;
+    width: auto;
+    color: $fi-highlight;
+    background-color: $black;
+    font-family: $secondary;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: .03em;
+    padding: .7em 1em;
+    border-radius: .3em;
+    transition: all .2s ease-in-out;
+    clear: both;
+    cursor: pointer;
+    &:focus, &:hover, &:active {
+        color: $black !important;
+        background-color: $fi-highlight;
     }
 }
 

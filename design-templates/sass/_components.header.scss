@@ -78,10 +78,7 @@ h3.header__title {
     color: $black;
     margin-top: 2em;
     margin-bottom: 0;
-    &--home {
-        @extend .header__subhead;
-        margin-bottom: 2em;
-    }
+    width: span(8);
 }
 
 p.c-subhead {
@@ -90,17 +87,11 @@ p.c-subhead {
 
 .header__arrow {
     position: absolute;
-    bottom: -5em;
+    bottom: -8em;
     right: 0;
     width: 4.2em;
     img {
         margin-bottom: .2em;
-    }
-}
-
-@media (min-width: $bp-l) {
-    .header__subhead {
-        width: span(8);
     }
 }
 
@@ -112,6 +103,10 @@ p.c-subhead {
     @media (min-width: $bp-m) {
         max-width: 25em;
     }
+    @media (min-width: $bp-l) {
+        margin-top: 3em;
+    }
+    
 }
 
 /* CTA */
@@ -119,20 +114,10 @@ p.c-subhead {
 .header__cta {
     clear: both;
     margin-top: 2em;
-    @media (min-width: $bp-l) {
-        width: span(8);
-    }
     .c-button {
         margin-bottom: 1em;
     }
     p {
-        text-shadow: 1px 1px 40px $white;
-    }
-}
-
-.header__cta--home {
-    color: $black;
-    @media (min-width: $bp-l) {
-        width: span(6);
+        margin-bottom: 2em;
     }
 }

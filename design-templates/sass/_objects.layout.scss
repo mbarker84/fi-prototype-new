@@ -138,6 +138,13 @@ main, section {
     }
 }
 
+.o-header-group--about {
+    @media (min-width: $bp-l) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
 /* Signup section */
 
 @media (min-width: $bp-l) {
