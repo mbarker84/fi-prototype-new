@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Future Insights</title>
+    <title>Future of Web Design | Videos</title>
     <link href="../stylesheets/main.css" rel="stylesheet" type="text/css" />
     <!--Font Awesome-->
     <link href="../stylesheets/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" />
@@ -17,7 +17,7 @@
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
     
-<body class="fi">
+<body class="fowd">
 <nav class="nav--main">
     <a id="trigger" class="menu__trigger" href="#open-menu">Menu <i id="menu-icon" class="fa fa-bars"></i></a>
     <a id="trigger--mobile" class="menu__trigger" href="#open-menu">Menu <i id="menu-icon" class="fa fa-bars"></i></a>
@@ -64,9 +64,8 @@
                 <li class="full-nav__sub--item"><a class="all" href="#">See all...</a></li>
             </ul>
         </li>
-        <li class="full-nav__item"><a href="#"><h5>Videos</h5></a></li>
+        <li class="full-nav__item current"><a href="#"><h5>Videos</h5></a></li>
         <li class="full-nav__item"><a href="#"><h5>Blog</h5></a></li>
-        <li class="full-nav__item"><a href="#"><h5>Speakers</h5></a></li>
         <li class="full-nav__item"><a href="#"><h5>About</h5></a>
         </li>
         <li class="full-nav__item"><a href="#"><h5>Get Involved <i class="fa fa-chevron-down"></i></h5></a>
@@ -90,20 +89,55 @@
   <path d="M382.6 0H22.4C10 0 0 10 0 22.4v360.3C0 395 10 405 22.4 405h194V248.2h-52.8V187h52.8V142c0-52.3 31.9-80.8 78.6-80.8 22.4 0 41.6 1.7 47.2 2.4v54.7l-32.4 0c-25.4 0-30.3 12.1-30.3 29.8v39H340l-7.9 61.1h-52.6V405h103.2c12.3 0 22.4-10 22.4-22.4V22.4C405 10 395 0 382.6 0z"/>
 </svg></a></li>
         </ul>
+    </div>
 </nav>
 <!--header-->
-<header>
+<header class="header--videos">
+    <!--event-menu-->
+    <div class="event-menu__wrapper">
+        <a id="event-menu__trigger">Future of Web Design <i class="fa fa-caret-down"></i></a>
+        <ul class="event-menu">
+            <li class="event-menu__item"><a href="#">Future of Web Apps</a></li>
+            <li class="event-menu__item"><a href="#">Future Insights Live</a></li>
+            <li class="event-menu__item"><a href="#">Future of Work</a></li>
+        </ul>
+    </div>
     <div class="o-header__group">
-        <h3>About Us</h3>
+        <h3 class="header__title">Video Courses</h3>
         <div class="header__line-break--black"></div>
-        <form id="main-search" class="header__search">
-            <input type="text" name="search">
-            <button class="search"><i class="fa fa-search"></i></button>
-        </form>
-        <!--topic-menu-->
-    <div class="topic-menu__wrapper--inline"><!--EDITABLE--CAN THIS BE SET UP SO THAT MOST POPULAR OR MOST FREQUENTLY TAGGED TOPICS APPEAR HERE? IF NOT THEN WE NEED TO BE ABLE TO CHOOSE TOPICS MANUALLY-->
-        <a id="topic-menu__trigger--desktop">Browse popular topics... <i class="fa fa-caret-down"></i></a>
-        <ul class="topic-menu--desktop">
+        <div class="o-row--header">
+            <!--search box-->
+            <form id="main-search" class="header__search">
+                <input type="text" name="search" placeholder="e.g. Bruce Lawson, CSS, London 2015">
+                <button class="search"><i class="fa fa-search"></i></button>
+            </form>
+            <!--topic-menu-->
+            <div class="topic-menu__wrapper--inline"><!--EDITABLE REGION-->
+                <a id="topic-menu__trigger--desktop">Browse popular topics... <i class="fa fa-caret-down"></i></a>
+                <ul class="topic-menu--desktop">
+                    <li class="topic-menu__item"><a href="#">UX Design</a></li>
+                    <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
+                    <li class="topic-menu__item"><a href="#">Prototyping</a></li>
+                    <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
+                    <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+    <!--event-menu--desktop-->
+    <ul class="event-menu--desktop">
+        <li class="event-menu__item--desktop"><a href="#">All</a></li>
+        <li class="event-menu__item--desktop"><a class="current" href="#">Future of Web Design</a><img class="event-menu__triangle" src="../img/icons/svg/small-triangle-red.svg" width="100%" height="auto"></li>
+        <li class="event-menu__item--desktop"><a href="#">Future of Web Apps</a></li>
+            <li class="event-menu__item--desktop"><a href="#">Future Insights Live</a></li>
+            <li class="event-menu__item--desktop"><a href="#">Future of Work</a></li>
+        <li class="event-menu__item--desktop"><a href="#">More...</a></li>
+    </ul>
+    <!--topic-menu-->
+    <div class="topic-menu__wrapper"><!--EDITABLE REGION-->
+        <a id="topic-menu__trigger">Choose topics... <i class="fa fa-caret-down"></i></a>
+        <ul class="topic-menu">
             <li class="topic-menu__item"><a href="#">UX Design</a></li>
             <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
             <li class="topic-menu__item"><a href="#">Prototyping</a></li>
@@ -111,157 +145,101 @@
             <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
         </ul>
     </div>
-    </div>
-</header>
     <!--main-->
-    <main class="about">
-        <section class="about o-type--1">
-            <div class="o-row--regular">
-                <div class="o-section__intro-block">
-                    <p>Future Insights is a small, international team dedicated to running incredible events for the designers, developers and web workers with an eye firmly fixed on the future.</p>
-                <p>Formerly known as Carsonified, now based in Bath, UK and Boston, MA, we host high quality conference experiences all over the world.</p>
-                <p>Contact us at <a href="mailto:hello@futureinsights.com">hello@futureinsights.com</a></p>
-                </div>
-            </div>
-        </section>
-        <!--team-->
-        <section class="team o-type--2">
-            <div class="o-wrapper-sides">
-                <h2>Meet the team</h2>
-                <ul class="speaker__list o-4-col-list">
-                    <li class="o-list__item--regular speaker__item">
-                        <figure class="speaker__img">
-                            <!--EDITABLE--><img src="../img/staff/ellie200.jpg" width="100%" height="auto">
-                            <figcaption class="speaker__caption"><!--EDITABLE-->
-                                <h4 class="speaker__name">Ellie Robinson</h4>
-                                <p class="small advisor__role">Conference Producer</p>
-                                <ul class="speaker__links">
-                                    <li class="links__item"><p class="small link-name">Twitter</p><p class="small"><a href="#" class="link">@FollowEllie</a></p></li>
-                                </ul>
-                                <a class="speaker__profile-link" href="#"><h5>Profile <i class="fa fa-caret-right"></i></h5></a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="o-list__item--regular speaker__item">
-                        <figure class="speaker__img">
-                            <!--EDITABLE--><img src="../img/staff/lou.jpeg" width="100%" height="auto">
-                            <figcaption class="speaker__caption"><!--EDITABLE-->
-                                <h4 class="speaker__name">Lou Morgan</h4>
-                                <p class="small advisor__role">Events Director</p>
-                                <ul class="speaker__links">
-                                    <li class="links__item"><p class="small link-name">Twitter</p><p class="small"><a href="#" class="link">@bloulou</a></p></li>
-                                </ul>
-                                <a class="speaker__profile-link" href="#"><h5>Profile <i class="fa fa-caret-right"></i></h5></a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="o-list__item--regular speaker__item">
-                        <figure class="speaker__img">
-                            <!--EDITABLE--><img src="../img/staff/sarah.jpg" width="100%" height="auto">
-                            <figcaption class="speaker__caption"><!--EDITABLE-->
-                                <h4 class="speaker__name">Sarah Robinson</h4>
-                                <p class="small advisor__role">Conference Producer</p>
-                                <ul class="speaker__links">
-                                    <li class="links__item"><p class="small link-name">Twitter</p><p class="small"><a href="#" class="link">@BathCityGirl</a></p></li>
-                                </ul>
-                                <a class="speaker__profile-link" href="#"><h5>Profile <i class="fa fa-caret-right"></i></h5></a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="o-list__item--regular speaker__item">
-                        <figure class="speaker__img">
-                            <!--EDITABLE--><img src="../img/staff/veronica.png" width="100%" height="auto">
-                            <figcaption class="speaker__caption"><!--EDITABLE-->
-                                <h4 class="speaker__name">Veronica Cortes</h4>
-                                <p class="small advisor__role">Conference Producer</p>
-                                <ul class="speaker__links">
-                                    <li class="links__item"><p class="small link-name">Twitter</p><p class="small"><a href="#" class="link">@vcortes1976</a></p></li>
-                                </ul>
-                                <a class="speaker__profile-link" href="#"><h5>Profile <i class="fa fa-caret-right"></i></h5></a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="o-list__item--regular speaker__item">
-                        <figure class="speaker__img">
-                            <!--EDITABLE--><img src="../img/staff/ellie200.jpg" width="100%" height="auto">
-                            <figcaption class="speaker__caption"><!--EDITABLE-->
-                                <h4 class="speaker__name">Michelle Barker</h4>
-                                <p class="small advisor__role">Designer</p>
-                                <ul class="speaker__links">
-                                    <li class="links__item"><p class="small link-name">Twitter</p><p class="small"><a href="#" class="link">@mbarker_84</a></p></li>
-                                </ul>
-                                <a class="speaker__profile-link" href="#"><h5>Profile <i class="fa fa-caret-right"></i></h5></a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="o-list__item--regular speaker__item">
-                        <figure class="speaker__img">
-                            <!--EDITABLE--><img src="../img/staff/lou.jpeg" width="100%" height="auto">
-                            <figcaption class="speaker__caption"><!--EDITABLE-->
-                                <h4 class="speaker__name">Lisa Nelson</h4>
-                                <p class="small advisor__role">Meeting Planner</p>
-                                <ul class="speaker__links">
-                                    <li class="links__item"><p class="small link-name">Twitter</p><p class="small"><a href="#" class="link">@lisarobin</a></p></li>
-                                </ul>
-                                <a class="speaker__profile-link" href="#"><h5>Profile <i class="fa fa-caret-right"></i></h5></a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="o-list__item--regular speaker__item">
-                        <figure class="speaker__img">
-                            <!--EDITABLE--><img src="../img/staff/sarah.jpg" width="100%" height="auto">
-                            <figcaption class="speaker__caption"><!--EDITABLE-->
-                                <h4 class="speaker__name">Thadd Palmer</h4>
-                                <p class="small advisor__role">Sponsorship Overlord</p>
-                                <ul class="speaker__links">
-                                    <li class="links__item"><p class="small link-name">Twitter</p><p class="small"><a href="#" class="link">@thadd_eus</a></p></li>
-                                </ul>
-                                <a class="speaker__profile-link" href="#"><h5>Profile <i class="fa fa-caret-right"></i></h5></a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="o-list__item--regular speaker__item">
-                        <figure class="speaker__img">
-                            <!--EDITABLE--><img src="../img/staff/veronica.png" width="100%" height="auto">
-                            <figcaption class="speaker__caption"><!--EDITABLE-->
-                                <h4 class="speaker__name">Michelle Burke</h4>
-                                <p class="small advisor__role">Marketing Manager</p>
-                                <ul class="speaker__links">
-                                    <li class="links__item"><p class="small link-name">Twitter</p><p class="small"><a href="#" class="link">@Michelle__Burke</a></p></li>
-                                </ul>
-                                <a class="speaker__profile-link" href="#"><h5>Profile <i class="fa fa-caret-right"></i></h5></a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!--vacancies-->
-        <section class="vacancies o-type--1">
+    <main class="o-type--1">
+        <!--video gallery-->
+        <section class="video-courses">
             <div class="o-section__intro-block">
-                <h2>Work with Us</h2>
-                <p>Join our team of talented individuals making our events happen! We’re currently recruiting for the following roles:</p>
+                <p>Subscribe to a 6-week video course: Get a weekly email with a free video on your chosen topic, delivered direct to your inbox.</p>
             </div>
-            <ul class="about__vacancies">
-                <li class="o-feature-block--no-header">
-                    <div class="vacancies__title">
-                        <h3 class="article__title">Marketing Manager</h3>
-                        <p class="small"><strong>Deadline:</strong> 16 July 2015</p>
+            <ul class="course-collection">
+                <li class="course-collection__item">
+                    <h2 class="course__title">CSS Masterclass</h2>
+                <div class="o-feature-block--no-header courses__featured-block"><!--EDITABLE REGION-->
+                    <div class="o-row--regular">
+                        <figure class="articles__img"><img src="../img/videos/fowd-video-valhead.jpg" width="100%" height="auto"></figure>
+                        <div class="articles__text">
+                            <p>Your practical guide to the latest and greatest thinking in CSS. This course will help you get up-to-date with modern CSS3 techniques and show you some of the best tips and tricks to help you make your websites fast, impressive and maintainable.</p>
+                            <a class="c-button">Subscribe <i class="fa fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <div class="vacancies__description">
-                        <h6>Job Description</h6>
-                        <p>We seek a highly organized, talented communicator to join our marketing team. The Marketing Manager supports Event Marketing and Sales in the areas of marketing project management and the creation and execution of digital marketing initiatives and programs. The position is responsible for growing our community of web/mobile designers and developers and generating traffic to our core site (http://futureinsights.com) and our event sites, and converting that traffic into paying attendees and sponsors for our events. The position can be located at either our Dedham, MA or Bath, UK office.</p>
-                        <h5><a href="#">Read more <i class="fa fa-arrow-right"></i></a></h5>
+                </div>
+                <div class="o-row--regular course__featuring">
+                    <h4 class="feature__subtitle">Featuring</h4>
+                    <ul class="courses__list o-3-col-list">
+                        <li class="courses__item">
+                            <h6 class="courses__video-title">Designing Animation Awesomeness</h6>
+                            <p class="courses__speaker small"><a href="#">Val Head</a></p>
+                        </li>
+                        <li class="courses__item">
+                            <h6 class="courses__video-title">Designing Animation Awesomeness</h6>
+                            <p class="courses__speaker small"><a href="#">Val Head</a></p>
+                        </li>
+                        <li class="courses__item">
+                            <h6 class="courses__video-title">Designing Animation Awesomeness</h6>
+                            <p class="courses__speaker small"><a href="#">Val Head</a></p>
+                        </li>
+                        <li class="courses__item">
+                            <h6 class="courses__video-title">Designing Animation Awesomeness</h6>
+                            <p class="courses__speaker small"><a href="#">Val Head</a></p>
+                        </li>
+                        <li class="courses__item">
+                            <h6 class="courses__video-title">Designing Animation Awesomeness</h6>
+                            <p class="courses__speaker small"><a href="#">Val Head</a></p>
+                        </li>
+                        <li class="courses__item">
+                            <h6 class="courses__video-title">Designing Animation Awesomeness</h6>
+                            <p class="courses__speaker small"><a href="#">Val Head</a></p>
+                        </li>
+                    </ul>
+                </div>
+                </li>
+                <li class="course-collection__item">
+                    <h2 class="course__title">UX Design</h2>
+                <div class="o-feature-block--no-header"><!--EDITABLE REGION-->
+                    <div class="o-row--regular">
+                        <figure class="articles__img"><img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto"></figure>
+                        <div class="articles__text">
+                            <p>Your practical guide to the latest and greatest thinking in CSS. This course will help you get up-to-date with modern CSS3 techniques and show you some of the best tips and tricks to help you make your websites fast, impressive and maintainable.</p>
+                            <a class="c-button">Subscribe <i class="fa fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <div class="vacancies__apply">
-                        <h6>How to apply</h6><p>Please send us your CV along with a cover email to <a href="#">Jennifer.Miller@wispubs.com</a>.</p>
-                    </div>
+                </div>
+                <div class="o-row--regular course__featuring">
+                    <h4 class="feature__subtitle">Featuring</h4>
+                    <ul class="courses__list o-3-col-list">
+                        <li class="courses__item">
+                            <h6 class="courses__video-title">Designing Animation Awesomeness</h6>
+                            <p class="courses__speaker small"><a href="#">Val Head</a></p>
+                        </li>
+                        <li class="courses__item">
+                            <h6 class="courses__video-title">Designing Animation Awesomeness</h6>
+                            <p class="courses__speaker small"><a href="#">Val Head</a></p>
+                        </li>
+                        <li class="courses__item">
+                            <h6 class="courses__video-title">Designing Animation Awesomeness</h6>
+                            <p class="courses__speaker small"><a href="#">Val Head</a></p>
+                        </li>
+                        <li class="courses__item">
+                            <h6 class="courses__video-title">Designing Animation Awesomeness</h6>
+                            <p class="courses__speaker small"><a href="#">Val Head</a></p>
+                        </li>
+                        <li class="courses__item">
+                            <h6 class="courses__video-title">Designing Animation Awesomeness</h6>
+                            <p class="courses__speaker small"><a href="#">Val Head</a></p>
+                        </li>
+                        <li class="courses__item">
+                            <h6 class="courses__video-title">Designing Animation Awesomeness</h6>
+                            <p class="courses__speaker small"><a href="#">Val Head</a></p>
+                        </li>
+                    </ul>
+                </div>
                 </li>
             </ul>
-        </section>
     </main>
+        
         <!--signup-->
-        <section class="signup--blog o-type--3">
+        <section class="signup o-type--3">
             <div class="o-signup__img">
                 <svg class="newsletter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 507.8 466.7" xml:space="preserve" enable-background="new 0 0 507.8 466.7">
 <style type="text/css">
@@ -317,7 +295,7 @@
             </div>
             <div class="o-signup__text">
                 <h2>Sign Up</h2>
-                <p>Subscribe to one of our email newsletters and get FREE access to hundreds of videos today.</p>
+                <!--EDITABLE--><p>Subscribe to one of our email newsletters and get FREE access to hundreds of videos today.</p>
                 <form class="signup__form">
                     <fieldset class="signup__details">
                         <input class="signup-form__field" type="text" name="name" placeholder="Your Name">
@@ -334,7 +312,7 @@
             </div>
         </section>
         <!--get involved-->
-        <section class="get-involved o-type--1"><!--EDITABLE REGION--ALL TEXT-->
+        <section class="get-involved o-type--1"><!--EDITABLE REGION-->
             <h2>Get Involved</h2>
             <ul class="c-get-involved">
                 <li id="write">
@@ -394,7 +372,7 @@
             </ul>
         </section>
     <!--footer-->
-    <footer><!--EDITABLE REGION--ALL TEXT-->
+    <footer><!--EDITABLE REGION-->
         <div class="o-wrapper">
             <p class="small">Future of Web Design is produced by <a href="../index.html"><img class="logo--small" src="../img/logos/fi-white.svg" alt="Future Insights" width="100%" height="auto"></a></p>
         <div class="footer__about">
@@ -511,17 +489,25 @@
     </script>
     <!--topic menu-->
     <script>
-        $( "#topic-menu__trigger--mobile" ).click(function() {
+        $( "#topic-menu__trigger" ).click(function() {
             $( ".topic-menu" ).slideToggle( "slow" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
         });
     </script>
+    <!--topic menu desktop-->
     <script>
         $( "#topic-menu__trigger--desktop" ).click(function() {
             $( ".topic-menu--desktop" ).slideToggle( "slow" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
+        });
+    </script>
+    <script>
+        $( "#more-topics__trigger" ).click(function() {
+            $( ".topics__sub-menu" ).slideToggle( "slow" );
+            $( ".sub-menu--closed" ).switchClass( "sub-menu--closed", "sub-menu--open", 200 );
+            $( ".sub-menu--open" ).switchClass( "sub-menu--open", "sub-menu--closed", 200 );
         });
     </script>
     

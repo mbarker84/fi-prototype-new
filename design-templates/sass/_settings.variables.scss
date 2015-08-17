@@ -25,6 +25,7 @@ $black-overlay: rgba(32, 33, 35, .8);
 $white-transparent: rgba(247, 249, 249, .5);
 
 /* Greys */
+$ultimate-lt-grey: lighten($black, 81%);
 $ultra-lt-grey: lighten($black, 75%);
 $lt-grey: lighten($black, 60%);
 $md-grey: lighten($black, 40%);

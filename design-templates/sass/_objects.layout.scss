@@ -229,5 +229,13 @@ main, section {
     
 }
 
+/* 10 column width at large breakpoints */
+
+@media (min-width: $bp-l) {
+    .o-col--10 {
+        width: span(10);
+    }
+}
+
 
     

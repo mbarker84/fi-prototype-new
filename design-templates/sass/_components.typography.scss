@@ -18,6 +18,10 @@ h1.header__page-head {
     color: $black;
 }
 
+h2.course__title {
+    margin-bottom: .5em;
+}
+
 h3.article__title {
     margin-bottom: .5em;
 }
@@ -35,12 +39,24 @@ h4.block-title {
     padding: .5em;
 }
 
+h4.feature__subtitle {
+    padding-bottom: .5em;
+    margin: 1em 0;
+    color: $md-grey;
+    @include border-bottom($lt-grey);
+}
+
 h5.label--premium {
     position: absolute;
     top: .7em;
     right: 0;
     padding: .3em .5em;
     color: $black;
+}
+
+h6.courses__video-title {
+    margin-bottom: 0;
+    color: $dk-grey;
 }
 
 p.subhead {

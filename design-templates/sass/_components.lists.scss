@@ -55,17 +55,22 @@ ul.events__topic-list {
 
 ul.about__vacancies {
     margin-bottom: 0;
+    @media (min-width: $bp-l) {
+        width: span(10);
+    }
 }
 
-li.vacancies__item {
-    margin-top: 0;
-    p {
-        @media(min-width: $bp-l--2) {
-            width: span(8);
+ul.vacancies__list {
+    list-style: disc outside none;
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+    font-family: $paragraph;
+    font-weight: 700;
+    color: $dk-grey;
+    li {
+        padding-left: 1em;
+        &::before {
         }
-    }
-    h5 {
-        margin-bottom: 1em;
     }
 }
 
@@ -83,6 +88,23 @@ li.video__link-item {
         display: inline-block;
         float: left;
         margin-right: 3em;
+    }
+}
+
+/* Video courses */
+
+.course__featuring {
+    padding: 1em;
+    @media (min-width: $bp-l) {
+        padding: 1em 2em;
+    }
+}
+
+li.course-collection__item {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    &:last-child {
+        margin-bottom: 0;
     }
 }
 
