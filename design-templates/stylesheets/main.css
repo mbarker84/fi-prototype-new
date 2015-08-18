@@ -1450,6 +1450,16 @@ ul.comments--submitted {
   .videos__featured h6 {
     color: #202123; }
 
+.subscription__package {
+  padding: 1em;
+  background-color: #e4eeef;
+  color: #515358; }
+  .subscription__package p {
+    color: #515358; }
+  @media (min-width: 990px) {
+    .subscription__package {
+      padding: 2em; } }
+
 footer {
   background-color: #202123;
   color: #82868d; }
@@ -2174,14 +2184,14 @@ ul.about__vacancies {
     ul.about__vacancies {
       width: 83.00654%; } }
 
-ul.vacancies__list {
+ul.body-text__list {
   list-style: disc outside none;
   margin-bottom: 1em;
   padding-left: 1.5em;
   font-family: "ff-tisa-sans-web-pro", sans-serif;
   font-weight: 700;
   color: #515358; }
-  ul.vacancies__list li {
+  ul.body-text__list li {
     padding-left: 1em; }
 
 /* Video links */
@@ -3072,6 +3082,9 @@ section.testimonials {
 .courses__featured-block {
   margin-top: 0; }
 
+section.video-courses {
+  padding-bottom: 2em; }
+
 section.speaker__appearances,
 section.speaker__content {
   padding: 2em 0 0 0; }
@@ -3408,6 +3421,9 @@ h2.speaker-profile__speaker-name {
       font-size: 0.64em; } }
   .sponsor__speaker-label:focus, .sponsor__speaker-label:hover, .sponsor__speaker-label:active {
     background-color: #b7b9be; }
+
+.subscription-type {
+  text-transform: lowercase; }
 
 @media (max-width: 620px) {
   .tr-mobile-hide {

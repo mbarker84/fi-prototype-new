@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Future Insights</title>
+    <title>Future of Web Design | Sponsor</title>
     <link href="../stylesheets/main.css" rel="stylesheet" type="text/css" />
     <!--Font Awesome-->
     <link href="../stylesheets/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" />
@@ -92,16 +92,48 @@
         </ul>
 </nav>
 <!--header-->
-<header>
+<header class="header--blog">
+    <!--event-menu-->
+    <div class="event-menu__wrapper"><!--EDITABLE--WE NEED TO BE ABLE TO SELECT WHICH EVENTS WE WANT TO GO HERE-->
+        <a id="event-menu__trigger">Future of Web Design <i class="fa fa-caret-down"></i></a>
+        <ul class="event-menu">
+            <li class="event-menu__item"><a href="#">Future of Web Apps</a></li>
+            <li class="event-menu__item"><a href="#">Future Insights Live</a></li>
+            <li class="event-menu__item"><a href="#">Future of Work</a></li>
+        </ul>
+    </div>
     <div class="o-header__group">
+         <!--search box-->
         <form id="main-search" class="header__search">
-            <input type="text" name="search">
+            <input type="text" name="search" placeholder="e.g. Bruce Lawson, CSS, London 2015">
             <button class="search"><i class="fa fa-search"></i></button>
         </form>
         <!--topic-menu-->
-    <div class="topic-menu__wrapper--inline"><!--EDITABLE--CAN THIS BE SET UP SO THAT MOST POPULAR OR MOST FREQUENTLY TAGGED TOPICS APPEAR HERE? IF NOT THEN WE NEED TO BE ABLE TO CHOOSE TOPICS MANUALLY-->
-        <a id="topic-menu__trigger--desktop">Browse popular topics... <i class="fa fa-caret-down"></i></a>
-        <ul class="topic-menu--desktop">
+        <div class="topic-menu__wrapper--inline">
+            <a id="topic-menu__trigger--desktop">Browse popular topics... <i class="fa fa-caret-down"></i></a>
+            <ul class="topic-menu--desktop"><!--EDITABLE--CAN THIS BE SET UP SO THAT MOST POPULAR OR MOST FREQUENTLY TAGGED TOPICS APPEAR HERE? IF NOT THEN WE NEED TO BE ABLE TO CHOOSE TOPICS MANUALLY-->
+                <li class="topic-menu__item"><a href="#">UX Design</a></li>
+                <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
+                <li class="topic-menu__item"><a href="#">Prototyping</a></li>
+                <li class="topic-menu__item"><a href="#">Design Inspiration</a></li>
+                <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <!--event-menu--desktop-->
+    <ul class="event-menu--desktop">
+        <li class="event-menu__item--desktop"><a class="current" href="#">All</a><img class="event-menu__triangle" src="../img/icons/svg/small-triangle-blue.svg" width="100%" height="auto"></li>
+        <li class="event-menu__item--desktop"><a href="#">Future of Web Design</a></li>
+        <li class="event-menu__item--desktop"><a href="#">Future of Web Apps</a></li>
+            <li class="event-menu__item--desktop"><a href="#">Future Insights Live</a></li>
+            <li class="event-menu__item--desktop"><a href="#">Future of Work</a></li>
+        <li class="event-menu__item--desktop"><a href="#">More...</a></li>
+    </ul>
+    <!--topic-menu-->
+    <div class="topic-menu__wrapper"><!--EDITABLE AS ABOVE-->
+        <a id="topic-menu__trigger--mobile">Choose topics... <i class="fa fa-caret-down"></i></a>
+        <ul class="topic-menu">
             <li class="topic-menu__item"><a href="#">UX Design</a></li>
             <li class="topic-menu__item"><a href="#">HTML and CSS</a></li>
             <li class="topic-menu__item"><a href="#">Prototyping</a></li>
@@ -109,140 +141,73 @@
             <li class="topic-menu__item"><a href="#">Product and Strategy</a></li>
         </ul>
     </div>
-    </div>
-</header>
     <!--main-->
-    <main class="about">
-        <!--vacancies-->
-        <section class="vacancy-details o-type--1">
-            <article class="vacancies__article o-col--10">
-            <div class="o-section__intro-block vacancies__title">
-                <h2>Marketing Manager</h2>
-                <h6>Deadline: 26 July, 2015</h6>
+    <main class="subscribe">
+        <!--articles-->
+        <section class="speaker-submit o-type--1">
+            <h2>Subscription Packages</h2>
+            <div class="o-section__intro-block"><!--EDITABLE-->
+                <p>Subscribe to our newsletter to get access to hundreds of conference videos:</p>
             </div>
-            <div class="vacancies__description">
-                <h3>Job Description</h3>
-                <p>We seek a highly organized, talented communicator to join our marketing team. The Marketing Manager supports Event Marketing and Sales in the areas of marketing project management and the creation and execution of digital marketing initiatives and programs. The position is responsible for growing our community of web/mobile designers and developers and generating traffic to our core site (http://futureinsights.com) and our event sites, and converting that traffic into paying attendees and sponsors for our events. The position can be located at either our Dedham, MA or Bath, UK office.</p>
+            <div class="o-row--regular">
+                <div class="o-col-50--1 subscription__package">
+                    <h3>Free</h3>
+                    <ul class="body-text__list">
+                        <li class="body-text__list-item"><p class="small">Access to hundreds of videos from Future Insights events</p></li>
+                        <li class="body-text__list-item"><p class="small">Regular email newsletter</p></li>
+                    </ul>
+                </div>
+                <div class="o-col-50--2 subscription__package">
+                    <h3>$90 <span class="subscription-type">p.a.</span></h3>
+                    <h6>(free for conference pass holders)</h6>
+                    <ul class="body-text__list">
+                        <li class="body-text__list-item"><p class="small">Access Premium videos from our latest events, featuring up-to-the-minute content</p></li>
+                        <li class="body-text__list-item"><p class="small">Regular email newsletter</p></li>
+                        <li class="body-text__list-item"><p class="small">Great for sharing with your team</p></li>
+                    </ul>
+                </div>
             </div>
-            <div class="vacancies__description">
-                <h6>Responsibilities</h6>
-                <ul class="body-text__list">
-                    <li><p>Defining the marketing plan, both strategically and tactically, and then executing to that plan</p></li>
-                    <li><p>Coordinating the execution and implementation of digital and social marketing initiatives, distribution of advertising assets across media technologies and platforms</p></li>
-                    <li><p>Maintaining social media platforms (Facebook, Twitter, LinkedIn, Lanyrd) and coordinate messaging</p></li>
-                    <li><p>Creating compelling and accurate content in written and visual form to use as resources to spark discussion and information sharing</p></li>
-                    <li><p>Working with management to identify and implement tracking solutions for measurement of online and mobile campaigns/initiatives</p></li>
-                    <li><p>Providing leadership, support and training in the best social opportunities to maximize brand awareness and ROI</p></li>
-                    <li><p>Analyzing performance of previous digital marketing campaigns to regularly identify areas of optimization</p></li>
-                    <li><p>Coalescing all marketing activities to maximize attendance to our conferences and sales of vendor sponsorships and exhibition fees</p></li>
-                </ul>
-            </div>
-            <div class="vacancies__description">
-                <h6>Desired Skills and Experience</h6>
-                <ul class="vacancies__list">
-                    <li><p>Minimum 3 years’ experience in a marketing, digital marketing, or social media role with a technology company targeting UI/UX designers and/or web/app developers, or an advertising agency or marketing consultancy firm</p></li>
-                    <li><p>An understanding and passion for online, inbound marketing</p></li>
-                    <li><p>Strong background with social media platforms</p></li>
-                    <li><p>Ability to define a marketing plan and then execute to that plan</p></li>
-                    <li><p>Creative and strategic thinker</p></li>
-                    <li><p>An understanding of marketing automation and web analytics and tracking protocols across all digital platforms, including web, mobile, and social media.</p></li>
-                    <li><p>Strong working knowledge of Microsoft Office Suite and Adobe Creative Suite (particularly Photoshop and InDesign)</p></li>
-                    <li><p>Strong working knowledge of Microsoft Office Suite and Adobe Creative Suite (particularly Photoshop and InDesign)</p></li>
-                </ul>
-            </div>
-            <div class="vacancies__description">
-                <h6>The right person for the job must:</h6>
-                <ul class="vacancies__list">
-                    <li><p>Be team oriented, responsive and able to work in a fast-paced environment</p></li>
-                    <li><p>Have an innovative, problem-solving, and solutions-oriented mindset</p></li>
-                    <li><p>Have excellent organizational and communication skills – both verbal and written</p></li>
-                    <li><p>Have strong presentation skills</p></li>
-                    <li><p>Demonstrate strong influencing abilities</p></li>
-                    <li><p>Be Mac and PC literate</p></li>
-                    <li><p>Have a basic knowledge of HTML</p></li>
-                    <li><p>Have a Bachelor’s degree in Marketing, Advertising or Digital Media, or equivalent work experience</p></li>
-                </ul>
-            </div>
-            <div class="vacancies__apply">
-                <h3>How to apply</h3><p>Please send us your CV along with a cover email to <a href="#">Jennifer.Miller@wispubs.com</a>.</p>
-            </div>
-            </article>
-            <h5><a href="#">All vacancies <i class="fa fa-arrow-right"></i></a></h5>
         </section>
     </main>
-        <!--signup-->
-        <section class="signup--blog o-type--3">
-            <div class="o-signup__img">
-                <svg class="newsletter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 507.8 466.7" xml:space="preserve" enable-background="new 0 0 507.8 466.7">
-<style type="text/css">
-
-.st0{fill:#202123;stroke:#F7F9F9;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-.st1{fill:#F7F9F9;}
-.st2{fill:#F7F9F9;stroke:#F7F9F9;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-.st3{fill:#F7F9F9;stroke:#FFFFFF;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-.st4{fill:#202123;}
-.st5{fill:none;stroke:#F7F9F9;stroke-width:8;stroke-miterlimit:10;}
-
-</style>
-<g id="envelope_base">
-<path id="XMLID_1_" class="st0" d="M456.5 446.9H103.3V253.3L266.5 154c6.3-3.5 14.1-3.6 20.4-0.2l169.6 99.4V446.9z"/>
-</g>
-<g id="envelope_top">
-<g id="letter">
-  <g id="XMLID_6_">
-    <polygon id="XMLID_4_" class="st0" points="423.7 363.1 136 363.1 136 7 364.2 7 423.7 61.7 "/>
-    <polygon id="XMLID_8_" class="st0" points="363.5 61.7 423.7 61.7 364.2 7 "/>
-  </g>
-  <g id="XMLID_13_">
-    <path id="XMLID_14_" class="st1" d="M220.1 198.9c1.8-2.5 3.9-5.2 6.2-8 2.3-2.9 5.4-6.2 9.2-9.9 3.8-3.7 7-6.4 9.4-8.1 2.4-1.6 4.8-2.5 6.9-2.5 0.5 0 1.1 0.1 1.8 0.3s1.3 0.6 1.9 1.1 1.1 1.3 1.5 2.3c0.4 1 0.6 2.3 0.6 3.8 0 3.1-0.4 6.1-1.3 9.1 -0.9 3-2.5 6.5-4.9 10.7 -2.4 4.2-4 7.9-4.8 10.9 -0.8 3.1-1.2 6.3-1.2 9.6 0 1.8 0.3 3.3 0.8 4.4 0.5 1.1 1.2 1.6 2.1 1.6 1.1 0 2.2-0.2 3.4-0.7s2.4-1 3.6-1.8c1.2-0.7 2.4-1.6 3.6-2.5 1.2-0.9 2.3-1.9 3.3-2.9 2.5-2.3 4.9-4.9 7.3-7.9l1.1 17.9c-0.8 0.6-1.8 1.3-3.1 2.2 -1.2 0.9-2.6 1.8-4.1 2.8 -1.5 1-3.1 2-4.9 3 -1.8 1-3.5 1.9-5.3 2.7 -1.8 0.8-3.5 1.4-5.3 1.9 -1.8 0.5-3.5 0.8-5.1 0.8 -2.5 0-4.7-0.6-6.6-1.9 -1.9-1.3-3.4-2.9-4.6-4.8 -1.2-1.9-2.1-4.1-2.7-6.4s-0.9-4.5-0.9-6.5c0-1.5 0.2-3.1 0.6-4.9 0.4-1.8 0.9-3.6 1.5-5.4 0.6-1.8 1.2-3.6 2-5.3 0.7-1.7 1.4-3.3 2-4.6 0.6-1.4 1.2-2.5 1.6-3.3 0.5-0.9 0.8-1.4 0.9-1.5l-1.4-0.2c-0.8 0.5-2.1 1.7-3.9 3.7 -1.8 2-3.9 4.5-6.2 7.6s-4.7 6.5-7.1 10.3c-2.4 3.8-4.7 7.7-6.6 11.8 -1 2-1.8 3.7-2.4 5.2 -0.6 1.5-1.2 2.7-1.9 3.6 -0.6 0.9-1.3 1.6-2 2.1 -0.7 0.5-1.6 0.7-2.8 0.7 -1.5 0-2.7-0.4-3.5-1.2 -0.9-0.8-1.5-1.9-2-3.2 -0.4-1.3-0.7-2.8-0.9-4.5 -0.1-1.7-0.2-3.4-0.2-5.2 0-3.1 0-7.1 0.1-12.1s0.3-10.5 0.6-16.6c0.4-6.1 1-12.4 2-18.9 1-6.5 1.9-13 2.8-19.4 0.9-6.4 2.3-12.6 4.2-18.4s4.1-11 6.8-15.4c2.7-4.4 5.8-8 9.4-10.6 3.6-2.6 7.7-3.9 12.4-3.9 2.4 0 4.4 0.4 6 1.1 1.5 0.7 2.8 1.7 3.7 3.1 0.9 1.3 1.6 2.9 1.9 4.7 0.4 1.8 0.5 3.9 0.5 6.1 0 3.4-0.5 7.1-1.4 11.2s-2.2 8.3-3.7 12.7c-1.5 4.4-3.3 8.9-5.3 13.4 -2 4.5-4 8.9-6.1 13.1 -2.1 4.2-4.1 8.2-6.1 12 -2 3.8-3.8 7.1-5.3 9.9L220.1 198.9zM226.1 156.5c2.7-6.9 4.6-12.7 5.8-17.4s1.8-8.2 1.8-10.4c0-3.4-0.5-5.1-1.4-5.1 -1.2 0-2.9 1.9-5.2 5.7 -2.3 3.8-5 9.4-8.1 16.6 -0.8 2.5-1.5 5-2.1 7.7 -0.7 2.6-1.2 5.3-1.5 7.9 -0.4 2.6-0.8 5.2-1.1 7.8s-0.7 5-1 7.2c-1 5.3-1.7 10.5-2.3 15.7 1.2-2.8 2.5-5.9 4-9.2 1.4-3.3 2.9-6.6 4.3-9.9 1.4-3.3 2.7-6.3 3.9-9.2C224.3 161 225.3 158.5 226.1 156.5z"/>
-    <path id="XMLID_17_" class="st1" d="M310.4 225.7c-1.6 1.5-3.6 3.1-6 4.8s-5 3.2-7.8 4.6c-2.8 1.4-5.6 2.6-8.5 3.5 -2.9 0.9-5.6 1.4-8.3 1.4 -2.3 0-4.3-0.3-5.9-1 -1.6-0.7-2.9-1.6-3.9-2.7 -1-1.2-1.7-2.6-2.1-4.3 -0.4-1.7-0.6-3.5-0.6-5.6 0-2.8 0.3-6.1 0.9-9.9 1.3-7.8 2.1-12.2 2.5-13.2 0.6-1.9 1.8-6.2 3.7-12.8 1.7-5.4 2.8-8.9 3.2-10.5 0.2-1.1 0.8-2.2 1.9-3.1 0.9-0.8 2-1.5 3.1-2 1.2-0.5 2.4-0.9 3.6-1.2 1.3-0.2 2.4-0.4 3.4-0.4 1.9 0 3.1 0.3 3.8 1 0.7 0.7 1 1.6 1 2.8 0 1-0.2 2.4-0.7 4.2 -0.5 1.8-1 3.9-1.6 6.2 -0.6 2.3-1.5 5.3-2.6 8.9 -1.2 3.6-1.9 6.7-2.4 9.3 -0.4 2.6-1 5.1-1.6 7.6 -0.6 2.5-1 4.8-1 6.9 0 2 0.2 3.6 0.7 4.8 0.4 1.2 1.4 1.8 2.8 1.8 1.6 0 3.4-0.6 5.4-1.7 2-1.1 4-2.5 6-4.1 2-1.6 4-3.2 5.9-5 1.9-1.7 3.6-3.2 5.1-4.4V225.7zM280.3 155c0-1 0.2-2.2 0.7-3.5 0.4-1.3 1.2-2.6 2.2-3.7 1-1.2 2.4-2.1 4-2.9 1.7-0.8 3.8-1.2 6.3-1.2 1.6 0 3.1 0.2 4.4 0.5 1.4 0.4 2.6 0.9 3.6 1.7 1 0.7 1.9 1.7 2.5 3 0.6 1.2 0.9 2.7 0.9 4.4 0 1.5-0.2 3-0.7 4.5 -0.5 1.5-1.3 2.7-2.4 3.9 -1.1 1.1-2.4 2.1-4.1 2.8 -1.6 0.7-3.6 1.1-5.9 1.1 -4 0-6.9-0.9-8.8-2.8C281.2 160.6 280.3 158.1 280.3 155z"/>
-    <path id="XMLID_21_" class="st1" d="M341.8 228.8c-0.1 0.2-0.2 0.6-0.2 1.2 -0.1 0.6-0.2 1.3-0.5 2.2 -0.2 0.9-0.6 1.8-1 2.7 -0.4 0.9-1.1 1.8-2 2.6 -0.9 0.8-2 1.5-3.3 2 -1.3 0.5-3 0.8-5.1 0.8 -1.7 0-3.2-0.2-4.5-0.6 -1.3-0.4-2.5-1-3.5-1.8 -1-0.8-1.7-1.9-2.3-3.1 -0.5-1.3-0.8-2.8-0.8-4.5 0-1.5 0.2-2.9 0.7-4.3 0.5-1.4 1.2-2.7 2.2-3.8 1-1.1 2.3-2 3.8-2.6 1.6-0.7 3.4-1 5.6-1 3.5 0 6.2 0.9 8.1 2.6 1.9 1.7 2.8 4.2 2.8 7.3C341.9 228.5 341.9 228.7 341.8 228.8zM330.1 205.5c0.4-4.6 1.1-9.4 2-14.3 0.9-4.9 2-9.8 3.4-14.7 1.4-4.9 2.7-9.7 4-14.5 1.3-4.8 2.6-9.4 3.8-13.8 1.2-4.4 2.4-8.6 3.5-12.5 1.1-3.9 2.1-7.4 2.9-10.5 0.6-2.2 1.5-3.9 2.7-5.2 1.2-1.3 2.4-2.4 3.9-3.1s2.9-1.2 4.5-1.5 3.1-0.4 4.6-0.4c0.8 0 1.5 0.1 2.1 0.3 0.7 0.2 1.2 0.5 1.7 1 0.5 0.5 0.8 1.1 1.1 2 0.2 0.8 0.4 1.9 0.4 3.2 0 0.9-0.1 1.9-0.2 3 -0.1 1.1-0.3 2.4-0.6 3.9 -1.6 5.2-3.1 10.4-4.7 15.7 -1.6 5.3-3.7 11-6.3 17 -2.6 6-5.6 12.6-8.9 19.8 -3.3 7.2-7.1 15.5-11.2 24.8 -0.1 0.5-0.3 1-0.7 1.4 -0.4 0.4-0.8 0.8-1.4 1.1 -0.5 0.3-1.1 0.5-1.8 0.7 -0.6 0.2-1.2 0.2-1.8 0.2 -0.9 0-1.6-0.2-2.2-0.5 -0.6-0.4-0.9-1-0.9-1.8C329.9 206.3 330 206 330.1 205.5z"/>
-  </g>
-</g>
-<g id="XMLID_9_">
-  <polygon id="XMLID_2_" class="st2" points="104.3 262.7 280.7 371.5 103.9 446.7 "/>
-  <polygon id="XMLID_5_" class="st2" points="456.3 262.7 279.9 371.5 456.7 446.7 "/>
-</g>
-<path id="XMLID_7_" class="st3" d="M103.1 446.7l164.8-94c7.1-4.1 17-4.1 24.1 0l164.8 94H103.1z"/>
-<g id="XMLID_11_">
-  <path id="XMLID_23_" class="st4" d="M279.9 349.7c4.2 0 8.5 1 12 3l164.8 94H103.1l164.8-94C271.4 350.8 275.6 349.7 279.9 349.7M279.9 329.7c-7.8 0-15.4 2-22 5.7l-164.8 94c-7.9 4.5-11.7 13.7-9.4 22.5 2.3 8.8 10.3 14.9 19.3 14.9h353.6c9.1 0 17-6.1 19.3-14.9 2.3-8.8-1.5-18-9.4-22.5l-164.8-94C295.3 331.7 287.7 329.7 279.9 329.7L279.9 329.7z"/>
-</g>
-</g>
-<g id="stars">
-<g id="XMLID_30_">
-  <g id="XMLID_27_">
-    <line id="XMLID_12_" class="st5" x1="28.9" y1="371.8" x2="46.8" y2="445.7"/>
-    <line id="XMLID_31_" class="st5" x1="5.4" y1="389" x2="70.3" y2="428.5"/>
-    <line id="XMLID_32_" class="st5" x1="0.9" y1="417.7" x2="74.8" y2="399.8"/>
-    <line id="XMLID_33_" class="st5" x1="18.1" y1="441.2" x2="57.6" y2="376.3"/>
-  </g>
-  <g id="XMLID_3_">
-    <line id="XMLID_34_" class="st5" x1="488.4" y1="7.2" x2="469.4" y2="59.9"/>
-    <line id="XMLID_28_" class="st5" x1="461.2" y1="12.1" x2="497.6" y2="55.1"/>
-    <line id="XMLID_29_" class="st5" x1="451.7" y1="38.6" x2="507.1" y2="28.6"/>
-  </g>
-</g>
-</g>
-</svg>
-            </div>
-            <div class="o-signup__text">
-                <h2>Sign Up</h2>
-                <p>Subscribe to one of our email newsletters and get FREE access to hundreds of videos today.</p>
-                <form class="signup__form">
-                    <fieldset class="signup__details">
-                        <input class="signup-form__field" type="text" name="name" placeholder="Your Name">
-                        <input class="signup-form__field" type="text" name="email" placeholder="Email address, e.g. joe@domain.com">
-                    </fieldset>
-                    <p>What type of emails would you like to receive?</p>
-                    <fieldset class="signup__options">
-                        <label class="signup__radio-buttons" for="design"><input type="radio" name="newsletter" value="design">Design emails</label>
-                        <label class="signup__radio-buttons" for="design"><input type="radio" name="newsletter" value="developer">Developer emails</label>
-                        <label class="signup__radio-buttons" for="design"><input type="radio" name="newsletter" value="all">All emails</label>
-                    </fieldset>
-                </form>
-            <a class="c-button">Subscribe <i class="fa fa-arrow-right"></i></a>
+        <!--events - cities-->
+        <section class="cities o-type--2">
+            <div class="o-wrapper-sides">
+                <h2>Upcoming Events</h2>
+            <ul class="c-list--cities--blog o-3-col-list"><!--EDITABLE REGION, SAME AS HOMEPAGE-->
+                <li class="o-list__item--regular">
+                    <a href="html/event-home.html">
+                        <figure>
+                            <img class="events__image" src="../img/events/event-FOWD-01.jpg" width="100%" height="auto">
+                        <figcaption>
+                            <h3>London</h3><h4>27&ndash;29 April, 2015</h4>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="o-list__item--regular">
+                    <a href="html/event-home.html">
+                        <figure>
+                            <img class="events__image" src="../img/events/event-FOWA-01.jpg" width="100%" height="auto">
+                        <figcaption>
+                            <h3>San Francisco</h3><h4>28&ndash;30 October, 2015</h4>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="o-list__item--regular">
+                    <a href="html/event-home.html">
+                        <figure>
+                            <img class="events__image" src="../img/events/event-UDE-01.jpg" width="100%" height="auto">
+                        </figure>
+                        <figcaption>
+                            <h3>New York City</h3><h4>2&ndash;4 November, 2015</h4>
+                        </figcaption>
+                    </a>
+                </li>
+            </ul>
             </div>
         </section>
+        
         <!--get involved-->
         <section class="get-involved o-type--1"><!--EDITABLE REGION--ALL TEXT-->
             <h2>Get Involved</h2>

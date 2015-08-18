@@ -5,3 +5,15 @@
         color: $black;
     }
 }
+
+.subscription__package {
+    padding: 1em;
+    background-color: adjust-color($fi-highlight, $hue: 0deg, $saturation: -38, $lightness: 34);
+    color: $dk-grey;
+    p {
+        color: $dk-grey;
+    }
+    @media (min-width: $bp-l) {
+        padding: 2em;
+    }
+}
