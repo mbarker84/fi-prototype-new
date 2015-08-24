@@ -25,5 +25,12 @@
 
 .fowa {
     @include theme(theme-fowa, $fowa);
+    header {
+        @include header-background(url(../img/backgrounds/lines-orange.svg), url(../img/backgrounds/lines-orange-l.svg), $black-overlay, transparentize($fowa, .2) 45%, $fowa-lt 96%, url(../img/events/home-main.jpg), url(../img/events/home-main_l.jpg));
+        color: $black;
+    }
+    .o-feature-block {
+        background-color: adjust-color($fowa, $hue: 0deg, $saturation: -36, $lightness: 36);
+    }
 }
     

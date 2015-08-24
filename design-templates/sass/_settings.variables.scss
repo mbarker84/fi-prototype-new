@@ -21,6 +21,8 @@ $fowa-dk: darken($fowa, 20%);
 
 $fowd-lt: adjust-color($fowd, $hue: 0deg, $saturation: 10, $lightness: 30);
 
+$fowa-lt: adjust-color($fowa, $hue: 0deg, $saturation: 10, $lightness: 30);
+
 $black-overlay: rgba(32, 33, 35, .8);
 $white-transparent: rgba(247, 249, 249, .5);
 
