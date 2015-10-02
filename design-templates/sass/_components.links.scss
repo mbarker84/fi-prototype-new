@@ -22,6 +22,20 @@ a.menu__trigger {
     }
 }
 
+nav,
+header,
+footer {
+    a {
+        color: $fi-highlight;
+    }
+}
+
+main {
+    a {
+        color: $fi-primary;
+    }
+}
+
 #trigger--mobile {
     display: block;
     @media (min-width: $bp-l) {

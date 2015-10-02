@@ -1,0 +1,55 @@
+/* Videos - 3 column list */
+
+.videos__list {
+    margin-bottom: 1em;
+    figure {
+        position: relative;
+    }
+    figcaption {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding: 1em;
+        background-color: $black-overlay;
+    }
+    @media (min-width: $bp-m) and (max-width: $bp-l) {
+        li {
+            @include clearfix;
+            clear: both;
+            margin-bottom: 1em;
+            background-color: $black;
+        }
+        figure img {
+            @include span(4);
+        }
+        figcaption {
+            @include span(8 last);
+            position: relative;
+            padding: 2em 2em 2em 1em;
+            background-color: transparent;
+        }
+    }
+    @media (min-width: $bp-l) {
+        figcaption {
+            transition: all .2s ease-in-out;
+            h5 {
+                transform: scaleY(0);
+                opacity: 0;
+                transition: all .2s ease-in-out;
+                margin-bottom: -1em;
+                text-align: right;
+            }
+        }
+        a:focus, a:hover, a:active {
+            figcaption {
+                padding-bottom: 2em;
+                background-color: black;
+                h5 {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+

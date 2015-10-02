@@ -133,13 +133,6 @@ $themes: (
         background-color: adjust-color($primary, $hue: 0deg, $saturation: -36, $lightness: 36);
     }
     
-    .videos__list,
-    .recommendations__list {
-        figcaption h5 {
-            color: $primary;
-        }
-    }
-        
     li.date-menu__item:last-child a {
         color: $primary !important;
     }

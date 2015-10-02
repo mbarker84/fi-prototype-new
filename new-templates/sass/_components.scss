@@ -131,13 +131,13 @@ a {
     color: $white;
     text-align: center;
     p {
-        color: lighten($fi-primary, 28%);
+        color: lighten($fi-primary, 30%);
         padding: 1em;
-        background-color: transparentize(darken($fi-primary, 35%), .7);
+        background-color: transparentize(darken($fi-primary, 35%), .6);
         border-radius: .2em;
     }
     h1 {
-        color: $white;
+        color: $black;
         margin-bottom: .5em;
         letter-spacing: 0.01em;
     }
@@ -171,6 +171,48 @@ a {
     color: $white;
     p {
         letter-spacing: .02em;
+    }
+}
+
+.header__speaker-profile {
+    background-color: transparentize(lighten($fi-primary, 35%), .4);
+    border-radius: .2em;
+    padding: 1em;
+    margin-bottom: 0;
+    @media (min-width: $bp-l) {
+        padding: 2em;
+    }
+}
+
+.speaker-profile__image {
+    padding: 1em;
+    img {
+        border-radius: 50%;
+    }
+}
+
+.header__speaker-links {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    background-color: $black;
+    color: $lt-grey;
+    font-family: $paragraph;
+    a {
+        color: $fi-highlight;
+        &:focus, &:hover, &:active {
+            color: $fi-primary;
+        }
+    }
+    .speaker-links__item {
+        margin-bottom: 1em;
+    }
+    @media (min-width: $bp-m) {
+        display: flex;
+        .speaker-links__item {
+            margin-right: 2em;
+            margin-bottom: 0;
+        }
     }
 }
 

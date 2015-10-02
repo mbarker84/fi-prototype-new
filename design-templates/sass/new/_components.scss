@@ -1,0 +1,222 @@
+/* Components - styling */
+
+a {
+    text-decoration: none;
+}
+
+.header__search-box {
+    display: none;
+    @media (min-width: $bp-l) {
+        display: block;
+        padding: .5em 1em;
+        background-color: rgba(247, 249, 249, .1);
+        border-radius: 1.1em;
+        border: 2px solid $white;
+        font-size: 1.2em;
+        margin: .5em 0;
+    }
+    p {
+        color: $white;
+    }
+}
+
+.header__dropdown {
+    padding: .9em 1em;
+    margin: .5em 0;
+    background-color: $black;
+    color: $md-grey;
+}
+
+
+/* Signup CTA */
+
+.header__signup-box {
+    @include clearfix;
+    clear: both;
+    padding: 1em;
+    background-color: $black;
+    color: $lt-grey;
+    text-align: center;
+    border-radius: .2em;
+    @media (min-width: $bp-l) {
+        @include span(9);
+        text-align: left;
+        padding: 1.5em;
+    }
+}
+
+.signup__text {
+    margin-bottom: 1em;
+    @media (min-width: $bp-l) {
+        width: span(8);
+        p {
+            font-size: 1.1em;
+        }
+    }
+}
+
+.header__button--blue {
+    display: block;
+    width: auto;
+    color: $black;
+    background-color: $fi-highlight;
+    font-family: $secondary;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: .7em 1em;
+    border-radius: .3em;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    &:focus, &:hover, &:active {
+        background-color: $black;
+        color: $fi-highlight;
+    }
+    @media (min-width: $bp-s) {
+        max-width: 9em;
+        margin: 0 auto;
+    }
+    @media (min-width: $bp-l) {
+        max-width: 100%;
+    }
+}
+
+.header__search-box--mobile {
+    float: right;
+    width: 3em;
+    color: white;
+    padding: 1em;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    cursor: text;
+    &:focus, &:hover, &:active {
+        width: 15em;
+        background-color: $black-overlay;
+    }
+    @media (min-width: $bp-l) {
+        display: none;
+    }
+}
+
+/* Subhead (homepage) */
+
+.header__subhead {
+    clear: both;
+    margin-top: 1em;
+    padding: 1em;
+    color: $black;
+    text-align: center;
+    border-radius: .2em;
+    p {
+        font-weight: 700;
+    }
+    @media (min-width: $bp-l) {
+        @include span(9);
+        text-align: left;
+        padding: 1.5em;
+        p {
+            font-size: 1.2em;
+        }
+    }
+    h5 {
+        margin-top: 1em;
+        font-weight: 700; 
+    }
+}
+
+.header__subhead--home {
+    clear: both;
+    margin-top: 1em;
+    color: $white;
+    text-align: center;
+    p {
+        color: lighten($fi-primary, 30%);
+        padding: 1em;
+        background-color: transparentize(darken($fi-primary, 35%), .6);
+        border-radius: .2em;
+    }
+    h1 {
+        color: $black;
+        margin-bottom: .5em;
+        letter-spacing: 0.01em;
+    }
+    @media (min-width: $bp-l) {
+        @include span(9);
+        text-align: left;
+        p {
+            font-size: 1.3em;
+        }
+    }
+}
+
+.header__company-info {
+    max-width: 12em;
+    text-align: center;
+    margin: 1em auto 0 auto;
+    @media (min-width: $bp-m) {
+        margin: 1em auto 0 0;
+        text-align: left;
+        .header__fi-black {
+            margin-top: .5em;
+        }
+    }
+    @media (min-width: $bp-l) {
+        max-width: 100%;
+    }
+}
+
+.header__cta--full-width {
+    background-color: transparentize($black, .4);
+    color: $white;
+    p {
+        letter-spacing: .02em;
+    }
+}
+
+.header__speaker-profile {
+    background-color: transparentize(lighten($fi-primary, 35%), .4);
+    border-radius: .2em;
+    padding: 1em;
+    margin-bottom: 0;
+    @media (min-width: $bp-l) {
+        padding: 2em;
+    }
+    h2 {
+        margin-bottom: .5em;
+    }
+}
+
+.speaker-profile__image {
+    padding: 1em;
+    img {
+        border-radius: 50%;
+    }
+}
+
+.header__speaker-links {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    background-color: $black;
+    color: $lt-grey;
+    font-family: $paragraph;
+    a {
+        color: $fi-highlight;
+        &:focus, &:hover, &:active {
+            color: $fi-primary;
+        }
+    }
+    .speaker-links__item {
+        margin-bottom: 1em;
+    }
+    @media (min-width: $bp-m) {
+        display: flex;
+        .speaker-links__item {
+            margin-right: 2em;
+            margin-bottom: 0;
+        }
+    }
+}
+
+    
