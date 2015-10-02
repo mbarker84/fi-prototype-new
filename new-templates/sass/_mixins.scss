@@ -21,3 +21,9 @@
         padding: 1.3em 3em;
     }
 }
+
+@mixin headings {
+    font-family: $headings;
+    font-style: italic;
+    font-weight: 700;
+}

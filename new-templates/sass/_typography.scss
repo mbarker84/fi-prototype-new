@@ -1,3 +1,10 @@
+h1 {
+    @include headings;
+    font-size: 3.5em; 
+    color: $black;
+    line-height: 1.1;
+}
+
 h5 {
     font-family: $secondary;
     text-transform: uppercase;

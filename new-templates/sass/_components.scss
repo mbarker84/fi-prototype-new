@@ -102,7 +102,6 @@ a {
 /* Subhead (homepage) */
 
 .header__subhead {
-    @include clearfix;
     clear: both;
     margin-top: 1em;
     padding: 1em;
@@ -126,6 +125,31 @@ a {
     }
 }
 
+.header__subhead--home {
+    clear: both;
+    margin-top: 1em;
+    color: $white;
+    text-align: center;
+    p {
+        color: lighten($fi-primary, 28%);
+        padding: 1em;
+        background-color: transparentize(darken($fi-primary, 35%), .7);
+        border-radius: .2em;
+    }
+    h1 {
+        color: $white;
+        margin-bottom: .5em;
+        letter-spacing: 0.01em;
+    }
+    @media (min-width: $bp-l) {
+        @include span(9);
+        text-align: left;
+        p {
+            font-size: 1.3em;
+        }
+    }
+}
+
 .header__company-info {
     max-width: 12em;
     text-align: center;
@@ -143,7 +167,7 @@ a {
 }
 
 .header__cta--full-width {
-    background-color: transparentize($black, .5);
+    background-color: transparentize($black, .4);
     color: $white;
     p {
         letter-spacing: .02em;
