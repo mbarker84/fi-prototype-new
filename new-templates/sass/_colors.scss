@@ -1,0 +1,102 @@
+/* Event specific colours */
+
+/* FOWD */
+.theme--fowd {
+    .header__signup-box {
+        box-shadow: .1em .1em .5em darken($fowd, 30%);
+    }
+    .main-head {
+        background: linear-gradient(transparentize($fowd, .3), transparentize($fowd, .1)), url(../img/home-main.jpg), $fi-primary;
+        background-size: cover;
+        background-position: center;
+        @media (min-width: $bp-l) {
+            background: linear-gradient(transparentize(darken($fowd, 20%), .3), transparentize($fowd, .1)), url(../img/home-main_l.jpg), $fi-primary;
+            background-size: cover;
+            background-position: center 55%;
+        }
+    }
+    .header__subhead {
+        background-color: transparentize(lighten($fowd, 32%), .2);
+    }
+}
+
+
+/* FOWA */
+.theme--fowa {
+    .header__signup-box {
+        box-shadow: .1em .1em .5em darken($fowa, 30%);
+    }
+    .main-head {
+        background: linear-gradient(transparentize($fowa, .3), transparentize($fowa, .1)), url(../img/home-main.jpg), $fi-primary;
+        background-size: cover;
+        background-position: center;
+        @media (min-width: $bp-l) {
+            background: linear-gradient(transparentize(darken($fowa, 20%), .3), transparentize($fowa, .1)), url(../img/home-main_l.jpg), $fi-primary;
+            background-size: cover;
+            background-position: center 55%;
+        }
+    }
+    .header__subhead {
+        background-color: transparentize(lighten($fowa, 30%), .2);
+    }
+}
+
+/* FI Live */
+.theme--filive {
+    .header__signup-box {
+        box-shadow: .1em .1em .5em darken($filive, 30%);
+    }
+    .main-head {
+        background: linear-gradient(transparentize($filive, .3), transparentize($filive, .1)), url(../img/home-main.jpg), $filive;
+        background-size: cover;
+        background-position: center;
+        @media (min-width: $bp-l) {
+            background: linear-gradient(transparentize($fi-primary, .3), transparentize($filive, .1)), url(../img/home-main_l.jpg), $filive;
+            background-size: cover;
+            background-position: center 55%;
+        }
+    }
+    .header__subhead {
+        background-color: transparentize(lighten($filive, 42%), .2);
+    }
+}
+
+/* Ultimate Developer Event */
+.theme--ude {
+    .header__signup-box {
+        box-shadow: .1em .1em .5em darken($ude, 30%);
+    }
+    .main-head {
+        background: linear-gradient(transparentize($ude, .3), transparentize($ude, .1)), url(../img/home-main.jpg),$ude;
+        background-size: cover;
+        background-position: center;
+        @media (min-width: $bp-l) {
+            background: linear-gradient(transparentize(darken($ude, 20%), .3), transparentize($ude, .1)), url(../img/home-main_l.jpg), $ude;
+            background-size: cover;
+            background-position: center 55%;
+        }
+    }
+    .header__subhead {
+        background-color: transparentize(lighten($ude, 30%), .2);
+    }
+}
+
+/* Generic theme – for when an event has no designated colour theme, or is a general Future Insights page */
+.theme--generic {
+    .header__signup-box {
+        box-shadow: .1em .1em .5em darken($ude, 30%);
+    }
+    .main-head {
+        background: linear-gradient(transparentize($fi-primary, .3), transparentize($fi-primary, .1)), url(../img/home-main.jpg),$ude;
+        background-size: cover;
+        background-position: center;
+        @media (min-width: $bp-l) {
+            background: linear-gradient(transparentize(darken($fi-primary, 30%), .3), $fi-primary), url(../img/home-main_l.jpg), $ude;
+            background-size: cover;
+            background-position: center 55%;
+        }
+    }
+    .header__subhead {
+        background-color: transparentize(lighten($fi-primary, 25%), .2);
+    }
+}

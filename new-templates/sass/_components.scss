@@ -1,0 +1,153 @@
+/* Components - styling */
+
+a {
+    text-decoration: none;
+}
+
+.header__search-box {
+    display: none;
+    @media (min-width: $bp-l) {
+        display: block;
+        padding: .5em 1em;
+        background-color: rgba(247, 249, 249, .1);
+        border-radius: 1.1em;
+        border: 2px solid $white;
+        font-size: 1.2em;
+        margin: .5em 0;
+    }
+    p {
+        color: $white;
+    }
+}
+
+.header__dropdown {
+    padding: .9em 1em;
+    margin: .5em 0;
+    background-color: $black;
+    color: $md-grey;
+}
+
+
+/* Signup CTA */
+
+.header__signup-box {
+    @include clearfix;
+    clear: both;
+    padding: 1em;
+    background-color: $black;
+    color: $lt-grey;
+    text-align: center;
+    border-radius: .2em;
+    @media (min-width: $bp-l) {
+        @include span(9);
+        text-align: left;
+        padding: 1.5em;
+    }
+}
+
+.signup__text {
+    margin-bottom: 1em;
+    @media (min-width: $bp-l) {
+        width: span(8);
+        p {
+            font-size: 1.1em;
+        }
+    }
+}
+
+.header__button--blue {
+    display: block;
+    width: auto;
+    color: $black;
+    background-color: $fi-highlight;
+    font-family: $secondary;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: .7em 1em;
+    border-radius: .3em;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    &:focus, &:hover, &:active {
+        background-color: $black;
+        color: $fi-highlight;
+    }
+    @media (min-width: $bp-s) {
+        max-width: 9em;
+        margin: 0 auto;
+    }
+    @media (min-width: $bp-l) {
+        max-width: 100%;
+    }
+}
+
+.header__search-box--mobile {
+    float: right;
+    width: 3em;
+    color: white;
+    padding: 1em;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    cursor: text;
+    &:focus, &:hover, &:active {
+        width: 15em;
+        background-color: $black-overlay;
+    }
+    @media (min-width: $bp-l) {
+        display: none;
+    }
+}
+
+/* Subhead (homepage) */
+
+.header__subhead {
+    @include clearfix;
+    clear: both;
+    margin-top: 1em;
+    padding: 1em;
+    color: $black;
+    text-align: center;
+    border-radius: .2em;
+    p {
+        font-weight: 700;
+    }
+    @media (min-width: $bp-l) {
+        @include span(9);
+        text-align: left;
+        padding: 1.5em;
+        p {
+            font-size: 1.2em;
+        }
+    }
+    h5 {
+        margin-top: 1em;
+        font-weight: 700; 
+    }
+}
+
+.header__company-info {
+    max-width: 12em;
+    text-align: center;
+    margin: 1em auto 0 auto;
+    @media (min-width: $bp-m) {
+        margin: 1em auto 0 0;
+        text-align: left;
+        .header__fi-black {
+            margin-top: .5em;
+        }
+    }
+    @media (min-width: $bp-l) {
+        max-width: 100%;
+    }
+}
+
+.header__cta--full-width {
+    background-color: transparentize($black, .5);
+    color: $white;
+    p {
+        letter-spacing: .02em;
+    }
+}
+
+    

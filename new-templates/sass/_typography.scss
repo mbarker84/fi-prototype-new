@@ -1,0 +1,7 @@
+h5 {
+    font-family: $secondary;
+    text-transform: uppercase;
+    @media (min-width: $bp-l) {
+        font-size: 1.2em;
+    }
+}

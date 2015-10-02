@@ -1,0 +1,126 @@
+/* Layout */
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.main-head__wrapper {
+    @include wrapper--header;
+}
+
+.main-head__wrapper--2 {
+    @include wrapper--header--2;
+}
+
+.header__row {
+    @include clearfix;
+    @media (min-width: $bp-l) {
+        display: flex;
+        margin-bottom: 2em;
+        &:last-child {
+            margin-bottom: 0;
+        }            
+    }
+}
+
+.header__col-1 {
+    @media (min-width: $bp-s) {
+        @include span(8);
+    }
+    @media (min-width: $bp-m) {
+        @include span(5);
+    }
+    @media (min-width: $bp-l) {
+        @include span(3);
+        padding-right: span(1);
+        border-right: 2px solid $white;
+    }
+}
+
+.header__col-2 {
+    @media (min-width: $bp-l) {
+        @include span(6);
+        padding-left: span(1);
+    }
+}
+
+.header__col-3 {
+    display: none;
+    @media (min-width: $bp-l) {
+        display: block;
+        @include span(3 last);
+    }
+}
+
+/* Brand homepages - bigger logo */
+.header__col-1--wide {
+    @media (min-width: $bp-s) {
+        @include span(8);
+    }
+    @media (min-width: $bp-m) {
+        @include span(5);
+    }
+    @media (min-width: $bp-l) {
+        @include span(4);
+        padding-right: span(1);
+        border-right: 2px solid $white;
+    }
+}
+
+.header__col-2--mid {
+    @media (min-width: $bp-l) {
+        @include span(5);
+        padding-left: span(1);
+    }
+}
+
+.header__signup-button {
+    clear: both;
+    width: 100%;
+}
+
+.header__signup-box,
+.header__subhead {
+    @media (min-width: $bp-l) {
+        @include span(9);
+    }
+}
+
+.header__company-info {
+    @media (min-width: $bp-l) {
+        @include span(3 last);
+        align-self: flex-end;
+    }
+}
+
+
+/* Flexbox layout at larger breakpoints */
+@media (min-width: $bp-l) {
+    .header__signup-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .header__signup-button {
+        align-self: flex-end;
+        width: auto;
+    }
+    
+    .header__cta-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    
+}
+
+/* Layout--icons */
+.main-head .fa-caret-down {
+    margin-right: 1em;
+}
+
+.fa-arrow-right {
+    margin-left: .5em;
+}
