@@ -248,7 +248,8 @@ img.event-menu__triangle {
 a#topic-menu__trigger,
 a#topic-menu__trigger--desktop,
 a#topic-menu__trigger--mobile,
-a#filter-menu__trigger {
+a#filter-menu__trigger,
+a#filters__trigger {
     display: block;
     width: 100%;
     padding: 1em;
@@ -263,7 +264,8 @@ a#filter-menu__trigger {
 
 ul.topic-menu,
 ul.topic-menu--desktop,
-ul.filter-menu {
+ul.filter-menu,
+.header__filters {
     display: none;
     font-family: $paragraph;
 }

@@ -7,8 +7,7 @@ main, section {
     @include clearfix;
 }
 
-.o-3-col-list {
-    li {
+.o-3-col-list {    li {
         margin-bottom: 1em;
     }
     @media (min-width: $bp-m) {

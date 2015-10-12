@@ -1,0 +1,53 @@
+/* Video filter menu */
+
+.header__filters {
+    background-color: $black;
+}
+
+li.filters__item {
+    padding: .6em 1em;
+}
+
+p.filters__title {
+    color: $dk-grey;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: .02em;
+    border-bottom: 1px solid $dk-grey;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+}
+
+.filters__sub-list {
+    li  {
+        a {
+            display: block;
+            padding: .6em .5em;
+            color: $lt-grey;
+            text-transform: none;
+            &:first-child {
+                padding-top: 1.2em;
+            }
+            &:before {
+                content: "\2610";
+                color: $dk-grey;
+                margin-right: 1em;
+            }
+        }
+        &.current {
+            a:before {
+                content: "\2714";
+                color: $fi-highlight;
+                margin-right: 1em;
+            }
+        }
+    }
+}
+
+@media (min-width: $bp-m) {
+    .filters__sub-list {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}

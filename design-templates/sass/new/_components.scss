@@ -4,6 +4,20 @@ a {
     text-decoration: none;
 }
 
+a.login {
+    background-color: $black;
+    &:focus, &:hover, &:active {
+        background-color: $fi-highlight;
+        color: $black;
+    }
+}
+
+.c-social-icons {
+    svg {
+        fill: $lt-grey;
+    }
+}
+
 .header__search-box {
     display: none;
     @media (min-width: $bp-l) {
@@ -176,7 +190,7 @@ a {
 
 .header__speaker-profile {
     background-color: transparentize(lighten($fi-primary, 35%), .4);
-    border-radius: .2em;
+    border-radius: .2em .2em 0 0;
     padding: 1em;
     margin-bottom: 0;
     @media (min-width: $bp-l) {
@@ -201,6 +215,7 @@ a {
     background-color: $black;
     color: $lt-grey;
     font-family: $paragraph;
+    border-radius: 0 0 .2em .2em;
     a {
         color: $fi-highlight;
         &:focus, &:hover, &:active {
