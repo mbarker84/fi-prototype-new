@@ -111,20 +111,10 @@
                 </div>
             </div>
         </div>
-    </div>
-</header>
-    <!--event-menu--desktop-->
-    <ul class="event-menu--desktop">
-        <li class="event-menu__item--desktop"><a href="#">All</a></li>
-        <li class="event-menu__item--desktop"><a href="#">Future of Web Design</a></li>
-        <li class="event-menu__item--desktop"><a href="#">Future of Web Apps</a></li>
-            <li class="event-menu__item--desktop"><a href="#">Future Insights Live</a></li>
-            <li class="event-menu__item--desktop"><a href="#">Future of Work</a></li>
-        <li class="event-menu__item--desktop"><a href="#">More...</a></li>
-    </ul>
-    <!--topic-menu-->
+        <h3>Video Library</h3>
+        <!--topic-menu-->
     <div class="filter-menu__wrapper"><!--EDITABLE REGION-->
-        <a id="filters__trigger">Search and filter <i class="fa fa-caret-down"></i></a>
+        <a id="filters__trigger" class="filter__button">Search and filter <i class="fa fa-caret-down"></i></a>
         <div class="header__filters">
             <ul class="filters__list">
                 <li class="filters__item"><p class="filters__title">Events</p>
@@ -147,8 +137,8 @@
                     </ul>
                 </li>
                 <li class="filters__item"><p class="filters__title">Year</p>
-                    <ul class="filters__dropdown">
-                        <li><a href="">All</a></li>
+                    <ul class="filters__sub-list">
+                        <li class="current"><a href="">All</a></li>
                         <li><a href="">2015</a></li>
                         <li><a href="">2014</a></li>
                         <li><a href="">2013</a></li>
@@ -158,7 +148,7 @@
                 </li>
                 <li class="filters__item"><p class="filters__title">Topics</p>
                     <ul class="filters__sub-list">
-                        <li class="current"><a href="">All</a></li>
+                        <li ><a href="">All</a></li>
                         <li><a href="">UX</a></li>
                         <li><a href="">UI</a></li>
                         <li><a href="">Front End</a></li>
@@ -167,28 +157,30 @@
                     </ul>
                 </li>
             </ul>
+            <a href="" class="c-button--lt-blue filters__button">Find videos</a>
         </div>
     </div>
+    </div>
+</header>
+    <!--event-menu--desktop-->
+    <ul class="event-menu--desktop">
+        <li class="event-menu__item--desktop"><a href="#">All</a></li>
+        <li class="event-menu__item--desktop"><a href="#">Future of Web Design</a></li>
+        <li class="event-menu__item--desktop"><a href="#">Future of Web Apps</a></li>
+            <li class="event-menu__item--desktop"><a href="#">Future Insights Live</a></li>
+            <li class="event-menu__item--desktop"><a href="#">Future of Work</a></li>
+        <li class="event-menu__item--desktop"><a href="#">More...</a></li>
+    </ul>
     <!--main-->
     <main class="blog o-type--1">
         <!--video gallery-->
         <section class="videos">
-            <h2>Video Library</h2>
             <!--options-->
             <div class="options">
                 <div class="options__title">
-                    <h3>All Events</h3>
+                    <h6>Showing <span class="highlight">All Events</span> in <span class="highlight">All Cities</span> <span class="highlight">2015</span></h6>
                 </div>
-                <!--event-menu-->
-                <div class="filter-menu__wrapper--inline">
-                    <a id="filter-menu__trigger">Browse by... <i class="fa fa-caret-down"></i></a>
-                    <ul class="filter-menu">
-                        <li class="filter-menu__item"><a href="#">Event</a></li>
-                        <li class="filter-menu__item"><a href="#">Speaker (A–Z)</a></li>
-                        <li class="filter-menu__item"><a href="#">Popular videos</a></li>
-                    </ul>
-                </div>
-                <p class="small options__number">16 events</p>
+                <p class="small options__number">198 videos</p>
             </div>
             <ul class="videos__gallery videos__list o-3-col-list"><!--FOR THE DEFAULT VIEW VIDEOS ARE ORDERED BY EVENT, STARTING WITH MOST RECENT-->
                 <li class="videos__item--event">

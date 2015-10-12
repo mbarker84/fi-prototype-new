@@ -19,6 +19,13 @@
         @extend .c-button;
         background-color: $white !important;
     }
+    &--lt-blue {
+        @extend .c-button;
+        background-color: $fi-highlight !important;
+        &:focus, &:hover, &:active {
+            background-color: $fi-primary !important;
+        }
+    }
 }
 
 .c-button--type-2 {

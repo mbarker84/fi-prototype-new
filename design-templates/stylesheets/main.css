@@ -1192,7 +1192,7 @@ article.articles--preview {
   text-align: center;
 }
 /* line 44, ../sass/_components.articles.preview.scss */
-.articles__videos-cta .c-button, .articles__videos-cta .c-button--header, .articles__videos-cta .c-button--white {
+.articles__videos-cta .c-button, .articles__videos-cta .c-button--header, .articles__videos-cta .c-button--white, .articles__videos-cta .c-button--lt-blue {
   margin: 0 auto;
 }
 
@@ -1338,7 +1338,7 @@ article.article--single ul.article__tags {
   color: #b7b9be !important;
 }
 /* line 52, ../sass/_components.articles.single.scss */
-.video__overlay .c-button, .video__overlay .c-button--header, .video__overlay .c-button--white {
+.video__overlay .c-button, .video__overlay .c-button--header, .video__overlay .c-button--white, .video__overlay .c-button--lt-blue {
   margin-bottom: 1em;
   color: #202123 !important;
 }
@@ -1645,7 +1645,7 @@ blockquote.article__blockquote--right:after {
 }
 
 /* line 1, ../sass/_components.buttons.scss */
-.c-button, .c-button--header, .c-button--white {
+.c-button, .c-button--header, .c-button--white, .c-button--lt-blue {
   display: inline-block;
   width: auto;
   color: #202123;
@@ -1679,8 +1679,16 @@ blockquote.article__blockquote--right:after {
 .c-button--white {
   background-color: #f7f9f9 !important;
 }
+/* line 22, ../sass/_components.buttons.scss */
+.c-button--lt-blue {
+  background-color: #4ecbd8 !important;
+}
+/* line 25, ../sass/_components.buttons.scss */
+.c-button--lt-blue:focus, .c-button--lt-blue:hover, .c-button--lt-blue:active {
+  background-color: #467ac6 !important;
+}
 
-/* line 24, ../sass/_components.buttons.scss */
+/* line 31, ../sass/_components.buttons.scss */
 .c-button--type-2 {
   display: inline-block;
   width: auto;
@@ -1696,22 +1704,22 @@ blockquote.article__blockquote--right:after {
   clear: both;
   cursor: pointer;
 }
-/* line 38, ../sass/_components.buttons.scss */
+/* line 45, ../sass/_components.buttons.scss */
 .c-button--type-2:focus, .c-button--type-2:hover, .c-button--type-2:active {
   color: #202123 !important;
   background-color: #4ecbd8;
 }
 
-/* line 44, ../sass/_components.buttons.scss */
+/* line 51, ../sass/_components.buttons.scss */
 .get-involved_button {
   margin-top: 1em;
 }
 
-/* line 48, ../sass/_components.buttons.scss */
+/* line 55, ../sass/_components.buttons.scss */
 .like-button {
   text-align: right;
 }
-/* line 50, ../sass/_components.buttons.scss */
+/* line 57, ../sass/_components.buttons.scss */
 .like-button svg.heart {
   display: block;
   width: 1.5em;
@@ -1720,11 +1728,11 @@ blockquote.article__blockquote--right:after {
   margin-left: 1em;
   float: right;
 }
-/* line 52, ../sass/_components.buttons.scss */
+/* line 59, ../sass/_components.buttons.scss */
 .like-button svg.heart .heart__fill {
   fill: #b7b9be;
 }
-/* line 54, ../sass/_components.buttons.scss */
+/* line 61, ../sass/_components.buttons.scss */
 .like-button svg.heart .heart__fill:focus, .like-button svg.heart .heart__fill:hover, .like-button svg.heart .heart__fill:active {
   fill: #82868d;
 }
@@ -1742,12 +1750,12 @@ blockquote.article__blockquote--right:after {
   color: #e52b32 !important;
 }
 /* line 23, ../sass/_tools.map.scss */
-.fowd .c-button, .fowd .c-button--header, .fowd .c-button--white {
+.fowd .c-button, .fowd .c-button--header, .fowd .c-button--white, .fowd .c-button--lt-blue {
   background-color: #e52b32;
   color: black;
 }
 /* line 26, ../sass/_tools.map.scss */
-.fowd .c-button:focus, .fowd .c-button--header:focus, .fowd .c-button--white:focus, .fowd .c-button:hover, .fowd .c-button--header:hover, .fowd .c-button--white:hover, .fowd .c-button:active, .fowd .c-button--header:active, .fowd .c-button--white:active {
+.fowd .c-button:focus, .fowd .c-button--header:focus, .fowd .c-button--white:focus, .fowd .c-button--lt-blue:focus, .fowd .c-button:hover, .fowd .c-button--header:hover, .fowd .c-button--white:hover, .fowd .c-button--lt-blue:hover, .fowd .c-button:active, .fowd .c-button--header:active, .fowd .c-button--white:active, .fowd .c-button--lt-blue:active {
   background-color: #971318;
   color: black;
 }
@@ -1913,12 +1921,12 @@ blockquote.article__blockquote--right:after {
   color: #ff7a19 !important;
 }
 /* line 23, ../sass/_tools.map.scss */
-.fowa .c-button, .fowa .c-button--header, .fowa .c-button--white {
+.fowa .c-button, .fowa .c-button--header, .fowa .c-button--white, .fowa .c-button--lt-blue {
   background-color: #ff7a19;
   color: black;
 }
 /* line 26, ../sass/_tools.map.scss */
-.fowa .c-button:focus, .fowa .c-button--header:focus, .fowa .c-button--white:focus, .fowa .c-button:hover, .fowa .c-button--header:hover, .fowa .c-button--white:hover, .fowa .c-button:active, .fowa .c-button--header:active, .fowa .c-button--white:active {
+.fowa .c-button:focus, .fowa .c-button--header:focus, .fowa .c-button--white:focus, .fowa .c-button--lt-blue:focus, .fowa .c-button:hover, .fowa .c-button--header:hover, .fowa .c-button--white:hover, .fowa .c-button--lt-blue:hover, .fowa .c-button:active, .fowa .c-button--header:active, .fowa .c-button--white:active, .fowa .c-button--lt-blue:active {
   background-color: #b24b00;
   color: black;
 }
@@ -2974,7 +2982,7 @@ p.c-subhead {
   margin-top: 2em;
 }
 /* line 117, ../sass/_components.header.scss */
-.header__cta .c-button, .header__cta .c-button--header, .header__cta .c-button--white {
+.header__cta .c-button, .header__cta .c-button--header, .header__cta .c-button--white, .header__cta .c-button--lt-blue {
   margin-bottom: 1em;
 }
 /* line 120, ../sass/_components.header.scss */
@@ -5966,17 +5974,26 @@ a.login:focus, a.login:hover, a.login:active {
 }
 
 /* Video filter menu */
-/* line 3, ../sass/new/_components.lists.scss */
+@media (min-width: 720px) {
+  /* line 3, ../sass/new/_components.lists.scss */
+  #filters__trigger {
+    max-width: 49.01961%;
+  }
+}
+
+/* line 9, ../sass/new/_components.lists.scss */
 .header__filters {
   background-color: #202123;
+  padding: 1em;
+  border-top: 1px solid #467ac6;
 }
 
-/* line 7, ../sass/new/_components.lists.scss */
+/* line 15, ../sass/new/_components.lists.scss */
 li.filters__item {
-  padding: .6em 1em;
+  padding: .6em 0;
 }
 
-/* line 11, ../sass/new/_components.lists.scss */
+/* line 19, ../sass/new/_components.lists.scss */
 p.filters__title {
   color: #515358;
   text-transform: uppercase;
@@ -5987,36 +6004,56 @@ p.filters__title {
   padding-bottom: .5em;
 }
 
-/* line 23, ../sass/new/_components.lists.scss */
+/* line 31, ../sass/new/_components.lists.scss */
 .filters__sub-list li a {
   display: block;
   padding: .6em .5em;
   color: #b7b9be;
   text-transform: none;
 }
-/* line 28, ../sass/new/_components.lists.scss */
+/* line 36, ../sass/new/_components.lists.scss */
 .filters__sub-list li a:first-child {
   padding-top: 1.2em;
 }
-/* line 31, ../sass/new/_components.lists.scss */
+/* line 39, ../sass/new/_components.lists.scss */
 .filters__sub-list li a:before {
   content: "\2610";
   color: #515358;
   margin-right: 1em;
 }
-/* line 38, ../sass/new/_components.lists.scss */
+/* line 46, ../sass/new/_components.lists.scss */
 .filters__sub-list li.current a:before {
   content: "\2714";
   color: #4ecbd8;
   margin-right: 1em;
 }
 
+/* line 55, ../sass/new/_components.lists.scss */
+.filters__button {
+  margin: 1em auto;
+  display: block;
+  max-width: 10em;
+  text-align: center;
+}
+
 @media (min-width: 620px) {
-  /* line 48, ../sass/new/_components.lists.scss */
+  /* line 63, ../sass/new/_components.lists.scss */
   .filters__sub-list {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+  }
+}
+@media (min-width: 720px) {
+  /* line 71, ../sass/new/_components.lists.scss */
+  .filters__sub-list {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+  /* line 75, ../sass/new/_components.lists.scss */
+  .filters__sub-list li a {
+    padding: .2em 0;
   }
 }
 /* line 1, ../sass/new/_typography.scss */
@@ -6080,4 +6117,15 @@ h5 {
 /* line 44, ../sass/new/_typography.scss */
 .main-head p:last-of-type {
   margin-bottom: 0;
+}
+
+/* line 50, ../sass/new/_typography.scss */
+.highlight {
+  border-bottom: 2px solid #a7c0e4;
+  padding: 0 .3em;
+}
+
+/* line 55, ../sass/new/_typography.scss */
+.options__title h6 {
+  color: #515358;
 }
