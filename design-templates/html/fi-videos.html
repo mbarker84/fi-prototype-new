@@ -114,6 +114,8 @@
         <h3>Video Library</h3>
         <!--topic-menu-->
     <div class="filter-menu__wrapper"><!--EDITABLE REGION-->
+        <!--mobile-->
+        <div class="filter-menu--mobile">
         <a id="filters__trigger" class="filter__button">Search and filter <i class="fa fa-caret-down"></i></a>
         <div class="header__filters">
             <ul class="filters__list">
@@ -159,12 +161,42 @@
             </ul>
             <a href="" class="c-button--lt-blue filters__button">Find videos</a>
         </div>
+        </div>
+        <!--desktop-->
+        <div class="filter-menu--desktop">
+        <div class="header__filters--desktop">
+            <ul class="filters__list--desktop">
+                <li class="filters__item--desktop"><p class="filters__title">Cities</p>
+                    <ul class="filters__sub-list--desktop">
+                        <li class="current"><a href="">All</a></li>
+                        <li><a href="">London</a></li>
+                        <li><a href="">New York</a></li>
+                        <li><a href="">Las Vegas</a></li>
+                        <li><a href="">San Francisco</a></li>
+                        <li><a href="">Boston</a></li>
+                    </ul>
+                </li>
+                <li class="filters__item--desktop"><p class="filters__title">Year</p>
+                    <ul class="filters__sub-list--desktop">
+                        <li class="current"><a href="">All</a></li>
+                        <li><a href="">2015</a></li>
+                        <li><a href="">2014</a></li>
+                        <li><a href="">2013</a></li>
+                        <li><a href="">2012</a></li>
+                        <li><a href="">Older</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="" class="c-button--lt-blue filters__button">Find videos<i class="fa fa-arrow-right"></i></a>
+        </div>
+        </div>
+        
     </div>
     </div>
 </header>
     <!--event-menu--desktop-->
     <ul class="event-menu--desktop">
-        <li class="event-menu__item--desktop"><a href="#">All</a></li>
+        <li class="event-menu__item--desktop"><a href="#" class="current">All</a><img class="event-menu__triangle" src="../img/icons/svg/small-triangle-black.svg" width="100%" height="auto"></li>
         <li class="event-menu__item--desktop"><a href="#">Future of Web Design</a></li>
         <li class="event-menu__item--desktop"><a href="#">Future of Web Apps</a></li>
             <li class="event-menu__item--desktop"><a href="#">Future Insights Live</a></li>
@@ -177,60 +209,181 @@
         <section class="videos">
             <!--options-->
             <div class="options">
-                <div class="options__title">
-                    <h6>Showing <span class="highlight">All Events</span> in <span class="highlight">All Cities</span> <span class="highlight">2015</span></h6>
+                <div class="options__col-1">
+                    <div class="options__title">
+                        <h6>Showing <span class="highlight">All Events</span> in <span class="highlight">All Cities</span> <span class="highlight">2015</span></h6>
+                        <p class="small options__number">198 videos</p>
+                    </div>
+                    <div class="options__col-2">
+                        <ul class="dropdown--sort" id="dropdown__trigger--sort">Speaker A&ndash;Z<i class="fa fa-caret-down"></i>
+                            <li class="dropdown__item--sort"><a href="">Title A&ndash;Z</a></li>
+                            <li class="dropdown__item--sort"><a href="">Most recent</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <p class="small options__number">198 videos</p>
             </div>
-            <ul class="videos__gallery videos__list o-3-col-list"><!--FOR THE DEFAULT VIEW VIDEOS ARE ORDERED BY EVENT, STARTING WITH MOST RECENT-->
-                <li class="videos__item--event">
+            <ul class="videos__gallery videos__list o-3-col-list">
+                <li><a href="#">
+                        <figure><img src="../img/videos/fowd-video-5.jpg" width="100%" height="auto">
+                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                    </a>
+                </li>
+                <li>
                     <a href="#">
                         <figure>
-                            <img src="../img/location-photos/London-FOWD.jpg" width="100%" height="auto"><i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">London 2015</h4><p class="list__caption small">21 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
+                            <img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
                 </li>
-                <li class="videos__item--event">
+                <li>
                     <a href="#">
                         <figure>
-                            <img src="../img/location-photos/New%20York-01.jpg" width="100%" height="auto"><i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">New York 2014</h4><p class="list__caption small">21 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
+                            <img src="../img/articles/article-5-400.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
                 </li>
-                <li class="videos__item--event">
+                <li><a href="#">
+                        <figure><img src="../img/videos/fowd-video-2.jpg" width="100%" height="auto">
+                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                    </a>
+                </li>
+                <li>
                     <a href="#">
                         <figure>
-                            <img src="../img/videos/fowd-video-5.jpg" width="100%" height="auto"><i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">FI Live, Las Vegas, 2014</h4><p class="list__caption small">30 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
+                            <img src="../img/videos/fowd-video-3.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
                 </li>
-                <li class="videos__item--event">
+                <li>
                     <a href="#">
                         <figure>
-                            <img src="../img/videos/fowd-video-1.jpg" width="100%" height="auto"><i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">London 2014</h4><p class="list__caption small">21 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
+                            <img src="../img/videos/fowd-video-4.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
                 </li>
-                <li class="videos__item--event">
+                <li><a href="#">
+                        <figure><img src="../img/videos/fowd-video-5.jpg" width="100%" height="auto">
+                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                    </a>
+                </li>
+                <li>
                     <a href="#">
                         <figure>
-                            <img src="../img/videos/fowd-video-2.jpg" width="100%" height="auto"><i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">New York 2013</h4><p class="list__caption small">21 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
+                            <img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
                 </li>
-                <li class="videos__item--event">
+                <li>
                     <a href="#">
                         <figure>
-                            <img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto"><i class="icon--video"></i>
-                            <figcaption><h4 class="list__caption">FI Live, Las Vegas, 2013</h4><p class="list__caption small">30 videos</p><h5 class="video__caption">See videos <i class="fa fa-caret-right"></i></h5></figcaption>
+                            <img src="../img/articles/article-5-400.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
                         </figure>
                     </a>
                 </li>
+                <li><a href="#">
+                        <figure><img src="../img/videos/fowd-video-2.jpg" width="100%" height="auto">
+                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-3.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-4.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <figure><img src="../img/videos/fowd-video-5.jpg" width="100%" height="auto">
+                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-6.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/articles/article-5-400.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <figure><img src="../img/videos/fowd-video-2.jpg" width="100%" height="auto">
+                <i class="icon--video"></i><figcaption><h4 class="video__caption">Orchestrating Content</h4><p class="video__caption small">Sara Wachter-Boettcher</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption></figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-3.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../img/videos/fowd-video-4.jpg" width="100%" height="auto">
+
+                            <i class="icon--video"></i>
+                            <figcaption><h4 class="list__caption">Designing Animation Awesomeness</h4><p class="list__caption small">Val Head</p><h5 class="video__caption">Play video <i class="fa fa-caret-right"></i></h5></figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+            <!--pagination-->
+            <ul class="pagination">
+                <li class="pagination__item"><a href="#"><i class="fa fa-chevron-left"></i> Previous</a></li>
+                <li class="pagination__item"><a href="#">1</a></li>
+                <li class="pagination__item"><a href="#">2</a></li>
+                <li class="pagination__item"><a href="#">3</a></li>
+                <li class="pagination__item"><a href="#">4</a></li>
+                <li class="pagination__item"><a href="#">5</a></li>
+                <li class="pagination__item"><a href="#">6</a></li>
+                <li class="pagination__item"><a href="#">Next <i class="fa fa-chevron-right"></i></a></li>
             </ul>
         </section>
         
@@ -273,139 +426,7 @@
             </ul>
             </div>
         </section>
-        <!--signup-->
-        <section class="signup--blog o-type--3">
-            <div class="o-signup__img">
-                <svg class="newsletter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 507.8 466.7" xml:space="preserve" enable-background="new 0 0 507.8 466.7">
-<style type="text/css">
-
-.st0{fill:#202123;stroke:#F7F9F9;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-.st1{fill:#F7F9F9;}
-.st2{fill:#F7F9F9;stroke:#F7F9F9;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-.st3{fill:#F7F9F9;stroke:#FFFFFF;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-.st4{fill:#202123;}
-.st5{fill:none;stroke:#F7F9F9;stroke-width:8;stroke-miterlimit:10;}
-
-</style>
-<g id="envelope_base">
-<path id="XMLID_1_" class="st0" d="M456.5 446.9H103.3V253.3L266.5 154c6.3-3.5 14.1-3.6 20.4-0.2l169.6 99.4V446.9z"/>
-</g>
-<g id="envelope_top">
-<g id="letter">
-  <g id="XMLID_6_">
-    <polygon id="XMLID_4_" class="st0" points="423.7 363.1 136 363.1 136 7 364.2 7 423.7 61.7 "/>
-    <polygon id="XMLID_8_" class="st0" points="363.5 61.7 423.7 61.7 364.2 7 "/>
-  </g>
-  <g id="XMLID_13_">
-    <path id="XMLID_14_" class="st1" d="M220.1 198.9c1.8-2.5 3.9-5.2 6.2-8 2.3-2.9 5.4-6.2 9.2-9.9 3.8-3.7 7-6.4 9.4-8.1 2.4-1.6 4.8-2.5 6.9-2.5 0.5 0 1.1 0.1 1.8 0.3s1.3 0.6 1.9 1.1 1.1 1.3 1.5 2.3c0.4 1 0.6 2.3 0.6 3.8 0 3.1-0.4 6.1-1.3 9.1 -0.9 3-2.5 6.5-4.9 10.7 -2.4 4.2-4 7.9-4.8 10.9 -0.8 3.1-1.2 6.3-1.2 9.6 0 1.8 0.3 3.3 0.8 4.4 0.5 1.1 1.2 1.6 2.1 1.6 1.1 0 2.2-0.2 3.4-0.7s2.4-1 3.6-1.8c1.2-0.7 2.4-1.6 3.6-2.5 1.2-0.9 2.3-1.9 3.3-2.9 2.5-2.3 4.9-4.9 7.3-7.9l1.1 17.9c-0.8 0.6-1.8 1.3-3.1 2.2 -1.2 0.9-2.6 1.8-4.1 2.8 -1.5 1-3.1 2-4.9 3 -1.8 1-3.5 1.9-5.3 2.7 -1.8 0.8-3.5 1.4-5.3 1.9 -1.8 0.5-3.5 0.8-5.1 0.8 -2.5 0-4.7-0.6-6.6-1.9 -1.9-1.3-3.4-2.9-4.6-4.8 -1.2-1.9-2.1-4.1-2.7-6.4s-0.9-4.5-0.9-6.5c0-1.5 0.2-3.1 0.6-4.9 0.4-1.8 0.9-3.6 1.5-5.4 0.6-1.8 1.2-3.6 2-5.3 0.7-1.7 1.4-3.3 2-4.6 0.6-1.4 1.2-2.5 1.6-3.3 0.5-0.9 0.8-1.4 0.9-1.5l-1.4-0.2c-0.8 0.5-2.1 1.7-3.9 3.7 -1.8 2-3.9 4.5-6.2 7.6s-4.7 6.5-7.1 10.3c-2.4 3.8-4.7 7.7-6.6 11.8 -1 2-1.8 3.7-2.4 5.2 -0.6 1.5-1.2 2.7-1.9 3.6 -0.6 0.9-1.3 1.6-2 2.1 -0.7 0.5-1.6 0.7-2.8 0.7 -1.5 0-2.7-0.4-3.5-1.2 -0.9-0.8-1.5-1.9-2-3.2 -0.4-1.3-0.7-2.8-0.9-4.5 -0.1-1.7-0.2-3.4-0.2-5.2 0-3.1 0-7.1 0.1-12.1s0.3-10.5 0.6-16.6c0.4-6.1 1-12.4 2-18.9 1-6.5 1.9-13 2.8-19.4 0.9-6.4 2.3-12.6 4.2-18.4s4.1-11 6.8-15.4c2.7-4.4 5.8-8 9.4-10.6 3.6-2.6 7.7-3.9 12.4-3.9 2.4 0 4.4 0.4 6 1.1 1.5 0.7 2.8 1.7 3.7 3.1 0.9 1.3 1.6 2.9 1.9 4.7 0.4 1.8 0.5 3.9 0.5 6.1 0 3.4-0.5 7.1-1.4 11.2s-2.2 8.3-3.7 12.7c-1.5 4.4-3.3 8.9-5.3 13.4 -2 4.5-4 8.9-6.1 13.1 -2.1 4.2-4.1 8.2-6.1 12 -2 3.8-3.8 7.1-5.3 9.9L220.1 198.9zM226.1 156.5c2.7-6.9 4.6-12.7 5.8-17.4s1.8-8.2 1.8-10.4c0-3.4-0.5-5.1-1.4-5.1 -1.2 0-2.9 1.9-5.2 5.7 -2.3 3.8-5 9.4-8.1 16.6 -0.8 2.5-1.5 5-2.1 7.7 -0.7 2.6-1.2 5.3-1.5 7.9 -0.4 2.6-0.8 5.2-1.1 7.8s-0.7 5-1 7.2c-1 5.3-1.7 10.5-2.3 15.7 1.2-2.8 2.5-5.9 4-9.2 1.4-3.3 2.9-6.6 4.3-9.9 1.4-3.3 2.7-6.3 3.9-9.2C224.3 161 225.3 158.5 226.1 156.5z"/>
-    <path id="XMLID_17_" class="st1" d="M310.4 225.7c-1.6 1.5-3.6 3.1-6 4.8s-5 3.2-7.8 4.6c-2.8 1.4-5.6 2.6-8.5 3.5 -2.9 0.9-5.6 1.4-8.3 1.4 -2.3 0-4.3-0.3-5.9-1 -1.6-0.7-2.9-1.6-3.9-2.7 -1-1.2-1.7-2.6-2.1-4.3 -0.4-1.7-0.6-3.5-0.6-5.6 0-2.8 0.3-6.1 0.9-9.9 1.3-7.8 2.1-12.2 2.5-13.2 0.6-1.9 1.8-6.2 3.7-12.8 1.7-5.4 2.8-8.9 3.2-10.5 0.2-1.1 0.8-2.2 1.9-3.1 0.9-0.8 2-1.5 3.1-2 1.2-0.5 2.4-0.9 3.6-1.2 1.3-0.2 2.4-0.4 3.4-0.4 1.9 0 3.1 0.3 3.8 1 0.7 0.7 1 1.6 1 2.8 0 1-0.2 2.4-0.7 4.2 -0.5 1.8-1 3.9-1.6 6.2 -0.6 2.3-1.5 5.3-2.6 8.9 -1.2 3.6-1.9 6.7-2.4 9.3 -0.4 2.6-1 5.1-1.6 7.6 -0.6 2.5-1 4.8-1 6.9 0 2 0.2 3.6 0.7 4.8 0.4 1.2 1.4 1.8 2.8 1.8 1.6 0 3.4-0.6 5.4-1.7 2-1.1 4-2.5 6-4.1 2-1.6 4-3.2 5.9-5 1.9-1.7 3.6-3.2 5.1-4.4V225.7zM280.3 155c0-1 0.2-2.2 0.7-3.5 0.4-1.3 1.2-2.6 2.2-3.7 1-1.2 2.4-2.1 4-2.9 1.7-0.8 3.8-1.2 6.3-1.2 1.6 0 3.1 0.2 4.4 0.5 1.4 0.4 2.6 0.9 3.6 1.7 1 0.7 1.9 1.7 2.5 3 0.6 1.2 0.9 2.7 0.9 4.4 0 1.5-0.2 3-0.7 4.5 -0.5 1.5-1.3 2.7-2.4 3.9 -1.1 1.1-2.4 2.1-4.1 2.8 -1.6 0.7-3.6 1.1-5.9 1.1 -4 0-6.9-0.9-8.8-2.8C281.2 160.6 280.3 158.1 280.3 155z"/>
-    <path id="XMLID_21_" class="st1" d="M341.8 228.8c-0.1 0.2-0.2 0.6-0.2 1.2 -0.1 0.6-0.2 1.3-0.5 2.2 -0.2 0.9-0.6 1.8-1 2.7 -0.4 0.9-1.1 1.8-2 2.6 -0.9 0.8-2 1.5-3.3 2 -1.3 0.5-3 0.8-5.1 0.8 -1.7 0-3.2-0.2-4.5-0.6 -1.3-0.4-2.5-1-3.5-1.8 -1-0.8-1.7-1.9-2.3-3.1 -0.5-1.3-0.8-2.8-0.8-4.5 0-1.5 0.2-2.9 0.7-4.3 0.5-1.4 1.2-2.7 2.2-3.8 1-1.1 2.3-2 3.8-2.6 1.6-0.7 3.4-1 5.6-1 3.5 0 6.2 0.9 8.1 2.6 1.9 1.7 2.8 4.2 2.8 7.3C341.9 228.5 341.9 228.7 341.8 228.8zM330.1 205.5c0.4-4.6 1.1-9.4 2-14.3 0.9-4.9 2-9.8 3.4-14.7 1.4-4.9 2.7-9.7 4-14.5 1.3-4.8 2.6-9.4 3.8-13.8 1.2-4.4 2.4-8.6 3.5-12.5 1.1-3.9 2.1-7.4 2.9-10.5 0.6-2.2 1.5-3.9 2.7-5.2 1.2-1.3 2.4-2.4 3.9-3.1s2.9-1.2 4.5-1.5 3.1-0.4 4.6-0.4c0.8 0 1.5 0.1 2.1 0.3 0.7 0.2 1.2 0.5 1.7 1 0.5 0.5 0.8 1.1 1.1 2 0.2 0.8 0.4 1.9 0.4 3.2 0 0.9-0.1 1.9-0.2 3 -0.1 1.1-0.3 2.4-0.6 3.9 -1.6 5.2-3.1 10.4-4.7 15.7 -1.6 5.3-3.7 11-6.3 17 -2.6 6-5.6 12.6-8.9 19.8 -3.3 7.2-7.1 15.5-11.2 24.8 -0.1 0.5-0.3 1-0.7 1.4 -0.4 0.4-0.8 0.8-1.4 1.1 -0.5 0.3-1.1 0.5-1.8 0.7 -0.6 0.2-1.2 0.2-1.8 0.2 -0.9 0-1.6-0.2-2.2-0.5 -0.6-0.4-0.9-1-0.9-1.8C329.9 206.3 330 206 330.1 205.5z"/>
-  </g>
-</g>
-<g id="XMLID_9_">
-  <polygon id="XMLID_2_" class="st2" points="104.3 262.7 280.7 371.5 103.9 446.7 "/>
-  <polygon id="XMLID_5_" class="st2" points="456.3 262.7 279.9 371.5 456.7 446.7 "/>
-</g>
-<path id="XMLID_7_" class="st3" d="M103.1 446.7l164.8-94c7.1-4.1 17-4.1 24.1 0l164.8 94H103.1z"/>
-<g id="XMLID_11_">
-  <path id="XMLID_23_" class="st4" d="M279.9 349.7c4.2 0 8.5 1 12 3l164.8 94H103.1l164.8-94C271.4 350.8 275.6 349.7 279.9 349.7M279.9 329.7c-7.8 0-15.4 2-22 5.7l-164.8 94c-7.9 4.5-11.7 13.7-9.4 22.5 2.3 8.8 10.3 14.9 19.3 14.9h353.6c9.1 0 17-6.1 19.3-14.9 2.3-8.8-1.5-18-9.4-22.5l-164.8-94C295.3 331.7 287.7 329.7 279.9 329.7L279.9 329.7z"/>
-</g>
-</g>
-<g id="stars">
-<g id="XMLID_30_">
-  <g id="XMLID_27_">
-    <line id="XMLID_12_" class="st5" x1="28.9" y1="371.8" x2="46.8" y2="445.7"/>
-    <line id="XMLID_31_" class="st5" x1="5.4" y1="389" x2="70.3" y2="428.5"/>
-    <line id="XMLID_32_" class="st5" x1="0.9" y1="417.7" x2="74.8" y2="399.8"/>
-    <line id="XMLID_33_" class="st5" x1="18.1" y1="441.2" x2="57.6" y2="376.3"/>
-  </g>
-  <g id="XMLID_3_">
-    <line id="XMLID_34_" class="st5" x1="488.4" y1="7.2" x2="469.4" y2="59.9"/>
-    <line id="XMLID_28_" class="st5" x1="461.2" y1="12.1" x2="497.6" y2="55.1"/>
-    <line id="XMLID_29_" class="st5" x1="451.7" y1="38.6" x2="507.1" y2="28.6"/>
-  </g>
-</g>
-</g>
-</svg>
-            </div>
-            <div class="o-signup__text">
-                <h2>Sign Up</h2>
-                <!--EDITABLE--><p>Subscribe to one of our email newsletters and get FREE access to hundreds of videos today.</p>
-                <form class="signup__form">
-                    <fieldset class="signup__details">
-                        <input class="signup-form__field" type="text" name="name" placeholder="Your Name">
-                        <input class="signup-form__field" type="text" name="email" placeholder="Email address, e.g. joe@domain.com">
-                    </fieldset>
-                    <p>What type of emails would you like to receive?</p>
-                    <fieldset class="signup__options">
-                        <label class="signup__radio-buttons" for="design"><input type="radio" name="newsletter" value="design">Design emails</label>
-                        <label class="signup__radio-buttons" for="design"><input type="radio" name="newsletter" value="developer">Developer emails</label>
-                        <label class="signup__radio-buttons" for="design"><input type="radio" name="newsletter" value="all">All emails</label>
-                    </fieldset>
-                </form>
-            <a class="c-button">Subscribe <i class="fa fa-arrow-right"></i></a>
-            </div>
-        </section>
-        <!--get involved-->
-        <section class="get-involved o-type--1"><!--EDITABLE REGION-->
-            <h2>Get Involved</h2>
-            <ul class="c-get-involved">
-                <li id="write">
-                    <div class="o-get-involved__img">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
-  <line fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="20.9" y1="150.6" x2="34.5" y2="137"/>
-  <path fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M18.7 122C9.6 110 4.3 95.5 4.3 80 4.3 38.2 42.7 4.3 90 4.3c14.4 0 27.9 3.1 39.8 8.6l-90.4 90.1 30.5 30.5 93.2-93.1c8 11.5 12.6 25.1 12.6 39.5 0 19-7.9 36.4-21 49.6l9.5 44.7 -42.9-23.9c-9.7 3.3-20.2 5.2-31.2 5.2 -10.9 0-21.4-1.8-31-5.1"/>
-  <polygon fill="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points=" 39.4 103.1 26.5 145.5 69.9 133.6 "/>
-  <line fill="none" stroke-width="7" stroke-linejoin="round" stroke-miterlimit="10" x1="50" y1="93" x2="79" y2="122"/>
-                        </svg></a>
-                    </div>
-                    <div class="o-get-involved__text">
-                        <h3>Write for us</h3>
-                        <p class="tr-mobile-hide">We&rsquo;re always looking for people to contribute articles, interviews and product reviews to our blogs. If you’ve got something to share email our Product Director, <a href="mailto:ian@futureinsights.com">Ian Murphy</a>.</p>
-                    </div>
-                </li>
-                <li id="speak">
-                    <div class="o-get-involved__img"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
-  <path fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M173.4 97.7c-3.3 12-9.8 23-18.7 32l9.7 42.1 -43.2-21.2c-9.7 3.4-20.2 5.2-31.3 5.2 -14 0-27.3-3-38.9-8.2L75 124.1l31.6-14.1c20.4-9.8 25.1-36.8 9-52.8l0 0c-16-16-43.1-11.4-52.8 9L48.7 97.8l-27.8 27.8C10.6 113.1 4.2 96.7 4.2 80 4.2 40.5 38.4 8.1 82 4.5"/>
-  <line fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="48.7" y1="97.8" x2="75" y2="124.1"/>
-  <line fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="46.6" y1="115.6" x2="57.7" y2="126.7"/>
-  <line fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="77" y1="108.7" x2="109.4" y2="93.9"/>
-  <line fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="113.5" y1="5" x2="113.5" y2="33"/>
-  <line fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="147" y1="66.5" x2="175" y2="66.5"/>
-  <line fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="142.5" y1="49.8" x2="166.8" y2="35.8"/>
-  <line fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="130.2" y1="37.5" x2="144.2" y2="13.2"/>
-  <line fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="87" y1="91.7" x2="108.4" y2="81.9"/>
-                        </svg></a>
-</div>
-                    <div class="o-get-involved__text">
-                    <h3>Speak at an Event</h3>
-                        <p class="tr-mobile-hide">Fill in this form to submit a talk for a Future Insights event. Please provide as much information as possible, and don’t forget to read our <a href="speaker-submission.html#guidelines">guidelines</a> first.</p>
-                        <p class="tr-mobile-hide">Although we consider every submission carefully, due to the volume of submissions we received please be aware that at busy times we can&rsquo;t always reply with individual feedback.</p>
-                        <h5 class="get-involved_button"><a class="tr-mobile-hide" href="speaker-submission.html">Submit a proposal <i class="fa fa-arrow-right"></i></a></h5>
-                    </div>
-                </li>
-                <li id="sponsor">
-                    <div class="o-get-involved__img"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
-  <path fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M175.1 70.5c0.4 3.1 0.7 6.3 0.7 9.5 0 19-7.9 36.4-21 49.7l9.7 42.1 -43.2-21.2c-9.7 3.4-20.2 5.2-31.3 5.2 -34 0-85.8-25.9-85.8-75.8 0-7.6 1.5-15.8 3.8-22.7l81.4 79.4c3.5 3.5 8.4 3.5 12.7 0l38.2-32.1c3.5-3.5 3.5-9.2 0-12.7L88.5 41.1l8.1-8.1L69.9 22.5 56.2 10.3c10.4-3.9 25.3-7.8 44.5-5.6"/>
-  <line fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="114.5" y1="91.1" x2="133.6" y2="110.2"/>
-  <line fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="103.2" y1="102.4" x2="120.6" y2="119.8"/>
-  <line fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="92" y1="115.2" x2="108.1" y2="131.4"/>
-  <line fill="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="171.5" y1="52.5" x2="137.8" y2="85.4"/>
-  <path fill="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M111 53.3l-7.7-0.3c-2.4-0.1-4.7 0.8-6.3 2.5l-3.7 3.7c-3.3 3.3-8.7 3.3-12 0l0 0c-3.3-3.3-3.3-8.7 0-12l6.4-6.4 31.9-29"/>
-  <path fill="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M38.9 90.4l5.2-5.6c3.9-4.1 10.4-4.2 14.4-0.2l9.3 9.3c0.4 0.4 0.8 0.9 1.2 1.5l18 26.5c2.7 4 2.2 9.3-1.2 12.7l0 0c-3.1 3.1-8 3.2-11.2 0.2l-35.3-33C36.1 98.7 35.9 93.6 38.9 90.4z"/>
-  <line fill="none" stroke-width="7" stroke-linejoin="round" stroke-miterlimit="10" x1="63.6" y1="90.4" x2="45.9" y2="108"/>
-  <line fill="none" stroke-width="7" stroke-linejoin="round" stroke-miterlimit="10" x1="73.5" y1="103.1" x2="57.9" y2="118.7"/>
-  <line fill="none" stroke-width="7" stroke-linejoin="round" stroke-miterlimit="10" x1="84.1" y1="116.5" x2="71.4" y2="129.3"/>
-</svg></a>
-</div>
-                    <div class="o-get-involved__text">
-                        <h3>Sponsor Us</h3>
-                        <p class="tr-mobile-hide">When you sponsor a Future Insights event you get a truly first class service. We offer a variety of bespoke packages to suit your needs and budget.</p>
-                        <h5 class="get-involved_button"><a class="tr-mobile-hide" href="sponsor-enquiry.html">Make an enquiry <i class="fa fa-arrow-right"></i></a></h5>
-                    </div>
-                </li>
-            </ul>
-        </section>
+        
     <!--footer-->
     <footer><!--EDITABLE REGION-->
         <div class="o-wrapper">
@@ -534,6 +555,14 @@
     <script>
         $( "#topic-menu__trigger--desktop" ).click(function() {
             $( ".topic-menu--desktop" ).slideToggle( "slow" );
+             $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
+            $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
+        });
+    </script>
+     <!--dropdown sort menu-->
+    <script>
+        $( "#dropdown__trigger--sort" ).click(function() {
+            $( ".dropdown__item--sort" ).slideToggle( "fast" );
              $( ".fa-caret-down" ).switchClass( "fa-caret-down", "fa-times", 200 );
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
         });
