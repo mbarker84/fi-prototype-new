@@ -6178,6 +6178,11 @@ p.filters__title {
   .event-menu__item--desktop a.current {
     background-color: #202123 !important;
   }
+
+  /* line 196, ../sass/new/_components.lists.scss */
+  .event-menu__dropdown {
+    display: none;
+  }
 }
 /* line 1, ../sass/new/_typography.scss */
 h1 {
@@ -6244,9 +6249,9 @@ h5 {
 
 /* line 50, ../sass/new/_typography.scss */
 .highlight {
-  border-bottom: 2px solid #82868d;
   margin: 0 .2em;
   color: #515358;
+  font-weight: 700;
 }
 
 /* line 56, ../sass/new/_typography.scss */
