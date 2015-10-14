@@ -143,13 +143,18 @@ a#event-menu__trigger {
     display: block;
     width: 100%;
     padding: 1em;
-    color: $white !important;
+    color: $lt-grey !important;
     font-family: $paragraph;
     text-transform: uppercase;
     letter-spacing: .03em;
     cursor: pointer;
+    background-color: $black;
     i {
         float: right;
+    }
+    &:focus, &:hover, &:active {
+        background-color: $fi-highlight;
+        color: $black !important;
     }
 }
 
@@ -165,8 +170,15 @@ li.event-menu__item {
         display: block;
         width: 100%;
         padding: 1em;
-        color: $white !important;
+        color: $lt-grey !important;
         background-color: $black;
+        &:focus, &:hover, &:active {
+            background-color: $fi-highlight;
+            color: $black !important;
+        }
+    }
+    i {
+        float: right;
     }
 }
 

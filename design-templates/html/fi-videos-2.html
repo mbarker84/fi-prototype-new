@@ -130,6 +130,24 @@
             <li class="event-menu__item--desktop"><a href="#">Future of Work</a></li>
         <li class="event-menu__item--desktop"><a href="#">More...</a></li>
     </ul>
+    <!--event-menu mobile-->
+    <div class="event-menu__wrapper">
+        <a id="event-menu__trigger">Events <i class="fa fa-caret-down"></i></a>
+        <ul class="event-menu">
+            <li class="event-menu__item"><a class="event-menu-item__trigger" href="#">Future of Web Design <i class="fa fa-caret-right"></i></a>
+                <ul class="event-menu__sub-menu--mobile">
+                    <li class="event-sub-menu__item--mobile"><a href="#">London 2015</a></li>
+                    <li class="event-sub-menu__item--mobile"><a href="#">New York 2014</a></li>
+                    <li class="event-sub-menu__item--mobile"><a href="#">London 2014</a></li>
+                    <li class="event-sub-menu__item--mobile"><a href="#">New York 2013</a></li>
+                    <li class="event-sub-menu__item--mobile"><a href="#">London 2013</a></li>
+                </ul>
+            </li>
+            <li class="event-menu__item"><a href="#">Future of Web Apps <i class="fa fa-caret-right"></i></a></li>
+            <li class="event-menu__item"><a href="#">Future Insights Live <i class="fa fa-caret-right"></i></a></li>
+            <li class="event-menu__item"><a href="#">Future of Work <i class="fa fa-caret-right"></i></a></li>
+        </ul>
+    </div>
     <!--main-->
     <main class="blog o-type--1">
         <!--video gallery-->
@@ -141,12 +159,12 @@
                         <p><em>Showing</em> <span class="highlight">All Events</span> <em>in</em> <span class="highlight">All Cities</span> <span class="highlight">2015</span></p>
                         <p class="small options__number">198 videos</p>
                     </div>
-                    <div class="options__col-2">
-                        <ul class="dropdown--sort" id="dropdown__trigger--sort">Speaker A&ndash;Z<i class="fa fa-caret-down"></i>
-                            <li class="dropdown__item--sort"><a href="">Title A&ndash;Z</a></li>
-                            <li class="dropdown__item--sort"><a href="">Most recent</a></li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="options__col-2"><p class="small sort__label">Sort by:</p>
+                    <ul class="dropdown--sort" id="dropdown__trigger--sort">Speaker A&ndash;Z<i class="fa fa-caret-down"></i>
+                        <li class="dropdown__item--sort"><a href="">Title A&ndash;Z</a></li>
+                        <li class="dropdown__item--sort"><a href="">Most recent</a></li>
+                    </ul>
                 </div>
             </div>
             <ul class="videos__gallery videos__list o-3-col-list">
@@ -502,6 +520,13 @@
             $( ".fa-times" ).switchClass( "fa-times", "fa-caret-down", 200 );
         });
     </script>
+    <!--event menu level 2 slide-in-->
+    <script>
+        $( ".event-menu-item__trigger" ).click(function() {
+          $( ".event-menu__sub-menu--mobile" ).toggle( "slide" );
+        });
+    </script>
+    
     <script>
         $( "#more-topics__trigger" ).click(function() {
             $( ".topics__sub-menu" ).slideToggle( "slow" );
