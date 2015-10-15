@@ -26,6 +26,14 @@
             background-color: $fi-primary !important;
         }
     }
+    &--blue {
+        @extend .c-button;
+        background-color: $fi-primary !important;
+        &:focus, &:hover, &:active {
+            background-color: $black !important;
+            color: $fi-highlight;
+        }
+    }
 }
 
 .c-button--type-2 {

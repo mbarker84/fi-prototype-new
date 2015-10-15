@@ -17,6 +17,7 @@ img {
     @include clearfix;
     @media (min-width: $bp-l) {
         display: flex;
+        align-items: baseline;
         margin-bottom: 2em;
         &:last-child {
             margin-bottom: 0;
@@ -32,7 +33,7 @@ img {
         @include span(5);
     }
     @media (min-width: $bp-l) {
-        @include span(3);
+        width: span(3) + gutter();
         padding-right: span(1);
         border-right: 2px solid $white;
     }
@@ -40,7 +41,8 @@ img {
 
 .header__col-2 {
     @media (min-width: $bp-l) {
-        @include span(6);
+        width: span(6);
+        margin-right: gutter();
         padding-left: span(1) + gutter();
     }
 }
@@ -146,17 +148,42 @@ img {
 
 /* Speaker profile */
 
+.header__speaker-profile {
+    @media (min-width: $bp-m) {
+        display: flex;
+    }
+}
+
 .speaker-profile__image {
     max-width: 12em;
     margin: 0 auto;
     @media (min-width: $bp-m) {
         max-width: 100%;
-        @include span(4);
+        width: span(4);
+        margin-right: gutter();
     }
 }
 
 .speaker-profile__bio {
     @media (min-width: $bp-m) {
+        width: span(8 last);
+    }
+}
+
+/* Events card */
+
+.events-card__col-1 {
+    @media (min-width: $bp-s) {
+        @include span(4);
+    }
+    @media (min-width: $bp-l) {
+        padding-right: 1em;
+    }
+}
+
+.events-card__text {
+    @media (min-width: $bp-m--2) {
         @include span(8 last);
     }
 }
+    
